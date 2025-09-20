@@ -1,0 +1,944 @@
+{
+  "shot_list": {
+    "metadata": {
+      "project": "ZenMirror Crowdfunding Campaign",
+      "created_date": "2025-09-17",
+      "total_shots": 87,
+      "estimated_production_time": "5 days",
+      "video_format": "4K, 60fps for slow motion, 24fps for standard",
+      "target_video_length": "2:30 - 3:00 minutes"
+    },
+    "opening_sequence": {
+      "shot_001": {
+        "category": "hook_problem_setup",
+        "duration": "3 seconds",
+        "description": "Close-up of frustrated meditator adjusting multiple wearable devices - chest strap, smartwatch, EEG headband",
+        "camera_angle": "Medium close-up, handheld for tension",
+        "lighting": "Harsh, clinical lighting",
+        "audio": "Ambient tension sound, device beeping",
+        "post_production": "Quick cuts, stressed color grading",
+        "talent": "Female practitioner, 30s, visibly frustrated"
+      },
+      "shot_002": {
+        "category": "problem_visualization",
+        "duration": "4 seconds",
+        "description": "Wide shot showing cluttered meditation space with tangled wires, charging stations, multiple devices",
+        "camera_angle": "Wide establishing shot",
+        "lighting": "Cold, sterile lighting",
+        "audio": "Electronic interference sounds",
+        "post_production": "Contrast adjustment for clinical feel",
+        "props": "Multiple meditation tracking devices, cables, charging dock"
+      },
+      "shot_003": {
+        "category": "transition_question",
+        "duration": "2 seconds",
+        "description": "Extreme close-up of meditator's closed eyes opening with concern",
+        "camera_angle": "Extreme close-up, macro lens",
+        "lighting": "Soft natural light",
+        "audio": "Silence building to question voiceover",
+        "post_production": "Slow zoom out, color transition from cold to warm",
+        "talent": "Same practitioner, transition moment"
+      }
+    },
+    "product_introduction": {
+      "shot_004": {
+        "category": "product_reveal",
+        "duration": "5 seconds",
+        "description": "360-degree ZenMirror device rotation on clean bamboo surface with soft natural lighting",
+        "camera_angle": "Medium shot, rotating platform",
+        "lighting": "Soft, warm product lighting with natural shadows",
+        "audio": "Gentle chime, technological harmony sound",
+        "post_production": "Smooth rotation, product highlight glow",
+        "props": "ZenMirror device, natural bamboo platform"
+      },
+      "shot_005": {
+        "category": "contactless_demonstration",
+        "duration": "6 seconds",
+        "description": "Side view showing person meditating 1.5 meters from ZenMirror with animated radar waves visualization",
+        "camera_angle": "Medium wide shot, profile view",
+        "lighting": "Warm, peaceful ambient lighting",
+        "audio": "Subtle radar pulse sound, breathing audio",
+        "post_production": "Add animated radar wave overlay, peaceful color grading",
+        "talent": "Male practitioner, 40s, peaceful posture"
+      },
+      "shot_006": {
+        "category": "technology_explanation",
+        "duration": "4 seconds",
+        "description": "Close-up of ZenMirror's radar module with technical animation overlay showing millimeter wave detection",
+        "camera_angle": "Macro close-up, technical focus",
+        "lighting": "Technical product lighting with accent highlights",
+        "audio": "Subtle technology sound, precise beeping",
+        "post_production": "Technical animation overlay, scientific color palette",
+        "graphics": "Millimeter wave visualization, technical specifications"
+      },
+      "shot_007": {
+        "category": "mobile_app_integration",
+        "duration": "5 seconds",
+        "description": "Smartphone showing ZenMirror app dashboard with real-time data streaming",
+        "camera_angle": "Over-shoulder shot of phone screen",
+        "lighting": "Soft screen lighting with ambient warmth",
+        "audio": "App interface sounds, data streaming audio",
+        "post_production": "Screen content replacement, UI glow effects",
+        "props": "Smartphone with app interface mockup"
+      }
+    },
+    "mentor_personalities": {
+      "shot_008": {
+        "category": "mentor_introduction",
+        "duration": "6 seconds",
+        "description": "Split screen showing all 6 mentor avatars with cultural backgrounds",
+        "camera_angle": "Medium shot, symmetrical composition",
+        "lighting": "Culturally appropriate lighting for each mentor background",
+        "audio": "Gentle transition music, anticipation build",
+        "post_production": "Split screen composition, cultural background integration",
+        "graphics": "6 mentor avatars, cultural symbols, tradition names"
+      },
+      "shot_009": {
+        "category": "zen_master_demo",
+        "duration": "8 seconds",
+        "description": "Serene meditation setting with bamboo, practitioner guided by Zen Master voice",
+        "camera_angle": "Wide shot, peaceful composition",
+        "lighting": "Natural, soft lighting with shadow play",
+        "audio": "Zen Master voice sample: 'Thoughts like clouds, breath like wind'",
+        "post_production": "Natural color grading, peaceful atmosphere",
+        "talent": "Asian practitioner, traditional meditation posture",
+        "props": "Bamboo elements, stone garden, natural setting"
+      },
+      "shot_010": {
+        "category": "yogi_demo",
+        "duration": "8 seconds",
+        "description": "Yoga studio setting with energy flow visualization, Yogi guidance demonstration",
+        "camera_angle": "Medium shot, flowing movement",
+        "lighting": "Warm, golden hour lighting",
+        "audio": "Yogi voice sample: 'Feel the life energy flowing through each breath'",
+        "post_production": "Energy flow animation overlay, warm color grading",
+        "talent": "Indian practitioner, yoga posture",
+        "props": "Yoga mat, natural fiber textures, plants"
+      },
+      "shot_011": {
+        "category": "chaplain_demo",
+        "duration": "8 seconds",
+        "description": "Peaceful spiritual space with soft lighting, compassionate guidance demonstration",
+        "camera_angle": "Medium shot, gentle and comforting",
+        "lighting": "Soft, welcoming light with gentle shadows",
+        "audio": "Chaplain voice sample: 'Your heart finds rest in this sacred stillness'",
+        "post_production": "Gentle glow effects, comforting color palette",
+        "talent": "Multi-ethnic practitioner, contemplative pose",
+        "props": "Universal spiritual symbols, candles, peaceful elements"
+      },
+      "shot_012": {
+        "category": "spiritual_mentor_demo",
+        "duration": "8 seconds",
+        "description": "Modern spiritual space with diverse elements, empowering guidance style",
+        "camera_angle": "Medium shot, empowering angle",
+        "lighting": "Bright, inspiring lighting",
+        "audio": "Spiritual Mentor voice sample: 'Your inner wisdom knows the way'",
+        "post_production": "Inspiring light effects, empowering color scheme",
+        "talent": "Diverse practitioner, confident posture",
+        "props": "Crystals, diverse spiritual symbols, modern elements"
+      },
+      "shot_013": {
+        "category": "stoic_demo",
+        "duration": "8 seconds",
+        "description": "Study/library setting with classical elements, rational guidance approach",
+        "camera_angle": "Medium shot, strong and grounded",
+        "lighting": "Steady, consistent lighting",
+        "audio": "Stoic voice sample: 'You chose reason over reaction. Your inner citadel grows stronger'",
+        "post_production": "Strong, stable color grading",
+        "talent": "Western practitioner, grounded posture",
+        "props": "Books, classical columns, architectural elements"
+      },
+      "shot_014": {
+        "category": "vedanta_demo",
+        "duration": "8 seconds",
+        "description": "Traditional Indian setting with authentic cultural elements, wisdom-based guidance",
+        "camera_angle": "Medium shot, respectful cultural framing",
+        "lighting": "Warm, traditional lighting with cultural authenticity",
+        "audio": "Vedanta voice sample: 'Rest in your true nature, untouched by the mind's fluctuations'",
+        "post_production": "Traditional color palette, cultural respect emphasis",
+        "talent": "Indian practitioner, traditional meditation posture",
+        "props": "Om symbols, traditional patterns, authentic cultural elements"
+      }
+    },
+    "feature_demonstration": {
+      "shot_015": {
+        "category": "real_time_monitoring",
+        "duration": "7 seconds",
+        "description": "Split screen: peaceful meditator and live app data showing HRV, breathing, heart rate",
+        "camera_angle": "Split screen composition",
+        "lighting": "Balanced lighting between practitioner and screen",
+        "audio": "Gentle heartbeat sound, breathing audio, app interface sounds",
+        "post_production": "Real-time data visualization, split screen balance",
+        "graphics": "Live HRV charts, breathing patterns, heart rate display"
+      },
+      "shot_016": {
+        "category": "hrv_visualization",
+        "duration": "5 seconds",
+        "description": "Close-up of smartphone showing detailed HRV analysis with RMSSD and SDNN metrics",
+        "camera_angle": "Close-up screen shot",
+        "lighting": "Screen-focused lighting",
+        "audio": "Data analysis sounds, scientific precision audio",
+        "post_production": "Screen content optimization, data clarity enhancement",
+        "graphics": "HRV charts, scientific metrics, analysis visualization"
+      },
+      "shot_017": {
+        "category": "rsa_demonstration",
+        "duration": "6 seconds",
+        "description": "Animated visualization of respiratory sinus arrhythmia showing heart rate-breathing synchronization",
+        "camera_angle": "Medium shot of screen with animation",
+        "lighting": "Technical lighting for clarity",
+        "audio": "Synchronized breathing and heartbeat rhythm",
+        "post_production": "RSA animation overlay, scientific visualization",
+        "graphics": "RSA wave patterns, heart-breath synchronization animation"
+      },
+      "shot_018": {
+        "category": "mindfulness_points",
+        "duration": "5 seconds",
+        "description": "Gamification interface showing mindfulness points accumulation and achievement unlocks",
+        "camera_angle": "Over-shoulder screen view",
+        "lighting": "Engaging screen lighting",
+        "audio": "Achievement sounds, positive reinforcement audio",
+        "post_production": "Gamification effects, positive energy color grading",
+        "graphics": "Points accumulation animation, achievement badges"
+      },
+      "shot_019": {
+        "category": "achievement_system",
+        "duration": "6 seconds",
+        "description": "User unlocking various achievement badges with celebration animations",
+        "camera_angle": "Close-up of achievement interface",
+        "lighting": "Celebratory lighting effects",
+        "audio": "Achievement unlock sounds, celebration music",
+        "post_production": "Achievement celebration effects, reward psychology colors",
+        "graphics": "Badge unlock animations, progression visualization"
+      },
+      "shot_020": {
+        "category": "work_mode_demo",
+        "duration": "8 seconds",
+        "description": "Office worker with ZenMirror monitoring stress levels, breathing reminder notification",
+        "camera_angle": "Medium shot of office environment",
+        "lighting": "Office lighting with technology accents",
+        "audio": "Office ambient sound, gentle reminder notification",
+        "post_production": "Professional environment color grading",
+        "talent": "Professional worker, office setting",
+        "props": "Office desk, computer, professional environment"
+      },
+      "shot_021": {
+        "category": "study_mode_demo",
+        "duration": "8 seconds",
+        "description": "Student using ZenMirror for concentration enhancement during study session",
+        "camera_angle": "Medium shot of study environment",
+        "lighting": "Study-focused lighting",
+        "audio": "Study ambient sound, concentration enhancement audio",
+        "post_production": "Academic focus color scheme",
+        "talent": "Young adult student, study posture",
+        "props": "Books, study materials, academic setting"
+      }
+    },
+    "scientific_validation": {
+      "shot_022": {
+        "category": "research_backing",
+        "duration": "5 seconds",
+        "description": "Montage of scientific research papers and peer-reviewed studies on HRV and meditation",
+        "camera_angle": "Close-up document shots",
+        "lighting": "Academic lighting, paper clarity",
+        "audio": "Scientific credibility sound, research authority audio",
+        "post_production": "Academic credibility color grading",
+        "props": "Research papers, scientific publications, academic credentials"
+      },
+      "shot_023": {
+        "category": "expert_testimonial_setup",
+        "duration": "6 seconds",
+        "description": "Meditation teacher in professional setting providing expert validation",
+        "camera_angle": "Medium shot, professional interview setup",
+        "lighting": "Professional interview lighting",
+        "audio": "Expert testimonial audio: credibility and authority",
+        "post_production": "Professional credibility enhancement",
+        "talent": "Meditation teacher/expert, professional appearance"
+      },
+      "shot_024": {
+        "category": "beta_user_testimonial_1",
+        "duration": "8 seconds",
+        "description": "Real beta user sharing transformation story in authentic home setting",
+        "camera_angle": "Medium shot, authentic environment",
+        "lighting": "Natural, authentic lighting",
+        "audio": "User testimonial: 'ZenMirror completely changed my practice'",
+        "post_production": "Authentic, relatable color grading",
+        "talent": "Real beta user, authentic testimonial"
+      },
+      "shot_025": {
+        "category": "beta_user_testimonial_2",
+        "duration": "8 seconds",
+        "description": "Second beta user discussing objective feedback benefits",
+        "camera_angle": "Medium shot, personal space",
+        "lighting": "Warm, personal lighting",
+        "audio": "User testimonial: 'First time I have objective feedback without distraction'",
+        "post_production": "Personal, warm color grading",
+        "talent": "Second real beta user, personal story"
+      }
+    },
+    "comparison_demonstration": {
+      "shot_026": {
+        "category": "before_scenario",
+        "duration": "6 seconds",
+        "description": "Meditator struggling with multiple wearable devices, constant adjustments, distraction",
+        "camera_angle": "Medium shot, handheld for discomfort",
+        "lighting": "Uncomfortable, clinical lighting",
+        "audio": "Distraction sounds, device interference",
+        "post_production": "Uncomfortable color grading, tension emphasis",
+        "talent": "Practitioner showing frustration with traditional devices",
+        "props": "Multiple wearable devices, tangled cables"
+      },
+      "shot_027": {
+        "category": "after_scenario",
+        "duration": "6 seconds",
+        "description": "Same meditator peaceful with ZenMirror, no physical devices, pure practice",
+        "camera_angle": "Steady, peaceful framing",
+        "lighting": "Warm, peaceful lighting",
+        "audio": "Peaceful ambient sound, natural breathing",
+        "post_production": "Peaceful, warm color grading",
+        "talent": "Same practitioner, now peaceful and undisturbed"
+      },
+      "shot_028": {
+        "category": "privacy_comparison",
+        "duration": "5 seconds",
+        "description": "Visual comparison: intrusive wearables vs non-imaging radar technology",
+        "camera_angle": "Split screen comparison",
+        "lighting": "Comparative lighting for clarity",
+        "audio": "Privacy emphasis audio, security sounds",
+        "post_production": "Privacy-focused color scheme, security emphasis",
+        "graphics": "Privacy icons, non-imaging technology visualization"
+      }
+    },
+    "product_details": {
+      "shot_029": {
+        "category": "device_close_up_front",
+        "duration": "4 seconds",
+        "description": "Extreme close-up of ZenMirror front face showing radar module and elegant design",
+        "camera_angle": "Macro close-up, frontal view",
+        "lighting": "Product detail lighting, highlight textures",
+        "audio": "Precision technology sound",
+        "post_production": "Product detail enhancement, texture emphasis",
+        "props": "ZenMirror device, clean background"
+      },
+      "shot_030": {
+        "category": "device_close_up_side",
+        "duration": "4 seconds",
+        "description": "Side profile showing 45-degree angled design and bamboo housing materials",
+        "camera_angle": "Macro close-up, side profile",
+        "lighting": "Material texture lighting, natural wood highlights",
+        "audio": "Natural materials sound, craftsmanship audio",
+        "post_production": "Material texture enhancement, craftsmanship emphasis",
+        "props": "ZenMirror device, natural material background"
+      },
+      "shot_031": {
+        "category": "device_close_up_back",
+        "duration": "3 seconds",
+        "description": "Back view showing connection ports and elegant cable management",
+        "camera_angle": "Macro close-up, rear view",
+        "lighting": "Technical detail lighting",
+        "audio": "Technical precision sound",
+        "post_production": "Technical detail clarity",
+        "props": "ZenMirror device, technical background"
+      },
+      "shot_032": {
+        "category": "size_comparison",
+        "duration": "4 seconds",
+        "description": "ZenMirror next to common objects showing compact, unobtrusive size",
+        "camera_angle": "Medium shot, size reference",
+        "lighting": "Comparative product lighting",
+        "audio": "Size emphasis audio, compact advantage",
+        "post_production": "Size comparison clarity",
+        "props": "ZenMirror device, size reference objects (book, smartphone)"
+      }
+    },
+    "setup_demonstration": {
+      "shot_033": {
+        "category": "unboxing_experience",
+        "duration": "6 seconds",
+        "description": "Premium unboxing experience showing sustainable packaging and first impression",
+        "camera_angle": "Over-shoulder unboxing shot",
+        "lighting": "Premium unboxing lighting",
+        "audio": "Premium unboxing sounds, anticipation build",
+        "post_production": "Premium experience color grading",
+        "props": "ZenMirror packaging, premium presentation materials"
+      },
+      "shot_034": {
+        "category": "simple_setup_step1",
+        "duration": "4 seconds",
+        "description": "User placing ZenMirror on surface 1.5 meters from meditation spot",
+        "camera_angle": "Wide shot showing placement distance",
+        "lighting": "Setup instruction lighting, clarity focus",
+        "audio": "Setup instruction audio, simplicity emphasis",
+        "post_production": "Instructional clarity color scheme",
+        "talent": "User demonstrating simple setup process"
+      },
+      "shot_035": {
+        "category": "simple_setup_step2",
+        "duration": "4 seconds",
+        "description": "User connecting ZenMirror to smartphone app via Bluetooth",
+        "camera_angle": "Close-up of app connection process",
+        "lighting": "Technology connection lighting",
+        "audio": "Connection success sounds, technology harmony",
+        "post_production": "Technology success indicators",
+        "props": "Smartphone, ZenMirror device, connection visualization"
+      },
+      "shot_036": {
+        "category": "simple_setup_step3",
+        "duration": "4 seconds",
+        "description": "User selecting mentor personality and beginning first meditation session",
+        "camera_angle": "Over-shoulder app interaction",
+        "lighting": "User interface lighting",
+        "audio": "App interaction sounds, meditation beginning",
+        "post_production": "User interface clarity enhancement",
+        "talent": "User interacting with mentor selection interface"
+      }
+    },
+    "lifestyle_integration": {
+      "shot_037": {
+        "category": "home_meditation_morning",
+        "duration": "6 seconds",
+        "description": "Morning meditation routine in bedroom with ZenMirror seamlessly integrated",
+        "camera_angle": "Wide shot, peaceful morning scene",
+        "lighting": "Natural morning light, peaceful atmosphere",
+        "audio": "Morning meditation ambient, peaceful awakening",
+        "post_production": "Morning serenity color grading",
+        "talent": "Person in morning meditation routine",
+        "props": "Bedroom setting, natural morning elements"
+      },
+      "shot_038": {
+        "category": "home_meditation_evening",
+        "duration": "6 seconds",
+        "description": "Evening reflection session in living room with ambient lighting",
+        "camera_angle": "Medium shot, cozy evening environment",
+        "lighting": "Warm evening ambient lighting",
+        "audio": "Evening meditation sounds, day's end peace",
+        "post_production": "Evening warmth color grading",
+        "talent": "Person in evening meditation practice",
+        "props": "Living room setting, evening ambient elements"
+      },
+      "shot_039": {
+        "category": "office_work_mode",
+        "duration": "7 seconds",
+        "description": "Professional using ZenMirror for stress monitoring during work day",
+        "camera_angle": "Medium shot, professional office environment",
+        "lighting": "Office lighting with productivity focus",
+        "audio": "Office ambient with focus enhancement",
+        "post_production": "Professional productivity color scheme",
+        "talent": "Professional worker, office productivity",
+        "props": "Office desk, computer, professional work environment"
+      },
+      "shot_040": {
+        "category": "studio_group_session",
+        "duration": "8 seconds",
+        "description": "Meditation studio with multiple practitioners using ZenMirror for group session",
+        "camera_angle": "Wide shot, group meditation environment",
+        "lighting": "Studio lighting, group harmony focus",
+        "audio": "Group meditation ambient, collective practice",
+        "post_production": "Group harmony color grading",
+        "talent": "Multiple practitioners, meditation instructor",
+        "props": "Meditation studio setting, group practice materials"
+      }
+    },
+    "data_visualization_details": {
+      "shot_041": {
+        "category": "hrv_analysis_detail",
+        "duration": "6 seconds",
+        "description": "Detailed HRV analysis showing RMSSD, SDNN metrics with scientific explanation",
+        "camera_angle": "Close-up screen with detailed data",
+        "lighting": "Data analysis lighting, scientific clarity",
+        "audio": "Scientific explanation voiceover, data precision",
+        "post_production": "Scientific data visualization enhancement",
+        "graphics": "Detailed HRV charts, scientific metrics overlay"
+      },
+      "shot_042": {
+        "category": "breathing_pattern_analysis",
+        "duration": "5 seconds",
+        "description": "Real-time breathing pattern visualization with phase and frequency analysis",
+        "camera_angle": "Medium shot of breathing visualization",
+        "lighting": "Breathing pattern lighting, rhythm focus",
+        "audio": "Breathing rhythm audio, pattern recognition",
+        "post_production": "Breathing pattern animation enhancement",
+        "graphics": "Breathing wave patterns, rhythm visualization"
+      },
+      "shot_043": {
+        "category": "progress_tracking_longterm",
+        "duration": "6 seconds",
+        "description": "Long-term progress tracking showing meditation quality improvement over time",
+        "camera_angle": "Wide screen showing progress charts",
+        "lighting": "Progress visualization lighting",
+        "audio": "Progress achievement audio, improvement emphasis",
+        "post_production": "Progress visualization enhancement",
+        "graphics": "Long-term progress charts, improvement trends"
+      }
+    },
+    "social_proof": {
+      "shot_044": {
+        "category": "user_testimonial_3",
+        "duration": "8 seconds",
+        "description": "Meditation studio owner discussing professional use benefits",
+        "camera_angle": "Medium shot, professional studio setting",
+        "lighting": "Professional testimonial lighting",
+        "audio": "Professional testimonial: studio use benefits",
+        "post_production": "Professional credibility color grading",
+        "talent": "Meditation studio owner, professional context"
+      },
+      "shot_045": {
+        "category": "user_testimonial_4",
+        "duration": "8 seconds",
+        "description": "Long-term practitioner sharing transformation and consistency improvements",
+        "camera_angle": "Medium shot, personal practice space",
+        "lighting": "Personal testimonial lighting",
+        "audio": "Personal transformation story, consistency benefits",
+        "post_production": "Personal transformation emphasis",
+        "talent": "Experienced practitioner, personal story"
+      },
+      "shot_046": {
+        "category": "community_statistics",
+        "duration": "5 seconds",
+        "description": "Animated statistics showing beta user satisfaction, improvement metrics",
+        "camera_angle": "Full screen statistics display",
+        "lighting": "Statistics presentation lighting",
+        "audio": "Statistics presentation audio, credibility emphasis",
+        "post_production": "Statistics animation enhancement",
+        "graphics": "Beta user statistics, satisfaction metrics animation"
+      }
+    },
+    "technology_deep_dive": {
+      "shot_047": {
+        "category": "radar_technology_explanation",
+        "duration": "8 seconds",
+        "description": "Animated explanation of millimeter wave radar technology with technical diagrams",
+        "camera_angle": "Medium shot with technical animation overlay",
+        "lighting": "Technical explanation lighting",
+        "audio": "Technical explanation voiceover, scientific precision",
+        "post_production": "Technical animation integration",
+        "graphics": "Millimeter wave technology animation, technical diagrams"
+      },
+      "shot_048": {
+        "category": "contactless_detection_demo",
+        "duration": "6 seconds",
+        "description": "Visual demonstration of contactless detection through clothing and distance",
+        "camera_angle": "Side view showing detection through clothing",
+        "lighting": "Detection demonstration lighting",
+        "audio": "Detection demonstration audio, technology precision",
+        "post_production": "Detection visualization overlay",
+        "talent": "Person demonstrating contactless detection",
+        "graphics": "Detection visualization, distance measurement"
+      },
+      "shot_049": {
+        "category": "privacy_protection_demo",
+        "duration": "5 seconds",
+        "description": "Visual explanation of non-imaging technology preserving privacy",
+        "camera_angle": "Split screen: imaging vs non-imaging comparison",
+        "lighting": "Privacy demonstration lighting",
+        "audio": "Privacy protection explanation, security emphasis",
+        "post_production": "Privacy protection visualization",
+        "graphics": "Non-imaging technology demonstration, privacy icons"
+      }
+    },
+    "achievement_gamification": {
+      "shot_050": {
+        "category": "achievement_entry_series",
+        "duration": "4 seconds",
+        "description": "User unlocking first meditation achievement with celebration animation",
+        "camera_angle": "Close-up of achievement unlock interface",
+        "lighting": "Achievement celebration lighting",
+        "audio": "Achievement unlock celebration, first success",
+        "post_production": "Achievement celebration effects",
+        "graphics": "Entry achievement badge animation, first success celebration"
+      },
+      "shot_051": {
+        "category": "achievement_duration_series",
+        "duration": "4 seconds",
+        "description": "Progress visualization for duration-based achievements (30 min, 1 hour, 2 hours)",
+        "camera_angle": "Medium screen showing duration progress",
+        "lighting": "Progress achievement lighting",
+        "audio": "Duration achievement progression, time milestone",
+        "post_production": "Duration achievement visualization",
+        "graphics": "Duration achievement progression, time-based milestones"
+      },
+      "shot_052": {
+        "category": "achievement_consistency_series",
+        "duration": "5 seconds",
+        "description": "Calendar visualization showing consistency streaks (7, 21, 108, 365 days)",
+        "camera_angle": "Wide screen calendar view",
+        "lighting": "Consistency achievement lighting",
+        "audio": "Consistency achievement audio, streak celebration",
+        "post_production": "Consistency streak visualization",
+        "graphics": "Calendar streak visualization, consistency milestone animation"
+      },
+      "shot_053": {
+        "category": "achievement_quality_series",
+        "duration": "4 seconds",
+        "description": "Quality score achievements: heart like still water (90+), perfect moment (100)",
+        "camera_angle": "Close-up quality score display",
+        "lighting": "Quality achievement lighting",
+        "audio": "Quality achievement celebration, excellence recognition",
+        "post_production": "Quality achievement effects",
+        "graphics": "Quality score visualization, excellence achievement animation"
+      }
+    },
+    "mentor_cultural_authenticity": {
+      "shot_054": {
+        "category": "zen_cultural_context",
+        "duration": "6 seconds",
+        "description": "Traditional Zen elements: bamboo garden, stone arrangement, natural harmony",
+        "camera_angle": "Wide shot, natural Zen environment",
+        "lighting": "Natural, peaceful Zen lighting",
+        "audio": "Traditional Zen ambient, natural harmony",
+        "post_production": "Zen aesthetic color grading, natural harmony",
+        "props": "Authentic Zen garden elements, traditional setting"
+      },
+      "shot_055": {
+        "category": "yoga_cultural_context",
+        "duration": "6 seconds",
+        "description": "Traditional yoga setting: natural outdoor environment, flowing water, energy focus",
+        "camera_angle": "Medium shot, energy flow environment",
+        "lighting": "Golden hour yoga lighting, energy emphasis",
+        "audio": "Traditional yoga ambient, energy flow sounds",
+        "post_production": "Yoga energy color grading, flow emphasis",
+        "props": "Natural yoga setting, traditional elements"
+      },
+      "shot_056": {
+        "category": "vedanta_cultural_context",
+        "duration": "6 seconds",
+        "description": "Traditional Indian spiritual setting: authentic cultural elements, respectful representation",
+        "camera_angle": "Medium shot, culturally respectful framing",
+        "lighting": "Traditional Indian spiritual lighting",
+        "audio": "Traditional Vedanta ambient, cultural authenticity",
+        "post_production": "Cultural authenticity color grading",
+        "props": "Authentic Indian spiritual elements, traditional symbols"
+      }
+    },
+    "closed_loop_demonstration": {
+      "shot_057": {
+        "category": "feedback_loop_step1",
+        "duration": "5 seconds",
+        "description": "Monitor phase: ZenMirror detecting physiological changes during meditation",
+        "camera_angle": "Split view: device and data collection",
+        "lighting": "Monitoring phase lighting, data collection focus",
+        "audio": "Monitoring phase audio, data collection sounds",
+        "post_production": "Data collection visualization",
+        "graphics": "Real-time data collection animation"
+      },
+      "shot_058": {
+        "category": "feedback_loop_step2",
+        "duration": "5 seconds",
+        "description": "Assess phase: AI analyzing patterns and determining meditation quality",
+        "camera_angle": "Close-up of AI analysis interface",
+        "lighting": "AI analysis lighting, processing focus",
+        "audio": "AI analysis audio, pattern recognition sounds",
+        "post_production": "AI analysis visualization enhancement",
+        "graphics": "AI pattern analysis animation, processing visualization"
+      },
+      "shot_059": {
+        "category": "feedback_loop_step3",
+        "duration": "5 seconds",
+        "description": "Feedback phase: Personalized mentor guidance delivered at optimal moment",
+        "camera_angle": "Medium shot of user receiving guidance",
+        "lighting": "Feedback delivery lighting, guidance focus",
+        "audio": "Mentor guidance delivery, personalized feedback",
+        "post_production": "Guidance delivery visualization",
+        "talent": "User receiving personalized feedback"
+      },
+      "shot_060": {
+        "category": "feedback_loop_step4",
+        "duration": "5 seconds",
+        "description": "Improve phase: System learning and adapting for future sessions",
+        "camera_angle": "Close-up of learning algorithm interface",
+        "lighting": "Learning phase lighting, adaptation focus",
+        "audio": "Learning algorithm audio, adaptation sounds",
+        "post_production": "Learning algorithm visualization",
+        "graphics": "Machine learning adaptation animation"
+      }
+    },
+    "comparison_matrix": {
+      "shot_061": {
+        "category": "feature_comparison_table",
+        "duration": "8 seconds",
+        "description": "Animated comparison table: ZenMirror vs chest strap vs smartwatch vs EEG",
+        "camera_angle": "Full screen comparison table",
+        "lighting": "Comparison table lighting, clarity focus",
+        "audio": "Comparison presentation audio, advantage emphasis",
+        "post_production": "Comparison table animation enhancement",
+        "graphics": "Animated comparison table, feature highlighting"
+      },
+      "shot_062": {
+        "category": "advantage_visualization",
+        "duration": "6 seconds",
+        "description": "Visual representation of ZenMirror advantages: contactless, privacy, comfort",
+        "camera_angle": "Medium shot with advantage graphics overlay",
+        "lighting": "Advantage presentation lighting",
+        "audio": "Advantage presentation audio, superiority emphasis",
+        "post_production": "Advantage visualization enhancement",
+        "graphics": "Advantage icons, superiority visualization"
+      }
+    },
+    "call_to_action_buildup": {
+      "shot_063": {
+        "category": "funding_goal_visualization",
+        "duration": "5 seconds",
+        "description": "Animated funding progress bar showing campaign momentum",
+        "camera_angle": "Full screen funding visualization",
+        "lighting": "Campaign momentum lighting",
+        "audio": "Campaign momentum audio, excitement build",
+        "post_production": "Funding momentum visualization",
+        "graphics": "Funding progress animation, momentum visualization"
+      },
+      "shot_064": {
+        "category": "early_bird_urgency",
+        "duration": "4 seconds",
+        "description": "Early bird pricing countdown timer with limited availability emphasis",
+        "camera_angle": "Close-up countdown timer",
+        "lighting": "Urgency lighting, limited time focus",
+        "audio": "Urgency audio, limited time emphasis",
+        "post_production": "Urgency visualization enhancement",
+        "graphics": "Countdown timer animation, urgency indicators"
+      },
+      "shot_065": {
+        "category": "reward_tiers_overview",
+        "duration": "6 seconds",
+        "description": "Quick overview of reward tiers with value proposition highlighting",
+        "camera_angle": "Medium shot reward tiers display",
+        "lighting": "Value proposition lighting",
+        "audio": "Value proposition audio, reward tier benefits",
+        "post_production": "Reward tier visualization enhancement",
+        "graphics": "Reward tier display, value highlighting animation"
+      }
+    },
+    "community_vision": {
+      "shot_066": {
+        "category": "community_building",
+        "duration": "6 seconds",
+        "description": "Montage of diverse practitioners from around the world using ZenMirror",
+        "camera_angle": "Multiple quick cuts, global community",
+        "lighting": "Global community lighting, diversity celebration",
+        "audio": "Community building audio, global connection",
+        "post_production": "Global community color grading",
+        "talent": "Diverse practitioners from different cultures",
+        "props": "Global settings, cultural diversity representation"
+      },
+      "shot_067": {
+        "category": "meditation_revolution",
+        "duration": "5 seconds",
+        "description": "Conceptual visualization of meditation practice transformation",
+        "camera_angle": "Wide conceptual shot",
+        "lighting": "Transformation lighting, revolution emphasis",
+        "audio": "Transformation audio, revolution impact",
+        "post_production": "Revolution concept visualization",
+        "graphics": "Transformation concept animation"
+      }
+    },
+    "final_call_to_action": {
+      "shot_068": {
+        "category": "founder_message",
+        "duration": "10 seconds",
+        "description": "Founder speaking directly to camera with passionate mission statement",
+        "camera_angle": "Medium shot, direct eye contact",
+        "lighting": "Personal connection lighting, authenticity focus",
+        "audio": "Founder personal message, mission passion",
+        "post_production": "Personal authenticity color grading",
+        "talent": "ZenMirror founder, passionate mission delivery"
+      },
+      "shot_069": {
+        "category": "final_product_shot",
+        "duration": "4 seconds",
+        "description": "Hero product shot with ZenMirror in perfect meditation environment",
+        "camera_angle": "Wide hero shot, product emphasis",
+        "lighting": "Hero product lighting, perfection focus",
+        "audio": "Hero product audio, culmination emphasis",
+        "post_production": "Hero product enhancement, perfect presentation",
+        "props": "Perfect meditation environment, hero product setup"
+      },
+      "shot_070": {
+        "category": "backing_instructions",
+        "duration": "8 seconds",
+        "description": "Clear, step-by-step backing instructions with platform interface",
+        "camera_angle": "Over-shoulder backing process",
+        "lighting": "Instruction clarity lighting",
+        "audio": "Clear backing instructions, process guidance",
+        "post_production": "Instruction clarity enhancement",
+        "graphics": "Backing process visualization, step-by-step guide"
+      }
+    },
+    "ending_sequence": {
+      "shot_071": {
+        "category": "peaceful_meditation_montage",
+        "duration": "10 seconds",
+        "description": "Peaceful montage of various practitioners in deep meditation with ZenMirror",
+        "camera_angle": "Multiple peaceful meditation shots",
+        "lighting": "Peaceful meditation lighting, serenity focus",
+        "audio": "Peaceful meditation montage, serenity emphasis",
+        "post_production": "Peaceful montage color grading",
+        "talent": "Multiple peaceful practitioners, diverse meditation",
+        "props": "Various peaceful meditation environments"
+      },
+      "shot_072": {
+        "category": "logo_animation",
+        "duration": "3 seconds",
+        "description": "ZenMirror logo animation with contactless technology visualization",
+        "camera_angle": "Full screen logo presentation",
+        "lighting": "Logo presentation lighting",
+        "audio": "Logo audio signature, brand recognition",
+        "post_production": "Logo animation enhancement",
+        "graphics": "ZenMirror logo animation, brand signature"
+      }
+    },
+    "bonus_content_shots": {
+      "shot_073": {
+        "category": "setup_variations",
+        "duration": "6 seconds",
+        "description": "Various setup options: desk placement, floor stand, bedside table",
+        "camera_angle": "Multiple setup angle shots",
+        "lighting": "Setup flexibility lighting",
+        "audio": "Setup flexibility audio, versatility emphasis",
+        "post_production": "Setup versatility visualization",
+        "props": "Various furniture setups, placement options"
+      },
+      "shot_074": {
+        "category": "family_meditation",
+        "duration": "8 seconds",
+        "description": "Family meditation session with ZenMirror accommodating multiple users",
+        "camera_angle": "Wide family meditation shot",
+        "lighting": "Family harmony lighting",
+        "audio": "Family meditation ambient, harmony emphasis",
+        "post_production": "Family harmony color grading",
+        "talent": "Family members, multi-generational meditation"
+      },
+      "shot_075": {
+        "category": "travel_portability",
+        "duration": "5 seconds",
+        "description": "ZenMirror being packed for travel, portable meditation solution",
+        "camera_angle": "Medium shot travel packing",
+        "lighting": "Travel portability lighting",
+        "audio": "Travel portability audio, convenience emphasis",
+        "post_production": "Travel convenience visualization",
+        "props": "Travel case, portability accessories"
+      },
+      "shot_076": {
+        "category": "seasonal_meditation",
+        "duration": "8 seconds",
+        "description": "Meditation practice across different seasons and environments",
+        "camera_angle": "Multiple seasonal environment shots",
+        "lighting": "Seasonal lighting variations",
+        "audio": "Seasonal meditation ambient, year-round practice",
+        "post_production": "Seasonal variation color grading",
+        "talent": "Practitioners in seasonal environments",
+        "props": "Seasonal settings, environmental variety"
+      },
+      "shot_077": {
+        "category": "accessibility_features",
+        "duration": "6 seconds",
+        "description": "ZenMirror accessibility for users with different physical abilities",
+        "camera_angle": "Medium shot accessibility demonstration",
+        "lighting": "Accessibility focus lighting",
+        "audio": "Accessibility emphasis audio, inclusion focus",
+        "post_production": "Accessibility visualization",
+        "talent": "Users with diverse physical abilities"
+      },
+      "shot_078": {
+        "category": "corporate_wellness",
+        "duration": "7 seconds",
+        "description": "Corporate wellness program integration with ZenMirror",
+        "camera_angle": "Medium shot corporate environment",
+        "lighting": "Corporate wellness lighting",
+        "audio": "Corporate wellness audio, productivity emphasis",
+        "post_production": "Corporate wellness color grading",
+        "talent": "Corporate employees, wellness program",
+        "props": "Corporate wellness environment"
+      },
+      "shot_079": {
+        "category": "healthcare_integration",
+        "duration": "6 seconds",
+        "description": "Healthcare and wellness center integration possibilities",
+        "camera_angle": "Medium shot healthcare setting",
+        "lighting": "Healthcare integration lighting",
+        "audio": "Healthcare integration audio, wellness emphasis",
+        "post_production": "Healthcare integration visualization",
+        "talent": "Healthcare practitioners, wellness focus",
+        "props": "Healthcare wellness environment"
+      },
+      "shot_080": {
+        "category": "app_customization",
+        "duration": "5 seconds",
+        "description": "App customization options: themes, preferences, personalization",
+        "camera_angle": "Close-up app customization interface",
+        "lighting": "Customization interface lighting",
+        "audio": "Customization audio, personalization emphasis",
+        "post_production": "Customization interface enhancement",
+        "graphics": "App customization options, personalization features"
+      },
+      "shot_081": {
+        "category": "data_export",
+        "duration": "4 seconds",
+        "description": "Data export and sharing capabilities for healthcare providers",
+        "camera_angle": "Close-up data export interface",
+        "lighting": "Data sharing lighting",
+        "audio": "Data sharing audio, professional integration",
+        "post_production": "Data sharing visualization",
+        "graphics": "Data export interface, sharing capabilities"
+      },
+      "shot_082": {
+        "category": "future_features_preview",
+        "duration": "6 seconds",
+        "description": "Preview of planned future features and updates",
+        "camera_angle": "Medium shot future features display",
+        "lighting": "Future innovation lighting",
+        "audio": "Future features audio, innovation emphasis",
+        "post_production": "Future innovation visualization",
+        "graphics": "Future features roadmap, innovation preview"
+      },
+      "shot_083": {
+        "category": "environmental_impact",
+        "duration": "5 seconds",
+        "description": "Sustainable packaging and environmental responsibility demonstration",
+        "camera_angle": "Close-up sustainable packaging",
+        "lighting": "Sustainability lighting, eco-focus",
+        "audio": "Sustainability audio, environmental responsibility",
+        "post_production": "Sustainability visualization",
+        "props": "Sustainable packaging materials, eco-friendly elements"
+      },
+      "shot_084": {
+        "category": "quality_assurance",
+        "duration": "4 seconds",
+        "description": "Quality testing and assurance process visualization",
+        "camera_angle": "Medium shot quality testing",
+        "lighting": "Quality assurance lighting",
+        "audio": "Quality assurance audio, reliability emphasis",
+        "post_production": "Quality assurance visualization",
+        "props": "Quality testing equipment, assurance process"
+      },
+      "shot_085": {
+        "category": "customer_support",
+        "duration": "5 seconds",
+        "description": "Customer support and community assistance resources",
+        "camera_angle": "Medium shot support interaction",
+        "lighting": "Customer support lighting",
+        "audio": "Customer support audio, assistance emphasis",
+        "post_production": "Customer support visualization",
+        "talent": "Customer support representative, user assistance"
+      },
+      "shot_086": {
+        "category": "international_shipping",
+        "duration": "4 seconds",
+        "description": "Global shipping and international availability demonstration",
+        "camera_angle": "Medium shot global shipping",
+        "lighting": "Global availability lighting",
+        "audio": "Global shipping audio, worldwide availability",
+        "post_production": "Global availability visualization",
+        "graphics": "World map shipping visualization, international reach"
+      },
+      "shot_087": {
+        "category": "closing_meditation",
+        "duration": "8 seconds",
+        "description": "Final peaceful meditation scene with ZenMirror creating perfect harmony",
+        "camera_angle": "Wide peaceful meditation conclusion",
+        "lighting": "Perfect harmony lighting, conclusion peace",
+        "audio": "Peaceful conclusion audio, harmony emphasis",
+        "post_production": "Perfect harmony color grading, peaceful conclusion",
+        "talent": "Peaceful practitioner, perfect meditation conclusion",
+        "props": "Perfect meditation environment, harmony setting"
+      }
+    }
+  }
+}

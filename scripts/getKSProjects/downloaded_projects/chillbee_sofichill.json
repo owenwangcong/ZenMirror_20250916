@@ -1,0 +1,38 @@
+{
+  "project_title": "World's 1st Soft Backpack Cooler: Low to 5°F with Compressor",
+  "funding_goal": "CA$ 1,385",
+  "amount_raised": "CA$ 260,431", 
+  "percentage_funded": "18804%",
+  "number_of_backers": 435,
+  "status": "Successfully Funded",
+  "category": "Hardware",
+  "location": "Rosemead, CA",
+  "key_features": [
+    "Compressor cooling technology reaches 5°F (-15°C)",
+    "48+ hour battery life with 99.9Wh built-in battery",
+    "23qt (22L) capacity - ice-free storage",
+    "TIZIP waterproof zippers for airtight seal",
+    "Triple-layer soft insulation weighs only 13.2 lbs"
+  ],
+  "reward_tiers": [
+    {
+      "name": "Super Early Bird",
+      "price": "$389 (~CA$ 539)",
+      "backers": 64,
+      "description": "Sofichill Backpack with chargers and manual"
+    },
+    {
+      "name": "Super Early Bird Bundle", 
+      "price": "$483 (~CA$ 670)",
+      "backers": 110,
+      "description": "Sofichill Backpack + BeeCell 99 battery"
+    },
+    {
+      "name": "Super Pack",
+      "price": "$499 (~CA$ 692)",
+      "backers": 128,
+      "description": "Sofichill + BeeCell 99 + Solar Charger"
+    }
+  ],
+  "url": "https://www.kickstarter.com/projects/chillbee/chillbee-sofichill-22-portable-backpack-fridge"
+}

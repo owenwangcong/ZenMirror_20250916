@@ -1,0 +1,1029 @@
+{
+  "b_roll_collection": {
+    "metadata": {
+      "project": "ZenMirror Crowdfunding Campaign B-Roll",
+      "created_date": "2025-09-17",
+      "total_clips": 124,
+      "estimated_filming_time": "3 days",
+      "clip_duration_range": "2-10 seconds each",
+      "usage": "Supporting footage for main shot list and campaign content"
+    },
+    "meditation_practice_b_roll": {
+      "category_total": 32,
+      "clips": {
+        "med_b001": {
+          "description": "Close-up of hands in mudra position during meditation",
+          "duration": "5 seconds",
+          "lighting": "Soft natural light",
+          "camera_movement": "Slow push-in",
+          "audio": "Silent or gentle ambient",
+          "usage": "Meditation authenticity, spiritual practice"
+        },
+        "med_b002": {
+          "description": "Peaceful facial expression during deep meditation",
+          "duration": "4 seconds",
+          "lighting": "Warm golden hour",
+          "camera_movement": "Static close-up",
+          "audio": "Natural breathing",
+          "usage": "Meditation serenity, inner peace"
+        },
+        "med_b003": {
+          "description": "Side profile of meditator with gentle breath rhythm visible",
+          "duration": "6 seconds",
+          "lighting": "Soft side lighting",
+          "camera_movement": "Slow dolly left to right",
+          "audio": "Rhythmic breathing",
+          "usage": "Breathing demonstration, meditation practice"
+        },
+        "med_b004": {
+          "description": "Wide shot of solo meditation in peaceful bedroom setting",
+          "duration": "8 seconds",
+          "lighting": "Morning natural light",
+          "camera_movement": "Static wide establishing",
+          "audio": "Morning ambient",
+          "usage": "Home practice, morning routine"
+        },
+        "med_b005": {
+          "description": "Group meditation in studio with multiple practitioners",
+          "duration": "10 seconds",
+          "lighting": "Even studio lighting",
+          "camera_movement": "Slow pan across group",
+          "audio": "Group meditation ambient",
+          "usage": "Community practice, studio use"
+        },
+        "med_b006": {
+          "description": "Elderly person meditating with peaceful expression",
+          "duration": "5 seconds",
+          "lighting": "Gentle afternoon light",
+          "camera_movement": "Static medium shot",
+          "audio": "Peaceful ambient",
+          "usage": "Age inclusivity, lifelong practice"
+        },
+        "med_b007": {
+          "description": "Young adult in lotus position on yoga mat",
+          "duration": "4 seconds",
+          "lighting": "Natural outdoor light",
+          "camera_movement": "Slow zoom out",
+          "audio": "Nature ambient",
+          "usage": "Youth engagement, outdoor practice"
+        },
+        "med_b008": {
+          "description": "Parent and child meditating together",
+          "duration": "7 seconds",
+          "lighting": "Warm family lighting",
+          "camera_movement": "Gentle push-in",
+          "audio": "Family harmony ambient",
+          "usage": "Family practice, multi-generational"
+        },
+        "med_b009": {
+          "description": "Meditation in traditional temple setting",
+          "duration": "6 seconds",
+          "lighting": "Traditional temple lighting",
+          "camera_movement": "Reverent static shot",
+          "audio": "Temple ambient",
+          "usage": "Traditional practice, cultural authenticity"
+        },
+        "med_b010": {
+          "description": "Beach meditation at sunrise",
+          "duration": "8 seconds",
+          "lighting": "Golden sunrise",
+          "camera_movement": "Slow pan with ocean",
+          "audio": "Ocean waves",
+          "usage": "Natural settings, peaceful environments"
+        },
+        "med_b011": {
+          "description": "Forest meditation among trees",
+          "duration": "6 seconds",
+          "lighting": "Dappled forest light",
+          "camera_movement": "Gentle tilt up trees",
+          "audio": "Forest ambient",
+          "usage": "Nature connection, outdoor practice"
+        },
+        "med_b012": {
+          "description": "Meditation practitioner adjusting posture mindfully",
+          "duration": "3 seconds",
+          "lighting": "Natural indoor light",
+          "camera_movement": "Close-up adjustment",
+          "audio": "Subtle movement",
+          "usage": "Mindful adjustment, comfort"
+        },
+        "med_b013": {
+          "description": "Eyes gently closing at meditation beginning",
+          "duration": "3 seconds",
+          "lighting": "Soft face lighting",
+          "camera_movement": "Extreme close-up",
+          "audio": "Peaceful silence",
+          "usage": "Meditation initiation, inner focus"
+        },
+        "med_b014": {
+          "description": "Gentle smile appearing during meditation",
+          "duration": "4 seconds",
+          "lighting": "Warm natural light",
+          "camera_movement": "Static close-up",
+          "audio": "Peaceful ambient",
+          "usage": "Meditation joy, inner contentment"
+        },
+        "med_b015": {
+          "description": "Walking meditation in garden setting",
+          "duration": "8 seconds",
+          "lighting": "Natural garden light",
+          "camera_movement": "Tracking shot",
+          "audio": "Footsteps, nature",
+          "usage": "Active meditation, mindful movement"
+        },
+        "med_b016": {
+          "description": "Candle flame during meditation session",
+          "duration": "5 seconds",
+          "lighting": "Candlelit atmosphere",
+          "camera_movement": "Static flame focus",
+          "audio": "Flame ambience",
+          "usage": "Focused attention, meditation atmosphere"
+        },
+        "med_b017": {
+          "description": "Incense smoke rising during practice",
+          "duration": "4 seconds",
+          "lighting": "Atmospheric lighting",
+          "camera_movement": "Slow motion smoke",
+          "audio": "Peaceful ambient",
+          "usage": "Meditation atmosphere, sensory elements"
+        },
+        "med_b018": {
+          "description": "Prayer beads or mala in hands",
+          "duration": "5 seconds",
+          "lighting": "Warm intimate lighting",
+          "camera_movement": "Close-up hand movement",
+          "audio": "Subtle bead sounds",
+          "usage": "Traditional meditation tools"
+        },
+        "med_b019": {
+          "description": "Meditation journal and pen for reflection",
+          "duration": "3 seconds",
+          "lighting": "Natural desk lighting",
+          "camera_movement": "Static close-up",
+          "audio": "Pen writing",
+          "usage": "Meditation reflection, journaling"
+        },
+        "med_b020": {
+          "description": "Meditation cushion arrangement in peaceful space",
+          "duration": "4 seconds",
+          "lighting": "Soft ambient lighting",
+          "camera_movement": "Slow pan across setup",
+          "audio": "Peaceful ambient",
+          "usage": "Meditation setup, peaceful environment"
+        },
+        "med_b021": {
+          "description": "Feet in comfortable meditation position",
+          "duration": "3 seconds",
+          "lighting": "Natural light",
+          "camera_movement": "Static medium close-up",
+          "audio": "Peaceful ambient",
+          "usage": "Comfort, relaxed posture"
+        },
+        "med_b022": {
+          "description": "Meditation space with plants and natural elements",
+          "duration": "6 seconds",
+          "lighting": "Natural green lighting",
+          "camera_movement": "Slow establishing pan",
+          "audio": "Natural ambient",
+          "usage": "Natural meditation environment"
+        },
+        "med_b023": {
+          "description": "Evening meditation with warm lamp lighting",
+          "duration": "5 seconds",
+          "lighting": "Warm evening light",
+          "camera_movement": "Static peaceful shot",
+          "audio": "Evening ambient",
+          "usage": "Evening practice, day's end reflection"
+        },
+        "med_b024": {
+          "description": "Meditation in airport or travel setting",
+          "duration": "4 seconds",
+          "lighting": "Available travel lighting",
+          "camera_movement": "Discrete travel shot",
+          "audio": "Travel ambient",
+          "usage": "Travel meditation, adaptability"
+        },
+        "med_b025": {
+          "description": "Office meditation during work break",
+          "duration": "5 seconds",
+          "lighting": "Office lighting",
+          "camera_movement": "Professional environment",
+          "audio": "Office ambient",
+          "usage": "Work-life integration, stress relief"
+        },
+        "med_b026": {
+          "description": "Student meditation in library or study space",
+          "duration": "4 seconds",
+          "lighting": "Study lighting",
+          "camera_movement": "Academic environment",
+          "audio": "Study ambient",
+          "usage": "Academic stress relief, focus"
+        },
+        "med_b027": {
+          "description": "Meditation with headphones for guided practice",
+          "duration": "5 seconds",
+          "lighting": "Personal practice lighting",
+          "camera_movement": "Medium shot",
+          "audio": "Personal practice ambient",
+          "usage": "Guided meditation, personal practice"
+        },
+        "med_b028": {
+          "description": "Meditation with crystals or spiritual objects",
+          "duration": "4 seconds",
+          "lighting": "Spiritual object lighting",
+          "camera_movement": "Close-up spiritual elements",
+          "audio": "Spiritual ambient",
+          "usage": "Spiritual practice, personal elements"
+        },
+        "med_b029": {
+          "description": "Meditation in hospital or healthcare setting",
+          "duration": "6 seconds",
+          "lighting": "Healthcare lighting",
+          "camera_movement": "Compassionate framing",
+          "audio": "Healthcare ambient",
+          "usage": "Wellness, therapeutic application"
+        },
+        "med_b030": {
+          "description": "Wheelchair user in meditation practice",
+          "duration": "5 seconds",
+          "lighting": "Inclusive lighting",
+          "camera_movement": "Respectful framing",
+          "audio": "Inclusive ambient",
+          "usage": "Accessibility, inclusive design"
+        },
+        "med_b031": {
+          "description": "Meditation retreat group in natural setting",
+          "duration": "8 seconds",
+          "lighting": "Retreat natural lighting",
+          "camera_movement": "Group retreat shot",
+          "audio": "Retreat ambient",
+          "usage": "Community practice, retreat experience"
+        },
+        "med_b032": {
+          "description": "Time-lapse of meditation session showing stillness",
+          "duration": "6 seconds",
+          "lighting": "Consistent time-lapse lighting",
+          "camera_movement": "Static time-lapse",
+          "audio": "Time-compressed ambient",
+          "usage": "Meditation duration, commitment"
+        }
+      }
+    },
+    "technology_innovation_b_roll": {
+      "category_total": 28,
+      "clips": {
+        "tech_b001": {
+          "description": "Macro shot of radar sensor module with technical precision",
+          "duration": "4 seconds",
+          "lighting": "Technical product lighting",
+          "camera_movement": "Macro focus pull",
+          "audio": "Technical precision sound",
+          "usage": "Technology credibility, precision engineering"
+        },
+        "tech_b002": {
+          "description": "Animated radar wave propagation visualization",
+          "duration": "5 seconds",
+          "lighting": "Technical animation lighting",
+          "camera_movement": "Animation tracking",
+          "audio": "Radar pulse sound",
+          "usage": "Technology explanation, contactless demonstration"
+        },
+        "tech_b003": {
+          "description": "Circuit board and electronic components close-up",
+          "duration": "3 seconds",
+          "lighting": "Electronics detail lighting",
+          "camera_movement": "Slow macro pan",
+          "audio": "Electronic ambience",
+          "usage": "Technology sophistication, engineering quality"
+        },
+        "tech_b004": {
+          "description": "Laboratory setting with technical equipment",
+          "duration": "6 seconds",
+          "lighting": "Laboratory lighting",
+          "camera_movement": "Professional lab shot",
+          "audio": "Laboratory ambient",
+          "usage": "Research and development, scientific backing"
+        },
+        "tech_b005": {
+          "description": "Data visualization flowing across screens",
+          "duration": "5 seconds",
+          "lighting": "Screen data lighting",
+          "camera_movement": "Data flow tracking",
+          "audio": "Data processing sound",
+          "usage": "Data analysis, real-time processing"
+        },
+        "tech_b006": {
+          "description": "Wireless signal visualization in 3D space",
+          "duration": "4 seconds",
+          "lighting": "3D visualization lighting",
+          "camera_movement": "3D space navigation",
+          "audio": "Wireless signal sound",
+          "usage": "Contactless technology, wireless innovation"
+        },
+        "tech_b007": {
+          "description": "Precision measurement instruments and calibration",
+          "duration": "4 seconds",
+          "lighting": "Precision instrument lighting",
+          "camera_movement": "Instrument detail shot",
+          "audio": "Precision measurement sound",
+          "usage": "Accuracy, scientific precision"
+        },
+        "tech_b008": {
+          "description": "Computer algorithms processing physiological data",
+          "duration": "5 seconds",
+          "lighting": "Algorithm processing lighting",
+          "camera_movement": "Code/algorithm visualization",
+          "audio": "Computing process sound",
+          "usage": "AI processing, algorithm sophistication"
+        },
+        "tech_b009": {
+          "description": "Manufacturing precision equipment and quality control",
+          "duration": "6 seconds",
+          "lighting": "Manufacturing lighting",
+          "camera_movement": "Manufacturing process shot",
+          "audio": "Manufacturing ambient",
+          "usage": "Quality manufacturing, precision production"
+        },
+        "tech_b010": {
+          "description": "Research papers and scientific documentation",
+          "duration": "3 seconds",
+          "lighting": "Document lighting",
+          "camera_movement": "Document detail scan",
+          "audio": "Paper rustling",
+          "usage": "Scientific backing, research foundation"
+        },
+        "tech_b011": {
+          "description": "Oscilloscope showing physiological waveforms",
+          "duration": "5 seconds",
+          "lighting": "Technical measurement lighting",
+          "camera_movement": "Waveform tracking",
+          "audio": "Technical measurement sound",
+          "usage": "Technical accuracy, waveform analysis"
+        },
+        "tech_b012": {
+          "description": "Bluetooth connectivity and wireless pairing",
+          "duration": "3 seconds",
+          "lighting": "Connectivity lighting",
+          "camera_movement": "Connection visualization",
+          "audio": "Connection success sound",
+          "usage": "Wireless connectivity, ease of setup"
+        },
+        "tech_b013": {
+          "description": "Mobile app interface animations and transitions",
+          "duration": "4 seconds",
+          "lighting": "App interface lighting",
+          "camera_movement": "Interface navigation",
+          "audio": "App interaction sound",
+          "usage": "User interface, app functionality"
+        },
+        "tech_b014": {
+          "description": "Database servers and cloud computing visualization",
+          "duration": "4 seconds",
+          "lighting": "Server room lighting",
+          "camera_movement": "Server infrastructure shot",
+          "audio": "Server processing sound",
+          "usage": "Data infrastructure, cloud capabilities"
+        },
+        "tech_b015": {
+          "description": "Encryption and security visualization",
+          "duration": "4 seconds",
+          "lighting": "Security visualization lighting",
+          "camera_movement": "Security animation tracking",
+          "audio": "Security encryption sound",
+          "usage": "Data security, privacy protection"
+        },
+        "tech_b016": {
+          "description": "Software development and coding environment",
+          "duration": "5 seconds",
+          "lighting": "Development environment lighting",
+          "camera_movement": "Code development shot",
+          "audio": "Keyboard typing, development ambient",
+          "usage": "Software development, technical expertise"
+        },
+        "tech_b017": {
+          "description": "Antenna and signal transmission close-up",
+          "duration": "3 seconds",
+          "lighting": "Signal transmission lighting",
+          "camera_movement": "Antenna detail shot",
+          "audio": "Signal transmission sound",
+          "usage": "Signal technology, transmission quality"
+        },
+        "tech_b018": {
+          "description": "Frequency spectrum analysis and signal processing",
+          "duration": "5 seconds",
+          "lighting": "Spectrum analysis lighting",
+          "camera_movement": "Spectrum tracking",
+          "audio": "Frequency analysis sound",
+          "usage": "Signal analysis, frequency precision"
+        },
+        "tech_b019": {
+          "description": "Machine learning model training visualization",
+          "duration": "6 seconds",
+          "lighting": "ML visualization lighting",
+          "camera_movement": "ML process tracking",
+          "audio": "Machine learning sound",
+          "usage": "AI learning, adaptive technology"
+        },
+        "tech_b020": {
+          "description": "Quality assurance testing and validation",
+          "duration": "5 seconds",
+          "lighting": "Testing environment lighting",
+          "camera_movement": "Testing process shot",
+          "audio": "Testing equipment sound",
+          "usage": "Quality assurance, reliability testing"
+        },
+        "tech_b021": {
+          "description": "Battery life and power efficiency demonstration",
+          "duration": "3 seconds",
+          "lighting": "Power efficiency lighting",
+          "camera_movement": "Power indicator shot",
+          "audio": "Power efficiency sound",
+          "usage": "Energy efficiency, long battery life"
+        },
+        "tech_b022": {
+          "description": "Environmental testing chamber and conditions",
+          "duration": "4 seconds",
+          "lighting": "Environmental testing lighting",
+          "camera_movement": "Testing chamber shot",
+          "audio": "Environmental testing sound",
+          "usage": "Durability testing, environmental reliability"
+        },
+        "tech_b023": {
+          "description": "Precision assembly and manufacturing process",
+          "duration": "5 seconds",
+          "lighting": "Assembly process lighting",
+          "camera_movement": "Assembly detail shot",
+          "audio": "Assembly process sound",
+          "usage": "Manufacturing quality, precision assembly"
+        },
+        "tech_b024": {
+          "description": "Innovation timeline and technology evolution",
+          "duration": "6 seconds",
+          "lighting": "Timeline visualization lighting",
+          "camera_movement": "Timeline progression",
+          "audio": "Innovation progression sound",
+          "usage": "Technology evolution, innovation history"
+        },
+        "tech_b025": {
+          "description": "Patent documentation and intellectual property",
+          "duration": "3 seconds",
+          "lighting": "Document lighting",
+          "camera_movement": "Patent document scan",
+          "audio": "Document rustling",
+          "usage": "Intellectual property, innovation protection"
+        },
+        "tech_b026": {
+          "description": "Regulatory compliance and safety certification",
+          "duration": "4 seconds",
+          "lighting": "Certification lighting",
+          "camera_movement": "Certification display",
+          "audio": "Compliance verification sound",
+          "usage": "Safety compliance, regulatory approval"
+        },
+        "tech_b027": {
+          "description": "Future technology roadmap visualization",
+          "duration": "5 seconds",
+          "lighting": "Future vision lighting",
+          "camera_movement": "Roadmap progression",
+          "audio": "Future innovation sound",
+          "usage": "Future development, technology roadmap"
+        },
+        "tech_b028": {
+          "description": "International technology standards and global reach",
+          "duration": "4 seconds",
+          "lighting": "Global standards lighting",
+          "camera_movement": "Global visualization",
+          "audio": "International standard sound",
+          "usage": "Global compatibility, international standards"
+        }
+      }
+    },
+    "lifestyle_integration_b_roll": {
+      "category_total": 30,
+      "clips": {
+        "life_b001": {
+          "description": "Modern apartment bedroom with ZenMirror on nightstand",
+          "duration": "5 seconds",
+          "lighting": "Natural bedroom lighting",
+          "camera_movement": "Slow bedroom pan",
+          "audio": "Peaceful morning ambient",
+          "usage": "Home integration, daily routine"
+        },
+        "life_b002": {
+          "description": "Kitchen counter meditation space during morning routine",
+          "duration": "4 seconds",
+          "lighting": "Kitchen morning light",
+          "camera_movement": "Kitchen integration shot",
+          "audio": "Morning routine ambient",
+          "usage": "Flexible placement, morning practice"
+        },
+        "life_b003": {
+          "description": "Living room coffee table setup for evening meditation",
+          "duration": "6 seconds",
+          "lighting": "Evening living room light",
+          "camera_movement": "Living room establishing",
+          "audio": "Evening relaxation ambient",
+          "usage": "Evening routine, family space integration"
+        },
+        "life_b004": {
+          "description": "Home office desk with ZenMirror for work stress monitoring",
+          "duration": "5 seconds",
+          "lighting": "Office lighting",
+          "camera_movement": "Office workspace shot",
+          "audio": "Office productivity ambient",
+          "usage": "Work integration, stress management"
+        },
+        "life_b005": {
+          "description": "Student dorm room setup for study focus enhancement",
+          "duration": "4 seconds",
+          "lighting": "Dorm room lighting",
+          "camera_movement": "Student space shot",
+          "audio": "Study environment ambient",
+          "usage": "Student life, academic focus"
+        },
+        "life_b006": {
+          "description": "Luxury hotel room travel setup",
+          "duration": "5 seconds",
+          "lighting": "Hotel room lighting",
+          "camera_movement": "Travel accommodation shot",
+          "audio": "Travel ambient",
+          "usage": "Travel compatibility, portable practice"
+        },
+        "life_b007": {
+          "description": "Airbnb or vacation rental integration",
+          "duration": "4 seconds",
+          "lighting": "Vacation rental lighting",
+          "camera_movement": "Rental space integration",
+          "audio": "Vacation ambient",
+          "usage": "Vacation practice, temporary spaces"
+        },
+        "life_b008": {
+          "description": "Elderly care facility peaceful room setup",
+          "duration": "6 seconds",
+          "lighting": "Care facility lighting",
+          "camera_movement": "Compassionate framing",
+          "audio": "Peaceful care ambient",
+          "usage": "Senior care, wellness integration"
+        },
+        "life_b009": {
+          "description": "Children's playroom adapted for family meditation",
+          "duration": "5 seconds",
+          "lighting": "Playroom natural light",
+          "camera_movement": "Family space shot",
+          "audio": "Family harmony ambient",
+          "usage": "Family practice, child-friendly environment"
+        },
+        "life_b010": {
+          "description": "Minimalist apartment with clean aesthetic integration",
+          "duration": "6 seconds",
+          "lighting": "Minimalist lighting",
+          "camera_movement": "Clean aesthetic shot",
+          "audio": "Minimalist ambient",
+          "usage": "Design integration, aesthetic harmony"
+        },
+        "life_b011": {
+          "description": "Busy family kitchen with meditation corner",
+          "duration": "4 seconds",
+          "lighting": "Family kitchen lighting",
+          "camera_movement": "Family activity shot",
+          "audio": "Family activity ambient",
+          "usage": "Busy family life, finding peace"
+        },
+        "life_b012": {
+          "description": "Suburban master bedroom with meditation nook",
+          "duration": "5 seconds",
+          "lighting": "Suburban bedroom lighting",
+          "camera_movement": "Bedroom nook shot",
+          "audio": "Suburban peaceful ambient",
+          "usage": "Suburban lifestyle, master bedroom"
+        },
+        "life_b013": {
+          "description": "Urban loft with industrial design integration",
+          "duration": "6 seconds",
+          "lighting": "Industrial loft lighting",
+          "camera_movement": "Loft space shot",
+          "audio": "Urban loft ambient",
+          "usage": "Urban living, industrial design"
+        },
+        "life_b014": {
+          "description": "Retirement community common area meditation space",
+          "duration": "5 seconds",
+          "lighting": "Community space lighting",
+          "camera_movement": "Community area shot",
+          "audio": "Community ambient",
+          "usage": "Senior living, community wellness"
+        },
+        "life_b015": {
+          "description": "Corporate wellness room with professional setup",
+          "duration": "6 seconds",
+          "lighting": "Corporate wellness lighting",
+          "camera_movement": "Corporate space shot",
+          "audio": "Corporate wellness ambient",
+          "usage": "Corporate wellness, professional environment"
+        },
+        "life_b016": {
+          "description": "Gym or fitness center meditation corner",
+          "duration": "4 seconds",
+          "lighting": "Fitness center lighting",
+          "camera_movement": "Fitness integration shot",
+          "audio": "Fitness center ambient",
+          "usage": "Fitness integration, post-workout meditation"
+        },
+        "life_b017": {
+          "description": "Spa or wellness center treatment room",
+          "duration": "5 seconds",
+          "lighting": "Spa lighting",
+          "camera_movement": "Spa environment shot",
+          "audio": "Spa relaxation ambient",
+          "usage": "Spa integration, wellness centers"
+        },
+        "life_b018": {
+          "description": "Yoga studio corner with multiple ZenMirror devices",
+          "duration": "6 seconds",
+          "lighting": "Yoga studio lighting",
+          "camera_movement": "Studio setup shot",
+          "audio": "Yoga studio ambient",
+          "usage": "Yoga studio integration, group monitoring"
+        },
+        "life_b019": {
+          "description": "Meditation center classroom with educational setup",
+          "duration": "5 seconds",
+          "lighting": "Educational lighting",
+          "camera_movement": "Classroom setup shot",
+          "audio": "Educational ambient",
+          "usage": "Meditation education, teaching tool"
+        },
+        "life_b020": {
+          "description": "Hospital patient room with therapeutic integration",
+          "duration": "5 seconds",
+          "lighting": "Hospital room lighting",
+          "camera_movement": "Therapeutic framing",
+          "audio": "Hospital peaceful ambient",
+          "usage": "Healthcare integration, therapeutic use"
+        },
+        "life_b021": {
+          "description": "Therapy office with counseling integration",
+          "duration": "4 seconds",
+          "lighting": "Therapy office lighting",
+          "camera_movement": "Therapeutic environment shot",
+          "audio": "Therapy ambient",
+          "usage": "Mental health support, therapy integration"
+        },
+        "life_b022": {
+          "description": "University library quiet study area",
+          "duration": "5 seconds",
+          "lighting": "Library study lighting",
+          "camera_movement": "Study area shot",
+          "audio": "Library ambient",
+          "usage": "Academic environment, study enhancement"
+        },
+        "life_b023": {
+          "description": "Airplane seat meditation during flight",
+          "duration": "4 seconds",
+          "lighting": "Airplane cabin lighting",
+          "camera_movement": "Travel meditation shot",
+          "audio": "Flight ambient",
+          "usage": "Travel meditation, flight anxiety relief"
+        },
+        "life_b024": {
+          "description": "Outdoor patio meditation with weather resistance",
+          "duration": "6 seconds",
+          "lighting": "Outdoor patio lighting",
+          "camera_movement": "Outdoor setup shot",
+          "audio": "Outdoor ambient",
+          "usage": "Outdoor use, weather adaptability"
+        },
+        "life_b025": {
+          "description": "Shared workspace or coworking meditation pod",
+          "duration": "5 seconds",
+          "lighting": "Coworking lighting",
+          "camera_movement": "Shared space shot",
+          "audio": "Coworking ambient",
+          "usage": "Shared workspace, coworking wellness"
+        },
+        "life_b026": {
+          "description": "Beach house vacation rental with ocean view",
+          "duration": "6 seconds",
+          "lighting": "Beach house lighting",
+          "camera_movement": "Ocean view shot",
+          "audio": "Ocean ambient",
+          "usage": "Vacation meditation, ocean settings"
+        },
+        "life_b027": {
+          "description": "Mountain cabin retreat with nature integration",
+          "duration": "5 seconds",
+          "lighting": "Mountain cabin lighting",
+          "camera_movement": "Nature retreat shot",
+          "audio": "Mountain ambient",
+          "usage": "Nature retreat, mountain meditation"
+        },
+        "life_b028": {
+          "description": "Tiny house minimalist living with space efficiency",
+          "duration": "4 seconds",
+          "lighting": "Tiny house lighting",
+          "camera_movement": "Space efficiency shot",
+          "audio": "Tiny house ambient",
+          "usage": "Minimalist living, space efficiency"
+        },
+        "life_b029": {
+          "description": "Multi-generational home with family integration",
+          "duration": "6 seconds",
+          "lighting": "Multi-generational lighting",
+          "camera_movement": "Family integration shot",
+          "audio": "Multi-generational ambient",
+          "usage": "Extended family, generational practice"
+        },
+        "life_b030": {
+          "description": "Accessible living space with mobility considerations",
+          "duration": "5 seconds",
+          "lighting": "Accessible lighting",
+          "camera_movement": "Accessibility framing",
+          "audio": "Accessible ambient",
+          "usage": "Accessibility design, inclusive living"
+        }
+      }
+    },
+    "emotional_transformation_b_roll": {
+      "category_total": 24,
+      "clips": {
+        "emot_b001": {
+          "description": "Before: Stressed person with tension in face and shoulders",
+          "duration": "3 seconds",
+          "lighting": "Harsh stress lighting",
+          "camera_movement": "Tense close-up",
+          "audio": "Stress ambient",
+          "usage": "Stress visualization, before state"
+        },
+        "emot_b002": {
+          "description": "After: Same person with peaceful, relaxed expression",
+          "duration": "4 seconds",
+          "lighting": "Peaceful lighting",
+          "camera_movement": "Serene close-up",
+          "audio": "Peaceful ambient",
+          "usage": "Transformation result, after state"
+        },
+        "emot_b003": {
+          "description": "Achievement unlock celebration with genuine joy",
+          "duration": "3 seconds",
+          "lighting": "Celebration lighting",
+          "camera_movement": "Joy capture",
+          "audio": "Achievement celebration",
+          "usage": "Achievement satisfaction, progress celebration"
+        },
+        "emot_b004": {
+          "description": "Confidence building through consistent practice",
+          "duration": "5 seconds",
+          "lighting": "Confidence lighting",
+          "camera_movement": "Empowerment shot",
+          "audio": "Confidence building ambient",
+          "usage": "Personal empowerment, confidence growth"
+        },
+        "emot_b005": {
+          "description": "Peaceful sleep preparation with evening meditation",
+          "duration": "4 seconds",
+          "lighting": "Evening sleep lighting",
+          "camera_movement": "Sleep preparation shot",
+          "audio": "Sleep preparation ambient",
+          "usage": "Sleep improvement, evening routine"
+        },
+        "emot_b006": {
+          "description": "Morning energy and clarity after meditation",
+          "duration": "4 seconds",
+          "lighting": "Morning clarity lighting",
+          "camera_movement": "Morning energy shot",
+          "audio": "Morning energy ambient",
+          "usage": "Morning clarity, energy improvement"
+        },
+        "emot_b007": {
+          "description": "Reduced anxiety visible in body language",
+          "duration": "5 seconds",
+          "lighting": "Anxiety relief lighting",
+          "camera_movement": "Anxiety relief shot",
+          "audio": "Anxiety relief ambient",
+          "usage": "Anxiety reduction, stress relief"
+        },
+        "emot_b008": {
+          "description": "Increased focus during work or study",
+          "duration": "4 seconds",
+          "lighting": "Focus enhancement lighting",
+          "camera_movement": "Focus demonstration shot",
+          "audio": "Focus enhancement ambient",
+          "usage": "Focus improvement, concentration enhancement"
+        },
+        "emot_b009": {
+          "description": "Emotional regulation during challenging moments",
+          "duration": "5 seconds",
+          "lighting": "Emotional balance lighting",
+          "camera_movement": "Emotional regulation shot",
+          "audio": "Emotional balance ambient",
+          "usage": "Emotional regulation, challenging situations"
+        },
+        "emot_b010": {
+          "description": "Relationship harmony through shared practice",
+          "duration": "6 seconds",
+          "lighting": "Relationship harmony lighting",
+          "camera_movement": "Relationship connection shot",
+          "audio": "Relationship harmony ambient",
+          "usage": "Relationship improvement, shared practice"
+        },
+        "emot_b011": {
+          "description": "Workplace stress reduction and professional calm",
+          "duration": "5 seconds",
+          "lighting": "Professional calm lighting",
+          "camera_movement": "Workplace stress relief shot",
+          "audio": "Professional calm ambient",
+          "usage": "Workplace wellness, professional stress relief"
+        },
+        "emot_b012": {
+          "description": "Academic stress relief and study enhancement",
+          "duration": "4 seconds",
+          "lighting": "Academic relief lighting",
+          "camera_movement": "Study stress relief shot",
+          "audio": "Academic relief ambient",
+          "usage": "Academic stress, study enhancement"
+        },
+        "emot_b013": {
+          "description": "Creative inspiration and mental clarity",
+          "duration": "5 seconds",
+          "lighting": "Creative inspiration lighting",
+          "camera_movement": "Creative clarity shot",
+          "audio": "Creative inspiration ambient",
+          "usage": "Creative enhancement, mental clarity"
+        },
+        "emot_b014": {
+          "description": "Pain management through meditation practice",
+          "duration": "5 seconds",
+          "lighting": "Pain relief lighting",
+          "camera_movement": "Pain management shot",
+          "audio": "Pain relief ambient",
+          "usage": "Pain management, therapeutic benefit"
+        },
+        "emot_b015": {
+          "description": "Depression support through consistent practice",
+          "duration": "6 seconds",
+          "lighting": "Depression support lighting",
+          "camera_movement": "Mental health support shot",
+          "audio": "Mental health support ambient",
+          "usage": "Mental health support, depression assistance"
+        },
+        "emot_b016": {
+          "description": "Addiction recovery support through mindfulness",
+          "duration": "5 seconds",
+          "lighting": "Recovery support lighting",
+          "camera_movement": "Recovery support shot",
+          "audio": "Recovery support ambient",
+          "usage": "Addiction recovery, mindfulness support"
+        },
+        "emot_b017": {
+          "description": "Grief processing and emotional healing",
+          "duration": "5 seconds",
+          "lighting": "Grief processing lighting",
+          "camera_movement": "Emotional healing shot",
+          "audio": "Grief processing ambient",
+          "usage": "Grief support, emotional healing"
+        },
+        "emot_b018": {
+          "description": "Spiritual connection and transcendent moments",
+          "duration": "6 seconds",
+          "lighting": "Spiritual connection lighting",
+          "camera_movement": "Transcendent moment shot",
+          "audio": "Spiritual connection ambient",
+          "usage": "Spiritual growth, transcendent experience"
+        },
+        "emot_b019": {
+          "description": "Community connection through shared practice",
+          "duration": "5 seconds",
+          "lighting": "Community connection lighting",
+          "camera_movement": "Community bond shot",
+          "audio": "Community connection ambient",
+          "usage": "Community building, shared experience"
+        },
+        "emot_b020": {
+          "description": "Intergenerational wisdom sharing",
+          "duration": "6 seconds",
+          "lighting": "Wisdom sharing lighting",
+          "camera_movement": "Intergenerational shot",
+          "audio": "Wisdom sharing ambient",
+          "usage": "Intergenerational practice, wisdom sharing"
+        },
+        "emot_b021": {
+          "description": "Personal breakthrough and insight moments",
+          "duration": "4 seconds",
+          "lighting": "Breakthrough lighting",
+          "camera_movement": "Insight moment shot",
+          "audio": "Breakthrough ambient",
+          "usage": "Personal breakthrough, insight development"
+        },
+        "emot_b022": {
+          "description": "Long-term practice commitment and dedication",
+          "duration": "5 seconds",
+          "lighting": "Commitment lighting",
+          "camera_movement": "Dedication demonstration shot",
+          "audio": "Commitment ambient",
+          "usage": "Long-term commitment, practice dedication"
+        },
+        "emot_b023": {
+          "description": "Teaching and mentoring others in practice",
+          "duration": "6 seconds",
+          "lighting": "Teaching lighting",
+          "camera_movement": "Mentoring shot",
+          "audio": "Teaching ambient",
+          "usage": "Teaching practice, mentoring others"
+        },
+        "emot_b024": {
+          "description": "Cultural bridge-building through universal practice",
+          "duration": "5 seconds",
+          "lighting": "Cultural bridge lighting",
+          "camera_movement": "Cultural unity shot",
+          "audio": "Cultural bridge ambient",
+          "usage": "Cultural unity, universal practice"
+        }
+      }
+    },
+    "nature_environment_b_roll": {
+      "category_total": 10,
+      "clips": {
+        "nat_b001": {
+          "description": "Sunrise over peaceful lake with meditation reflection",
+          "duration": "8 seconds",
+          "lighting": "Golden sunrise",
+          "camera_movement": "Slow sunrise pan",
+          "audio": "Peaceful lake ambient",
+          "usage": "Natural peace, sunrise meditation"
+        },
+        "nat_b002": {
+          "description": "Forest path with dappled sunlight filtering through trees",
+          "duration": "6 seconds",
+          "lighting": "Dappled forest light",
+          "camera_movement": "Forest path tracking",
+          "audio": "Forest ambient",
+          "usage": "Natural path, forest meditation"
+        },
+        "nat_b003": {
+          "description": "Ocean waves gently lapping on peaceful beach",
+          "duration": "7 seconds",
+          "lighting": "Ocean natural light",
+          "camera_movement": "Wave rhythm tracking",
+          "audio": "Ocean waves",
+          "usage": "Ocean rhythm, wave meditation"
+        },
+        "nat_b004": {
+          "description": "Mountain vista with vast peaceful landscape",
+          "duration": "8 seconds",
+          "lighting": "Mountain vista lighting",
+          "camera_movement": "Vista panorama",
+          "audio": "Mountain wind ambient",
+          "usage": "Mountain peace, vast perspective"
+        },
+        "nat_b005": {
+          "description": "Garden flowers and plants in gentle breeze",
+          "duration": "5 seconds",
+          "lighting": "Garden natural light",
+          "camera_movement": "Gentle flower movement",
+          "audio": "Garden breeze ambient",
+          "usage": "Garden peace, natural growth"
+        },
+        "nat_b006": {
+          "description": "Flowing stream or river with peaceful water sounds",
+          "duration": "6 seconds",
+          "lighting": "Stream natural light",
+          "camera_movement": "Water flow tracking",
+          "audio": "Flowing water",
+          "usage": "Water flow, stream meditation"
+        },
+        "nat_b007": {
+          "description": "Desert landscape with vast open sky meditation",
+          "duration": "7 seconds",
+          "lighting": "Desert natural light",
+          "camera_movement": "Desert vastness shot",
+          "audio": "Desert wind ambient",
+          "usage": "Desert vastness, open sky meditation"
+        },
+        "nat_b008": {
+          "description": "Winter snow scene with peaceful stillness",
+          "duration": "6 seconds",
+          "lighting": "Winter natural light",
+          "camera_movement": "Snow stillness shot",
+          "audio": "Winter stillness ambient",
+          "usage": "Winter peace, snow meditation"
+        },
+        "nat_b009": {
+          "description": "Autumn leaves falling with seasonal transition",
+          "duration": "5 seconds",
+          "lighting": "Autumn natural light",
+          "camera_movement": "Falling leaves tracking",
+          "audio": "Autumn ambient",
+          "usage": "Seasonal transition, autumn meditation"
+        },
+        "nat_b010": {
+          "description": "Star-filled night sky with cosmic perspective",
+          "duration": "8 seconds",
+          "lighting": "Night sky lighting",
+          "camera_movement": "Cosmic perspective shot",
+          "audio": "Night ambient",
+          "usage": "Cosmic perspective, night meditation"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,358 @@
+{
+  "product_requirements": {
+    "executive_summary": {
+      "product_vision": "ZenMirror delivers contactless meditation monitoring through millimeter wave radar technology, providing culturally-sensitive feedback and comprehensive physiological insights to advance meditation practice",
+      "core_requirements": "100% implementation of all product description features with emphasis on contactless operation, cultural authenticity, and multi-modal application",
+      "success_criteria": "Device enables deeper meditation mastery while maintaining practice purity and spiritual authenticity"
+    },
+    "functional_requirements": {
+      "contactless_monitoring": {
+        "requirement_id": "REQ-001",
+        "priority": "Critical",
+        "description": "Monitor physiological signals without any device contact or wearing requirement",
+        "specifications": {
+          "technology": "Millimeter wave radar detection",
+          "detection_range": "0.5 - 3.0 meters from device",
+          "detection_accuracy": "±2% for breathing rate, ±5% for heart rate",
+          "operation_modes": "Meditation, Work, Study with optimized algorithms",
+          "environmental_tolerance": "Indoor operation, clothing penetration capability"
+        },
+        "user_stories": [
+          "As a meditator, I want to receive physiological feedback without wearing any device",
+          "As a practitioner, I want to maintain natural meditation posture without equipment interference"
+        ],
+        "acceptance_criteria": [
+          "Device detects breathing and heart rate from 1.5m distance",
+          "No physical contact required during entire session",
+          "Works through normal clothing and meditation blankets",
+          "Maintains accuracy during slight body movement"
+        ]
+      },
+      "physiological_monitoring": {
+        "requirement_id": "REQ-002",
+        "priority": "Critical",
+        "description": "Comprehensive real-time monitoring of meditation-relevant physiological parameters",
+        "specifications": {
+          "breathing_monitoring": {
+            "rate_detection": "6-30 breaths per minute range",
+            "phase_tracking": "Inhale/exhale pattern analysis",
+            "depth_assessment": "Relative breathing amplitude measurement",
+            "regularity_analysis": "Pattern consistency and variation tracking"
+          },
+          "heart_rate_monitoring": {
+            "rate_detection": "40-120 BPM range for meditation states",
+            "phase_tracking": "Heart cycle timing and pattern",
+            "hrv_analysis": "RMSSD and SDNN calculation",
+            "rsa_monitoring": "Respiratory sinus arrhythmia correlation"
+          },
+          "movement_detection": {
+            "body_position": "Seated meditation posture maintenance",
+            "micro_movements": "Small adjustments and fidgeting detection",
+            "distance_tracking": "User position relative to device",
+            "stillness_assessment": "Overall stability measurement"
+          }
+        },
+        "user_stories": [
+          "As a practitioner, I want to understand my breathing patterns during meditation",
+          "As a user, I want to track heart rate variability for stress assessment",
+          "As a meditator, I want to know when micro-movements affect my practice"
+        ],
+        "acceptance_criteria": [
+          "All five primary parameters monitored simultaneously",
+          "Real-time data processing with <1 second latency",
+          "Data accuracy verified against clinical-grade devices",
+          "Comprehensive session analytics and trend tracking"
+        ]
+      },
+      "mentor_personalities": {
+        "requirement_id": "REQ-003",
+        "priority": "Critical",
+        "description": "Six distinct mentor personalities providing culturally-authentic spiritual guidance",
+        "specifications": {
+          "zen_master": {
+            "philosophy": "Present-moment awareness, non-attachment, simplicity",
+            "guidance_style": "Minimal, poetic, direct insight",
+            "feedback_approach": "Natural metaphors, questioning, spaciousness",
+            "cultural_elements": "Zen Buddhism principles and aesthetics"
+          },
+          "yogi": {
+            "philosophy": "Energy awareness, breath-life connection, union",
+            "guidance_style": "Encouraging, body-aware, energetic",
+            "feedback_approach": "Prana focus, chakra awareness, holistic integration",
+            "cultural_elements": "Yoga philosophy and Sanskrit terminology"
+          },
+          "priest_chaplain": {
+            "philosophy": "Divine presence, surrender, compassionate love",
+            "guidance_style": "Comforting, faith-based, nurturing",
+            "feedback_approach": "Grace-centered, peace-focused, trusting",
+            "cultural_elements": "Christian contemplative tradition"
+          },
+          "spiritual_mentor": {
+            "philosophy": "Universal wisdom, personal empowerment, growth",
+            "guidance_style": "Empowering, insightful, universally accessible",
+            "feedback_approach": "Inner wisdom activation, self-discovery",
+            "cultural_elements": "Non-denominational spiritual principles"
+          },
+          "stoic_philosopher": {
+            "philosophy": "Rational control, virtue, resilience",
+            "guidance_style": "Logical, strengthening, practical",
+            "feedback_approach": "Reason-based, discipline-focused, clear",
+            "cultural_elements": "Ancient Greek and Roman stoicism"
+          },
+          "vedanta_acharya": {
+            "philosophy": "Self-realization, devotion, traditional wisdom",
+            "guidance_style": "Reverent, traditional, devotionally-oriented",
+            "feedback_approach": "Surrender-based, traditional practices",
+            "cultural_elements": "Hindu Vedantic tradition and Sanskrit"
+          }
+        },
+        "user_stories": [
+          "As a Buddhist practitioner, I want Zen-aligned guidance during meditation",
+          "As a yoga student, I want breath and energy-focused feedback",
+          "As a Christian contemplative, I want faith-integrated meditation support"
+        ],
+        "acceptance_criteria": [
+          "All six mentors have distinct voices and approaches",
+          "Cultural authenticity validated by tradition experts",
+          "Guidance adapts to user's physiological state and progress",
+          "User can select and switch between mentor personalities"
+        ]
+      },
+      "mindfulness_points_system": {
+        "requirement_id": "REQ-004",
+        "priority": "High",
+        "description": "Gamified scoring system rewarding meditation quality and consistency",
+        "specifications": {
+          "base_scoring": {
+            "quality_component": "Session quality score (0-100) based on physiological stability",
+            "duration_component": "Time-based points with diminishing returns after optimal duration",
+            "consistency_bonus": "Daily practice streaks and regular habit formation"
+          },
+          "dynamic_rewards": {
+            "concentration_multiplier": "1.2-2.0x for high-quality sessions (>80 quality score)",
+            "endurance_bonus": "1.1-1.5x for sessions exceeding duration thresholds",
+            "breakthrough_rewards": "Special bonuses for personal bests and milestones"
+          },
+          "point_calculation": "Base points × concentration multiplier × endurance bonus + special rewards",
+          "progression_tracking": "Cumulative points, level progression, achievement unlocking"
+        },
+        "user_stories": [
+          "As a practitioner, I want to see objective scores for my meditation sessions",
+          "As a user, I want to be rewarded for consistent practice and improvement",
+          "As a meditator, I want meaningful recognition for breakthrough sessions"
+        ],
+        "acceptance_criteria": [
+          "Points accurately reflect meditation quality and effort",
+          "Rewards system motivates continued practice without addiction",
+          "Progress tracking shows meaningful improvement over time",
+          "Point system respects spiritual values while providing engagement"
+        ]
+      },
+      "achievement_system": {
+        "requirement_id": "REQ-005",
+        "priority": "High",
+        "description": "Comprehensive achievement framework recognizing meditation milestones and progress",
+        "specifications": {
+          "achievement_categories": {
+            "entry_series": ["First meditation (5+ min)", "First guided session", "Daily reminder setup"],
+            "duration_series": ["30 min session", "1 hour session", "2 hour session", "3 hour session"],
+            "consistency_series": ["7 day streak", "21 day streak", "108 day streak", "365 day streak"],
+            "quality_series": ["90+ quality score", "10 high-quality sessions", "Perfect 100 score"],
+            "exploration_series": ["Dawn meditation", "Afternoon session", "Night meditation", "Holiday practice"]
+          },
+          "progression_mechanics": {
+            "unlock_conditions": "Specific criteria for each achievement",
+            "notification_system": "Real-time achievement notifications",
+            "social_sharing": "Optional sharing of milestones with community",
+            "progress_tracking": "Visual progress toward next achievements"
+          }
+        },
+        "user_stories": [
+          "As a beginner, I want recognition for completing my first meditation",
+          "As a dedicated practitioner, I want acknowledgment of consistency and dedication",
+          "As an advanced user, I want challenges that reflect mastery and depth"
+        ],
+        "acceptance_criteria": [
+          "All achievement categories from product description implemented",
+          "Achievement unlock feels meaningful and celebratory",
+          "Progress toward achievements provides motivation",
+          "Hidden achievements add discovery and surprise elements"
+        ]
+      },
+      "multi_modal_operation": {
+        "requirement_id": "REQ-006",
+        "priority": "High",
+        "description": "Three distinct operation modes optimized for different use cases",
+        "specifications": {
+          "meditation_mode": {
+            "focus": "Deep contemplative states and spiritual practice",
+            "monitoring": "Detailed physiological tracking with spiritual context",
+            "feedback": "Mentor-based guidance aligned with chosen tradition",
+            "analytics": "Session quality, progress tracking, spiritual insights"
+          },
+          "work_mode": {
+            "focus": "Professional productivity and stress management",
+            "monitoring": "Stress indicators, focus levels, breathing patterns",
+            "feedback": "Productivity alerts, stress warnings, focus reminders",
+            "analytics": "Work session quality, stress trends, focus optimization"
+          },
+          "study_mode": {
+            "focus": "Learning concentration and cognitive performance",
+            "monitoring": "Attention levels, cognitive load, concentration patterns",
+            "feedback": "Concentration alerts, break reminders, focus optimization",
+            "analytics": "Study session effectiveness, concentration trends, learning optimization"
+          }
+        },
+        "user_stories": [
+          "As a professional, I want to monitor stress during important meetings",
+          "As a student, I want feedback on my concentration during study sessions",
+          "As a practitioner, I want specialized meditation guidance"
+        ],
+        "acceptance_criteria": [
+          "Each mode has optimized algorithms and feedback approaches",
+          "Mode switching is intuitive and immediate",
+          "Analytics are tailored to each mode's objectives",
+          "Cross-mode insights available for holistic wellness tracking"
+        ]
+      }
+    },
+    "technical_requirements": {
+      "hardware_specifications": {
+        "radar_system": {
+          "frequency_band": "Millimeter wave (24-30 GHz range)",
+          "power_output": "Low power, FCC/CE compliant emissions",
+          "detection_resolution": "Sub-millimeter movement detection",
+          "field_of_view": "Adjustable beam width for user targeting",
+          "environmental_tolerance": "Indoor operation, temperature/humidity stable"
+        },
+        "processing_unit": {
+          "cpu_requirements": "ARM-based processor, sufficient for real-time DSP",
+          "memory": "Adequate for signal processing and ML algorithms",
+          "storage": "Local session storage with cloud sync capability",
+          "connectivity": "Bluetooth 5.0+, WiFi 802.11ac, optional cellular"
+        },
+        "power_management": {
+          "battery_life": "8+ hours continuous operation",
+          "charging": "USB-C fast charging, wireless charging optional",
+          "power_efficiency": "Optimized for extended meditation sessions",
+          "standby_mode": "Low power mode when not actively monitoring"
+        }
+      },
+      "software_architecture": {
+        "real_time_processing": {
+          "signal_processing": "Digital signal processing for radar data extraction",
+          "physiological_algorithms": "Heart rate, breathing, movement detection algorithms",
+          "machine_learning": "Personalization and pattern recognition models",
+          "cultural_adaptation": "Mentor personality engines and guidance systems"
+        },
+        "mobile_application": {
+          "platforms": "iOS 14+, Android 10+ native applications",
+          "real_time_sync": "Bluetooth communication with device",
+          "data_visualization": "Real-time and historical data presentation",
+          "mentor_interface": "Personality selection and guidance customization",
+          "achievement_tracking": "Progress monitoring and milestone recognition"
+        },
+        "cloud_services": {
+          "data_sync": "Optional cloud backup and cross-device synchronization",
+          "analytics": "Aggregated insights and trend analysis",
+          "community_features": "Optional social sharing and community engagement",
+          "updates": "OTA firmware and software updates"
+        }
+      }
+    },
+    "user_experience_requirements": {
+      "setup_and_onboarding": {
+        "initial_setup": "5-minute setup process from unboxing to first session",
+        "device_pairing": "One-touch Bluetooth pairing with mobile app",
+        "mentor_selection": "Guided process for choosing initial mentor personality",
+        "baseline_calibration": "Brief session to establish personal physiological baseline"
+      },
+      "session_experience": {
+        "session_start": "One-touch session initiation from app or device",
+        "real_time_feedback": "Optional audio guidance during session",
+        "minimal_interruption": "Contactless operation maintains meditation purity",
+        "session_end": "Gentle notification at session completion or manual ending"
+      },
+      "post_session_analysis": {
+        "immediate_feedback": "Session summary with key insights and mentor guidance",
+        "detailed_analytics": "Comprehensive physiological data and trend analysis",
+        "progress_tracking": "Long-term improvement visualization and milestone recognition",
+        "personalized_recommendations": "Suggestions for practice improvement and optimization"
+      }
+    },
+    "compliance_and_regulatory": {
+      "safety_requirements": {
+        "rf_emissions": "FCC Part 15, CE compliance for millimeter wave radar",
+        "sar_limits": "Below SAR thresholds due to contactless operation",
+        "electromagnetic_compatibility": "EMC testing and certification",
+        "material_safety": "Non-toxic materials, RoHS compliance"
+      },
+      "privacy_and_security": {
+        "data_protection": "GDPR, CCPA compliance for personal physiological data",
+        "local_processing": "Minimize cloud data transmission, local analytics priority",
+        "user_consent": "Clear consent for data collection and sharing",
+        "encryption": "End-to-end encryption for sensitive data transmission"
+      },
+      "cultural_sensitivity": {
+        "spiritual_authenticity": "Expert validation of mentor personality accuracy",
+        "cultural_respect": "Avoid appropriation while honoring traditions",
+        "inclusive_design": "Accessible across diverse spiritual and cultural backgrounds",
+        "expert_consultation": "Ongoing consultation with spiritual tradition authorities"
+      }
+    },
+    "performance_requirements": {
+      "accuracy_standards": {
+        "breathing_rate": "±2% accuracy compared to clinical respiratory monitors",
+        "heart_rate": "±5% accuracy compared to clinical cardiac monitors",
+        "hrv_analysis": "±10% accuracy compared to clinical HRV devices",
+        "movement_detection": "Sub-millimeter sensitivity for micro-movement tracking"
+      },
+      "response_time": {
+        "data_processing": "<1 second latency for real-time feedback",
+        "app_synchronization": "<2 seconds for device-app data sync",
+        "mentor_response": "<3 seconds for guidance generation and delivery",
+        "session_analytics": "<10 seconds for comprehensive session analysis"
+      },
+      "reliability_targets": {
+        "device_uptime": "99.5% operational reliability during intended use",
+        "connection_stability": "99% Bluetooth connection maintenance during sessions",
+        "data_accuracy": "Consistent performance across environmental conditions",
+        "battery_performance": "Reliable 8+ hour operation with degradation <20% over 2 years"
+      }
+    },
+    "integration_requirements": {
+      "ecosystem_compatibility": {
+        "health_platforms": "Integration with Apple Health, Google Fit, other wellness ecosystems",
+        "meditation_apps": "API compatibility with existing meditation applications",
+        "smart_home": "Integration with home automation and ambient environment control",
+        "wearable_correlation": "Optional data correlation with existing fitness trackers"
+      },
+      "development_platform": {
+        "sdk_availability": "Developer SDK for third-party integrations",
+        "api_documentation": "Comprehensive API documentation and examples",
+        "community_support": "Developer community and support resources",
+        "certification_program": "Third-party app certification and quality assurance"
+      }
+    },
+    "success_metrics": {
+      "user_satisfaction": {
+        "meditation_quality": "User-reported improvement in meditation experience",
+        "cultural_authenticity": "Spiritual community acceptance and endorsement",
+        "ease_of_use": "Setup and operation simplicity ratings",
+        "reliability": "Device and app performance consistency"
+      },
+      "technical_performance": {
+        "accuracy_validation": "Clinical testing against established monitoring devices",
+        "environmental_robustness": "Performance across diverse indoor environments",
+        "battery_longevity": "Real-world battery life testing and optimization",
+        "connection_reliability": "Bluetooth and app connectivity stability metrics"
+      },
+      "market_acceptance": {
+        "adoption_rate": "User acquisition and retention metrics",
+        "community_growth": "Meditation teacher and community endorsements",
+        "competitive_differentiation": "Market position versus existing alternatives",
+        "cultural_validation": "Spiritual tradition authority acceptance and support"
+      }
+    }
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "workflow_id": "svg_to_jpg_conversion_001",
+  "start_time": "2025-09-18T10:30:00Z",
+  "project": "ZenMirror Campaign SVG to JPG Conversion",
+  "description": "Complete replacement of all SVG image references with JPG equivalents using nano-banana MCP",
+
+  "identified_svg_files": [
+    {
+      "file": "final_campaigns/kickstarter/assets/icons/radar-waves.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "Technology feature icon",
+      "exists": true
+    },
+    {
+      "file": "final_campaigns/kickstarter/assets/icons/heart-monitoring.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "Technology feature icon",
+      "exists": true
+    },
+    {
+      "file": "final_campaigns/kickstarter/assets/icons/privacy-shield.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "Technology feature icon",
+      "exists": true
+    },
+    {
+      "file": "final_campaigns/kickstarter/assets/tech-diagram.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "Main technology diagram",
+      "exists": true
+    },
+    {
+      "file": "final_campaigns/kickstarter/assets/icons/zen-circle.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "Zen Master mentor icon",
+      "exists": true
+    },
+    {
+      "file": "final_campaigns/kickstarter/assets/icons/lotus.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "Yogi mentor icon",
+      "exists": true
+    },
+    {
+      "file": "final_campaigns/kickstarter/assets/icons/dove.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "Chaplain mentor icon",
+      "exists": true
+    },
+    {
+      "file": "final_campaigns/kickstarter/assets/icons/tree-of-life.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "Spiritual Mentor icon",
+      "exists": false
+    },
+    {
+      "file": "final_campaigns/kickstarter/assets/icons/column.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "Stoic Philosopher mentor icon",
+      "exists": false
+    },
+    {
+      "file": "final_campaigns/kickstarter/assets/icons/om-symbol.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "Vedanta Acharya mentor icon",
+      "exists": true
+    },
+    {
+      "file": "final_campaigns/kickstarter/assets/icons/real-time.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "Feature icon",
+      "exists": true
+    },
+    {
+      "file": "final_campaigns/kickstarter/assets/icons/scoring.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "Feature icon",
+      "exists": false
+    },
+    {
+      "file": "final_campaigns/kickstarter/assets/icons/achievements.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "Feature icon",
+      "exists": false
+    },
+    {
+      "file": "final_campaigns/kickstarter/assets/icons/multi-mode.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "Feature icon",
+      "exists": false
+    },
+    {
+      "file": "final_campaigns/kickstarter/assets/icons/closed-loop.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "Feature icon",
+      "exists": false
+    },
+    {
+      "file": "final_campaigns/kickstarter/assets/icons/analytics.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "Feature icon",
+      "exists": true
+    },
+    {
+      "file": "final_campaigns/kickstarter/assets/icons/hrv-research.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "Research icon",
+      "exists": false
+    },
+    {
+      "file": "final_campaigns/kickstarter/assets/icons/rsa-research.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "Research icon",
+      "exists": false
+    },
+    {
+      "file": "final_campaigns/kickstarter/assets/icons/meditation-research.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "Research icon",
+      "exists": false
+    },
+    {
+      "file": "final_campaigns/kickstarter/assets/hrv-rsa-chart.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "Data visualization chart",
+      "exists": true
+    },
+    {
+      "file": "final_campaigns/kickstarter/assets/closed-loop-diagram.svg",
+      "html_file": "final_campaigns/kickstarter/index.html",
+      "usage": "System diagram",
+      "exists": true
+    },
+    {
+      "file": "final_campaigns/indiegogo/assets/gallery/setup-view.svg",
+      "html_file": "final_campaigns/indiegogo/index.html",
+      "usage": "Gallery thumbnail",
+      "exists": true
+    },
+    {
+      "file": "final_campaigns/indiegogo/assets/icons/hrv-research.svg",
+      "html_file": "final_campaigns/indiegogo/index.html",
+      "usage": "Research icon",
+      "exists": true
+    },
+    {
+      "file": "final_campaigns/indiegogo/assets/icons/meditation-research.svg",
+      "html_file": "final_campaigns/indiegogo/index.html",
+      "usage": "Research icon",
+      "exists": true
+    },
+    {
+      "file": "final_campaigns/indiegogo/assets/icons/rsa-research.svg",
+      "html_file": "final_campaigns/indiegogo/index.html",
+      "usage": "Research icon",
+      "exists": true
+    },
+    {
+      "file": "final_campaigns/indiegogo/assets/closed-loop-diagram.svg",
+      "html_file": "final_campaigns/indiegogo/index.html",
+      "usage": "System diagram",
+      "exists": true
+    }
+  ],
+
+  "conversion_phases": [
+    {
+      "phase": 1,
+      "name": "Existing SVG Analysis",
+      "description": "Analyze existing SVG files for content and styling",
+      "estimated_duration": "30 minutes"
+    },
+    {
+      "phase": 2,
+      "name": "JPG Generation",
+      "description": "Generate JPG replacements using nano-banana MCP",
+      "estimated_duration": "2 hours"
+    },
+    {
+      "phase": 3,
+      "name": "HTML Updates",
+      "description": "Update HTML files with new JPG references",
+      "estimated_duration": "45 minutes"
+    },
+    {
+      "phase": 4,
+      "name": "Validation & Testing",
+      "description": "Verify all images display correctly",
+      "estimated_duration": "30 minutes"
+    }
+  ],
+
+  "target_directories": [
+    "D:\\Projects\\ZenMirror_20250916\\final_campaigns\\kickstarter\\assets\\icons\\",
+    "D:\\Projects\\ZenMirror_20250916\\final_campaigns\\kickstarter\\assets\\",
+    "D:\\Projects\\ZenMirror_20250916\\final_campaigns\\indiegogo\\assets\\icons\\",
+    "D:\\Projects\\ZenMirror_20250916\\final_campaigns\\indiegogo\\assets\\",
+    "D:\\Projects\\ZenMirror_20250916\\final_campaigns\\indiegogo\\assets\\gallery\\"
+  ],
+
+  "status": "initialized",
+  "current_phase": 1,
+  "total_svg_files": 26,
+  "existing_svg_files": 13,
+  "missing_svg_files": 13
+}

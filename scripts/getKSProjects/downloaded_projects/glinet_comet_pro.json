@@ -1,0 +1,69 @@
+{
+  "title": "GL.iNet Comet Pro Remote KVM over Wi-Fi",
+  "subtitle": "Revolutionizing Remote KVM over Wi-Fi",
+  "funding": {
+    "amountRaised": "CA$ 733,201",
+    "goal": "CA$ 13,852",
+    "backers": "3,253",
+    "daysToGo": "44",
+    "fundingPercentage": "5294%",
+    "currency": "CAD"
+  },
+  "creator": {
+    "name": "GL.iNet",
+    "location": "Fairfax, VA",
+    "experience": "3 created • 1 backed"
+  },
+  "engagement": {
+    "updates": "4",
+    "comments": "141",
+    "faq": "8"
+  },
+  "category": "Hardware",
+  "badges": ["Project We Love", "Hardware"],
+  "keyFeatures": [
+    "4K Video Passthrough with Low Latency (30-60ms)",
+    "Dual Band Wi-Fi 6 (2.4 GHz and 5 GHz)",
+    "Clear Two Way Audio Communication",
+    "Touchscreen Interface",
+    "Desktop App Support (Windows/macOS)",
+    "Remote Cloud Control",
+    "Tailscale Support",
+    "Wake on LAN",
+    "Two Factor Authentication",
+    "Hardware Screen Lock",
+    "Wireguard VPN",
+    "Self-Hosted Server Deployment"
+  ],
+  "accessories": [
+    "ATX Board - remote power management",
+    "Fingerbot - physical button control",
+    "PoE Splitter - power over ethernet"
+  ],
+  "thirdPartyReviews": [
+    "NASCompares - GL.iNet Comet Pro KVM Review",
+    "DIGIBITE - $99 device that replaces TeamViewer",
+    "Caio Delgado - Low latency remote control review"
+  ],
+  "technicalSpecs": {
+    "videoOutput": "4K@30FPS HD passthrough",
+    "latency": "30-60ms with H.264 hardware encoding",
+    "connectivity": "Wi-Fi 6 dual band + Ethernet",
+    "security": "2FA, Hardware lock, WireGuard VPN",
+    "interface": "Built-in touchscreen",
+    "powerOptions": "Standard adapter or PoE"
+  },
+  "companyBackground": {
+    "founded": "2010",
+    "specialization": "Network hardware and software solutions",
+    "focus": "IoT network solutions, Wi-Fi routers with OpenWrt"
+  },
+  "shippingPolicy": {
+    "cost": "$15 USD",
+    "startDate": "December 2025",
+    "countries": "US, Canada, China, Hong Kong, Taiwan, Japan, Korea, Australia, New Zealand, Singapore, Ukraine, UK, India, Indonesia, Brunei, Saudi Arabia, UAE, Israel, South Africa, Brazil, Mexico, Colombia, Serbia, Switzerland, Norway, EU"
+  },
+  "url": "https://www.kickstarter.com/projects/glinet/comet-pro",
+  "extractedAt": "2025-09-10T22:10:56.909Z",
+  "analysisNotes": "Extremely successful tech campaign with 5294% funding, strong technical documentation, third-party reviews, established company credibility, and comprehensive feature set for professional KVM market."
+}

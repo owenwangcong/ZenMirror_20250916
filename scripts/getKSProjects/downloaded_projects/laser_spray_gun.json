@@ -1,0 +1,50 @@
+{
+  "project_title": "Y02: Laser Spray Gun Make Complex Curves a Breeze",
+  "funding_goal": "CA$ 2,845",
+  "amount_raised": "CA$ 22,361",
+  "percentage_funded": "786%",
+  "number_of_backers": 128,
+  "category": "Technology > Gadgets",
+  "main_features": [
+    "Dual laser alignment technology for precision guidance",
+    "3-speed adjustable pressure levels",
+    "Quick color change system (3-second paint swapping)",
+    "Replaceable nozzles and reusable paint bottles",
+    "Cordless design with 3000mAh battery (5-hour runtime)",
+    "Type-C charging",
+    "Clog-resistant nozzle design",
+    "Laser distance measurement for optimal spray distance"
+  ],
+  "reward_tiers": [
+    {
+      "name": "Super Early Bird",
+      "price": "HK$ 778 (CA$ 139)",
+      "backers": 90,
+      "includes": "Paint sprayer (1pcs), Bottle with Nozzles (2pcs)"
+    },
+    {
+      "name": "Early Bird", 
+      "price": "HK$ 857 (CA$ 153)",
+      "backers": 1,
+      "includes": "Paint sprayer (1pcs), Bottle with Nozzles (2pcs)"
+    },
+    {
+      "name": "Paint sprayer",
+      "price": "HK$ 1,014 (CA$ 181)",
+      "backers": 28,
+      "includes": "Paint sprayer (1pcs), Bottle with Nozzles (8pcs)"
+    },
+    {
+      "name": "Couple Package",
+      "price": "HK$ 1,877 (CA$ 334)",
+      "backers": 3,
+      "includes": "Paint sprayer (2pcs), Bottle with Nozzles (16pcs)"
+    },
+    {
+      "name": "Triple Package",
+      "price": "HK$ 2,744 (CA$ 489)",
+      "backers": 2,
+      "includes": "Paint sprayer (3pcs), Bottle with Nozzles (24pcs)"
+    }
+  ]
+}

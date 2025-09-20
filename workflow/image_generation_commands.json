@@ -1,0 +1,114 @@
+{
+  "generation_batch_001": {
+    "target_directory": "D:\\Projects\\ZenMirror_20250916\\final_campaigns\\kickstarter\\assets\\icons",
+    "format": "JPG",
+    "dimensions": "48x48",
+    "quality": "high",
+    "images": [
+      {
+        "filename": "radar-waves.jpg",
+        "description": "Radar waves icon showing concentric circles emanating from a center point, representing millimeter wave radar technology. Use orange gradient colors (#D97A34 to #F4A460). Show 3-4 concentric wave rings with a solid center dot.",
+        "style": "clean, modern icon design, tech-focused"
+      },
+      {
+        "filename": "heart-monitoring.jpg",
+        "description": "Heart monitoring icon with a stylized heart shape and EKG/heartbeat line overlay. Use green gradient colors (#2D5B3E to #4A7C59) for the heart and orange (#D97A34) for the EKG line.",
+        "style": "medical/health tech icon, professional appearance"
+      },
+      {
+        "filename": "privacy-shield.jpg",
+        "description": "Privacy shield icon representing data protection and security. Use green colors for trust and security. Simple shield shape with lock or checkmark symbol.",
+        "style": "security icon, trustworthy design"
+      },
+      {
+        "filename": "zen-circle.jpg",
+        "description": "Zen circle (enso) icon - a traditional Japanese calligraphy circle representing enlightenment and mindfulness. Simple brushstroke circle, not perfectly closed.",
+        "style": "traditional Zen aesthetic, minimalist"
+      },
+      {
+        "filename": "lotus.jpg",
+        "description": "Lotus flower icon representing spiritual growth and enlightenment. Simple, stylized lotus with layered petals.",
+        "style": "spiritual symbol, elegant design"
+      },
+      {
+        "filename": "dove.jpg",
+        "description": "Dove icon representing peace and spiritual freedom. Simple, graceful dove silhouette, possibly in flight.",
+        "style": "peaceful, spiritual symbol"
+      },
+      {
+        "filename": "om-symbol.jpg",
+        "description": "Om (AUM) symbol icon - the sacred sound and spiritual symbol in Hinduism and Buddhism. Traditional Om script symbol.",
+        "style": "traditional spiritual symbol, sacred geometry"
+      },
+      {
+        "filename": "real-time.jpg",
+        "description": "Real-time monitoring icon showing clock/timer with data flow arrows or waves, representing live monitoring capability.",
+        "style": "tech icon, dynamic appearance"
+      },
+      {
+        "filename": "analytics.jpg",
+        "description": "Analytics icon with bar charts, graphs, or data visualization elements representing data analysis and insights.",
+        "style": "data visualization icon, professional"
+      }
+    ]
+  },
+  "generation_batch_002": {
+    "target_directory": "D:\\Projects\\ZenMirror_20250916\\final_campaigns\\kickstarter\\assets",
+    "format": "JPG",
+    "dimensions": "800x400",
+    "quality": "high",
+    "images": [
+      {
+        "filename": "tech-diagram.jpg",
+        "description": "Technology diagram showing ZenMirror's millimeter wave radar system. Show device → radar waves → signal processing → real-time analysis → feedback loop. Use ZenMirror color scheme (greens and oranges).",
+        "style": "technical diagram, professional infographic style"
+      },
+      {
+        "filename": "hrv-rsa-chart.jpg",
+        "description": "Scientific chart showing HRV (Heart Rate Variability) and RSA (Respiratory Sinus Arrhythmia) data visualization. Show waveforms, data points, and medical/scientific styling.",
+        "style": "scientific chart, medical data visualization"
+      },
+      {
+        "filename": "closed-loop-diagram.jpg",
+        "description": "Closed-loop system diagram showing meditation feedback cycle: sensing → analysis → guidance → improved meditation → sensing. Circular flow with arrows.",
+        "style": "system diagram, flow chart appearance"
+      }
+    ]
+  },
+  "generation_batch_003": {
+    "target_directory": "D:\\Projects\\ZenMirror_20250916\\final_campaigns\\indiegogo\\assets\\icons",
+    "format": "JPG",
+    "dimensions": "48x48",
+    "quality": "high",
+    "images": [
+      {
+        "filename": "hrv-research.jpg",
+        "description": "HRV research icon showing heart rate variability concept with scientific elements like graphs, heart symbol, and research indicators.",
+        "style": "scientific research icon, medical appearance"
+      },
+      {
+        "filename": "meditation-research.jpg",
+        "description": "Meditation research icon combining meditation pose silhouette with scientific elements like brain waves or research symbols.",
+        "style": "research icon, combining spirituality and science"
+      },
+      {
+        "filename": "rsa-research.jpg",
+        "description": "RSA (Respiratory Sinus Arrhythmia) research icon showing breathing patterns, heart rhythm, and scientific research elements.",
+        "style": "respiratory research icon, medical/scientific"
+      }
+    ]
+  },
+  "generation_batch_004": {
+    "target_directory": "D:\\Projects\\ZenMirror_20250916\\final_campaigns\\indiegogo\\assets\\gallery",
+    "format": "JPG",
+    "dimensions": "600x400",
+    "quality": "high",
+    "images": [
+      {
+        "filename": "setup-view.jpg",
+        "description": "ZenMirror device setup view showing the device positioned for meditation monitoring. Clean, modern setup in a meditation space with the device on a stand or table.",
+        "style": "product photography style, clean environment"
+      }
+    ]
+  }
+}

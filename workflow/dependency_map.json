@@ -1,0 +1,168 @@
+{
+  "dependency_map": {
+    "agents": {
+      "product-manager": {
+        "depends_on": ["raw/product_description.txt"],
+        "provides_to": [
+          "content-strategist",
+          "financial-planner",
+          "marketing-strategist",
+          "ui-developer",
+          "graphic-designer"
+        ],
+        "critical_path": true,
+        "outputs": [
+          "outputs/product-manager/market_analysis.json",
+          "outputs/product-manager/competitive_landscape.json",
+          "outputs/product-manager/product_positioning.json",
+          "outputs/product-manager/target_audience.json"
+        ]
+      },
+      "content-strategist": {
+        "depends_on": ["product-manager"],
+        "provides_to": ["resource-compiler"],
+        "parallel_group": "strategy",
+        "outputs": [
+          "outputs/content-strategist/messaging_framework.json",
+          "outputs/content-strategist/copy_content.json",
+          "outputs/content-strategist/brand_voice.json"
+        ]
+      },
+      "financial-planner": {
+        "depends_on": ["product-manager"],
+        "provides_to": ["resource-compiler"],
+        "parallel_group": "strategy",
+        "outputs": [
+          "outputs/financial-planner/funding_strategy.json",
+          "outputs/financial-planner/pricing_tiers.json",
+          "outputs/financial-planner/budget_breakdown.json"
+        ]
+      },
+      "marketing-strategist": {
+        "depends_on": ["product-manager"],
+        "provides_to": ["resource-compiler"],
+        "parallel_group": "strategy",
+        "outputs": [
+          "outputs/marketing-strategist/launch_strategy.json",
+          "outputs/marketing-strategist/social_media_plan.json",
+          "outputs/marketing-strategist/pr_strategy.json"
+        ]
+      },
+      "ui-developer": {
+        "depends_on": ["product-manager"],
+        "provides_to": ["video-scriptwriter", "resource-compiler"],
+        "parallel_group": "creative",
+        "outputs": [
+          "outputs/ui-developer/kickstarter_mockups/",
+          "outputs/ui-developer/indiegogo_mockups/",
+          "outputs/ui-developer/interactive_prototypes/"
+        ]
+      },
+      "graphic-designer": {
+        "depends_on": ["product-manager"],
+        "provides_to": ["resource-compiler"],
+        "parallel_group": "creative",
+        "outputs": [
+          "outputs/graphic-designer/visual_assets/",
+          "outputs/graphic-designer/infographics/",
+          "outputs/graphic-designer/brand_elements/"
+        ]
+      },
+      "video-scriptwriter": {
+        "depends_on": ["ui-developer"],
+        "provides_to": ["resource-compiler"],
+        "outputs": [
+          "outputs/video-scriptwriter/shot_list.json",
+          "outputs/video-scriptwriter/b_roll_list.json",
+          "outputs/video-scriptwriter/production_schedule.json"
+        ]
+      },
+      "resource-compiler": {
+        "depends_on": [
+          "content-strategist",
+          "financial-planner",
+          "marketing-strategist",
+          "ui-developer",
+          "graphic-designer",
+          "video-scriptwriter"
+        ],
+        "provides_to": ["qa-reviewer"],
+        "outputs": [
+          "final_campaigns/kickstarter/index.html",
+          "final_campaigns/indiegogo/index.html"
+        ]
+      },
+      "qa-reviewer": {
+        "depends_on": ["resource-compiler"],
+        "provides_to": ["campaign-expert"],
+        "outputs": [
+          "qa/test_reports.json",
+          "qa/performance_metrics.json",
+          "qa/compliance_check.json"
+        ]
+      },
+      "campaign-expert": {
+        "depends_on": ["qa-reviewer"],
+        "provides_to": ["all_agents_iterative"],
+        "iterative": true,
+        "max_iterations": 5,
+        "outputs": [
+          "expert_review/iteration_reports/",
+          "expert_review/improvement_commands/",
+          "expert_review/final_certification.json"
+        ]
+      },
+      "orchestrator": {
+        "depends_on": ["all"],
+        "provides_to": ["workflow_management"],
+        "outputs": [
+          "workflow/execution_log.json",
+          "workflow/status_dashboard.html",
+          "workflow/performance_metrics.json",
+          "workflow/final_report.md"
+        ]
+      }
+    },
+    "file_dependencies": {
+      "input_files": {
+        "raw/product_description.txt": {
+          "required_by": ["all_agents"],
+          "phase": "0",
+          "critical": true
+        }
+      },
+      "intermediate_files": {
+        "outputs/product-manager/*": {
+          "created_by": "product-manager",
+          "required_by": ["content-strategist", "financial-planner", "marketing-strategist", "ui-developer", "graphic-designer"]
+        },
+        "outputs/ui-developer/*": {
+          "created_by": "ui-developer",
+          "required_by": ["video-scriptwriter"]
+        }
+      },
+      "output_files": {
+        "final_campaigns/kickstarter/index.html": {
+          "final_deliverable": true,
+          "platform": "kickstarter"
+        },
+        "final_campaigns/indiegogo/index.html": {
+          "final_deliverable": true,
+          "platform": "indiegogo"
+        }
+      }
+    },
+    "critical_path": [
+      "product-manager",
+      "ui-developer",
+      "video-scriptwriter",
+      "resource-compiler",
+      "qa-reviewer",
+      "campaign-expert"
+    ],
+    "parallel_groups": {
+      "strategy": ["content-strategist", "financial-planner", "marketing-strategist"],
+      "creative": ["ui-developer", "graphic-designer"]
+    }
+  }
+}

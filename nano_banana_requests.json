@@ -1,0 +1,128 @@
+{
+  "nano_banana_generation_requests": {
+    "session_id": "zenmirror_graphics_2025",
+    "total_graphics": 52,
+    "priority_queue": [
+      {
+        "id": "zenmirror_logo",
+        "priority": 1,
+        "filename": "zenmirror-logo.svg",
+        "description": "ZenMirror logo with Chinese characters",
+        "prompt": "Create a sophisticated logo design for 'ZenMirror 禅镜' that seamlessly blends modern technology with zen meditation aesthetics. The design should include: (1) Clean, modern typography for 'ZenMirror' in sans-serif font, (2) Elegant Chinese characters '禅镜' integrated harmoniously, (3) Subtle millimeter wave radar elements (gentle curved lines), (4) Mirror/reflection symbolism (circular or geometric elements), (5) Color palette: deep blue (#1a365d), zen orange (#ff6b35), warm gray (#4a5568), (6) Minimalist, premium feel suitable for tech startup, (7) SVG format with clean lines and scalable design, (8) Versatile for light and dark backgrounds. Style should convey innovation, mindfulness, and precision.",
+        "style": "logo_design",
+        "dimensions": "500x200",
+        "format": "svg"
+      },
+      {
+        "id": "main_device_hero",
+        "priority": 1,
+        "filename": "zenmirror-main.jpg",
+        "description": "Hero product shot of ZenMirror device",
+        "prompt": "Create a stunning product photography shot of the ZenMirror meditation device featuring: (1) Elegant bamboo housing with natural wood grain texture, (2) 45-degree angled design positioning for optimal radar sensing, (3) Subtle radar sensor module integrated into the design, (4) Minimal meditation space setting with soft cushions and natural elements, (5) Professional lighting - soft, warm, natural illumination, (6) Clean background - peaceful meditation environment, (7) High detail showing premium materials and craftsmanship, (8) Sense of tranquility and technological sophistication, (9) Device positioned to show both form and function, (10) Color harmony with zen aesthetics - earth tones, soft blues. Style: Professional product photography with depth of field, premium quality suitable for hero banner.",
+        "style": "product_photography",
+        "dimensions": "1920x1080",
+        "format": "jpg"
+      },
+      {
+        "id": "radar_technology_diagram",
+        "priority": 1,
+        "filename": "radar-visualization.jpg",
+        "description": "Technical diagram of radar sensing technology",
+        "prompt": "Design a scientific infographic showing ZenMirror's millimeter wave radar technology featuring: (1) Device emitting 60-64 GHz millimeter waves in gentle curved lines, (2) Human figure in meditation pose showing chest wall micro-movements, (3) Signal path visualization: transmission → reflection → processing, (4) Heart rate and breathing pattern detection illustration, (5) Data flow to analysis algorithms, (6) Clean, modern scientific illustration style, (7) Color coding: blue for transmitted waves, orange for reflected signals, (8) Technical accuracy with accessible presentation, (9) Privacy emphasis (non-imaging technology), (10) Professional medical/scientific aesthetic. Style: Technical infographic with clear visual flow and professional medical illustration quality.",
+        "style": "technical_infographic",
+        "dimensions": "1200x800",
+        "format": "jpg"
+      },
+      {
+        "id": "zen_master_portrait",
+        "priority": 2,
+        "filename": "zen-master-detailed.jpg",
+        "description": "Zen Master mentor personality visual",
+        "prompt": "Create an artistic, respectful representation of a Zen Master meditation mentor featuring: (1) Peaceful, wise countenance with gentle expression, (2) Traditional but not stereotypical appearance, (3) Serene meditation posture in natural setting, (4) Bamboo and flowing water elements in background, (5) Soft, contemplative lighting creating peaceful ambiance, (6) Cultural authenticity without appropriation, (7) Timeless, ageless quality suggesting wisdom, (8) Color palette: earth tones, soft greens, muted blues, (9) Artistic style - contemplative realism with soft edges, (10) Conveys deep meditation experience and gentle guidance. Style: Artistic portrait with spiritual depth and cultural sensitivity.",
+        "style": "spiritual_portrait",
+        "dimensions": "800x800",
+        "format": "jpg"
+      },
+      {
+        "id": "app_dashboard_mockup",
+        "priority": 2,
+        "filename": "app-dashboard.jpg",
+        "description": "ZenMirror app dashboard interface",
+        "prompt": "Design a modern, intuitive app dashboard for meditation monitoring featuring: (1) Real-time vital signs display (heart rate: 68 BPM, breathing: 6/min), (2) HRV coherence score prominently displayed (92/100), (3) Meditation quality meter with visual progress indicator, (4) Clean, minimal interface design with zen aesthetics, (5) Color scheme: deep blue, zen orange accents, white/light gray background, (6) Breathing pattern visualization (gentle wave form), (7) Heart rate variability graph with smooth curves, (8) Current session timer and progress tracking, (9) Mentor selection area with cultural icons, (10) Achievement notifications subtly displayed. Style: Modern app UI with mindful design principles and accessibility.",
+        "style": "app_interface",
+        "dimensions": "375x812",
+        "format": "jpg"
+      },
+      {
+        "id": "traditional_vs_zenmirror",
+        "priority": 2,
+        "filename": "traditional-problems.jpg",
+        "description": "Traditional wearables comparison graphic",
+        "prompt": "Create a split-screen comparison graphic showing: (1) Left side: Traditional meditation wearables looking cumbersome - chest straps, smartwatches, EEG headbands, (2) Person looking uncomfortable and distracted by devices, (3) Multiple wires and sensors creating clutter, (4) Expression of frustration or distraction, (5) Cluttered, technological environment, (6) Right side: Person in peaceful meditation with ZenMirror device discretely positioned nearby, (7) Clean, minimal meditation space, (8) Person completely focused and peaceful, (9) Contactless sensing illustrated with gentle radar waves, (10) Zen aesthetic with natural elements. Style: Clear visual storytelling with professional photography quality.",
+        "style": "comparison_graphic",
+        "dimensions": "1600x900",
+        "format": "jpg"
+      },
+      {
+        "id": "mentor_selection_interface",
+        "priority": 2,
+        "filename": "mentor-interface.jpg",
+        "description": "Mentor selection app screen",
+        "prompt": "Design an elegant mentor selection interface featuring: (1) Six mentor tradition icons arranged in a clean grid, (2) Zen circle (Buddhism), Lotus (Yoga), Dove (Christian), Tree of Life (Universal), Column (Stoic), Om symbol (Vedanta), (3) Each icon with subtle cultural colors and respectful design, (4) Brief tradition descriptions with authentic terminology, (5) Current selection highlighted with gentle glow effect, (6) Peaceful background with soft gradients, (7) Typography that's readable and calm, (8) Cultural sensitivity in all visual elements, (9) Modern app interface conventions, (10) Sense of wisdom and authenticity. Style: Modern app UI with deep respect for spiritual traditions.",
+        "style": "app_interface",
+        "dimensions": "375x812",
+        "format": "jpg"
+      },
+      {
+        "id": "achievement_system_visual",
+        "priority": 3,
+        "filename": "achievements-view.jpg",
+        "description": "Mindfulness achievement system interface",
+        "prompt": "Create a meaningful achievement system interface showing: (1) Progress categories: Focus Mastery, Breath Wisdom, Heart Coherence, (2) Earned badges with contemplative symbols (lotus, mountains, flowing water), (3) Progress bars showing meditation journey advancement, (4) Mindfulness points display with current level (347 MP), (5) Practitioner level progression (Mindful Beginner → Steady Practitioner), (6) Recent achievements highlighted with gentle animations, (7) Non-competitive, growth-focused design, (8) Zen aesthetic with peaceful colors, (9) Meaningful milestone descriptions, (10) Sense of personal growth and spiritual development. Style: Mindful gamification with spiritual depth.",
+        "style": "app_interface",
+        "dimensions": "375x812",
+        "format": "jpg"
+      },
+      {
+        "id": "product_packaging_design",
+        "priority": 3,
+        "filename": "product-packaging.jpg",
+        "description": "Sustainable product packaging",
+        "prompt": "Design eco-friendly packaging for ZenMirror featuring: (1) Sustainable materials - recycled cardboard with natural textures, (2) Minimal, elegant design reflecting zen principles, (3) ZenMirror logo prominently but tastefully placed, (4) Natural color palette - earth tones with zen orange accents, (5) Clean typography with product information, (6) Unboxing experience that creates anticipation, (7) Protective inner packaging for delicate device, (8) Cultural elements that honor meditation traditions, (9) Premium feel despite sustainable materials, (10) Photography showing package in hands, emphasizing tactile quality. Style: Premium sustainable packaging with mindful design principles.",
+        "style": "product_photography",
+        "dimensions": "1200x800",
+        "format": "jpg"
+      },
+      {
+        "id": "technology_comparison_table",
+        "priority": 3,
+        "filename": "tech-comparison-visual.jpg",
+        "description": "Technology comparison infographic",
+        "prompt": "Create a comprehensive comparison infographic showing ZenMirror vs traditional meditation monitoring featuring: (1) Clean table format with clear categories, (2) ZenMirror advantages highlighted: contactless, zero distraction, privacy protection, (3) Traditional methods shown: chest straps, smartwatches, EEG headbands, (4) Visual checkmarks, X marks, and partial indicators, (5) Professional medical/scientific presentation, (6) Icons representing each technology type, (7) Color coding for easy comparison scanning, (8) Technical accuracy in all claims, (9) Emphasis on user experience benefits, (10) Clean, readable typography. Style: Professional comparison chart with scientific credibility.",
+        "style": "infographic",
+        "dimensions": "1400x800",
+        "format": "jpg"
+      }
+    ],
+    "generation_settings": {
+      "quality": "high",
+      "style_consistency": true,
+      "brand_guidelines": {
+        "primary_colors": ["#1a365d", "#ff6b35", "#4a5568"],
+        "secondary_colors": ["#f7fafc", "#e2e8f0", "#cbd5e0"],
+        "fonts": ["Inter", "Noto Serif"],
+        "design_principles": ["minimalism", "zen_aesthetics", "technological_precision", "cultural_respect"]
+      },
+      "technical_requirements": {
+        "web_optimization": true,
+        "responsive_compatibility": true,
+        "accessibility_compliance": true,
+        "file_size_limits": {
+          "jpg": "500KB",
+          "svg": "100KB",
+          "png": "300KB"
+        }
+      }
+    }
+  }
+}

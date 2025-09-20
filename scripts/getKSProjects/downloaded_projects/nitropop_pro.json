@@ -1,0 +1,58 @@
+{
+  "project_title": "Nitropop pro: Smart Nitro Cold Brew Machine",
+  "creator": "nitropop",
+  "funding_goal": "$1,000",
+  "amount_raised": "$46,754",
+  "percentage_funded": "4675%",
+  "number_of_backers": 171,
+  "campaign_period": "Jul 8 2025 - Aug 7 2025 (30 days)",
+  "location": "Denver, CO",
+  "category": "Gadgets",
+  "project_we_love": false,
+  "updates_count": 2,
+  "comments_count": 11,
+  "faq_count": null,
+  "key_features": [
+    "Built-in nitrogen generator using PSA technology",
+    "500kPa high-pressure infusion",
+    "Large 500ml capacity (5-8 cups per batch)",
+    "Automatic cleaning system",
+    "Compact and portable design",
+    "4000mAh battery with USB-C charging",
+    "No external gas cylinders needed",
+    "Dishwasher safe components",
+    "One-touch operation"
+  ],
+  "reward_structure": [
+    {
+      "type": "Early Bird",
+      "description": "Discounted Nitropop Pro units"
+    },
+    {
+      "type": "Standard Reward",
+      "description": "Regular pricing for Nitropop Pro"
+    },
+    {
+      "type": "Multiple Units",
+      "description": "Bundles for families or small businesses"
+    }
+  ],
+  "unique_elements": [
+    "PSA technology for nitrogen generation from air",
+    "No ongoing cartridge costs",
+    "Portable battery operation",
+    "Works with multiple beverage types",
+    "High-pressure infusion system",
+    "Integrated cleaning system",
+    "Detailed technical specifications provided",
+    "CAD drawings and sketches shown"
+  ],
+  "technical_specs": {
+    "nitrogen_purity": "≥99.5%",
+    "pressure": "500kPa",
+    "capacity": "500ml",
+    "battery": "4000mAh",
+    "charging": "USB-C",
+    "cleaning": "Dishwasher safe"
+  }
+}

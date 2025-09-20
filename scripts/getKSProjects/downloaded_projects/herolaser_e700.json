@@ -1,0 +1,77 @@
+{
+  "project_title": "HeroLaser E700-The World's Smallest 3-in-1 Laser Workstation",
+  "creator": "HEROLASER",
+  "funding_goal": "$50,000",
+  "amount_raised": "$1,887,960",
+  "percentage_funded": "3776%",
+  "number_of_backers": 190,
+  "campaign_period": "Jul 1 2025 - Jul 31 2025 (30 days)",
+  "location": "Not specified",
+  "category": "Technology/Industrial Equipment",
+  "project_we_love": false,
+  "updates_count": null,
+  "comments_count": null,
+  "faq_count": null,
+  "key_features": [
+    "World's smallest 3-in-1 laser workstation",
+    "Laser welding, cutting, cleaning, and engraving capabilities",
+    "700W fiber laser power",
+    "Work area: 400×300×40mm",
+    "0.02mm precision",
+    "Mobile control via app",
+    "Weighs only 50kg (desktop computer size)",
+    "Cuts up to 3mm steel",
+    "2mm stainless steel and carbon steel cutting",
+    "1.5mm aluminum cutting capability",
+    "1mm copper and brass cutting",
+    "Industrial-grade Z-axis auto height control",
+    "Dynamic real-time adjustments",
+    "NexCut software (Mac & Windows compatible)",
+    "Metal cutting capability (not just wood/acrylic)"
+  ],
+  "reward_structure": [
+    {
+      "type": "Early Bird Specials",
+      "description": "Discounted E700 units for early backers"
+    },
+    {
+      "type": "Standard Rewards",
+      "description": "Regular pricing for E700 workstations"
+    },
+    {
+      "type": "Professional Packages",
+      "description": "Complete setups with accessories and software"
+    }
+  ],
+  "unique_elements": [
+    "Smallest form factor for metal-cutting laser workstation",
+    "True metal cutting capability vs. wood/acrylic-only competitors",
+    "4-in-1 functionality in compact desktop size",
+    "700W fiber laser in 50kg package",
+    "Industrial-grade precision in consumer-friendly form",
+    "Cross-platform software compatibility",
+    "Auto height control for irregular surfaces",
+    "Previous successful product launches (T300, T700)",
+    "Real metal fabrication capability",
+    "Desktop-sized industrial functionality"
+  ],
+  "technical_specs": {
+    "weight": "50kg",
+    "laser_power": "700W fiber laser",
+    "work_area": "400×300×40mm",
+    "precision": "0.02mm",
+    "cutting_capacity": {
+      "steel": "up to 3mm",
+      "stainless_steel": "2mm",
+      "carbon_steel": "2mm",
+      "aluminum": "1.5mm",
+      "copper": "1mm",
+      "brass": "1mm"
+    },
+    "software": "NexCut (Mac & Windows compatible)",
+    "control": "Mobile app control",
+    "auto_features": "Z-axis auto height control with real-time adjustment"
+  },
+  "average_pledge": "$9,937",
+  "company_background": "Previous successful launches of T300 and T700 laser welders on Indiegogo"
+}

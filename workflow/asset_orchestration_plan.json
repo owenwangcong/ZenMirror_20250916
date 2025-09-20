@@ -1,0 +1,155 @@
+{
+  "workflow_id": "zenmirror_asset_generation",
+  "start_time": "2025-09-17T10:00:00Z",
+  "orchestrator": "asset_generator",
+  "total_assets_required": 127,
+  "asset_categories": {
+    "logos_branding": {
+      "count": 8,
+      "files": [
+        "zenmirror-logo.svg",
+        "zenmirror-logo-horizontal.svg",
+        "zenmirror-logo-monochrome.svg",
+        "zenmirror-favicon.svg",
+        "og-image.jpg",
+        "campaign-badges.svg",
+        "live-badge.svg",
+        "flexible-funding-badge.svg"
+      ]
+    },
+    "product_images": {
+      "count": 24,
+      "subcategories": {
+        "hero_shots": ["zenmirror-main.jpg", "zenmirror-hero.jpg"],
+        "product_views": ["product-front.jpg", "product-side.jpg", "product-detail.jpg", "product-packaging.jpg"],
+        "setup_scenarios": ["home-meditation.jpg", "studio-use.jpg", "office-meditation.jpg", "travel-setup.jpg"],
+        "gallery_items": ["setup-view.jpg", "zenmirror-setup.jpg"]
+      }
+    },
+    "technology_visuals": {
+      "count": 18,
+      "files": [
+        "radar-visualization.jpg",
+        "tech-diagram.svg",
+        "closed-loop-diagram.svg",
+        "hrv-rsa-chart.svg",
+        "millimeter-wave-visualization.svg",
+        "contactless-sensing-diagram.svg",
+        "privacy-protection-visual.svg"
+      ]
+    },
+    "mentor_assets": {
+      "count": 24,
+      "mentors": [
+        {"name": "zen-master", "files": ["zen-master.jpg", "zen-master-detailed.jpg"]},
+        {"name": "yogi", "files": ["yogi.jpg", "yogi-detailed.jpg"]},
+        {"name": "chaplain", "files": ["chaplain.jpg", "chaplain-detailed.jpg"]},
+        {"name": "spiritual-mentor", "files": ["spiritual-mentor.jpg", "spiritual-mentor-detailed.jpg"]},
+        {"name": "stoic", "files": ["stoic.jpg", "stoic-detailed.jpg"]},
+        {"name": "vedanta", "files": ["vedanta.jpg", "vedanta-detailed.jpg"]}
+      ]
+    },
+    "ui_interface": {
+      "count": 15,
+      "files": [
+        "app-interface.jpg",
+        "mentor-selection.jpg",
+        "data-visualization.jpg",
+        "app-dashboard.jpg",
+        "mentor-interface.jpg",
+        "analytics-view.jpg",
+        "achievements-view.jpg"
+      ]
+    },
+    "icons_graphics": {
+      "count": 32,
+      "categories": {
+        "technology": ["radar-waves.svg", "heart-monitoring.svg", "privacy-shield.svg"],
+        "mentors": ["zen-circle.svg", "lotus.svg", "dove.svg", "tree-of-life.svg", "column.svg", "om-symbol.svg"],
+        "features": ["real-time.svg", "scoring.svg", "achievements.svg", "multi-mode.svg", "closed-loop.svg", "analytics.svg"],
+        "research": ["hrv-research.svg", "meditation-research.svg", "rsa-research.svg"]
+      }
+    },
+    "video_thumbnails": {
+      "count": 6,
+      "files": [
+        "hero-demo-thumb.jpg",
+        "tech-demo-thumb.jpg",
+        "mentor-demo-thumb.jpg",
+        "setup-guide-thumb.jpg",
+        "user-stories-thumb.jpg",
+        "comparison-thumb.jpg",
+        "video-thumbnail.jpg"
+      ]
+    }
+  },
+  "target_directories": [
+    "D:\\Projects\\ZenMirror_20250916\\final_campaigns\\indiegogo\\assets",
+    "D:\\Projects\\ZenMirror_20250916\\final_campaigns\\kickstarter\\assets",
+    "D:\\Projects\\ZenMirror_20250916\\outputs\\ui-developer\\indiegogo_mockups\\assets",
+    "D:\\Projects\\ZenMirror_20250916\\outputs\\ui-developer\\kickstarter_mockups\\assets"
+  ],
+  "execution_phases": [
+    {
+      "phase": 1,
+      "name": "Directory Setup",
+      "duration": "5 minutes",
+      "tasks": ["Create asset directories", "Organize subdirectories"]
+    },
+    {
+      "phase": 2,
+      "name": "Brand Assets Generation",
+      "duration": "30 minutes",
+      "tasks": ["Generate ZenMirror logos", "Create campaign badges", "Generate social media assets"]
+    },
+    {
+      "phase": 3,
+      "name": "Product Photography",
+      "duration": "45 minutes",
+      "tasks": ["Generate hero product shots", "Create usage scenario images", "Generate packaging visuals"]
+    },
+    {
+      "phase": 4,
+      "name": "Technology Visualization",
+      "duration": "40 minutes",
+      "tasks": ["Create radar wave diagrams", "Generate tech flow diagrams", "Create scientific charts"]
+    },
+    {
+      "phase": 5,
+      "name": "Mentor Personality Assets",
+      "duration": "60 minutes",
+      "tasks": ["Generate mentor portraits", "Create mentor icons", "Generate cultural elements"]
+    },
+    {
+      "phase": 6,
+      "name": "UI Interface Screenshots",
+      "duration": "35 minutes",
+      "tasks": ["Generate app interfaces", "Create dashboard mockups", "Generate analytics views"]
+    },
+    {
+      "phase": 7,
+      "name": "Icons and Graphics",
+      "duration": "45 minutes",
+      "tasks": ["Generate feature icons", "Create research graphics", "Generate navigation elements"]
+    },
+    {
+      "phase": 8,
+      "name": "Video Thumbnails",
+      "duration": "25 minutes",
+      "tasks": ["Generate video preview images", "Create play button overlays", "Generate demo thumbnails"]
+    },
+    {
+      "phase": 9,
+      "name": "HTML Integration",
+      "duration": "60 minutes",
+      "tasks": ["Update all HTML files", "Fix image paths", "Verify all assets load correctly"]
+    }
+  ],
+  "quality_standards": {
+    "image_resolution": "High quality, web-optimized",
+    "svg_quality": "Vector perfect, scalable",
+    "brand_consistency": "Consistent ZenMirror aesthetic",
+    "file_naming": "Descriptive, consistent naming convention",
+    "accessibility": "Alt text provided for all images"
+  }
+}

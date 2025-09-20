@@ -1,0 +1,65 @@
+{
+  "project_title": "KANAAN-K1 Pro: World's Lightest AI Agent Glasses",
+  "creator": "Kanaan",
+  "funding_goal": "HK$ 13,200",
+  "amount_raised": "HK$ 48,583",
+  "percentage_funded": "368%",
+  "number_of_backers": 39,
+  "campaign_period": "Jul 8 2025 - Aug 22 2025 (45 days)",
+  "location": "Not specified",
+  "category": "Technology/Wearables",
+  "project_we_love": false,
+  "updates_count": null,
+  "comments_count": null,
+  "faq_count": null,
+  "key_features": [
+    "World's lightest AI agent glasses at 30g",
+    "2K video capture (2560×1440 resolution)",
+    "AI agent personalization",
+    "Immersive speaker system",
+    "Live real-time translation",
+    "All-day battery life",
+    "Ingenic chip technology for low power consumption",
+    "Rapid imaging capabilities",
+    "Compact design for lightweight wearability",
+    "AI support for productivity enhancement",
+    "Designed for nearsighted users",
+    "Social sharing optimization"
+  ],
+  "reward_structure": [
+    {
+      "type": "Early Bird",
+      "description": "Discounted K1 Pro glasses with up to 10% off"
+    },
+    {
+      "type": "Standard Rewards",
+      "description": "Regular pricing for K1 Pro units"
+    },
+    {
+      "type": "Bundle Options",
+      "description": "Multiple units or accessory packages"
+    }
+  ],
+  "unique_elements": [
+    "Ultra-lightweight design at only 30g",
+    "2K high-resolution video recording",
+    "Real-time translation capabilities",
+    "AI agent integration for personalized assistance",
+    "Specifically designed for nearsighted users",
+    "Ingenic chipset optimization",
+    "All-day battery performance",
+    "Social sharing focused features",
+    "Immersive audio experience",
+    "Productivity enhancement through AI"
+  ],
+  "technical_specs": {
+    "weight": "30g",
+    "video_resolution": "2K (2560×1440)",
+    "chipset": "Ingenic low-power chips",
+    "audio": "Immersive speaker system",
+    "battery": "All-day usage",
+    "ai_features": "Real-time translation, productivity AI",
+    "target_users": "Nearsighted users, social sharing enthusiasts"
+  },
+  "average_pledge": "HK$ 1,246"
+}

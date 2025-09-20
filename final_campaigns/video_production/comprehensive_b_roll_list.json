@@ -1,0 +1,934 @@
+{
+  "b_roll_metadata": {
+    "project": "ZenMirror Crowdfunding Campaign",
+    "total_clips": 124,
+    "categories": 5,
+    "estimated_shooting_time": "6 days",
+    "usage": "Hero video, social media, website, future campaigns"
+  },
+  "meditation_and_mindfulness": [
+    {
+      "clip_id": "MM001",
+      "description": "Sunrise meditation - silhouette against golden sky",
+      "duration": "10s",
+      "location": "Outdoor hilltop",
+      "mood": "Inspirational, peaceful"
+    },
+    {
+      "clip_id": "MM002",
+      "description": "Hands in mudra positions - various traditional poses",
+      "duration": "8s",
+      "location": "Studio",
+      "mood": "Authentic, spiritual"
+    },
+    {
+      "clip_id": "MM003",
+      "description": "Breathing visualization - chest gently rising and falling",
+      "duration": "15s",
+      "location": "Controlled lighting",
+      "mood": "Calming, scientific"
+    },
+    {
+      "clip_id": "MM004",
+      "description": "Group meditation in studio with multiple ZenMirrors",
+      "duration": "12s",
+      "location": "Meditation studio",
+      "mood": "Community, professional"
+    },
+    {
+      "clip_id": "MM005",
+      "description": "Walking meditation in nature",
+      "duration": "20s",
+      "location": "Forest path",
+      "mood": "Natural, grounded"
+    },
+    {
+      "clip_id": "MM006",
+      "description": "Candlelit evening meditation session",
+      "duration": "10s",
+      "location": "Home setting",
+      "mood": "Intimate, peaceful"
+    },
+    {
+      "clip_id": "MM007",
+      "description": "Yoga flow transitioning into seated meditation",
+      "duration": "25s",
+      "location": "Yoga studio",
+      "mood": "Flowing, energetic to calm"
+    },
+    {
+      "clip_id": "MM008",
+      "description": "Child learning meditation with family",
+      "duration": "15s",
+      "location": "Living room",
+      "mood": "Wholesome, educational"
+    },
+    {
+      "clip_id": "MM009",
+      "description": "Elderly person in peaceful meditation",
+      "duration": "12s",
+      "location": "Garden setting",
+      "mood": "Wisdom, serenity"
+    },
+    {
+      "clip_id": "MM010",
+      "description": "Office meditation during lunch break",
+      "duration": "8s",
+      "location": "Modern office",
+      "mood": "Practical, stress-relief"
+    },
+    {
+      "clip_id": "MM011",
+      "description": "Beach meditation with wave sounds",
+      "duration": "18s",
+      "location": "Ocean shore",
+      "mood": "Natural, expansive"
+    },
+    {
+      "clip_id": "MM012",
+      "description": "Mountain meditation with vista background",
+      "duration": "15s",
+      "location": "Mountain peak",
+      "mood": "Elevated, inspiring"
+    },
+    {
+      "clip_id": "MM013",
+      "description": "Urban rooftop meditation at sunset",
+      "duration": "12s",
+      "location": "City rooftop",
+      "mood": "Modern, accessible"
+    },
+    {
+      "clip_id": "MM014",
+      "description": "Different meditation postures sequence",
+      "duration": "20s",
+      "location": "Studio",
+      "mood": "Educational, inclusive"
+    },
+    {
+      "clip_id": "MM015",
+      "description": "Meditation teacher guiding class",
+      "duration": "10s",
+      "location": "Teaching environment",
+      "mood": "Professional, educational"
+    },
+    {
+      "clip_id": "MM016",
+      "description": "Person transitioning from stress to calm",
+      "duration": "15s",
+      "location": "Home office",
+      "mood": "Transformative, relief"
+    },
+    {
+      "clip_id": "MM017",
+      "description": "Meditation in different seasons montage",
+      "duration": "30s",
+      "location": "Various outdoor",
+      "mood": "Cyclical, consistent"
+    },
+    {
+      "clip_id": "MM018",
+      "description": "Prayer/contemplation in various traditions",
+      "duration": "25s",
+      "location": "Multiple settings",
+      "mood": "Inclusive, respectful"
+    },
+    {
+      "clip_id": "MM019",
+      "description": "Meditation retreat group sessions",
+      "duration": "15s",
+      "location": "Retreat center",
+      "mood": "Deep practice, community"
+    },
+    {
+      "clip_id": "MM020",
+      "description": "Mindful activities - tea ceremony, gardening",
+      "duration": "20s",
+      "location": "Traditional settings",
+      "mood": "Mindful living"
+    },
+    {
+      "clip_id": "MM021",
+      "description": "Meditation app usage in various settings",
+      "duration": "12s",
+      "location": "Multiple locations",
+      "mood": "Modern, accessible"
+    },
+    {
+      "clip_id": "MM022",
+      "description": "Breathing exercises with visible breath",
+      "duration": "10s",
+      "location": "Cool morning air",
+      "mood": "Vital, energizing"
+    },
+    {
+      "clip_id": "MM023",
+      "description": "Meditation journals and note-taking",
+      "duration": "8s",
+      "location": "Desk setting",
+      "mood": "Reflective, progressive"
+    },
+    {
+      "clip_id": "MM024",
+      "description": "Healing/therapeutic meditation sessions",
+      "duration": "15s",
+      "location": "Wellness center",
+      "mood": "Healing, supportive"
+    },
+    {
+      "clip_id": "MM025",
+      "description": "Cultural meditation practices from six traditions",
+      "duration": "30s",
+      "location": "Various cultural settings",
+      "mood": "Authentic, diverse"
+    }
+  ],
+  "technology_and_science": [
+    {
+      "clip_id": "TS001",
+      "description": "Radar waves visualization - animated overlay",
+      "duration": "5s",
+      "location": "Animation studio",
+      "mood": "Technical, precise"
+    },
+    {
+      "clip_id": "TS002",
+      "description": "Millimeter wave frequency spectrum animation",
+      "duration": "8s",
+      "location": "Digital animation",
+      "mood": "Scientific, educational"
+    },
+    {
+      "clip_id": "TS003",
+      "description": "ZenMirror device internal components reveal",
+      "duration": "10s",
+      "location": "Product studio",
+      "mood": "Sophisticated, technical"
+    },
+    {
+      "clip_id": "TS004",
+      "description": "Chest micro-movements detection close-up",
+      "duration": "12s",
+      "location": "High-speed camera setup",
+      "mood": "Scientific precision"
+    },
+    {
+      "clip_id": "TS005",
+      "description": "Heart rate waveform real-time capture",
+      "duration": "10s",
+      "location": "Lab environment",
+      "mood": "Clinical accuracy"
+    },
+    {
+      "clip_id": "TS006",
+      "description": "Breathing pattern analysis visualization",
+      "duration": "15s",
+      "location": "Data visualization",
+      "mood": "Analytical, insightful"
+    },
+    {
+      "clip_id": "TS007",
+      "description": "HRV data processing in real-time",
+      "duration": "12s",
+      "location": "Computer interface",
+      "mood": "Advanced, sophisticated"
+    },
+    {
+      "clip_id": "TS008",
+      "description": "RSA measurement demonstration",
+      "duration": "10s",
+      "location": "Scientific setup",
+      "mood": "Research-grade"
+    },
+    {
+      "clip_id": "TS009",
+      "description": "Signal processing algorithms visualization",
+      "duration": "8s",
+      "location": "Digital animation",
+      "mood": "Complex, intelligent"
+    },
+    {
+      "clip_id": "TS010",
+      "description": "Machine learning adaptation process",
+      "duration": "15s",
+      "location": "AI visualization",
+      "mood": "Learning, evolving"
+    },
+    {
+      "clip_id": "TS011",
+      "description": "Contactless vs contact sensor comparison",
+      "duration": "20s",
+      "location": "Split screen setup",
+      "mood": "Comparative, superior"
+    },
+    {
+      "clip_id": "TS012",
+      "description": "Privacy protection - non-imaging demonstration",
+      "duration": "10s",
+      "location": "Privacy comparison",
+      "mood": "Secure, private"
+    },
+    {
+      "clip_id": "TS013",
+      "description": "Device range and positioning flexibility",
+      "duration": "15s",
+      "location": "Range testing",
+      "mood": "Flexible, adaptable"
+    },
+    {
+      "clip_id": "TS014",
+      "description": "Environmental adaptability testing",
+      "duration": "12s",
+      "location": "Various conditions",
+      "mood": "Robust, reliable"
+    },
+    {
+      "clip_id": "TS015",
+      "description": "Power consumption and safety levels",
+      "duration": "8s",
+      "location": "Technical demonstration",
+      "mood": "Safe, efficient"
+    },
+    {
+      "clip_id": "TS016",
+      "description": "Wireless connectivity and data sync",
+      "duration": "10s",
+      "location": "Network visualization",
+      "mood": "Connected, seamless"
+    },
+    {
+      "clip_id": "TS017",
+      "description": "Quality control and testing procedures",
+      "duration": "15s",
+      "location": "QC laboratory",
+      "mood": "Rigorous, reliable"
+    },
+    {
+      "clip_id": "TS018",
+      "description": "Research citations and scientific backing",
+      "duration": "12s",
+      "location": "Academic setting",
+      "mood": "Credible, validated"
+    },
+    {
+      "clip_id": "TS019",
+      "description": "Data encryption and security measures",
+      "duration": "8s",
+      "location": "Security visualization",
+      "mood": "Secure, protected"
+    },
+    {
+      "clip_id": "TS020",
+      "description": "Cross-platform app compatibility",
+      "duration": "10s",
+      "location": "Multiple devices",
+      "mood": "Universal, accessible"
+    },
+    {
+      "clip_id": "TS021",
+      "description": "Cloud sync and backup systems",
+      "duration": "8s",
+      "location": "Cloud visualization",
+      "mood": "Reliable, backed-up"
+    },
+    {
+      "clip_id": "TS022",
+      "description": "Firmware updates and improvements",
+      "duration": "6s",
+      "location": "Update process",
+      "mood": "Evolving, improving"
+    },
+    {
+      "clip_id": "TS023",
+      "description": "Integration with other health platforms",
+      "duration": "10s",
+      "location": "Integration demo",
+      "mood": "Connected, comprehensive"
+    },
+    {
+      "clip_id": "TS024",
+      "description": "Accuracy validation against gold standards",
+      "duration": "15s",
+      "location": "Validation testing",
+      "mood": "Verified, trusted"
+    },
+    {
+      "clip_id": "TS025",
+      "description": "Future technology roadmap visualization",
+      "duration": "12s",
+      "location": "Futuristic animation",
+      "mood": "Innovative, forward-looking"
+    }
+  ],
+  "product_and_design": [
+    {
+      "clip_id": "PD001",
+      "description": "ZenMirror 360-degree product rotation",
+      "duration": "8s",
+      "location": "Product studio",
+      "mood": "Premium, elegant"
+    },
+    {
+      "clip_id": "PD002",
+      "description": "Bamboo material close-up and texture",
+      "duration": "6s",
+      "location": "Macro photography",
+      "mood": "Natural, sustainable"
+    },
+    {
+      "clip_id": "PD003",
+      "description": "Unboxing experience - premium packaging",
+      "duration": "20s",
+      "location": "Unboxing setup",
+      "mood": "Exciting, premium"
+    },
+    {
+      "clip_id": "PD004",
+      "description": "Device assembly and components reveal",
+      "duration": "15s",
+      "location": "Assembly studio",
+      "mood": "Precision, quality"
+    },
+    {
+      "clip_id": "PD005",
+      "description": "Setup process - out of box to first use",
+      "duration": "30s",
+      "location": "Home environment",
+      "mood": "Simple, straightforward"
+    },
+    {
+      "clip_id": "PD006",
+      "description": "Size comparison with everyday objects",
+      "duration": "8s",
+      "location": "Comparison setup",
+      "mood": "Compact, practical"
+    },
+    {
+      "clip_id": "PD007",
+      "description": "Different stand positions and angles",
+      "duration": "12s",
+      "location": "Product demonstration",
+      "mood": "Flexible, adjustable"
+    },
+    {
+      "clip_id": "PD008",
+      "description": "Travel case and portability features",
+      "duration": "10s",
+      "location": "Travel setting",
+      "mood": "Portable, protected"
+    },
+    {
+      "clip_id": "PD009",
+      "description": "LED indicators and status lights",
+      "duration": "5s",
+      "location": "Close-up lighting",
+      "mood": "Informative, clear"
+    },
+    {
+      "clip_id": "PD010",
+      "description": "Cable management and connection",
+      "duration": "8s",
+      "location": "Setup demonstration",
+      "mood": "Clean, organized"
+    },
+    {
+      "clip_id": "PD011",
+      "description": "Device in various home environments",
+      "duration": "20s",
+      "location": "Multiple home settings",
+      "mood": "Integrated, harmonious"
+    },
+    {
+      "clip_id": "PD012",
+      "description": "Color and finish options display",
+      "duration": "10s",
+      "location": "Product showcase",
+      "mood": "Customizable, personal"
+    },
+    {
+      "clip_id": "PD013",
+      "description": "Durability testing and materials",
+      "duration": "12s",
+      "location": "Testing facility",
+      "mood": "Robust, lasting"
+    },
+    {
+      "clip_id": "PD014",
+      "description": "Eco-friendly packaging and materials",
+      "duration": "15s",
+      "location": "Sustainability showcase",
+      "mood": "Responsible, conscious"
+    },
+    {
+      "clip_id": "PD015",
+      "description": "Comparison with competitor products",
+      "duration": "15s",
+      "location": "Comparison table",
+      "mood": "Superior, distinctive"
+    },
+    {
+      "clip_id": "PD016",
+      "description": "Manufacturing process glimpses",
+      "duration": "20s",
+      "location": "Factory floor",
+      "mood": "Precision, quality"
+    },
+    {
+      "clip_id": "PD017",
+      "description": "Quality inspection procedures",
+      "duration": "12s",
+      "location": "QC department",
+      "mood": "Meticulous, reliable"
+    },
+    {
+      "clip_id": "PD018",
+      "description": "Packaging automation and efficiency",
+      "duration": "10s",
+      "location": "Packaging line",
+      "mood": "Professional, efficient"
+    },
+    {
+      "clip_id": "PD019",
+      "description": "Accessories and add-ons showcase",
+      "duration": "15s",
+      "location": "Accessory display",
+      "mood": "Complete, enhanced"
+    },
+    {
+      "clip_id": "PD020",
+      "description": "Branding and logo applications",
+      "duration": "8s",
+      "location": "Brand showcase",
+      "mood": "Consistent, professional"
+    },
+    {
+      "clip_id": "PD021",
+      "description": "Patent and design protection features",
+      "duration": "6s",
+      "location": "IP visualization",
+      "mood": "Protected, innovative"
+    },
+    {
+      "clip_id": "PD022",
+      "description": "Award recognition and certifications",
+      "duration": "8s",
+      "location": "Awards display",
+      "mood": "Recognized, validated"
+    },
+    {
+      "clip_id": "PD023",
+      "description": "User manual and documentation",
+      "duration": "6s",
+      "location": "Documentation setup",
+      "mood": "Comprehensive, clear"
+    },
+    {
+      "clip_id": "PD024",
+      "description": "Customer support materials",
+      "duration": "8s",
+      "location": "Support center",
+      "mood": "Supported, cared for"
+    },
+    {
+      "clip_id": "PD025",
+      "description": "Product lifecycle and sustainability",
+      "duration": "12s",
+      "location": "Lifecycle visualization",
+      "mood": "Sustainable, responsible"
+    }
+  ],
+  "user_experience_and_lifestyle": [
+    {
+      "clip_id": "UL001",
+      "description": "Morning routine integration with ZenMirror",
+      "duration": "25s",
+      "location": "Bedroom/morning space",
+      "mood": "Fresh, energizing"
+    },
+    {
+      "clip_id": "UL002",
+      "description": "Work break meditation sessions",
+      "duration": "15s",
+      "location": "Office environment",
+      "mood": "Refreshing, productive"
+    },
+    {
+      "clip_id": "UL003",
+      "description": "Evening wind-down meditation",
+      "duration": "20s",
+      "location": "Bedroom/relaxation space",
+      "mood": "Calming, peaceful"
+    },
+    {
+      "clip_id": "UL004",
+      "description": "Family meditation time together",
+      "duration": "18s",
+      "location": "Living room",
+      "mood": "Bonding, harmonious"
+    },
+    {
+      "clip_id": "UL005",
+      "description": "Travel meditation in hotel room",
+      "duration": "12s",
+      "location": "Hotel setting",
+      "mood": "Consistent, adaptable"
+    },
+    {
+      "clip_id": "UL006",
+      "description": "Outdoor meditation with device",
+      "duration": "15s",
+      "location": "Garden/patio",
+      "mood": "Natural, grounded"
+    },
+    {
+      "clip_id": "UL007",
+      "description": "Student using for study focus",
+      "duration": "12s",
+      "location": "Study room",
+      "mood": "Focused, academic"
+    },
+    {
+      "clip_id": "UL008",
+      "description": "Athlete using for performance training",
+      "duration": "15s",
+      "location": "Training facility",
+      "mood": "Performance, optimization"
+    },
+    {
+      "clip_id": "UL009",
+      "description": "Healthcare setting meditation aid",
+      "duration": "10s",
+      "location": "Wellness center",
+      "mood": "Healing, therapeutic"
+    },
+    {
+      "clip_id": "UL010",
+      "description": "Senior citizen community use",
+      "duration": "18s",
+      "location": "Community center",
+      "mood": "Inclusive, accessible"
+    },
+    {
+      "clip_id": "UL011",
+      "description": "Corporate wellness program integration",
+      "duration": "20s",
+      "location": "Corporate setting",
+      "mood": "Professional, beneficial"
+    },
+    {
+      "clip_id": "UL012",
+      "description": "Meditation teacher training with ZenMirror",
+      "duration": "15s",
+      "location": "Training environment",
+      "mood": "Educational, professional"
+    },
+    {
+      "clip_id": "UL013",
+      "description": "Different cultural users and practices",
+      "duration": "25s",
+      "location": "Various cultural settings",
+      "mood": "Inclusive, universal"
+    },
+    {
+      "clip_id": "UL014",
+      "description": "Accessibility features for different abilities",
+      "duration": "20s",
+      "location": "Accessibility demo",
+      "mood": "Inclusive, empowering"
+    },
+    {
+      "clip_id": "UL015",
+      "description": "Community building through shared practice",
+      "duration": "18s",
+      "location": "Community space",
+      "mood": "Connected, supportive"
+    },
+    {
+      "clip_id": "UL016",
+      "description": "Progress tracking over time montage",
+      "duration": "20s",
+      "location": "Time-lapse setup",
+      "mood": "Progressive, achieving"
+    },
+    {
+      "clip_id": "UL017",
+      "description": "Social sharing and community features",
+      "duration": "12s",
+      "location": "Social media interface",
+      "mood": "Connected, sharing"
+    },
+    {
+      "clip_id": "UL018",
+      "description": "Personalization and preference setting",
+      "duration": "15s",
+      "location": "App interface",
+      "mood": "Customized, personal"
+    },
+    {
+      "clip_id": "UL019",
+      "description": "Achievement celebration moments",
+      "duration": "10s",
+      "location": "Achievement interface",
+      "mood": "Rewarding, motivating"
+    },
+    {
+      "clip_id": "UL020",
+      "description": "Long-term practice evolution",
+      "duration": "25s",
+      "location": "Progress visualization",
+      "mood": "Growth, mastery"
+    },
+    {
+      "clip_id": "UL021",
+      "description": "Stress management success stories",
+      "duration": "20s",
+      "location": "Before/after scenarios",
+      "mood": "Transformative, relief"
+    },
+    {
+      "clip_id": "UL022",
+      "description": "Sleep quality improvement correlation",
+      "duration": "15s",
+      "location": "Sleep tracking interface",
+      "mood": "Restorative, beneficial"
+    },
+    {
+      "clip_id": "UL023",
+      "description": "Focus and productivity enhancement",
+      "duration": "18s",
+      "location": "Work performance demo",
+      "mood": "Productive, sharp"
+    },
+    {
+      "clip_id": "UL024",
+      "description": "Emotional regulation and balance",
+      "duration": "15s",
+      "location": "Emotional journey",
+      "mood": "Balanced, centered"
+    },
+    {
+      "clip_id": "UL025",
+      "description": "Gift giving and sharing meditation",
+      "duration": "12s",
+      "location": "Gift presentation",
+      "mood": "Thoughtful, caring"
+    }
+  ],
+  "team_and_credibility": [
+    {
+      "clip_id": "TC001",
+      "description": "Dr. Sarah Chen in meditation practice",
+      "duration": "8s",
+      "location": "Personal practice space",
+      "mood": "Authentic, personal"
+    },
+    {
+      "clip_id": "TC002",
+      "description": "Dr. Marcus Rodriguez in laboratory setting",
+      "duration": "10s",
+      "location": "Research lab",
+      "mood": "Scientific, credible"
+    },
+    {
+      "clip_id": "TC003",
+      "description": "Lama Tenzin Norbu traditional teaching",
+      "duration": "12s",
+      "location": "Traditional setting",
+      "mood": "Wise, authentic"
+    },
+    {
+      "clip_id": "TC004",
+      "description": "Team collaboration and development sessions",
+      "duration": "15s",
+      "location": "Development office",
+      "mood": "Collaborative, innovative"
+    },
+    {
+      "clip_id": "TC005",
+      "description": "Research partnerships and collaborations",
+      "duration": "12s",
+      "location": "University/research facility",
+      "mood": "Academic, credible"
+    },
+    {
+      "clip_id": "TC006",
+      "description": "Advisory board meetings and consultations",
+      "duration": "10s",
+      "location": "Meeting room",
+      "mood": "Professional, guided"
+    },
+    {
+      "clip_id": "TC007",
+      "description": "Cultural consultants and authenticity verification",
+      "duration": "15s",
+      "location": "Cultural settings",
+      "mood": "Respectful, authentic"
+    },
+    {
+      "clip_id": "TC008",
+      "description": "Beta tester feedback and testimonials",
+      "duration": "20s",
+      "location": "User environments",
+      "mood": "Real, validated"
+    },
+    {
+      "clip_id": "TC009",
+      "description": "Manufacturing partner facility tour",
+      "duration": "18s",
+      "location": "Manufacturing facility",
+      "mood": "Professional, reliable"
+    },
+    {
+      "clip_id": "TC010",
+      "description": "Quality assurance team in action",
+      "duration": "12s",
+      "location": "QA laboratory",
+      "mood": "Meticulous, reliable"
+    },
+    {
+      "clip_id": "TC011",
+      "description": "Customer support team preparation",
+      "duration": "10s",
+      "location": "Support center",
+      "mood": "Caring, prepared"
+    },
+    {
+      "clip_id": "TC012",
+      "description": "Awards and recognition ceremonies",
+      "duration": "8s",
+      "location": "Award ceremonies",
+      "mood": "Recognized, accomplished"
+    },
+    {
+      "clip_id": "TC013",
+      "description": "Media interviews and press coverage",
+      "duration": "15s",
+      "location": "Media settings",
+      "mood": "Newsworthy, credible"
+    },
+    {
+      "clip_id": "TC014",
+      "description": "Conference presentations and demos",
+      "duration": "12s",
+      "location": "Conference venues",
+      "mood": "Expert, informative"
+    },
+    {
+      "clip_id": "TC015",
+      "description": "Investor meetings and funding milestones",
+      "duration": "10s",
+      "location": "Investment setting",
+      "mood": "Successful, growing"
+    },
+    {
+      "clip_id": "TC016",
+      "description": "Patent filing and IP protection",
+      "duration": "8s",
+      "location": "Legal office",
+      "mood": "Protected, innovative"
+    },
+    {
+      "clip_id": "TC017",
+      "description": "Regulatory approval and compliance",
+      "duration": "10s",
+      "location": "Regulatory setting",
+      "mood": "Compliant, approved"
+    },
+    {
+      "clip_id": "TC018",
+      "description": "International expansion planning",
+      "duration": "12s",
+      "location": "Strategy meeting",
+      "mood": "Global, ambitious"
+    },
+    {
+      "clip_id": "TC019",
+      "description": "Community outreach and education",
+      "duration": "15s",
+      "location": "Community events",
+      "mood": "Giving, educational"
+    },
+    {
+      "clip_id": "TC020",
+      "description": "Sustainability initiatives and practices",
+      "duration": "12s",
+      "location": "Environmental setting",
+      "mood": "Responsible, conscious"
+    },
+    {
+      "clip_id": "TC021",
+      "description": "Employee wellness and company culture",
+      "duration": "15s",
+      "location": "Office environment",
+      "mood": "Positive, healthy"
+    },
+    {
+      "clip_id": "TC022",
+      "description": "Diversity and inclusion in team",
+      "duration": "12s",
+      "location": "Team settings",
+      "mood": "Inclusive, diverse"
+    },
+    {
+      "clip_id": "TC023",
+      "description": "Innovation lab and future development",
+      "duration": "15s",
+      "location": "Innovation lab",
+      "mood": "Cutting-edge, future"
+    },
+    {
+      "clip_id": "TC024",
+      "description": "Partnership announcements and collaborations",
+      "duration": "10s",
+      "location": "Partnership events",
+      "mood": "Connected, growing"
+    },
+    {
+      "clip_id": "TC025",
+      "description": "Vision for future of meditation technology",
+      "duration": "18s",
+      "location": "Visionary setting",
+      "mood": "Inspiring, forward-looking"
+    }
+  ],
+  "production_requirements": {
+    "total_shooting_days": 6,
+    "locations_needed": [
+      "Meditation studios",
+      "Home environments",
+      "Office spaces",
+      "Outdoor natural settings",
+      "Manufacturing facility",
+      "Research laboratory",
+      "Cultural/traditional spaces"
+    ],
+    "talent_requirements": [
+      "Diverse age groups (children to elderly)",
+      "Multiple cultural backgrounds",
+      "Various meditation experience levels",
+      "Professional meditation teachers",
+      "Healthcare practitioners",
+      "Corporate users"
+    ],
+    "equipment_specifications": [
+      "Multiple 4K cameras for coverage",
+      "Drone for outdoor/aerial shots",
+      "Macro lenses for product detail",
+      "Time-lapse equipment",
+      "Stabilization gear",
+      "Professional lighting kits",
+      "Audio equipment for ambient sound"
+    ],
+    "post_production_notes": {
+      "color_grading": "Consistent with ZenMirror brand colors (greens and oranges)",
+      "audio_treatment": "Natural ambient sounds, no music overlay for most clips",
+      "delivery_formats": [
+        "4K master files",
+        "1080p optimized for web",
+        "720p for mobile",
+        "Vertical crops for social media",
+        "Various aspect ratios for platform optimization"
+      ]
+    }
+  }
+}

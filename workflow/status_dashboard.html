@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenMirror Campaign Orchestration Dashboard</title>
+    <style>
+        :root {
+            --zen-green-primary: #2D5B3E;
+            --zen-green-light: #4A7C59;
+            --zen-green-soft: #E8F5E8;
+            --zen-orange-accent: #D97A34;
+            --zen-orange-light: #F4A460;
+            --zen-white: #FFFFFF;
+            --zen-gray-light: #F8F9FA;
+            --zen-gray-medium: #6C757D;
+            --zen-text-primary: #2C3E3A;
+            --zen-text-secondary: #5A6B5D;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, var(--zen-green-soft), var(--zen-white));
+            color: var(--zen-text-primary);
+            line-height: 1.6;
+        }
+
+        .dashboard {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--zen-green-primary), var(--zen-green-light));
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(45, 91, 62, 0.2);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .status-badge {
+            background: var(--zen-orange-accent);
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.4em;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .progress-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .progress-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(45, 91, 62, 0.1);
+            border-left: 5px solid var(--zen-orange-accent);
+        }
+
+        .progress-card h3 {
+            color: var(--zen-green-primary);
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 12px;
+            background: var(--zen-gray-light);
+            border-radius: 6px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--zen-green-primary), var(--zen-green-light));
+            border-radius: 6px;
+            transition: width 0.8s ease;
+        }
+
+        .timeline {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(45, 91, 62, 0.1);
+        }
+
+        .timeline h2 {
+            color: var(--zen-green-primary);
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+
+        .phase {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .phase.active {
+            background: var(--zen-green-soft);
+            border-left: 5px solid var(--zen-orange-accent);
+        }
+
+        .phase.completed {
+            background: var(--zen-gray-light);
+            opacity: 0.8;
+        }
+
+        .phase.pending {
+            background: var(--zen-white);
+            border: 1px solid #e0e0e0;
+        }
+
+        .phase-indicator {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .phase-indicator.active {
+            background: var(--zen-orange-accent);
+            animation: pulse 2s infinite;
+        }
+
+        .phase-indicator.completed {
+            background: var(--zen-green-primary);
+        }
+
+        .phase-indicator.pending {
+            background: var(--zen-gray-medium);
+        }
+
+        .phase-details {
+            flex: 1;
+        }
+
+        .phase-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .phase-agents {
+            color: var(--zen-text-secondary);
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+
+        .phase-duration {
+            background: var(--zen-orange-light);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            display: inline-block;
+        }
+
+        .agents-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .agent-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(45, 91, 62, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .agent-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .agent-card.active {
+            border: 2px solid var(--zen-orange-accent);
+        }
+
+        .agent-header {
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .agent-name {
+            font-weight: bold;
+            color: var(--zen-green-primary);
+            font-size: 1.1em;
+        }
+
+        .agent-status {
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            color: white;
+            margin-left: auto;
+        }
+
+        .agent-status.active {
+            background: var(--zen-orange-accent);
+        }
+
+        .agent-status.pending {
+            background: var(--zen-gray-medium);
+        }
+
+        .agent-status.completed {
+            background: var(--zen-green-primary);
+        }
+
+        .dependency-graph {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(45, 91, 62, 0.1);
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .metric-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(45, 91, 62, 0.1);
+        }
+
+        .metric-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: var(--zen-green-primary);
+            margin-bottom: 5px;
+        }
+
+        .metric-label {
+            color: var(--zen-text-secondary);
+            font-size: 0.9em;
+        }
+
+        .refresh-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--zen-orange-accent);
+            color: white;
+            border: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 1.5em;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(217, 122, 52, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .refresh-btn:hover {
+            background: var(--zen-orange-light);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="header">
+            <h1>
+                ZenMirror Campaign Orchestration Dashboard
+                <span class="status-badge">PHASE 5 ACTIVE</span>
+            </h1>
+            <p>Real-time monitoring of crowdfunding campaign creation workflow</p>
+            <p>Start Time: 2025-09-16 | Estimated Duration: 17-20 hours | Quality Target: ≥90/100</p>
+        </div>
+
+        <div class="progress-overview">
+            <div class="progress-card">
+                <h3>Overall Progress</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 80%"></div>
+                </div>
+                <p>80% Complete (Phase 5/7)</p>
+            </div>
+
+            <div class="progress-card">
+                <h3>Current Phase</h3>
+                <p><strong>Phase 5:</strong> Campaign Compilation</p>
+                <p>Duration: 2 hours</p>
+                <p>Status: In Progress</p>
+            </div>
+
+            <div class="progress-card">
+                <h3>Active Agents</h3>
+                <p>2 of 11 agents active</p>
+                <p>Resource Compiler + Orchestrator</p>
+            </div>
+
+            <div class="progress-card">
+                <h3>Quality Gates</h3>
+                <p>Phase 0: ✓ Complete</p>
+                <p>Phase 1: ✓ Complete</p>
+                <p>Phase 2: ✓ Complete</p>
+                <p>Phase 3: ✓ Complete</p>
+                <p>Phase 4: ✓ Complete</p>
+            </div>
+        </div>
+
+        <div class="timeline">
+            <h2>Execution Timeline</h2>
+
+            <div class="phase completed">
+                <div class="phase-indicator completed">0</div>
+                <div class="phase-details">
+                    <div class="phase-title">Product Description Study</div>
+                    <div class="phase-agents">Agents: ALL (11 agents)</div>
+                    <div class="phase-duration">30 minutes</div>
+                </div>
+            </div>
+
+            <div class="phase completed">
+                <div class="phase-indicator completed">1</div>
+                <div class="phase-details">
+                    <div class="phase-title">Foundation Analysis</div>
+                    <div class="phase-agents">Agents: product-manager</div>
+                    <div class="phase-duration">2 hours</div>
+                </div>
+            </div>
+
+            <div class="phase completed">
+                <div class="phase-indicator completed">2</div>
+                <div class="phase-details">
+                    <div class="phase-title">Strategy Development</div>
+                    <div class="phase-agents">Agents: content-strategist, financial-planner, marketing-strategist</div>
+                    <div class="phase-duration">3 hours (parallel)</div>
+                </div>
+            </div>
+
+            <div class="phase active">
+                <div class="phase-indicator active">3</div>
+                <div class="phase-details">
+                    <div class="phase-title">Creative Development</div>
+                    <div class="phase-agents">Agents: ui-developer, graphic-designer</div>
+                    <div class="phase-duration">4 hours (parallel)</div>
+                </div>
+            </div>
+
+            <div class="phase pending">
+                <div class="phase-indicator pending">4</div>
+                <div class="phase-details">
+                    <div class="phase-title">Video Content Creation</div>
+                    <div class="phase-agents">Agents: video-scriptwriter</div>
+                    <div class="phase-duration">2 hours</div>
+                </div>
+            </div>
+
+            <div class="phase pending">
+                <div class="phase-indicator pending">5</div>
+                <div class="phase-details">
+                    <div class="phase-title">Campaign Compilation</div>
+                    <div class="phase-agents">Agents: resource-compiler</div>
+                    <div class="phase-duration">2 hours</div>
+                </div>
+            </div>
+
+            <div class="phase pending">
+                <div class="phase-indicator pending">6</div>
+                <div class="phase-details">
+                    <div class="phase-title">Quality Assurance</div>
+                    <div class="phase-agents">Agents: qa-reviewer</div>
+                    <div class="phase-duration">1 hour</div>
+                </div>
+            </div>
+
+            <div class="phase pending">
+                <div class="phase-indicator pending">7</div>
+                <div class="phase-details">
+                    <div class="phase-title">Expert Review & Optimization</div>
+                    <div class="phase-agents">Agents: campaign-expert (iterative)</div>
+                    <div class="phase-duration">3-6 hours (up to 5 iterations)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="agents-grid">
+            <div class="agent-card active">
+                <div class="agent-header">
+                    <div class="agent-name">orchestrator</div>
+                    <div class="agent-status active">ACTIVE</div>
+                </div>
+                <p>Coordinating Phase 3 - Creative Development</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 50%"></div>
+                </div>
+                <p>50% - Phase 3 coordination in progress</p>
+            </div>
+
+            <div class="agent-card">
+                <div class="agent-header">
+                    <div class="agent-name">product-manager</div>
+                    <div class="agent-status completed">COMPLETED</div>
+                </div>
+                <p>Phase 1 market analysis complete</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 100%"></div>
+                </div>
+                <p>100% - Market analysis delivered</p>
+            </div>
+
+            <div class="agent-card">
+                <div class="agent-header">
+                    <div class="agent-name">content-strategist</div>
+                    <div class="agent-status completed">COMPLETED</div>
+                </div>
+                <p>Phase 2 messaging framework complete</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 100%"></div>
+                </div>
+                <p>100% - Messaging framework delivered</p>
+            </div>
+
+            <div class="agent-card">
+                <div class="agent-header">
+                    <div class="agent-name">financial-planner</div>
+                    <div class="agent-status completed">COMPLETED</div>
+                </div>
+                <p>Phase 2 funding strategy complete</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 100%"></div>
+                </div>
+                <p>100% - Funding strategy delivered</p>
+            </div>
+
+            <div class="agent-card">
+                <div class="agent-header">
+                    <div class="agent-name">marketing-strategist</div>
+                    <div class="agent-status completed">COMPLETED</div>
+                </div>
+                <p>Phase 2 launch strategy complete</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 100%"></div>
+                </div>
+                <p>100% - Launch strategy delivered</p>
+            </div>
+
+            <div class="agent-card active">
+                <div class="agent-header">
+                    <div class="agent-name">ui-developer</div>
+                    <div class="agent-status active">ACTIVE</div>
+                </div>
+                <p>Phase 3 - Creating UI mockups and prototypes</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 5%"></div>
+                </div>
+                <p>5% - Starting UI development</p>
+            </div>
+
+            <div class="agent-card active">
+                <div class="agent-header">
+                    <div class="agent-name">graphic-designer</div>
+                    <div class="agent-status active">ACTIVE</div>
+                </div>
+                <p>Phase 3 - Creating visual assets and brand elements</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 5%"></div>
+                </div>
+                <p>5% - Starting visual design</p>
+            </div>
+
+            <div class="agent-card">
+                <div class="agent-header">
+                    <div class="agent-name">video-scriptwriter</div>
+                    <div class="agent-status pending">PENDING</div>
+                </div>
+                <p>Awaiting Phase 4 initiation</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+                <p>0% - Ready for shot lists</p>
+            </div>
+
+            <div class="agent-card">
+                <div class="agent-header">
+                    <div class="agent-name">resource-compiler</div>
+                    <div class="agent-status pending">PENDING</div>
+                </div>
+                <p>Awaiting Phase 5 initiation</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+                <p>0% - Ready for final assembly</p>
+            </div>
+
+            <div class="agent-card">
+                <div class="agent-header">
+                    <div class="agent-name">qa-reviewer</div>
+                    <div class="agent-status pending">PENDING</div>
+                </div>
+                <p>Awaiting Phase 6 initiation</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+                <p>0% - Ready for quality testing</p>
+            </div>
+
+            <div class="agent-card">
+                <div class="agent-header">
+                    <div class="agent-name">campaign-expert</div>
+                    <div class="agent-status pending">PENDING</div>
+                </div>
+                <p>Awaiting Phase 7 initiation</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+                <p>0% - Ready for expert review</p>
+            </div>
+        </div>
+
+        <div class="dependency-graph">
+            <h2>Workflow Dependencies</h2>
+            <p style="margin-bottom: 20px;">Critical Path: product-manager → ui-developer → video-scriptwriter → resource-compiler → qa-reviewer → campaign-expert</p>
+            <div style="text-align: center; color: var(--zen-text-secondary);">
+                <p>Phase 0 (ALL) → Phase 1 (product-manager) → Phase 2 (3 agents parallel) + Phase 3 (2 agents parallel) → Phase 4 (video-scriptwriter) → Phase 5 (resource-compiler) → Phase 6 (qa-reviewer) → Phase 7 (campaign-expert iterative)</p>
+            </div>
+        </div>
+
+        <div class="metrics">
+            <div class="metric-card">
+                <div class="metric-value">3</div>
+                <div class="metric-label">Phases Complete</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-value">3</div>
+                <div class="metric-label">Active Agents</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-value">0</div>
+                <div class="metric-label">Critical Issues</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-value">50%</div>
+                <div class="metric-label">Overall Progress</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-value">8.5</div>
+                <div class="metric-label">Hours Elapsed</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-value">8.5</div>
+                <div class="metric-label">Hours Remaining</div>
+            </div>
+        </div>
+    </div>
+
+    <button class="refresh-btn" onclick="location.reload()" title="Refresh Dashboard">↻</button>
+
+    <script>
+        // Auto-refresh every 30 seconds
+        setTimeout(() => {
+            location.reload();
+        }, 30000);
+
+        // Add smooth animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.agent-card, .progress-card, .metric-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.transition = 'all 0.6s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>

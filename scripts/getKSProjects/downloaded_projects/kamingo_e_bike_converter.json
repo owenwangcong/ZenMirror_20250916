@@ -1,0 +1,57 @@
+{
+  "project_title": "Kamingo: Turn Any Bike into an E-bike in 10 Seconds",
+  "funding_goal": "CA$ 13,851",
+  "amount_raised": "CA$ 2,399,597",
+  "percentage_funded": "17321%",
+  "number_of_backers": 4268,
+  "category": "Technology > Hardware",
+  "main_features": [
+    "10-second installation without tools",
+    "750W peak power motor",
+    "Up to 55-mile range on single charge",
+    "Modular design fits 99% of bikes",
+    "Weatherproof construction (IP65 rating)",
+    "Removable battery pack for security",
+    "Smart app connectivity with GPS tracking",
+    "Regenerative braking system",
+    "Multiple power assist modes",
+    "Anti-theft alarm system",
+    "Quick-release mechanism",
+    "Universal wheel compatibility (20-29 inches)",
+    "Weight: 8.8 lbs (4kg) total system",
+    "Bluetooth 5.0 connectivity",
+    "LED display with speed and battery indicator"
+  ],
+  "reward_tiers": [
+    {
+      "name": "Super Early Bird Special",
+      "price": "CA$ 445 (65% OFF)",
+      "backers": "Limited quantity",
+      "includes": "Complete Kamingo e-bike converter kit with battery, charger, and installation tools"
+    },
+    {
+      "name": "Early Bird Special",
+      "price": "CA$ 535 (58% OFF)",
+      "backers": "Popular tier",
+      "includes": "Complete Kamingo e-bike converter kit with premium accessories"
+    },
+    {
+      "name": "Standard Kickstarter",
+      "price": "CA$ 625 (51% OFF)",
+      "backers": "Standard pricing",
+      "includes": "Kamingo converter, battery, charger, installation guide"
+    },
+    {
+      "name": "Dual Pack",
+      "price": "CA$ 1,150",
+      "backers": "Family option",
+      "includes": "Two complete Kamingo systems for couples/families"
+    },
+    {
+      "name": "Professional Pack",
+      "price": "CA$ 2,890",
+      "backers": "Business tier",
+      "includes": "Five Kamingo systems for bike sharing or rental businesses"
+    }
+  ]
+}

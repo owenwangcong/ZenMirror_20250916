@@ -1,0 +1,363 @@
+{
+  "html_image_mapping": {
+    "description": "Complete mapping of image references across all HTML files for ZenMirror campaign",
+    "files_to_update": [
+      "D:/Projects/ZenMirror_20250916/final_campaigns/indiegogo/index.html",
+      "D:/Projects/ZenMirror_20250916/final_campaigns/kickstarter/index.html",
+      "D:/Projects/ZenMirror_20250916/outputs/ui-developer/indiegogo_mockups/index.html",
+      "D:/Projects/ZenMirror_20250916/outputs/ui-developer/kickstarter_mockups/index.html"
+    ],
+    "image_references": {
+      "logo_and_branding": [
+        {
+          "current_path": "./assets/zenmirror-logo.svg",
+          "new_path": "./assets/zenmirror-logo.svg",
+          "locations": ["nav logo", "footer logo", "sticky CTA"],
+          "alt_text": "ZenMirror",
+          "generated_file": "zenmirror-logo.svg"
+        },
+        {
+          "current_path": "./assets/og-image.jpg",
+          "new_path": "./assets/og-image.jpg",
+          "locations": ["meta tags"],
+          "generated_file": "og-image.jpg"
+        }
+      ],
+      "hero_and_main_product": [
+        {
+          "current_path": "./assets/zenmirror-main.jpg",
+          "new_path": "./assets/zenmirror-main.jpg",
+          "locations": ["hero section main image"],
+          "alt_text": "ZenMirror Device",
+          "generated_file": "zenmirror-main.jpg"
+        },
+        {
+          "current_path": "./assets/zenmirror-hero.jpg",
+          "new_path": "./assets/zenmirror-hero.jpg",
+          "locations": ["kickstarter hero"],
+          "alt_text": "ZenMirror Device",
+          "generated_file": "zenmirror-hero.jpg"
+        }
+      ],
+      "gallery_images": [
+        {
+          "current_path": "./assets/gallery/setup-view.svg",
+          "new_path": "./assets/gallery/setup-view.svg",
+          "locations": ["hero thumbnails"],
+          "generated_file": "setup-view.svg"
+        },
+        {
+          "current_path": "./assets/gallery/app-interface.jpg",
+          "new_path": "./assets/gallery/app-interface.jpg",
+          "locations": ["hero thumbnails"],
+          "generated_file": "app-interface.jpg"
+        },
+        {
+          "current_path": "./assets/gallery/mentor-selection.jpg",
+          "new_path": "./assets/gallery/mentor-selection.jpg",
+          "locations": ["hero thumbnails"],
+          "generated_file": "mentor-selection.jpg"
+        },
+        {
+          "current_path": "./assets/gallery/data-visualization.jpg",
+          "new_path": "./assets/gallery/data-visualization.jpg",
+          "locations": ["hero thumbnails"],
+          "generated_file": "data-visualization.jpg"
+        },
+        {
+          "current_path": "./assets/gallery/product-front.jpg",
+          "new_path": "./assets/gallery/product-front.jpg",
+          "locations": ["product gallery"],
+          "generated_file": "product-front.jpg"
+        },
+        {
+          "current_path": "./assets/gallery/product-side.jpg",
+          "new_path": "./assets/gallery/product-side.jpg",
+          "locations": ["product gallery"],
+          "generated_file": "product-side.jpg"
+        },
+        {
+          "current_path": "./assets/gallery/product-detail.jpg",
+          "new_path": "./assets/gallery/product-detail.jpg",
+          "locations": ["product gallery"],
+          "generated_file": "product-detail.jpg"
+        },
+        {
+          "current_path": "./assets/gallery/product-packaging.jpg",
+          "new_path": "./assets/gallery/product-packaging.jpg",
+          "locations": ["product gallery"],
+          "generated_file": "product-packaging.jpg"
+        },
+        {
+          "current_path": "./assets/gallery/app-dashboard.jpg",
+          "new_path": "./assets/gallery/app-dashboard.jpg",
+          "locations": ["app interface gallery"],
+          "generated_file": "app-dashboard.jpg"
+        },
+        {
+          "current_path": "./assets/gallery/mentor-interface.jpg",
+          "new_path": "./assets/gallery/mentor-interface.jpg",
+          "locations": ["app interface gallery"],
+          "generated_file": "mentor-interface.jpg"
+        },
+        {
+          "current_path": "./assets/gallery/analytics-view.jpg",
+          "new_path": "./assets/gallery/analytics-view.jpg",
+          "locations": ["app interface gallery"],
+          "generated_file": "analytics-view.jpg"
+        },
+        {
+          "current_path": "./assets/gallery/achievements-view.jpg",
+          "new_path": "./assets/gallery/achievements-view.jpg",
+          "locations": ["app interface gallery"],
+          "generated_file": "achievements-view.jpg"
+        }
+      ],
+      "usage_scenarios": [
+        {
+          "current_path": "./assets/gallery/home-meditation.jpg",
+          "new_path": "./assets/gallery/home-meditation.jpg",
+          "locations": ["usage scenarios"],
+          "generated_file": "home-meditation.jpg"
+        },
+        {
+          "current_path": "./assets/gallery/studio-use.jpg",
+          "new_path": "./assets/gallery/studio-use.jpg",
+          "locations": ["usage scenarios"],
+          "generated_file": "studio-use.jpg"
+        },
+        {
+          "current_path": "./assets/gallery/office-meditation.jpg",
+          "new_path": "./assets/gallery/office-meditation.jpg",
+          "locations": ["usage scenarios"],
+          "generated_file": "office-meditation.jpg"
+        },
+        {
+          "current_path": "./assets/gallery/travel-setup.jpg",
+          "new_path": "./assets/gallery/travel-setup.jpg",
+          "locations": ["usage scenarios"],
+          "generated_file": "travel-setup.jpg"
+        }
+      ],
+      "technology_diagrams": [
+        {
+          "current_path": "./assets/tech/radar-visualization.jpg",
+          "new_path": "./assets/tech/radar-visualization.jpg",
+          "locations": ["technology section"],
+          "generated_file": "radar-visualization.jpg"
+        },
+        {
+          "current_path": "./assets/tech-diagram.svg",
+          "new_path": "./assets/tech-diagram.svg",
+          "locations": ["technology section"],
+          "generated_file": "tech-diagram.svg"
+        },
+        {
+          "current_path": "./assets/closed-loop-diagram.svg",
+          "new_path": "./assets/closed-loop-diagram.svg",
+          "locations": ["technology section"],
+          "generated_file": "closed-loop-diagram.svg"
+        }
+      ],
+      "mentor_portraits": [
+        {
+          "current_path": "./assets/mentors/zen-master-detailed.jpg",
+          "new_path": "./assets/mentors/zen-master-detailed.jpg",
+          "locations": ["mentor profiles"],
+          "generated_file": "zen-master-detailed.jpg"
+        },
+        {
+          "current_path": "./assets/mentors/yogi-master.jpg",
+          "new_path": "./assets/mentors/yogi-master.jpg",
+          "locations": ["mentor profiles"],
+          "generated_file": "yogi-master.jpg"
+        },
+        {
+          "current_path": "./assets/mentors/chaplain.jpg",
+          "new_path": "./assets/mentors/chaplain.jpg",
+          "locations": ["mentor profiles"],
+          "generated_file": "chaplain.jpg"
+        },
+        {
+          "current_path": "./assets/mentors/spiritual-guide.jpg",
+          "new_path": "./assets/mentors/spiritual-guide.jpg",
+          "locations": ["mentor profiles"],
+          "generated_file": "spiritual-guide.jpg"
+        },
+        {
+          "current_path": "./assets/mentors/stoic-philosopher.jpg",
+          "new_path": "./assets/mentors/stoic-philosopher.jpg",
+          "locations": ["mentor profiles"],
+          "generated_file": "stoic-philosopher.jpg"
+        },
+        {
+          "current_path": "./assets/mentors/vedanta-acharya.jpg",
+          "new_path": "./assets/mentors/vedanta-acharya.jpg",
+          "locations": ["mentor profiles"],
+          "generated_file": "vedanta-acharya.jpg"
+        },
+        {
+          "current_path": "./assets/mentors/zen-master.jpg",
+          "new_path": "./assets/mentors/zen-master.jpg",
+          "locations": ["mentor grid - kickstarter"],
+          "generated_file": "zen-master.jpg"
+        },
+        {
+          "current_path": "./assets/mentors/yogi.jpg",
+          "new_path": "./assets/mentors/yogi.jpg",
+          "locations": ["mentor grid - kickstarter"],
+          "generated_file": "yogi.jpg"
+        },
+        {
+          "current_path": "./assets/mentors/spiritual-mentor.jpg",
+          "new_path": "./assets/mentors/spiritual-mentor.jpg",
+          "locations": ["mentor grid - kickstarter"],
+          "generated_file": "spiritual-mentor.jpg"
+        },
+        {
+          "current_path": "./assets/mentors/stoic.jpg",
+          "new_path": "./assets/mentors/stoic.jpg",
+          "locations": ["mentor grid - kickstarter"],
+          "generated_file": "stoic.jpg"
+        },
+        {
+          "current_path": "./assets/mentors/vedanta.jpg",
+          "new_path": "./assets/mentors/vedanta.jpg",
+          "locations": ["mentor grid - kickstarter"],
+          "generated_file": "vedanta.jpg"
+        }
+      ],
+      "story_narrative": [
+        {
+          "current_path": "./assets/story/traditional-problems.jpg",
+          "new_path": "./assets/story/traditional-problems.jpg",
+          "locations": ["story section"],
+          "generated_file": "traditional-problems.jpg"
+        },
+        {
+          "current_path": "./assets/story/zenmirror-solution.jpg",
+          "new_path": "./assets/story/zenmirror-solution.jpg",
+          "locations": ["story section"],
+          "generated_file": "zenmirror-solution.jpg"
+        },
+        {
+          "current_path": "./assets/story/cultural-mentors.jpg",
+          "new_path": "./assets/story/cultural-mentors.jpg",
+          "locations": ["story section"],
+          "generated_file": "cultural-mentors.jpg"
+        }
+      ],
+      "video_thumbnails": [
+        {
+          "current_path": "./assets/videos/hero-demo-thumb.jpg",
+          "new_path": "./assets/videos/hero-demo-thumb.jpg",
+          "locations": ["video gallery"],
+          "generated_file": "hero-demo-thumb.jpg"
+        },
+        {
+          "current_path": "./assets/videos/tech-demo-thumb.jpg",
+          "new_path": "./assets/videos/tech-demo-thumb.jpg",
+          "locations": ["video gallery"],
+          "generated_file": "tech-demo-thumb.jpg"
+        },
+        {
+          "current_path": "./assets/videos/mentor-demo-thumb.jpg",
+          "new_path": "./assets/videos/mentor-demo-thumb.jpg",
+          "locations": ["video gallery"],
+          "generated_file": "mentor-demo-thumb.jpg"
+        },
+        {
+          "current_path": "./assets/videos/setup-guide-thumb.jpg",
+          "new_path": "./assets/videos/setup-guide-thumb.jpg",
+          "locations": ["video gallery"],
+          "generated_file": "setup-guide-thumb.jpg"
+        },
+        {
+          "current_path": "./assets/videos/user-stories-thumb.jpg",
+          "new_path": "./assets/videos/user-stories-thumb.jpg",
+          "locations": ["video gallery"],
+          "generated_file": "user-stories-thumb.jpg"
+        },
+        {
+          "current_path": "./assets/videos/comparison-thumb.jpg",
+          "new_path": "./assets/videos/comparison-thumb.jpg",
+          "locations": ["video gallery"],
+          "generated_file": "comparison-thumb.jpg"
+        },
+        {
+          "current_path": "./assets/video-thumbnail.jpg",
+          "new_path": "./assets/video-thumbnail.jpg",
+          "locations": ["kickstarter video section"],
+          "generated_file": "video-thumbnail.jpg"
+        }
+      ],
+      "icons_and_symbols": [
+        {
+          "current_path": "./assets/icons/hrv-research.svg",
+          "new_path": "./assets/icons/hrv-research.svg",
+          "locations": ["research section"],
+          "generated_file": "hrv-research.svg"
+        },
+        {
+          "current_path": "./assets/icons/meditation-research.svg",
+          "new_path": "./assets/icons/meditation-research.svg",
+          "locations": ["research section"],
+          "generated_file": "meditation-research.svg"
+        },
+        {
+          "current_path": "./assets/icons/rsa-research.svg",
+          "new_path": "./assets/icons/rsa-research.svg",
+          "locations": ["research section"],
+          "generated_file": "rsa-research.svg"
+        },
+        {
+          "current_path": "./assets/icons/radar-waves.svg",
+          "new_path": "./assets/icons/radar-waves.svg",
+          "locations": ["tech features"],
+          "generated_file": "radar-waves.svg"
+        },
+        {
+          "current_path": "./assets/icons/heart-monitoring.svg",
+          "new_path": "./assets/icons/heart-monitoring.svg",
+          "locations": ["tech features"],
+          "generated_file": "heart-monitoring.svg"
+        },
+        {
+          "current_path": "./assets/icons/privacy-shield.svg",
+          "new_path": "./assets/icons/privacy-shield.svg",
+          "locations": ["tech features"],
+          "generated_file": "privacy-shield.svg"
+        }
+      ],
+      "updates_and_manufacturing": [
+        {
+          "current_path": "./assets/updates/manufacturing-facility.jpg",
+          "new_path": "./assets/updates/manufacturing-facility.jpg",
+          "locations": ["updates section"],
+          "generated_file": "manufacturing-facility.jpg"
+        }
+      ],
+      "comparison_graphics": [
+        {
+          "current_path": "./assets/traditional-wearables.jpg",
+          "new_path": "./assets/traditional-wearables.jpg",
+          "locations": ["comparison section"],
+          "generated_file": "traditional-wearables.jpg"
+        },
+        {
+          "current_path": "./assets/zenmirror-setup.jpg",
+          "new_path": "./assets/zenmirror-setup.jpg",
+          "locations": ["comparison section"],
+          "generated_file": "zenmirror-setup.jpg"
+        }
+      ]
+    },
+    "total_graphics_count": 52,
+    "priority_levels": {
+      "critical": ["logo", "hero images", "main product shots"],
+      "high": ["mentor portraits", "app interfaces", "technology diagrams"],
+      "medium": ["gallery images", "video thumbnails", "comparison graphics"],
+      "low": ["icons", "supporting graphics", "background elements"]
+    }
+  }
+}

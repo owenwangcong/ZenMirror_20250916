@@ -1,0 +1,769 @@
+{
+  "production_schedule": {
+    "project_info": {
+      "project_name": "ZenMirror Crowdfunding Campaign Video Production",
+      "total_duration": "14 days",
+      "start_date": "2025-03-20",
+      "completion_date": "2025-04-02",
+      "total_budget_estimate": "$75,000",
+      "team_size": "12 core members + 15 talent/extras"
+    },
+    "phases": {
+      "pre_production": {
+        "duration": "5 days",
+        "dates": "2025-03-20 to 2025-03-24",
+        "budget_allocation": "$15,000",
+        "daily_breakdown": {
+          "day_1": {
+            "date": "2025-03-20",
+            "focus": "Project Planning & Team Assembly",
+            "activities": [
+              {
+                "time": "09:00-10:30",
+                "activity": "Project kickoff meeting",
+                "participants": ["Director", "Producer", "Creative Director", "ZenMirror Founder"],
+                "deliverable": "Creative brief finalization"
+              },
+              {
+                "time": "10:30-12:00",
+                "activity": "Script review and shot list confirmation",
+                "participants": ["Director", "Scriptwriter", "Producer"],
+                "deliverable": "Final script approval and shot list validation"
+              },
+              {
+                "time": "13:00-15:00",
+                "activity": "Location scouting planning",
+                "participants": ["Location Manager", "Director", "Cinematographer"],
+                "deliverable": "Location requirement list and scouting schedule"
+              },
+              {
+                "time": "15:00-17:00",
+                "activity": "Casting requirements and talent search initiation",
+                "participants": ["Casting Director", "Director", "Producer"],
+                "deliverable": "Talent requirements document and casting timeline"
+              }
+            ],
+            "key_decisions": [
+              "Hero video narrative structure confirmation",
+              "Primary location types identification",
+              "Talent diversity and authenticity requirements"
+            ]
+          },
+          "day_2": {
+            "date": "2025-03-21",
+            "focus": "Location Scouting & Cultural Consulting",
+            "activities": [
+              {
+                "time": "08:00-12:00",
+                "activity": "Primary location scouting",
+                "participants": ["Location Manager", "Director", "Cinematographer"],
+                "locations": [
+                  "Modern apartment bedroom for home meditation",
+                  "Professional meditation studio for group scenes",
+                  "Office environment for work mode demonstration",
+                  "Natural outdoor setting for mentor cultural contexts"
+                ],
+                "deliverable": "Location photos, technical requirements, rental agreements"
+              },
+              {
+                "time": "13:00-15:00",
+                "activity": "Cultural consultant meetings",
+                "participants": ["Cultural Consultants (6)", "Director", "Scriptwriter"],
+                "focus": "Mentor personality authenticity review",
+                "deliverable": "Cultural authenticity approval and guidance notes"
+              },
+              {
+                "time": "15:00-17:00",
+                "activity": "Equipment requirements and rental coordination",
+                "participants": ["Cinematographer", "Audio Engineer", "Producer"],
+                "deliverable": "Equipment list, rental quotes, delivery schedule"
+              }
+            ],
+            "cultural_consultants": [
+              "Zen Buddhism: Lama Tenzin Norbu",
+              "Classical Yoga: Swami Pranavananda",
+              "Christian Contemplation: Father Michael Chen",
+              "Universal Spirituality: Dr. Sarah Blackwood",
+              "Stoic Philosophy: Prof. Marcus Aurelius-Smith",
+              "Vedanta: Acharya Vedanta Das"
+            ]
+          },
+          "day_3": {
+            "date": "2025-03-22",
+            "focus": "Talent Casting & Equipment Preparation",
+            "activities": [
+              {
+                "time": "09:00-12:00",
+                "activity": "Primary talent casting sessions",
+                "participants": ["Casting Director", "Director", "Cultural Consultants"],
+                "roles_casting": [
+                  "ZenMirror Founder (self)",
+                  "Beta users for testimonials (4 diverse individuals)",
+                  "Meditation expert/teacher",
+                  "Primary demonstration practitioners (6 different cultural backgrounds)",
+                  "Lifestyle integration talent (family, professional, student)"
+                ],
+                "deliverable": "Talent selection and contract negotiations"
+              },
+              {
+                "time": "13:00-15:00",
+                "activity": "Equipment delivery and technical setup",
+                "participants": ["Cinematographer", "Audio Engineer", "Gaffer", "Technical Coordinator"],
+                "equipment_categories": [
+                  "4K cameras (3 primary, 2 backup)",
+                  "Professional lighting kit",
+                  "Audio recording equipment",
+                  "Stabilization gear (gimbals, tripods)",
+                  "Macro lenses for product shots"
+                ],
+                "deliverable": "Equipment inventory and technical readiness confirmation"
+              },
+              {
+                "time": "15:00-17:00",
+                "activity": "Wardrobe and prop preparation",
+                "participants": ["Wardrobe Stylist", "Props Master", "Director"],
+                "deliverable": "Wardrobe selections and prop acquisition list"
+              }
+            ]
+          },
+          "day_4": {
+            "date": "2025-03-23",
+            "focus": "Technical Rehearsals & Final Preparations",
+            "activities": [
+              {
+                "time": "09:00-12:00",
+                "activity": "Technical lighting and camera tests",
+                "participants": ["Cinematographer", "Gaffer", "Technical Coordinator"],
+                "test_scenarios": [
+                  "Product beauty shots with optimal lighting",
+                  "Meditation scene ambiance testing",
+                  "Screen recording clarity verification",
+                  "Cultural setting authenticity review"
+                ],
+                "deliverable": "Technical setup standards and lighting plots"
+              },
+              {
+                "time": "13:00-15:00",
+                "activity": "Talent rehearsals and direction",
+                "participants": ["Director", "Selected Talent", "Cultural Consultants"],
+                "rehearsal_focus": [
+                  "Founder message delivery and authenticity",
+                  "Testimonial natural delivery coaching",
+                  "Meditation demonstration guidance",
+                  "Cultural mentor representation accuracy"
+                ],
+                "deliverable": "Talent direction notes and performance optimization"
+              },
+              {
+                "time": "15:00-17:00",
+                "activity": "Final production meeting and schedule confirmation",
+                "participants": ["Full Production Team"],
+                "deliverable": "Final shooting schedule and contingency plans"
+              }
+            ]
+          },
+          "day_5": {
+            "date": "2025-03-24",
+            "focus": "Pre-Production Wrap & Production Readiness",
+            "activities": [
+              {
+                "time": "09:00-11:00",
+                "activity": "Final location setup and dressing",
+                "participants": ["Location Manager", "Props Master", "Set Decorator"],
+                "deliverable": "Locations ready for filming"
+              },
+              {
+                "time": "11:00-13:00",
+                "activity": "Equipment final check and transport",
+                "participants": ["Technical Coordinator", "Cinematographer", "Audio Engineer"],
+                "deliverable": "All equipment ready and transported to primary location"
+              },
+              {
+                "time": "14:00-16:00",
+                "activity": "Team briefing and safety meeting",
+                "participants": ["Full Production Team", "Safety Coordinator"],
+                "deliverable": "Safety protocols confirmed, emergency procedures reviewed"
+              },
+              {
+                "time": "16:00-17:00",
+                "activity": "Final script read-through and timing",
+                "participants": ["Director", "Scriptwriter", "Key Talent"],
+                "deliverable": "Final script timing and delivery optimization"
+              }
+            ]
+          }
+        }
+      },
+      "principal_photography": {
+        "duration": "6 days",
+        "dates": "2025-03-25 to 2025-03-30",
+        "budget_allocation": "$35,000",
+        "daily_breakdown": {
+          "day_6": {
+            "date": "2025-03-25",
+            "focus": "Product Beauty Shots & Technology Demonstrations",
+            "location": "Professional Product Studio",
+            "crew_call": "07:00",
+            "estimated_wrap": "19:00",
+            "shot_list_sections": [
+              "Opening sequence (shots 001-004)",
+              "Product introduction (shots 005-012)",
+              "Technology demonstration (shots 047-049)",
+              "Device close-ups (shots 029-032)"
+            ],
+            "activities": [
+              {
+                "time": "07:00-08:00",
+                "activity": "Crew call and equipment setup",
+                "participants": ["Full Production Crew"],
+                "deliverable": "Studio ready for filming"
+              },
+              {
+                "time": "08:00-10:30",
+                "activity": "ZenMirror device beauty shots",
+                "shots": ["004", "029", "030", "031", "032"],
+                "setup": "360-degree rotation platform, natural bamboo surface",
+                "lighting": "Clean product lighting with natural shadows",
+                "deliverable": "Complete product beauty shot coverage"
+              },
+              {
+                "time": "10:30-12:30",
+                "activity": "Technology demonstration sequences",
+                "shots": ["006", "007", "047", "048"],
+                "setup": "Radar wave visualization overlay preparation",
+                "special_requirements": "Motion graphics coordination",
+                "deliverable": "Technology demonstration base footage"
+              },
+              {
+                "time": "13:30-16:00",
+                "activity": "App interface and data visualization",
+                "shots": ["007", "015", "016", "017"],
+                "setup": "Smartphone screen recording with optimal visibility",
+                "technical_requirements": "Screen replacement preparation",
+                "deliverable": "App interface demonstration footage"
+              },
+              {
+                "time": "16:00-18:30",
+                "activity": "Comparison sequences and problem visualization",
+                "shots": ["001", "002", "026", "028"],
+                "setup": "Cluttered device setup vs clean ZenMirror setup",
+                "props": "Traditional wearable devices, cables, charging stations",
+                "deliverable": "Before/after comparison footage"
+              }
+            ]
+          },
+          "day_7": {
+            "date": "2025-03-26",
+            "focus": "Meditation Demonstrations & Lifestyle Integration",
+            "location": "Meditation Studio & Modern Apartment",
+            "crew_call": "06:30",
+            "estimated_wrap": "20:00",
+            "shot_list_sections": [
+              "Meditation practice demonstrations",
+              "Lifestyle integration scenarios",
+              "Setup demonstration sequences"
+            ],
+            "activities": [
+              {
+                "time": "06:30-07:30",
+                "activity": "Location setup and lighting preparation",
+                "location": "Meditation Studio",
+                "deliverable": "Studio ready for group meditation scenes"
+              },
+              {
+                "time": "07:30-10:00",
+                "activity": "Group meditation studio scenes",
+                "shots": ["005", "040", "074"],
+                "talent": "6 diverse practitioners, meditation instructor",
+                "setup": "Authentic meditation studio environment",
+                "deliverable": "Group meditation demonstration footage"
+              },
+              {
+                "time": "10:00-12:00",
+                "activity": "Individual meditation demonstrations",
+                "shots": ["003", "037", "038"],
+                "talent": "Primary demonstration practitioners",
+                "setup": "Home bedroom and living room settings",
+                "deliverable": "Individual practice demonstration footage"
+              },
+              {
+                "time": "13:00-15:30",
+                "activity": "Setup and installation demonstration",
+                "shots": ["033", "034", "035", "036"],
+                "talent": "Setup demonstration user",
+                "setup": "Step-by-step setup process",
+                "deliverable": "Complete setup tutorial footage"
+              },
+              {
+                "time": "15:30-18:00",
+                "activity": "Work mode and study mode demonstrations",
+                "shots": ["020", "021", "039"],
+                "locations": "Office environment, study space",
+                "talent": "Professional worker, student",
+                "deliverable": "Multi-mode functionality footage"
+              },
+              {
+                "time": "18:00-19:30",
+                "activity": "Family and accessibility demonstrations",
+                "shots": ["008", "077"],
+                "talent": "Family members, accessibility users",
+                "setup": "Inclusive practice demonstration",
+                "deliverable": "Inclusive usage footage"
+              }
+            ]
+          },
+          "day_8": {
+            "date": "2025-03-27",
+            "focus": "Mentor Personality Demonstrations & Cultural Authenticity",
+            "location": "Various Cultural Settings",
+            "crew_call": "07:00",
+            "estimated_wrap": "19:00",
+            "shot_list_sections": [
+              "Six mentor personality demonstrations",
+              "Cultural context and authenticity scenes",
+              "Voice sample recording coordination"
+            ],
+            "activities": [
+              {
+                "time": "07:00-08:30",
+                "activity": "Zen Master cultural setting",
+                "shots": ["009", "054"],
+                "location": "Traditional Zen garden/temple setting",
+                "talent": "Asian practitioner with Zen background",
+                "cultural_consultant": "Lama Tenzin Norbu",
+                "props": "Bamboo elements, stone garden, natural setting",
+                "deliverable": "Zen Master cultural authenticity footage"
+              },
+              {
+                "time": "08:30-10:00",
+                "activity": "Yogi demonstration and energy flow",
+                "shots": ["010", "055"],
+                "location": "Yoga studio with natural outdoor access",
+                "talent": "Indian practitioner with yoga background",
+                "cultural_consultant": "Swami Pranavananda",
+                "props": "Yoga mat, natural fiber textures, plants",
+                "special_effects": "Energy flow visualization preparation",
+                "deliverable": "Yogi cultural authenticity footage"
+              },
+              {
+                "time": "10:00-11:30",
+                "activity": "Chaplain spiritual setting",
+                "shots": ["011"],
+                "location": "Peaceful spiritual space",
+                "talent": "Multi-ethnic practitioner",
+                "cultural_consultant": "Father Michael Chen",
+                "props": "Universal spiritual symbols, candles",
+                "deliverable": "Chaplain cultural authenticity footage"
+              },
+              {
+                "time": "12:30-14:00",
+                "activity": "Spiritual Mentor empowerment setting",
+                "shots": ["012"],
+                "location": "Modern spiritual space",
+                "talent": "Diverse practitioner",
+                "cultural_consultant": "Dr. Sarah Blackwood",
+                "props": "Crystals, diverse spiritual symbols",
+                "deliverable": "Spiritual Mentor cultural authenticity footage"
+              },
+              {
+                "time": "14:00-15:30",
+                "activity": "Stoic Philosopher rational setting",
+                "shots": ["013"],
+                "location": "Study/library with classical elements",
+                "talent": "Western practitioner",
+                "cultural_consultant": "Prof. Marcus Aurelius-Smith",
+                "props": "Books, classical columns, architectural elements",
+                "deliverable": "Stoic Philosopher cultural authenticity footage"
+              },
+              {
+                "time": "15:30-17:00",
+                "activity": "Vedanta Acharya traditional setting",
+                "shots": ["014", "056"],
+                "location": "Traditional Indian spiritual setting",
+                "talent": "Indian practitioner",
+                "cultural_consultant": "Acharya Vedanta Das",
+                "props": "Om symbols, traditional patterns, authentic cultural elements",
+                "deliverable": "Vedanta Acharya cultural authenticity footage"
+              },
+              {
+                "time": "17:00-18:30",
+                "activity": "Voice sample recording session",
+                "participants": ["Audio Engineer", "Cultural Consultants", "Voice Talent"],
+                "recordings": "Mentor guidance samples for each personality",
+                "deliverable": "High-quality mentor voice samples"
+              }
+            ]
+          },
+          "day_9": {
+            "date": "2025-03-28",
+            "focus": "Testimonials & Expert Validation",
+            "location": "Various Personal & Professional Settings",
+            "crew_call": "08:00",
+            "estimated_wrap": "18:00",
+            "shot_list_sections": [
+              "Beta user testimonials",
+              "Expert validation interviews",
+              "Community and social proof content"
+            ],
+            "activities": [
+              {
+                "time": "08:00-10:30",
+                "activity": "Beta user testimonial 1 - Personal transformation",
+                "shots": ["024"],
+                "location": "Beta user's authentic home meditation space",
+                "talent": "Sarah M. - 3-year beta user",
+                "setup": "Natural, authentic home environment",
+                "interview_focus": "Personal practice transformation",
+                "deliverable": "Authentic user transformation testimonial"
+              },
+              {
+                "time": "10:30-13:00",
+                "activity": "Beta user testimonial 2 - Objective feedback benefits",
+                "shots": ["025"],
+                "location": "Second beta user's personal space",
+                "talent": "David L. - Meditation teacher and beta user",
+                "setup": "Professional yet personal environment",
+                "interview_focus": "Objective feedback and teaching benefits",
+                "deliverable": "Professional user testimonial"
+              },
+              {
+                "time": "14:00-16:00",
+                "activity": "Expert validation interview",
+                "shots": ["023"],
+                "location": "Professional meditation center or office",
+                "talent": "Dr. Michael Chen - Mindfulness Research Institute",
+                "setup": "Professional interview environment",
+                "interview_focus": "Scientific credibility and cultural authenticity",
+                "deliverable": "Expert validation and credibility content"
+              },
+              {
+                "time": "16:00-17:30",
+                "activity": "Studio owner professional testimonial",
+                "shots": ["044"],
+                "location": "Meditation studio professional setting",
+                "talent": "Maya P. - Studio owner",
+                "setup": "Professional studio environment",
+                "interview_focus": "Professional use benefits and student progress",
+                "deliverable": "Professional application testimonial"
+              }
+            ]
+          },
+          "day_10": {
+            "date": "2025-03-29",
+            "focus": "Founder Message & Community Content",
+            "location": "ZenMirror Office & Community Settings",
+            "crew_call": "08:00",
+            "estimated_wrap": "17:00",
+            "shot_list_sections": [
+              "Founder personal message",
+              "Community and global connection content",
+              "Campaign urgency and value proposition"
+            ],
+            "activities": [
+              {
+                "time": "08:00-11:00",
+                "activity": "Founder personal message and mission",
+                "shots": ["068"],
+                "location": "Founder's personal meditation space",
+                "talent": "Dr. Sarah Chen - ZenMirror Founder",
+                "setup": "Authentic, personal meditation environment",
+                "interview_preparation": "Mission passion, technology vision, community impact",
+                "deliverable": "Founder personal connection and mission content"
+              },
+              {
+                "time": "11:00-13:30",
+                "activity": "Global community and diversity content",
+                "shots": ["066"],
+                "location": "Multiple diverse settings",
+                "talent": "Diverse practitioners from different cultural backgrounds",
+                "setup": "Global community representation",
+                "focus": "Cultural diversity and universal meditation practice",
+                "deliverable": "Global community and diversity content"
+              },
+              {
+                "time": "14:30-16:30",
+                "activity": "Campaign visualization and urgency content",
+                "shots": ["063", "064", "065"],
+                "location": "Studio with campaign visualization setup",
+                "setup": "Funding progress, early bird urgency, reward tiers",
+                "graphics_coordination": "Campaign progress animations",
+                "deliverable": "Campaign urgency and value proposition content"
+              }
+            ]
+          },
+          "day_11": {
+            "date": "2025-03-30",
+            "focus": "B-Roll Collection & Supplementary Content",
+            "location": "Various Natural & Lifestyle Settings",
+            "crew_call": "07:00",
+            "estimated_wrap": "19:00",
+            "shot_list_sections": [
+              "Nature and environment B-roll",
+              "Lifestyle integration B-roll",
+              "Emotional transformation B-roll"
+            ],
+            "activities": [
+              {
+                "time": "07:00-10:00",
+                "activity": "Natural environment B-roll collection",
+                "shots": "nat_b001 through nat_b010",
+                "locations": "Various natural settings (sunrise, forest, ocean, mountain)",
+                "setup": "Natural lighting, peaceful environments",
+                "focus": "Meditation-conducive natural settings",
+                "deliverable": "Complete natural environment B-roll collection"
+              },
+              {
+                "time": "10:00-13:00",
+                "activity": "Lifestyle integration B-roll",
+                "shots": "life_b001 through life_b030",
+                "locations": "Various home and professional environments",
+                "setup": "Authentic lifestyle integration scenarios",
+                "focus": "Daily life meditation practice integration",
+                "deliverable": "Comprehensive lifestyle integration B-roll"
+              },
+              {
+                "time": "14:00-17:00",
+                "activity": "Emotional transformation and meditation practice B-roll",
+                "shots": "med_b001 through med_b032, emot_b001 through emot_b024",
+                "locations": "Various meditation and personal growth settings",
+                "setup": "Authentic emotional and practice transformation",
+                "focus": "Personal growth and meditation authenticity",
+                "deliverable": "Emotional transformation and practice B-roll"
+              },
+              {
+                "time": "17:00-18:30",
+                "activity": "Technology and innovation B-roll",
+                "shots": "tech_b001 through tech_b028",
+                "locations": "Laboratory, office, technical environments",
+                "setup": "Technology credibility and innovation emphasis",
+                "focus": "Scientific backing and technical sophistication",
+                "deliverable": "Technology innovation B-roll collection"
+              }
+            ]
+          }
+        }
+      },
+      "post_production": {
+        "duration": "3 days",
+        "dates": "2025-03-31 to 2025-04-02",
+        "budget_allocation": "$25,000",
+        "daily_breakdown": {
+          "day_12": {
+            "date": "2025-03-31",
+            "focus": "Rough Cut Assembly & Initial Edit",
+            "activities": [
+              {
+                "time": "09:00-12:00",
+                "activity": "Footage ingestion and organization",
+                "participants": ["Editor", "Assistant Editor", "Data Manager"],
+                "deliverable": "All footage organized and backed up"
+              },
+              {
+                "time": "13:00-18:00",
+                "activity": "Rough cut assembly following script timing",
+                "participants": ["Editor", "Director"],
+                "deliverable": "First rough cut at target 2:45 duration"
+              }
+            ]
+          },
+          "day_13": {
+            "date": "2025-04-01",
+            "focus": "Color Grading, Audio Mixing & Graphics Integration",
+            "activities": [
+              {
+                "time": "09:00-12:00",
+                "activity": "Color grading and visual consistency",
+                "participants": ["Colorist", "Director", "Cinematographer"],
+                "deliverable": "Color-corrected and graded footage"
+              },
+              {
+                "time": "13:00-16:00",
+                "activity": "Audio mixing and sound design",
+                "participants": ["Audio Engineer", "Sound Designer", "Director"],
+                "deliverable": "Professional audio mix with music and sound design"
+              },
+              {
+                "time": "16:00-18:00",
+                "activity": "Motion graphics and animation integration",
+                "participants": ["Motion Graphics Artist", "Editor"],
+                "deliverable": "Radar visualizations, UI animations, and graphics integrated"
+              }
+            ]
+          },
+          "day_14": {
+            "date": "2025-04-02",
+            "focus": "Final Cut & Delivery Preparation",
+            "activities": [
+              {
+                "time": "09:00-12:00",
+                "activity": "Final cut refinement and timing optimization",
+                "participants": ["Editor", "Director", "Producer"],
+                "deliverable": "Locked final cut"
+              },
+              {
+                "time": "13:00-15:00",
+                "activity": "Quality review and approval",
+                "participants": ["Full Creative Team", "ZenMirror Founder"],
+                "deliverable": "Final approval and sign-off"
+              },
+              {
+                "time": "15:00-17:00",
+                "activity": "Multiple format rendering and delivery preparation",
+                "participants": ["Editor", "Technical Coordinator"],
+                "deliverable": "4K, 1080p, 720p, and platform-specific versions"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "resource_allocation": {
+      "crew_positions": {
+        "director": {
+          "name": "TBD - Experienced wellness/technology director",
+          "daily_rate": "$2,000",
+          "total_days": 14,
+          "responsibilities": ["Creative vision", "Talent direction", "Overall production leadership"]
+        },
+        "producer": {
+          "name": "TBD - Crowdfunding campaign specialist",
+          "daily_rate": "$1,500",
+          "total_days": 14,
+          "responsibilities": ["Budget management", "Schedule coordination", "Vendor management"]
+        },
+        "cinematographer": {
+          "name": "TBD - Product and lifestyle specialist",
+          "daily_rate": "$1,800",
+          "total_days": 10,
+          "responsibilities": ["Camera operation", "Lighting design", "Visual quality"]
+        },
+        "audio_engineer": {
+          "name": "TBD - Documentary audio specialist",
+          "daily_rate": "$800",
+          "total_days": 8,
+          "responsibilities": ["Location audio", "Interview recording", "Audio quality"]
+        },
+        "editor": {
+          "name": "TBD - Campaign video specialist",
+          "daily_rate": "$1,200",
+          "total_days": 6,
+          "responsibilities": ["Rough cut", "Final cut", "Delivery preparation"]
+        }
+      },
+      "equipment_rental": {
+        "camera_package": {
+          "items": ["3x Sony FX9 cameras", "Lenses", "Memory cards", "Batteries"],
+          "daily_rate": "$800",
+          "total_days": 6,
+          "total_cost": "$4,800"
+        },
+        "lighting_package": {
+          "items": ["LED panels", "Softboxes", "Stands", "Modifiers"],
+          "daily_rate": "$400",
+          "total_days": 6,
+          "total_cost": "$2,400"
+        },
+        "audio_package": {
+          "items": ["Wireless mics", "Boom mic", "Audio recorder", "Accessories"],
+          "daily_rate": "$200",
+          "total_days": 6,
+          "total_cost": "$1,200"
+        }
+      },
+      "location_costs": {
+        "meditation_studio": {
+          "daily_rate": "$500",
+          "days": 2,
+          "total": "$1,000"
+        },
+        "product_studio": {
+          "daily_rate": "$800",
+          "days": 1,
+          "total": "$800"
+        },
+        "various_locations": {
+          "estimated_total": "$2,000",
+          "includes": "Home settings, office space, natural outdoor locations"
+        }
+      }
+    },
+    "deliverables": {
+      "primary_video": {
+        "title": "ZenMirror Hero Campaign Video",
+        "duration": "2:45",
+        "formats": ["4K (3840x2160)", "1080p (1920x1080)", "720p (1280x720)"],
+        "delivery_date": "2025-04-02"
+      },
+      "platform_versions": {
+        "youtube": {
+          "format": "1080p MP4",
+          "aspect_ratio": "16:9",
+          "duration": "2:45"
+        },
+        "instagram": {
+          "format": "1080p MP4",
+          "aspect_ratio": "1:1 and 9:16",
+          "duration": "60 seconds (edited version)"
+        },
+        "tiktok": {
+          "format": "1080p MP4",
+          "aspect_ratio": "9:16",
+          "duration": "60 seconds (edited version)"
+        },
+        "facebook": {
+          "format": "1080p MP4",
+          "aspect_ratio": "16:9",
+          "duration": "2:45"
+        }
+      },
+      "additional_content": {
+        "behind_scenes": "5-minute documentary about production process",
+        "mentor_spotlights": "6 individual 30-second mentor introduction videos",
+        "testimonial_cuts": "Individual testimonial videos for extended use",
+        "b_roll_library": "Organized B-roll collection for ongoing marketing use"
+      }
+    },
+    "quality_control": {
+      "technical_standards": {
+        "video_quality": "4K production standard, broadcast quality color grading",
+        "audio_quality": "Professional mixing with -23 LUFS broadcast standard",
+        "cultural_authenticity": "Approved by cultural consultants for each tradition",
+        "brand_compliance": "Consistent with ZenMirror brand guidelines and values"
+      },
+      "approval_checkpoints": {
+        "script_approval": "Pre-production Day 1",
+        "casting_approval": "Pre-production Day 3",
+        "rough_cut_approval": "Post-production Day 1",
+        "final_approval": "Post-production Day 3"
+      }
+    },
+    "contingency_planning": {
+      "weather_contingency": {
+        "indoor_alternatives": "All outdoor shots have indoor backup options",
+        "schedule_flexibility": "2-day buffer built into schedule"
+      },
+      "talent_contingency": {
+        "backup_casting": "Secondary talent options for all key roles",
+        "remote_options": "Some testimonials can be recorded remotely if needed"
+      },
+      "technical_contingency": {
+        "equipment_backup": "Backup equipment for all critical items",
+        "data_backup": "Triple redundancy for all footage and audio"
+      }
+    },
+    "success_metrics": {
+      "production_kpis": {
+        "on_time_delivery": "100% schedule adherence",
+        "budget_adherence": "Within 5% of planned budget",
+        "quality_standards": "All deliverables meet specified technical standards",
+        "cultural_authenticity": "Zero cultural sensitivity issues raised"
+      },
+      "content_kpis": {
+        "story_completeness": "All key product features demonstrated",
+        "emotional_resonance": "Positive feedback from test audiences",
+        "conversion_optimization": "Clear and compelling call-to-action integration",
+        "brand_alignment": "Consistent with ZenMirror values and mission"
+      }
+    }
+  }
+}

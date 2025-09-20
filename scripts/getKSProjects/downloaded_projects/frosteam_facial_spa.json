@@ -1,0 +1,50 @@
+{
+  "project_title": "The Anti-Aging Facial Device for Glow & Daily Wellness",
+  "funding_goal": "CA$ 10,000",
+  "amount_raised": "CA$ 58,409",
+  "percentage_funded": "584%",
+  "number_of_backers": 107,
+  "category": "Technology > Gadgets",
+  "main_features": [
+    "3-in-1 device combining heat, cold, and aromatherapy",
+    "Anti-aging facial treatment for daily use",
+    "Patented cooling system",
+    "Steam therapy for skin renewal",
+    "Cold therapy to soften fine lines",
+    "Aromatherapy integration",
+    "Spa-grade quality for home use",
+    "Mammalian diving reflex activation for wellness"
+  ],
+  "reward_tiers": [
+    {
+      "name": "365$ Limited Offer",
+      "price": "CA$ 549",
+      "backers": 13,
+      "includes": "Frosteam 3-in-1 device (core unit only)"
+    },
+    {
+      "name": "VIP Starter Edition",
+      "price": "CA$ 625",
+      "backers": 33,
+      "includes": "Frosteam device, Firm & Youth Duo, Face Roller, Dive Breather"
+    },
+    {
+      "name": "Early Edition",
+      "price": "CA$ 715",
+      "backers": 2,
+      "includes": "Frosteam device, Firm & Youth Duo, Face Roller"
+    },
+    {
+      "name": "Bonus Edition",
+      "price": "CA$ 775",
+      "backers": 1,
+      "includes": "Frosteam device, Firm & Youth Duo"
+    },
+    {
+      "name": "Give One, Keep One – The Duo Deal",
+      "price": "CA$ 1,099",
+      "backers": 7,
+      "includes": "2x Frosteam devices, 2x Firm & Youth Duo, 2x Face Roller, 2x Dive Breather"
+    }
+  ]
+}

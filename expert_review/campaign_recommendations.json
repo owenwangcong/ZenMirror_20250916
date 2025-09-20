@@ -1,0 +1,273 @@
+{
+  "campaign_expert_recommendations": {
+    "timestamp": "2025-03-18T14:30:00Z",
+    "campaign_score": {
+      "current": 72,
+      "target": 90,
+      "gap": 18,
+      "status": "requires_improvement"
+    },
+    "critical_issues": [
+      {
+        "id": "CRIT-001",
+        "priority": "P1-BLOCKING",
+        "category": "missing_assets",
+        "title": "Massive Asset Inventory Gap",
+        "description": "75+ missing images/graphics across both campaigns causing broken links and poor visual presentation",
+        "impact": "Campaign launch blocked - unprofessional appearance",
+        "estimated_effort": "3-4 hours",
+        "solution": "Generate all missing assets using nano-banana MCP"
+      },
+      {
+        "id": "CRIT-002",
+        "priority": "P1-BLOCKING",
+        "category": "product_compliance",
+        "title": "Product Description Non-Compliance",
+        "description": "Missing critical technical diagrams and visual elements required by product description",
+        "impact": "Fails to meet 100% product description requirement",
+        "estimated_effort": "2 hours",
+        "solution": "Create radar diagrams, flow charts, comparison matrices"
+      },
+      {
+        "id": "CRIT-003",
+        "priority": "P2-CRITICAL",
+        "category": "conversion",
+        "title": "Conversion Element Optimization",
+        "description": "CTA placement, urgency indicators, and trust signals need optimization",
+        "impact": "Reduced backing probability and conversion rates",
+        "estimated_effort": "1 hour",
+        "solution": "Reposition CTAs, add urgency timers, include trust badges"
+      }
+    ],
+    "improvement_commands": [
+      {
+        "command_id": "CMD-001",
+        "target_agent": "graphic-designer",
+        "priority": "immediate",
+        "task": "Generate Technology Visualization Package",
+        "instructions": {
+          "deliverables": [
+            "Radar technology flow diagram",
+            "Closed-loop learning cycle visual",
+            "HRV/RSA data chart examples",
+            "Comparison matrix infographic"
+          ],
+          "style_guide": {
+            "colors": ["#2D5B3E", "#4A7C59", "#D97A34", "#F4A460"],
+            "fonts": "Inter, clean sans-serif",
+            "style": "Technology meets spirituality, clean minimalism"
+          },
+          "specifications": {
+            "format": "SVG for scalability",
+            "dimensions": "Responsive, 800px base width",
+            "file_naming": "tech-diagram.svg, closed-loop.svg, hrv-chart.svg"
+          }
+        },
+        "deadline": "2 hours",
+        "success_criteria": "All technology concepts visually represented with professional quality"
+      },
+      {
+        "command_id": "CMD-002",
+        "target_agent": "graphic-designer",
+        "priority": "immediate",
+        "task": "Create Complete Icon Library",
+        "instructions": {
+          "deliverables": [
+            "Feature icons (20+ icons)",
+            "Mentor tradition symbols",
+            "UI/UX interface icons",
+            "Scientific research icons"
+          ],
+          "icon_list": [
+            "radar-waves.svg", "heart-monitoring.svg", "privacy-shield.svg",
+            "real-time.svg", "analytics.svg", "achievements.svg",
+            "zen-circle.svg", "lotus.svg", "dove.svg", "om-symbol.svg",
+            "tree-of-life.svg", "column.svg", "hrv-research.svg",
+            "meditation-research.svg", "rsa-research.svg"
+          ],
+          "specifications": {
+            "size": "48x48px base, scalable SVG",
+            "style": "Consistent line weight, brand colors",
+            "usage": "Web-optimized, high contrast"
+          }
+        },
+        "deadline": "1.5 hours",
+        "success_criteria": "Complete visual hierarchy with professional iconography"
+      },
+      {
+        "command_id": "CMD-003",
+        "target_agent": "graphic-designer",
+        "priority": "high",
+        "task": "Generate Video Thumbnail Collection",
+        "instructions": {
+          "deliverables": [
+            "Hero demo video thumbnail",
+            "Technology explanation thumbnails",
+            "Mentor introduction thumbnails",
+            "User testimonial thumbnails"
+          ],
+          "specifications": {
+            "format": "SVG with JPEG conversion capability",
+            "dimensions": "16:9 aspect ratio, 640x360px",
+            "elements": "Play button overlay, duration badge, title text"
+          },
+          "content_themes": [
+            "ZenMirror device in action",
+            "Meditation scenarios",
+            "Data visualization screens",
+            "Cultural mentor representations"
+          ]
+        },
+        "deadline": "1 hour",
+        "success_criteria": "Engaging video thumbnails that increase click-through rates"
+      },
+      {
+        "command_id": "CMD-004",
+        "target_agent": "ui-developer",
+        "priority": "high",
+        "task": "Optimize Conversion Elements",
+        "instructions": {
+          "modifications": [
+            "Move primary CTA above fold on all viewports",
+            "Add countdown timers for early bird urgency",
+            "Implement progress bars for funding goals",
+            "Add social proof counters with animation"
+          ],
+          "files_to_modify": [
+            "final_campaigns/kickstarter/index.html",
+            "final_campaigns/indiegogo/index.html"
+          ],
+          "css_updates": [
+            "Improve button contrast and sizing",
+            "Add hover effects and micro-interactions",
+            "Optimize mobile touch targets (44px minimum)"
+          ]
+        },
+        "deadline": "1 hour",
+        "success_criteria": "CTAs visible without scrolling, urgency indicators functional"
+      },
+      {
+        "command_id": "CMD-005",
+        "target_agent": "graphic-designer",
+        "priority": "medium",
+        "task": "Create Social Proof Assets",
+        "instructions": {
+          "deliverables": [
+            "Professional team member photos",
+            "Customer testimonial graphics",
+            "Manufacturing facility images",
+            "Press mention badges"
+          ],
+          "style": "Professional, trustworthy, diverse representation",
+          "specifications": {
+            "team_photos": "Portrait style, clean background",
+            "testimonials": "Quote graphics with customer avatars",
+            "manufacturing": "Clean facility, quality focus"
+          }
+        },
+        "deadline": "2 hours",
+        "success_criteria": "Trust signals that build credibility and reduce risk perception"
+      }
+    ],
+    "verification_checklist": [
+      {
+        "category": "Assets",
+        "items": [
+          "Zero broken image links",
+          "All icons display correctly",
+          "Technology diagrams are clear and accurate",
+          "Video thumbnails are engaging",
+          "Product gallery is comprehensive"
+        ]
+      },
+      {
+        "category": "Product Compliance",
+        "items": [
+          "All 6 mentors visually represented",
+          "Technology flow is diagrammed",
+          "Closed-loop system is illustrated",
+          "Scientific backing is visualized",
+          "Comparison matrix is graphical"
+        ]
+      },
+      {
+        "category": "Conversion Optimization",
+        "items": [
+          "Primary CTA above fold on all devices",
+          "Urgency indicators are prominent",
+          "Social proof is compelling",
+          "Trust signals are visible",
+          "Risk reduction is emphasized"
+        ]
+      },
+      {
+        "category": "Mobile Experience",
+        "items": [
+          "Touch targets are 44px minimum",
+          "Content scales properly",
+          "Navigation is thumb-friendly",
+          "Loading is fast",
+          "Interactions are smooth"
+        ]
+      }
+    ],
+    "success_metrics": {
+      "asset_completion": {
+        "target": "100%",
+        "measurement": "All image links functional"
+      },
+      "loading_performance": {
+        "target": "<3 seconds",
+        "measurement": "Page load time"
+      },
+      "mobile_optimization": {
+        "target": "100% responsive",
+        "measurement": "All viewports functional"
+      },
+      "expert_score": {
+        "target": "90/100",
+        "measurement": "Campaign Expert System evaluation"
+      }
+    },
+    "timeline": {
+      "phase_1": {
+        "duration": "3 hours",
+        "tasks": "Asset generation sprint",
+        "deliverables": "All missing graphics created"
+      },
+      "phase_2": {
+        "duration": "1 hour",
+        "tasks": "Integration and optimization",
+        "deliverables": "Assets integrated, CTAs optimized"
+      },
+      "phase_3": {
+        "duration": "1 hour",
+        "tasks": "Testing and verification",
+        "deliverables": "Final review and expert approval"
+      },
+      "total_estimated": "5 hours",
+      "target_completion": "Same day"
+    },
+    "risk_mitigation": [
+      {
+        "risk": "Asset generation quality issues",
+        "mitigation": "Use established brand guidelines and review each asset"
+      },
+      {
+        "risk": "Integration breaking existing layout",
+        "mitigation": "Test on multiple devices after each integration"
+      },
+      {
+        "risk": "Performance degradation with new assets",
+        "mitigation": "Optimize all assets for web delivery, use SVG when possible"
+      }
+    ],
+    "final_assessment": {
+      "current_status": "NOT READY FOR LAUNCH",
+      "blocking_issues": 3,
+      "estimated_resolution_time": "4-6 hours",
+      "confidence_level": "High - Foundation is excellent, execution needed",
+      "launch_readiness_after_fixes": "95% probability of expert approval"
+    }
+  }
+}

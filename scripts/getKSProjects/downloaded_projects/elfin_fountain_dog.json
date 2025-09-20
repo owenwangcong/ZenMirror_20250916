@@ -1,0 +1,53 @@
+{
+  "project_title": "Elfin Fountain: The New Generation of Pumpless™ Dog Fountain",
+  "funding_goal": "CA$ 6,926",
+  "amount_raised": "CA$ 270,588",
+  "percentage_funded": "3906%",
+  "number_of_backers": 1815,
+  "category": "Technology > Hardware",
+  "main_features": [
+    "Pumpless design with MagDrive™ technology",
+    "Super easy to clean (2-second disassembly)",
+    "No electrical components in water tank",
+    "30-day battery life with Type-C charging",
+    "Stainless steel water tray (304 grade)",
+    "4-liter capacity (1.06 gallon)",
+    "Multi-layer filtration system",
+    "Dual sensor detection (6.6 feet range, 180°)",
+    "Three operating modes (Intelligent, Timer, Continuous)",
+    "23 dB quiet operation",
+    "18-month warranty"
+  ],
+  "reward_tiers": [
+    {
+      "name": "D1 Pro | Early Bird | 28% OFF",
+      "price": "$98 (CA$ 136)",
+      "backers": 225,
+      "includes": "Elfin Fountain D1 Pro, 8 extra filters, charging cable"
+    },
+    {
+      "name": "D1 | KS Special | 25% OFF",
+      "price": "$74 (CA$ 103)",
+      "backers": 31,
+      "includes": "Elfin Fountain D1, charging cable"
+    },
+    {
+      "name": "D1 | Early Bird | 25% OFF",
+      "price": "$88 (CA$ 122)",
+      "backers": 26,
+      "includes": "Elfin Fountain D1, 8 extra filters, charging cable"
+    },
+    {
+      "name": "D1 Pro | KS Special | 25% OFF",
+      "price": "$89 (CA$ 124)",
+      "backers": 27,
+      "includes": "Elfin Fountain D1 Pro, charging cable"
+    },
+    {
+      "name": "D1 Pro | Super Early Bird | 35% OFF (SOLD OUT)",
+      "price": "$89 (CA$ 124)",
+      "backers": 1050,
+      "includes": "Elfin Fountain D1 Pro, 8 extra filters, charging cable"
+    }
+  ]
+}

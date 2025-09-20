@@ -1,0 +1,118 @@
+{
+  "workflow_id": "svg_to_jpg_replacement_001",
+  "start_time": "2025-09-18T10:00:00Z",
+  "project": "ZenMirror Crowdfunding Campaign",
+  "objective": "Replace all SVG image references with JPG equivalents using nano-banana MCP",
+  "phases": [
+    {
+      "phase_id": "analysis",
+      "name": "SVG Analysis & Inventory",
+      "duration_estimate": "30 minutes",
+      "status": "in_progress",
+      "tasks": [
+        "Analyze image audit report for SVG references",
+        "Scan HTML files for inline SVG usage",
+        "Create comprehensive SVG inventory",
+        "Identify missing SVG files that need generation"
+      ]
+    },
+    {
+      "phase_id": "generation",
+      "name": "JPG Generation via nano-banana MCP",
+      "duration_estimate": "2 hours",
+      "status": "pending",
+      "dependencies": ["analysis"],
+      "tasks": [
+        "Generate JPG replacements for existing SVG files",
+        "Create missing images identified in audit",
+        "Ensure consistent visual style and quality",
+        "Optimize JPG file sizes for web performance"
+      ]
+    },
+    {
+      "phase_id": "replacement",
+      "name": "HTML Reference Updates",
+      "duration_estimate": "45 minutes",
+      "status": "pending",
+      "dependencies": ["generation"],
+      "tasks": [
+        "Update Kickstarter HTML file references",
+        "Update Indiegogo HTML file references",
+        "Maintain file organization structure",
+        "Preserve alt text and accessibility"
+      ]
+    },
+    {
+      "phase_id": "verification",
+      "name": "Quality Assurance & Testing",
+      "duration_estimate": "30 minutes",
+      "status": "pending",
+      "dependencies": ["replacement"],
+      "tasks": [
+        "Verify all image links work correctly",
+        "Check visual consistency across pages",
+        "Validate HTML structure integrity",
+        "Confirm performance improvements"
+      ]
+    }
+  ],
+  "svg_inventory": {
+    "existing_svgs": [
+      "./assets/icons/radar-waves.svg",
+      "./assets/icons/heart-monitoring.svg",
+      "./assets/icons/privacy-shield.svg",
+      "./assets/tech-diagram.svg",
+      "./assets/icons/zen-circle.svg",
+      "./assets/icons/lotus.svg",
+      "./assets/icons/dove.svg",
+      "./assets/icons/om-symbol.svg",
+      "./assets/icons/real-time.svg",
+      "./assets/icons/analytics.svg",
+      "./assets/hrv-rsa-chart.svg",
+      "./assets/closed-loop-diagram.svg",
+      "./assets/gallery/setup-view.svg",
+      "./assets/icons/hrv-research.svg",
+      "./assets/icons/meditation-research.svg",
+      "./assets/icons/rsa-research.svg",
+      "./assets/closed-loop-diagram.svg"
+    ],
+    "missing_svgs": [
+      "./assets/icons/tree-of-life.svg",
+      "./assets/icons/column.svg",
+      "./assets/icons/scoring.svg",
+      "./assets/icons/achievements.svg",
+      "./assets/icons/multi-mode.svg",
+      "./assets/icons/closed-loop.svg",
+      "./assets/icons/hrv-research.svg",
+      "./assets/icons/rsa-research.svg",
+      "./assets/icons/meditation-research.svg"
+    ],
+    "inline_svgs": [
+      "Play button SVG in video section (80x80 circle with play arrow)"
+    ],
+    "replacement_mapping": {
+      "radar-waves.svg": "radar-waves.jpg",
+      "heart-monitoring.svg": "heart-monitoring.jpg",
+      "privacy-shield.svg": "privacy-shield.jpg",
+      "tech-diagram.svg": "tech-diagram.jpg",
+      "zen-circle.svg": "zen-circle.jpg",
+      "lotus.svg": "lotus.jpg",
+      "dove.svg": "dove.jpg",
+      "om-symbol.svg": "om-symbol.jpg",
+      "real-time.svg": "real-time.jpg",
+      "analytics.svg": "analytics.jpg",
+      "hrv-rsa-chart.svg": "hrv-rsa-chart.jpg",
+      "closed-loop-diagram.svg": "closed-loop-diagram.jpg",
+      "setup-view.svg": "setup-view.jpg",
+      "hrv-research.svg": "hrv-research.jpg",
+      "meditation-research.svg": "meditation-research.jpg",
+      "rsa-research.svg": "rsa-research.jpg"
+    }
+  },
+  "quality_targets": {
+    "image_quality": "High (90%+)",
+    "file_size": "Optimized for web",
+    "compatibility": "100% reference updates",
+    "performance": "Improved loading times"
+  }
+}

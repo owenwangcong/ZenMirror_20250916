@@ -1,0 +1,33 @@
+SVG Images to Convert to JPG:
+
+Kickstarter Campaign:
+1. ./assets/icons/radar-waves.svg
+2. ./assets/icons/heart-monitoring.svg
+3. ./assets/icons/privacy-shield.svg
+4. ./assets/tech-diagram.svg
+5. ./assets/icons/zen-circle.svg
+6. ./assets/icons/lotus.svg
+7. ./assets/icons/dove.svg
+8. ./assets/icons/tree-of-life.svg
+9. ./assets/icons/column.svg
+10. ./assets/icons/om-symbol.svg
+11. ./assets/icons/real-time.svg
+12. ./assets/icons/scoring.svg
+13. ./assets/icons/achievements.svg
+14. ./assets/icons/multi-mode.svg
+15. ./assets/icons/closed-loop.svg
+16. ./assets/icons/analytics.svg
+17. ./assets/icons/hrv-research.svg
+18. ./assets/icons/rsa-research.svg
+19. ./assets/icons/meditation-research.svg
+20. ./assets/hrv-rsa-chart.svg
+21. ./assets/closed-loop-diagram.svg
+
+Indiegogo Campaign:
+22. ./assets/gallery/setup-view.svg
+23. ./assets/icons/hrv-research.svg (duplicate)
+24. ./assets/icons/meditation-research.svg (duplicate)
+25. ./assets/icons/rsa-research.svg (duplicate)
+26. ./assets/closed-loop-diagram.svg (duplicate)
+
+Unique SVG files to generate: ~22 unique images

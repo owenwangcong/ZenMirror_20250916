@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenMirror - Feature Demonstration Storyboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2D5B3E, #4A7C59);
+            color: #2C3E3A;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .sequence-info {
+            background: rgba(255,255,255,0.9);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(45,91,62,0.1);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .feature-panel {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(45,91,62,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-panel:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(45,91,62,0.2);
+        }
+
+        .feature-visual {
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .real-time-visual {
+            background: linear-gradient(135deg, #2D5B3E, #4A7C59, #E8F5E8);
+        }
+
+        .hrv-visual {
+            background: linear-gradient(135deg, #D97A34, #F4A460, #FDF6F0);
+        }
+
+        .achievement-visual {
+            background: linear-gradient(135deg, #FF6B35, #F7931E, #FDF6F0);
+        }
+
+        .multimode-visual {
+            background: linear-gradient(135deg, #343A40, #6C757D, #F8F9FA);
+        }
+
+        .visual-element {
+            position: absolute;
+            border-radius: 8px;
+        }
+
+        .split-screen {
+            width: 45%;
+            height: 80%;
+            top: 10%;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 10px;
+        }
+
+        .left-screen {
+            left: 5%;
+            background: rgba(45,91,62,0.1);
+        }
+
+        .right-screen {
+            right: 5%;
+            background: rgba(217,122,52,0.1);
+        }
+
+        .meditator-silhouette {
+            width: 30px;
+            height: 40px;
+            background: linear-gradient(45deg, #2D5B3E, #4A7C59);
+            border-radius: 15px 15px 5px 5px;
+            left: 15%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .data-chart {
+            width: 60px;
+            height: 40px;
+            background: repeating-linear-gradient(
+                90deg,
+                #D97A34,
+                #D97A34 5px,
+                #F4A460 5px,
+                #F4A460 10px
+            );
+            right: 15%;
+            top: 30%;
+            border-radius: 5px;
+        }
+
+        .hrv-wave {
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #2D5B3E, #4A7C59, #2D5B3E);
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: wave-flow 2s infinite;
+        }
+
+        .hrv-wave::before {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #D97A34, #F4A460, #D97A34);
+            top: 15px;
+            animation: wave-flow 2s infinite 0.5s;
+        }
+
+        .hrv-wave::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, #4A7C59, #E8F5E8, #4A7C59);
+            top: 30px;
+            animation: wave-flow 2s infinite 1s;
+        }
+
+        .achievement-badge {
+            width: 40px;
+            height: 40px;
+            background: radial-gradient(circle, #FF6B35, #F7931E);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            animation: achievement-glow 2s infinite;
+        }
+
+        .badge-1 {
+            top: 20%;
+            left: 20%;
+        }
+
+        .badge-2 {
+            top: 20%;
+            right: 20%;
+            animation-delay: 0.5s;
+        }
+
+        .badge-3 {
+            bottom: 20%;
+            left: 35%;
+            animation-delay: 1s;
+        }
+
+        .progress-bar {
+            width: 60%;
+            height: 8px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 4px;
+            bottom: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            width: 75%;
+            height: 100%;
+            background: linear-gradient(90deg, #2D5B3E, #4A7C59);
+            border-radius: 4px;
+            animation: progress-grow 3s infinite;
+        }
+
+        .mode-icon {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: white;
+        }
+
+        .meditation-mode {
+            background: linear-gradient(45deg, #2D5B3E, #4A7C59);
+            top: 20%;
+            left: 20%;
+        }
+
+        .work-mode {
+            background: linear-gradient(45deg, #343A40, #6C757D);
+            top: 20%;
+            right: 20%;
+        }
+
+        .study-mode {
+            background: linear-gradient(45deg, #D97A34, #F4A460);
+            bottom: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .feature-header {
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #2D5B3E, #4A7C59);
+            color: white;
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .feature-duration {
+            background: rgba(255,255,255,0.2);
+            padding: 4px 8px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            display: inline-block;
+        }
+
+        .feature-details {
+            padding: 20px;
+        }
+
+        .detail-item {
+            margin-bottom: 12px;
+        }
+
+        .detail-label {
+            font-weight: bold;
+            color: #2D5B3E;
+            margin-bottom: 3px;
+        }
+
+        .detail-content {
+            color: #5A6B5D;
+            font-size: 0.9rem;
+        }
+
+        .technical-specs {
+            background: rgba(45,91,62,0.05);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .data-point {
+            background: linear-gradient(135deg, #FDF6F0, #F4A460);
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border-left: 3px solid #D97A34;
+        }
+
+        .value-proposition {
+            background: linear-gradient(135deg, #E8F5E8, #F4F8F5);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            border-left: 3px solid #2D5B3E;
+        }
+
+        @keyframes wave-flow {
+            0%, 100% { transform: translateX(-50%) scaleY(1); }
+            50% { transform: translateX(-50%) scaleY(1.5); }
+        }
+
+        @keyframes achievement-glow {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 10px rgba(255,107,53,0.5); }
+            50% { transform: scale(1.1); box-shadow: 0 0 20px rgba(255,107,53,0.8); }
+        }
+
+        @keyframes progress-grow {
+            0% { width: 0%; }
+            75% { width: 75%; }
+            100% { width: 75%; }
+        }
+
+        .innovation-summary {
+            background: rgba(255,255,255,0.95);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 30px;
+            border-left: 5px solid #D97A34;
+        }
+
+        .summary-title {
+            color: #2D5B3E;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚡ ZenMirror Feature Demonstration Storyboard</h1>
+            <p>Core Functionality & Innovation Showcase (0:45 - 1:45)</p>
+        </div>
+
+        <div class="sequence-info">
+            <h2 style="color: #2D5B3E; margin-bottom: 15px;">📋 Sequence Overview</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                <div>
+                    <strong>Total Duration:</strong> 60 seconds<br>
+                    <strong>Purpose:</strong> Demonstrate key features
+                </div>
+                <div>
+                    <strong>Mood:</strong> Innovation & Capability<br>
+                    <strong>Key Message:</strong> Comprehensive monitoring
+                </div>
+                <div>
+                    <strong>Visual Style:</strong> Technical precision<br>
+                    <strong>Audio:</strong> Real-time data sounds
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-grid">
+            <!-- Real-Time Monitoring -->
+            <div class="feature-panel">
+                <div class="feature-header">
+                    <div class="feature-title">📊 Real-Time Monitoring</div>
+                    <div class="feature-duration">0:45-0:52 (7 seconds)</div>
+                </div>
+                <div class="feature-visual real-time-visual">
+                    <div class="visual-element split-screen left-screen">
+                        <div class="meditator-silhouette"></div>
+                    </div>
+                    <div class="visual-element split-screen right-screen">
+                        <div class="data-chart"></div>
+                    </div>
+                </div>
+                <div class="feature-details">
+                    <div class="detail-item">
+                        <div class="detail-label">🎯 Description</div>
+                        <div class="detail-content">Split screen: peaceful meditator and live app data showing HRV, breathing, heart rate</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">📷 Camera</div>
+                        <div class="detail-content">Split screen composition</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">💡 Lighting</div>
+                        <div class="detail-content">Balanced lighting between practitioner and screen</div>
+                    </div>
+                    <div class="technical-specs">
+                        <strong>🔬 Real-Time Data Streams:</strong><br>
+                        • Heart Rate Variability (HRV)<br>
+                        • Breathing Pattern Analysis<br>
+                        • Respiratory Sinus Arrhythmia (RSA)<br>
+                        • Movement Detection<br>
+                        • Session Quality Scoring
+                    </div>
+                    <div class="value-proposition">
+                        <strong>💎 Value Proposition:</strong> First-ever real-time meditation feedback without physical contact, providing instant insights into your practice quality.
+                    </div>
+                </div>
+            </div>
+
+            <!-- HRV Analysis -->
+            <div class="feature-panel">
+                <div class="feature-header">
+                    <div class="feature-title">❤️ HRV Analysis</div>
+                    <div class="feature-duration">0:52-0:58 (6 seconds)</div>
+                </div>
+                <div class="feature-visual hrv-visual">
+                    <div class="visual-element hrv-wave"></div>
+                </div>
+                <div class="feature-details">
+                    <div class="detail-item">
+                        <div class="detail-label">🎯 Description</div>
+                        <div class="detail-content">Detailed HRV analysis showing RMSSD, SDNN metrics with scientific visualization</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">📷 Camera</div>
+                        <div class="detail-content">Close-up screen with detailed data</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">💡 Lighting</div>
+                        <div class="detail-content">Data analysis lighting, scientific clarity</div>
+                    </div>
+                    <div class="data-point">
+                        <strong>RMSSD (Root Mean Square of Successive Differences):</strong><br>
+                        Measures short-term heart rate variability, indicating parasympathetic nervous system activity and relaxation depth.
+                    </div>
+                    <div class="data-point">
+                        <strong>SDNN (Standard Deviation of NN Intervals):</strong><br>
+                        Reflects overall heart rate variability, showing autonomic nervous system balance and meditation quality.
+                    </div>
+                    <div class="value-proposition">
+                        <strong>💎 Scientific Foundation:</strong> Uses clinically validated HRV metrics to objectively measure meditation effectiveness and autonomic nervous system balance.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievement System -->
+            <div class="feature-panel">
+                <div class="feature-header">
+                    <div class="feature-title">🏆 Achievement System</div>
+                    <div class="feature-duration">0:58-1:04 (6 seconds)</div>
+                </div>
+                <div class="feature-visual achievement-visual">
+                    <div class="visual-element achievement-badge badge-1">🥇</div>
+                    <div class="visual-element achievement-badge badge-2">⭐</div>
+                    <div class="visual-element achievement-badge badge-3">💎</div>
+                    <div class="visual-element progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+                <div class="feature-details">
+                    <div class="detail-item">
+                        <div class="detail-label">🎯 Description</div>
+                        <div class="detail-content">User unlocking various achievement badges with celebration animations</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">📷 Camera</div>
+                        <div class="detail-content">Close-up of achievement interface</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">💡 Lighting</div>
+                        <div class="detail-content">Celebratory lighting effects</div>
+                    </div>
+                    <div class="data-point">
+                        <strong>Entry Series:</strong> First meditation, guided session completion, daily reminder setup
+                    </div>
+                    <div class="data-point">
+                        <strong>Duration Series:</strong> 30 min, 1 hour, 2 hours, 3 hours single sessions
+                    </div>
+                    <div class="data-point">
+                        <strong>Consistency Series:</strong> 7, 21, 108, 365 day streaks
+                    </div>
+                    <div class="data-point">
+                        <strong>Quality Series:</strong> Heart like still water (90+), Perfect moment (100)
+                    </div>
+                    <div class="value-proposition">
+                        <strong>💎 Motivation Psychology:</strong> Gamified progression system based on meditation research, encouraging consistent practice through meaningful milestones.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Multi-Mode Functionality -->
+            <div class="feature-panel">
+                <div class="feature-header">
+                    <div class="feature-title">🔄 Multi-Mode Functionality</div>
+                    <div class="feature-duration">1:04-1:15 (11 seconds)</div>
+                </div>
+                <div class="feature-visual multimode-visual">
+                    <div class="visual-element mode-icon meditation-mode">🧘</div>
+                    <div class="visual-element mode-icon work-mode">💼</div>
+                    <div class="visual-element mode-icon study-mode">📚</div>
+                </div>
+                <div class="feature-details">
+                    <div class="detail-item">
+                        <div class="detail-label">🎯 Description</div>
+                        <div class="detail-content">Demonstration of meditation, work, and study modes with adaptive monitoring</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">📷 Camera</div>
+                        <div class="detail-content">Medium shot mode transition interface</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">💡 Lighting</div>
+                        <div class="detail-content">Mode-specific ambient lighting</div>
+                    </div>
+                    <div class="data-point">
+                        <strong>🧘 Meditation Mode:</strong><br>
+                        • Timed or open-ended sessions<br>
+                        • Movement detection and scoring<br>
+                        • Real-time mentor guidance<br>
+                        • Comprehensive session reports
+                    </div>
+                    <div class="data-point">
+                        <strong>💼 Work Mode:</strong><br>
+                        • Continuous stress monitoring<br>
+                        • Breathing reminders during high stress<br>
+                        • Focus enhancement alerts<br>
+                        • Productivity wellness tracking
+                    </div>
+                    <div class="data-point">
+                        <strong>📚 Study Mode:</strong><br>
+                        • Concentration optimization<br>
+                        • Break time recommendations<br>
+                        • Mental fatigue detection<br>
+                        • Learning efficiency insights
+                    </div>
+                    <div class="value-proposition">
+                        <strong>💎 All-Day Wellness:</strong> ZenMirror adapts to your entire day, providing contextual monitoring and guidance beyond just meditation sessions.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="innovation-summary">
+            <div class="summary-title">🚀 Innovation Demonstration Strategy</div>
+
+            <p><strong>Technical Credibility:</strong> This sequence establishes ZenMirror's scientific foundation through visual data representation. Real-time charts, waveforms, and metrics create trust in the technology's accuracy and sophistication.</p>
+
+            <p><strong>Feature Progression:</strong></p>
+            <ul style="margin: 10px 0; padding-left: 20px;">
+                <li><strong>Real-Time Monitoring:</strong> Shows immediate value - users see their practice objectively</li>
+                <li><strong>HRV Analysis:</strong> Demonstrates scientific depth with clinically validated metrics</li>
+                <li><strong>Achievement System:</strong> Appeals to motivation psychology and long-term engagement</li>
+                <li><strong>Multi-Mode:</strong> Expands value proposition beyond meditation to all-day wellness</li>
+            </ul>
+
+            <p><strong>Visual Design Philosophy:</strong> Split-screen compositions show the parallel between peaceful practice and rich data insights, reinforcing that ZenMirror enhances rather than disrupts meditation. Color coding helps distinguish different data types while maintaining the zenful aesthetic.</p>
+
+            <p><strong>Conversion Psychology:</strong> Each feature directly addresses user pain points - lack of objective feedback, motivation challenges, limited meditation contexts, and desire for comprehensive wellness tracking. The sequence builds confidence in ZenMirror as a complete solution.</p>
+        </div>
+    </div>
+</body>
+</html>

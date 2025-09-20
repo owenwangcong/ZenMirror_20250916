@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenMirror - Opening Sequence Storyboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2D5B3E, #4A7C59);
+            color: #2C3E3A;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .sequence-info {
+            background: rgba(255,255,255,0.9);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(45,91,62,0.1);
+        }
+
+        .storyboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .shot-panel {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(45,91,62,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .shot-panel:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(45,91,62,0.2);
+        }
+
+        .shot-visual {
+            height: 250px;
+            background: linear-gradient(45deg, #E8F5E8, #F4F8F5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shot-001 .shot-visual {
+            background: linear-gradient(45deg, #343A40, #6C757D);
+        }
+
+        .shot-002 .shot-visual {
+            background: linear-gradient(45deg, #6C757D, #F8F9FA);
+        }
+
+        .shot-003 .shot-visual {
+            background: linear-gradient(45deg, #F8F9FA, #E8F5E8);
+        }
+
+        .visual-element {
+            position: absolute;
+            border-radius: 10px;
+        }
+
+        .frustrated-person {
+            width: 60px;
+            height: 80px;
+            background: linear-gradient(45deg, #D97A34, #F4A460);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 20px 20px 10px 10px;
+        }
+
+        .device {
+            width: 15px;
+            height: 15px;
+            background: #343A40;
+            border-radius: 3px;
+        }
+
+        .device-1 {
+            top: 40%;
+            left: 30%;
+        }
+
+        .device-2 {
+            top: 60%;
+            right: 30%;
+        }
+
+        .device-3 {
+            top: 30%;
+            right: 40%;
+        }
+
+        .cables {
+            width: 2px;
+            height: 40px;
+            background: #343A40;
+            top: 70%;
+            left: 45%;
+        }
+
+        .cluttered-space {
+            width: 100%;
+            height: 60px;
+            background: repeating-linear-gradient(45deg, #6C757D, #6C757D 10px, #343A40 10px, #343A40 20px);
+            bottom: 0;
+        }
+
+        .eye {
+            width: 40px;
+            height: 40px;
+            background: radial-gradient(circle, #2C3E3A 30%, #E8F5E8 70%);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .shot-header {
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #2D5B3E, #4A7C59);
+            color: white;
+        }
+
+        .shot-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .shot-duration {
+            background: rgba(255,255,255,0.2);
+            padding: 4px 8px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            display: inline-block;
+        }
+
+        .shot-details {
+            padding: 20px;
+        }
+
+        .detail-item {
+            margin-bottom: 12px;
+        }
+
+        .detail-label {
+            font-weight: bold;
+            color: #2D5B3E;
+            margin-bottom: 3px;
+        }
+
+        .detail-content {
+            color: #5A6B5D;
+            font-size: 0.9rem;
+        }
+
+        .audio-track {
+            background: linear-gradient(135deg, #FDF6F0, #F4A460);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .voiceover {
+            font-style: italic;
+            color: #D97A34;
+            margin-top: 8px;
+            padding: 8px;
+            background: rgba(217,122,52,0.1);
+            border-left: 3px solid #D97A34;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .tension-indicator {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+            background: radial-gradient(circle, #FF6B35, #F7931E);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        .calm-indicator {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+            background: radial-gradient(circle, #2D5B3E, #4A7C59);
+            border-radius: 50%;
+            animation: glow 3s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.7; }
+        }
+
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 5px rgba(45,91,62,0.5); }
+            50% { box-shadow: 0 0 20px rgba(45,91,62,0.8); }
+        }
+
+        .narrative-flow {
+            background: rgba(255,255,255,0.95);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 30px;
+            border-left: 5px solid #D97A34;
+        }
+
+        .flow-title {
+            color: #2D5B3E;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎬 ZenMirror Opening Sequence Storyboard</h1>
+            <p>Hook & Problem Setup (0:00 - 0:15)</p>
+        </div>
+
+        <div class="sequence-info">
+            <h2 style="color: #2D5B3E; margin-bottom: 15px;">📋 Sequence Overview</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                <div>
+                    <strong>Total Duration:</strong> 15 seconds<br>
+                    <strong>Purpose:</strong> Establish problem with current solutions
+                </div>
+                <div>
+                    <strong>Mood:</strong> Tension → Transition<br>
+                    <strong>Key Message:</strong> Traditional tracking is intrusive
+                </div>
+                <div>
+                    <strong>Visual Style:</strong> Clinical → Warm<br>
+                    <strong>Audio:</strong> Harsh → Peaceful
+                </div>
+            </div>
+        </div>
+
+        <div class="storyboard-grid">
+            <!-- Shot 001 -->
+            <div class="shot-panel shot-001">
+                <div class="shot-header">
+                    <div class="shot-title">SHOT 001 - Frustrated Setup</div>
+                    <div class="shot-duration">0:00-0:03 (3 seconds)</div>
+                </div>
+                <div class="shot-visual">
+                    <div class="visual-element frustrated-person"></div>
+                    <div class="visual-element device device-1"></div>
+                    <div class="visual-element device device-2"></div>
+                    <div class="visual-element device device-3"></div>
+                    <div class="visual-element cables"></div>
+                    <div class="tension-indicator"></div>
+                </div>
+                <div class="shot-details">
+                    <div class="detail-item">
+                        <div class="detail-label">🎯 Description</div>
+                        <div class="detail-content">Close-up of frustrated meditator adjusting multiple wearable devices - chest strap, smartwatch, EEG headband</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">📷 Camera</div>
+                        <div class="detail-content">Medium close-up, handheld for tension</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">💡 Lighting</div>
+                        <div class="detail-content">Harsh, clinical lighting</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">👤 Talent</div>
+                        <div class="detail-content">Female practitioner, 30s, visibly frustrated</div>
+                    </div>
+                    <div class="audio-track">
+                        <strong>🔊 Audio:</strong> Ambient tension sound, device beeping
+                        <div class="voiceover">
+                            "Traditional meditation tracking means wearing uncomfortable devices that constantly remind you you're being monitored..."
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shot 002 -->
+            <div class="shot-panel shot-002">
+                <div class="shot-header">
+                    <div class="shot-title">SHOT 002 - Cluttered Space</div>
+                    <div class="shot-duration">0:03-0:07 (4 seconds)</div>
+                </div>
+                <div class="shot-visual">
+                    <div class="visual-element cluttered-space"></div>
+                    <div class="visual-element device" style="top: 20%; left: 20%;"></div>
+                    <div class="visual-element device" style="top: 30%; right: 25%;"></div>
+                    <div class="visual-element device" style="top: 40%; left: 60%;"></div>
+                    <div class="visual-element cables" style="left: 20%; height: 60px;"></div>
+                    <div class="visual-element cables" style="right: 25%; height: 50px;"></div>
+                    <div class="tension-indicator"></div>
+                </div>
+                <div class="shot-details">
+                    <div class="detail-item">
+                        <div class="detail-label">🎯 Description</div>
+                        <div class="detail-content">Wide shot showing cluttered meditation space with tangled wires, charging stations, multiple devices</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">📷 Camera</div>
+                        <div class="detail-content">Wide establishing shot</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">💡 Lighting</div>
+                        <div class="detail-content">Cold, sterile lighting</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">🎬 Props</div>
+                        <div class="detail-content">Multiple meditation tracking devices, cables, charging dock</div>
+                    </div>
+                    <div class="audio-track">
+                        <strong>🔊 Audio:</strong> Electronic interference sounds
+                        <div class="voiceover">
+                            "...turning your peaceful practice into a technology obstacle course."
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shot 003 -->
+            <div class="shot-panel shot-003">
+                <div class="shot-header">
+                    <div class="shot-title">SHOT 003 - Transition Question</div>
+                    <div class="shot-duration">0:07-0:15 (8 seconds)</div>
+                </div>
+                <div class="shot-visual">
+                    <div class="visual-element eye"></div>
+                    <div class="calm-indicator"></div>
+                </div>
+                <div class="shot-details">
+                    <div class="detail-item">
+                        <div class="detail-label">🎯 Description</div>
+                        <div class="detail-content">Extreme close-up of meditator's closed eyes opening with concern, transitioning to hope</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">📷 Camera</div>
+                        <div class="detail-content">Extreme close-up, macro lens</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">💡 Lighting</div>
+                        <div class="detail-content">Soft natural light</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">🎨 Post-Production</div>
+                        <div class="detail-content">Slow zoom out, color transition from cold to warm</div>
+                    </div>
+                    <div class="audio-track">
+                        <strong>🔊 Audio:</strong> Silence building to question voiceover
+                        <div class="voiceover">
+                            "What if meditation monitoring could be truly invisible?"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="narrative-flow">
+            <div class="flow-title">📖 Narrative Flow & Director's Notes</div>
+            <p><strong>Opening Hook Strategy:</strong> This sequence immediately connects with the target audience's pain points. We establish the problem through visual storytelling before introducing the solution.</p>
+
+            <p><strong>Visual Progression:</strong></p>
+            <ul style="margin: 10px 0; padding-left: 20px;">
+                <li><strong>Shot 001:</strong> Personal frustration - the human cost of current solutions</li>
+                <li><strong>Shot 002:</strong> Environmental clutter - the space cost of multiple devices</li>
+                <li><strong>Shot 003:</strong> Emotional transition - from problem to possibility</li>
+            </ul>
+
+            <p><strong>Color Psychology:</strong> We begin with harsh, clinical colors (grays, cold blues) representing the technological intrusion, then transition to warmer tones as we approach the solution, creating a visual metaphor for the relief ZenMirror provides.</p>
+
+            <p><strong>Audio Design:</strong> The harsh electronic sounds gradually fade to peaceful silence, mirroring the visual transition and reinforcing the core message of invisible monitoring.</p>
+        </div>
+    </div>
+</body>
+</html>

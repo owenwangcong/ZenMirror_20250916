@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenMirror - Mentor Personalities Storyboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2D5B3E, #4A7C59);
+            color: #2C3E3A;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .sequence-info {
+            background: rgba(255,255,255,0.9);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(45,91,62,0.1);
+        }
+
+        .mentor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .mentor-panel {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(45,91,62,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .mentor-panel:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(45,91,62,0.2);
+        }
+
+        .mentor-visual {
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .zen-visual {
+            background: linear-gradient(135deg, #2D4A3A, #4A6A4A, #E8F5E8);
+        }
+
+        .yogi-visual {
+            background: linear-gradient(135deg, #D97A34, #F4A460, #FDF6F0);
+        }
+
+        .chaplain-visual {
+            background: linear-gradient(135deg, #6C757D, #F8F9FA, #FFFFFF);
+        }
+
+        .spiritual-visual {
+            background: linear-gradient(135deg, #4A7C59, #D97A34, #E8F5E8);
+        }
+
+        .stoic-visual {
+            background: linear-gradient(135deg, #343A40, #6C757D, #F8F9FA);
+        }
+
+        .vedanta-visual {
+            background: linear-gradient(135deg, #D97A34, #2D5B3E, #FDF6F0);
+        }
+
+        .cultural-element {
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .bamboo {
+            width: 20px;
+            height: 60px;
+            background: linear-gradient(45deg, #4A6A4A, #6A8A6A);
+            border-radius: 10px;
+            left: 20%;
+            bottom: 20%;
+        }
+
+        .stone {
+            width: 30px;
+            height: 20px;
+            background: #6C757D;
+            border-radius: 15px;
+            right: 25%;
+            bottom: 30%;
+        }
+
+        .lotus {
+            width: 40px;
+            height: 40px;
+            background: radial-gradient(circle, #F4A460, #D97A34);
+            border-radius: 50% 50% 0 0;
+            top: 30%;
+            right: 20%;
+        }
+
+        .candle {
+            width: 8px;
+            height: 30px;
+            background: linear-gradient(45deg, #F4A460, #FFFFFF);
+            border-radius: 4px;
+            left: 30%;
+            top: 40%;
+        }
+
+        .flame {
+            width: 6px;
+            height: 8px;
+            background: radial-gradient(circle, #FF6B35, #D97A34);
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            left: 31%;
+            top: 35%;
+            animation: flicker 2s infinite;
+        }
+
+        .crystal {
+            width: 25px;
+            height: 25px;
+            background: linear-gradient(45deg, #4A7C59, #E8F5E8);
+            transform: rotate(45deg);
+            top: 25%;
+            left: 25%;
+        }
+
+        .column {
+            width: 15px;
+            height: 50px;
+            background: linear-gradient(45deg, #343A40, #6C757D);
+            border-radius: 7px;
+            right: 30%;
+            bottom: 25%;
+        }
+
+        .book {
+            width: 25px;
+            height: 18px;
+            background: #343A40;
+            border-radius: 2px;
+            left: 35%;
+            bottom: 35%;
+        }
+
+        .om-symbol {
+            width: 35px;
+            height: 35px;
+            background: radial-gradient(circle, #D97A34, #2D5B3E);
+            border-radius: 50%;
+            top: 35%;
+            left: 35%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .mentor-avatar {
+            width: 60px;
+            height: 70px;
+            border-radius: 30px 30px 10px 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .zen-avatar {
+            background: linear-gradient(45deg, #2D4A3A, #4A6A4A);
+        }
+
+        .yogi-avatar {
+            background: linear-gradient(45deg, #D97A34, #F4A460);
+        }
+
+        .chaplain-avatar {
+            background: linear-gradient(45deg, #6C757D, #F8F9FA);
+        }
+
+        .spiritual-avatar {
+            background: linear-gradient(45deg, #4A7C59, #D97A34);
+        }
+
+        .stoic-avatar {
+            background: linear-gradient(45deg, #343A40, #6C757D);
+        }
+
+        .vedanta-avatar {
+            background: linear-gradient(45deg, #D97A34, #2D5B3E);
+        }
+
+        .mentor-header {
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #2D5B3E, #4A7C59);
+            color: white;
+        }
+
+        .mentor-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .mentor-tradition {
+            background: rgba(255,255,255,0.2);
+            padding: 4px 8px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            display: inline-block;
+        }
+
+        .mentor-details {
+            padding: 20px;
+        }
+
+        .philosophy {
+            background: rgba(45,91,62,0.05);
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 3px solid #2D5B3E;
+        }
+
+        .guidance-sample {
+            background: linear-gradient(135deg, #FDF6F0, #F4A460);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            font-style: italic;
+            border-left: 3px solid #D97A34;
+        }
+
+        .cultural-authenticity {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .authenticity-badge {
+            background: rgba(217,122,52,0.1);
+            color: #D97A34;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .aura {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border-radius: 50%;
+            animation: aura-pulse 3s infinite;
+            opacity: 0.3;
+        }
+
+        .zen-aura {
+            box-shadow: 0 0 20px rgba(45,91,62,0.5);
+        }
+
+        .yogi-aura {
+            box-shadow: 0 0 20px rgba(217,122,52,0.5);
+        }
+
+        .chaplain-aura {
+            box-shadow: 0 0 20px rgba(108,117,125,0.5);
+        }
+
+        .spiritual-aura {
+            box-shadow: 0 0 20px rgba(74,124,89,0.5);
+        }
+
+        .stoic-aura {
+            box-shadow: 0 0 20px rgba(52,58,64,0.5);
+        }
+
+        .vedanta-aura {
+            box-shadow: 0 0 20px rgba(217,122,52,0.5);
+        }
+
+        @keyframes flicker {
+            0%, 100% { transform: scale(1) rotate(-2deg); }
+            50% { transform: scale(1.1) rotate(2deg); }
+        }
+
+        @keyframes aura-pulse {
+            0%, 100% { opacity: 0.2; }
+            50% { opacity: 0.5; }
+        }
+
+        .cultural-overview {
+            background: rgba(255,255,255,0.95);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 30px;
+            border-left: 5px solid #D97A34;
+        }
+
+        .overview-title {
+            color: #2D5B3E;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧘 ZenMirror Mentor Personalities Storyboard</h1>
+            <p>Wisdom Traditions & Cultural Authenticity (0:45 - 1:15)</p>
+        </div>
+
+        <div class="sequence-info">
+            <h2 style="color: #2D5B3E; margin-bottom: 15px;">📋 Sequence Overview</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                <div>
+                    <strong>Total Duration:</strong> 30 seconds<br>
+                    <strong>Purpose:</strong> Showcase 6 authentic mentors
+                </div>
+                <div>
+                    <strong>Mood:</strong> Multicultural wisdom<br>
+                    <strong>Key Message:</strong> Authentic tradition respect
+                </div>
+                <div>
+                    <strong>Visual Style:</strong> Cultural authenticity<br>
+                    <strong>Audio:</strong> Traditional ambient sounds
+                </div>
+            </div>
+        </div>
+
+        <div class="mentor-grid">
+            <!-- Zen Master -->
+            <div class="mentor-panel">
+                <div class="mentor-header">
+                    <div class="mentor-name">🏯 Zen Master</div>
+                    <div class="mentor-tradition">Japanese/Chinese Buddhist Tradition</div>
+                </div>
+                <div class="mentor-visual zen-visual">
+                    <div class="aura zen-aura"></div>
+                    <div class="cultural-element bamboo"></div>
+                    <div class="cultural-element stone"></div>
+                    <div class="mentor-avatar zen-avatar"></div>
+                </div>
+                <div class="mentor-details">
+                    <div class="philosophy">
+                        <strong>🧠 Core Philosophy:</strong> Mindfulness, present moment awareness, non-attachment to thoughts, embodying "beginner's mind" in every meditation.
+                    </div>
+                    <div>
+                        <strong>🎭 Guidance Style:</strong> Minimalist, poetic, uses nature metaphors
+                    </div>
+                    <div class="cultural-authenticity">
+                        <span class="authenticity-badge">Authentic Zen Elements</span>
+                        <span class="authenticity-badge">Traditional Garden</span>
+                        <span class="authenticity-badge">Natural Harmony</span>
+                    </div>
+                    <div class="guidance-sample">
+                        <strong>Voice Sample:</strong><br>
+                        "Thoughts like clouds, breath like wind... Notice without grasping. The mirror of mind reflects all, holds nothing."
+                    </div>
+                </div>
+            </div>
+
+            <!-- Yogi -->
+            <div class="mentor-panel">
+                <div class="mentor-header">
+                    <div class="mentor-name">🕉️ Yogi</div>
+                    <div class="mentor-tradition">Ancient Yoga & Pranayama Science</div>
+                </div>
+                <div class="mentor-visual yogi-visual">
+                    <div class="aura yogi-aura"></div>
+                    <div class="cultural-element lotus"></div>
+                    <div class="mentor-avatar yogi-avatar"></div>
+                </div>
+                <div class="mentor-details">
+                    <div class="philosophy">
+                        <strong>🧠 Core Philosophy:</strong> Life energy (Prana) flow, breath as bridge between body and consciousness, energy channel purification through mindful breathing.
+                    </div>
+                    <div>
+                        <strong>🎭 Guidance Style:</strong> Warm, encouraging, energy-focused
+                    </div>
+                    <div class="cultural-authenticity">
+                        <span class="authenticity-badge">Traditional Pranayama</span>
+                        <span class="authenticity-badge">Energy Flow Focus</span>
+                        <span class="authenticity-badge">Sanskrit Authenticity</span>
+                    </div>
+                    <div class="guidance-sample">
+                        <strong>Voice Sample:</strong><br>
+                        "Feel the life energy flowing through each breath... Your breath is deep and nourishing, connecting you to the universal rhythm."
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chaplain -->
+            <div class="mentor-panel">
+                <div class="mentor-header">
+                    <div class="mentor-name">✝️ Chaplain</div>
+                    <div class="mentor-tradition">Contemplative Christian Tradition</div>
+                </div>
+                <div class="mentor-visual chaplain-visual">
+                    <div class="aura chaplain-aura"></div>
+                    <div class="cultural-element candle"></div>
+                    <div class="cultural-element flame"></div>
+                    <div class="mentor-avatar chaplain-avatar"></div>
+                </div>
+                <div class="mentor-details">
+                    <div class="philosophy">
+                        <strong>🧠 Core Philosophy:</strong> Silent prayer, Divine presence encounter, surrendering to higher grace, finding peace through spiritual communion.
+                    </div>
+                    <div>
+                        <strong>🎭 Guidance Style:</strong> Compassionate, comforting, grace-centered
+                    </div>
+                    <div class="cultural-authenticity">
+                        <span class="authenticity-badge">Contemplative Prayer</span>
+                        <span class="authenticity-badge">Universal Symbols</span>
+                        <span class="authenticity-badge">Sacred Silence</span>
+                    </div>
+                    <div class="guidance-sample">
+                        <strong>Voice Sample:</strong><br>
+                        "Your heart finds rest in this sacred stillness... In the quiet, you are held by a love beyond understanding."
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spiritual Mentor -->
+            <div class="mentor-panel">
+                <div class="mentor-header">
+                    <div class="mentor-name">🌟 Spiritual Mentor</div>
+                    <div class="mentor-tradition">Universal Spiritual Wisdom</div>
+                </div>
+                <div class="mentor-visual spiritual-visual">
+                    <div class="aura spiritual-aura"></div>
+                    <div class="cultural-element crystal"></div>
+                    <div class="mentor-avatar spiritual-avatar"></div>
+                </div>
+                <div class="mentor-details">
+                    <div class="philosophy">
+                        <strong>🧠 Core Philosophy:</strong> Inner wisdom awakening, higher self connection, integrating modern psychology with universal spiritual principles.
+                    </div>
+                    <div>
+                        <strong>🎭 Guidance Style:</strong> Empowering, insightful, growth-oriented
+                    </div>
+                    <div class="cultural-authenticity">
+                        <span class="authenticity-badge">Modern Integration</span>
+                        <span class="authenticity-badge">Universal Principles</span>
+                        <span class="authenticity-badge">Personal Growth</span>
+                    </div>
+                    <div class="guidance-sample">
+                        <strong>Voice Sample:</strong><br>
+                        "Your inner wisdom knows the way... Trust the signals your body is sending. You're connecting with your authentic self."
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stoic Philosopher -->
+            <div class="mentor-panel">
+                <div class="mentor-header">
+                    <div class="mentor-name">🏛️ Stoic Philosopher</div>
+                    <div class="mentor-tradition">Ancient Greek Stoicism</div>
+                </div>
+                <div class="mentor-visual stoic-visual">
+                    <div class="aura stoic-aura"></div>
+                    <div class="cultural-element column"></div>
+                    <div class="cultural-element book"></div>
+                    <div class="mentor-avatar stoic-avatar"></div>
+                </div>
+                <div class="mentor-details">
+                    <div class="philosophy">
+                        <strong>🧠 Core Philosophy:</strong> Rational thought mastery, distinguishing controllable from uncontrollable, building inner resilience through reason and virtue.
+                    </div>
+                    <div>
+                        <strong>🎭 Guidance Style:</strong> Logical, steady, strength-building
+                    </div>
+                    <div class="cultural-authenticity">
+                        <span class="authenticity-badge">Classical Philosophy</span>
+                        <span class="authenticity-badge">Rational Approach</span>
+                        <span class="authenticity-badge">Inner Strength</span>
+                    </div>
+                    <div class="guidance-sample">
+                        <strong>Voice Sample:</strong><br>
+                        "You chose reason over reaction. Your inner citadel grows stronger... What disturbs is not the event, but your judgment of it."
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vedanta Acharya -->
+            <div class="mentor-panel">
+                <div class="mentor-header">
+                    <div class="mentor-name">🕉️ Vedanta Acharya</div>
+                    <div class="mentor-tradition">Hindu Vedantic Wisdom</div>
+                </div>
+                <div class="mentor-visual vedanta-visual">
+                    <div class="aura vedanta-aura"></div>
+                    <div class="cultural-element om-symbol">ॐ</div>
+                    <div class="mentor-avatar vedanta-avatar"></div>
+                </div>
+                <div class="mentor-details">
+                    <div class="philosophy">
+                        <strong>🧠 Core Philosophy:</strong> Self (Atman) and Universal Consciousness (Brahman) unity, witness consciousness cultivation, transcending mind fluctuations.
+                    </div>
+                    <div>
+                        <strong>🎭 Guidance Style:</strong> Wise, devotional, consciousness-focused
+                    </div>
+                    <div class="cultural-authenticity">
+                        <span class="authenticity-badge">Upanishad Wisdom</span>
+                        <span class="authenticity-badge">Sanskrit Terminology</span>
+                        <span class="authenticity-badge">Self-Realization</span>
+                    </div>
+                    <div class="guidance-sample">
+                        <strong>Voice Sample:</strong><br>
+                        "Rest in your true nature, untouched by the mind's fluctuations... The witness within you observes all, is disturbed by nothing."
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cultural-overview">
+            <div class="overview-title">🌍 Cultural Authenticity & Production Guidelines</div>
+
+            <p><strong>Visual Storytelling Approach:</strong> Each mentor sequence uses culturally authentic visual elements, colors, and symbols that respect traditional contexts while making them accessible to a global audience.</p>
+
+            <p><strong>Cultural Consulting:</strong></p>
+            <ul style="margin: 10px 0; padding-left: 20px;">
+                <li><strong>Expert Review:</strong> All mentor content reviewed by cultural consultants from respective traditions</li>
+                <li><strong>Authentic Elements:</strong> Traditional symbols, colors, and settings used respectfully, not decoratively</li>
+                <li><strong>Voice Authenticity:</strong> Native speakers consulted for pronunciation and cultural accuracy</li>
+                <li><strong>Universal Appeal:</strong> Wisdom accessible across cultures while maintaining authenticity</li>
+            </ul>
+
+            <p><strong>Production Considerations:</strong></p>
+            <ul style="margin: 10px 0; padding-left: 20px;">
+                <li><strong>Lighting:</strong> Each tradition has specific lighting styles (natural for Zen, golden for Yoga, soft for Chaplain, etc.)</li>
+                <li><strong>Settings:</strong> Authentic environments for each tradition (bamboo garden, yoga studio, chapel, etc.)</li>
+                <li><strong>Props:</strong> Traditional elements sourced authentically, not as generic decorations</li>
+                <li><strong>Talent:</strong> Diverse representation that honors each tradition's origins</li>
+            </ul>
+
+            <p><strong>Audio Design:</strong> Each mentor segment includes culturally appropriate ambient sounds - bamboo wind chimes for Zen, traditional flute for Yoga, gentle bells for Chaplain, etc.</p>
+        </div>
+    </div>
+</body>
+</html>

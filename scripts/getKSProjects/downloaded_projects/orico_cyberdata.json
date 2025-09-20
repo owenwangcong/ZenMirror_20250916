@@ -1,0 +1,73 @@
+{
+  "project_title": "ORICO CyberData AI-powered NAS with GPU Dock & RAID Cabinet",
+  "creator": "Orico",
+  "funding_goal": "HK$ 77,670",
+  "amount_raised": "HK$ 7,339,834",
+  "percentage_funded": "9450%",
+  "number_of_backers": 1167,
+  "campaign_period": "Jul 8 2025 - Aug 7 2025 (30 days)",
+  "location": "Sai Wan, Hong Kong",
+  "category": "Hardware",
+  "project_we_love": true,
+  "updates_count": 5,
+  "comments_count": 1021,
+  "faq_count": 32,
+  "key_features": [
+    "Up to 256TB storage capacity",
+    "Intel i5-1240P processor (up to 12 cores, 16 threads)",
+    "Dual 10GbE & USB4 ports (40Gbps)",
+    "RAID 50/60 support",
+    "ZFS file system for extra security",
+    "Cross-platform OS compatibility",
+    "AI features with local LLM",
+    "32GB DDR5 RAM (expandable to 96GB)",
+    "Mixed storage design (HDD + SSD)",
+    "GPU dock compatibility",
+    "Enterprise-grade cooling system"
+  ],
+  "reward_structure": [
+    {
+      "type": "Early Bird Specials",
+      "description": "Heavily discounted units for early backers"
+    },
+    {
+      "type": "NAS Configurations",
+      "description": "Multiple NAS models (CF56, CF56 Pro, CF1000)"
+    },
+    {
+      "type": "Add-on GPU Docks",
+      "description": "GT550 (550W) and GT800 (800W) external GPU docks"
+    },
+    {
+      "type": "RAID Cabinets",
+      "description": "HD8 and HD10 Thunderbolt RAID expansion units"
+    },
+    {
+      "type": "Bundle Packages",
+      "description": "Complete ecosystems with NAS + GPU dock + storage"
+    }
+  ],
+  "unique_elements": [
+    "Custom CyberData OS with cross-platform compatibility",
+    "Built-in AI Docker deployment for local LLM",
+    "Mixed storage architecture (HDD + M.2 SSD)",
+    "Expandable ecosystem with GPU docks and RAID cabinets",
+    "Enterprise-grade ZFS file system",
+    "40Gbps Thunderbolt 4 connectivity",
+    "Aircraft-grade aluminum construction",
+    "P2P remote access technology",
+    "Multiple OS support (Windows, Linux, Ubuntu, Debian)",
+    "Local AI content generation (AIGC)"
+  ],
+  "technical_specs": {
+    "processor_options": ["Intel i5-1240P", "N150", "N305"],
+    "max_storage": "256TB",
+    "hdd_bays": "Up to 10 (24TB each)",
+    "m2_slots": "Up to 6 (8TB each)",
+    "memory": "32GB DDR5 (expandable to 96GB)",
+    "connectivity": ["Dual 10GbE", "40Gbps USB4", "Thunderbolt 4/3"],
+    "raid_support": ["0", "1", "5", "6", "10", "50", "60"],
+    "cooling": "Four adjustable speed modes",
+    "power_efficiency": "80Plus Platinum"
+  }
+}

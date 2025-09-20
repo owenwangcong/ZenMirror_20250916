@@ -1,0 +1,767 @@
+{
+  "shot_list_metadata": {
+    "project": "ZenMirror Crowdfunding Campaign",
+    "video_duration": "2:45",
+    "total_shots": 87,
+    "creation_date": "2025-09-17",
+    "version": "1.0",
+    "production_budget": "$75,000",
+    "estimated_filming_days": 14
+  },
+  "hero_video_shots": [
+    {
+      "shot_id": "HV001",
+      "sequence": "Opening",
+      "shot_type": "Extreme Wide Shot",
+      "description": "Sunrise meditation scene - silhouette of person sitting peacefully in nature",
+      "duration": "3s",
+      "equipment": "Drone + 4K camera",
+      "notes": "Golden hour lighting essential"
+    },
+    {
+      "shot_id": "HV002",
+      "sequence": "Opening",
+      "shot_type": "Close-up",
+      "description": "ZenMirror device sitting elegantly on bamboo stand",
+      "duration": "2s",
+      "equipment": "Macro lens + ring light",
+      "notes": "Focus on premium bamboo texture"
+    },
+    {
+      "shot_id": "HV003",
+      "sequence": "Problem Statement",
+      "shot_type": "Medium Shot",
+      "description": "Person struggling with chest strap monitor - frustrated expression",
+      "duration": "3s",
+      "equipment": "Handheld + natural light",
+      "notes": "Show physical discomfort clearly"
+    },
+    {
+      "shot_id": "HV004",
+      "sequence": "Problem Statement",
+      "shot_type": "Close-up",
+      "description": "Smartwatch display showing low battery during meditation",
+      "duration": "2s",
+      "equipment": "Macro lens",
+      "notes": "Red battery icon prominent"
+    },
+    {
+      "shot_id": "HV005",
+      "sequence": "Problem Statement",
+      "shot_type": "Wide Shot",
+      "description": "Person constantly adjusting EEG headband, breaking meditation flow",
+      "duration": "4s",
+      "equipment": "Static wide angle",
+      "notes": "Emphasize distraction and interruption"
+    },
+    {
+      "shot_id": "HV006",
+      "sequence": "Solution Introduction",
+      "shot_type": "Medium Shot",
+      "description": "ZenMirror setup - person simply placing device and starting meditation",
+      "duration": "5s",
+      "equipment": "Steadicam",
+      "notes": "Show simplicity and ease"
+    },
+    {
+      "shot_id": "HV007",
+      "sequence": "Technology Demo",
+      "shot_type": "Animated Graphic",
+      "description": "Radar waves emanating from device toward meditating person",
+      "duration": "4s",
+      "equipment": "3D animation",
+      "notes": "Green/orange color scheme, subtle waves"
+    },
+    {
+      "shot_id": "HV008",
+      "sequence": "Technology Demo",
+      "shot_type": "Extreme Close-up",
+      "description": "Chest rising and falling during breathing",
+      "duration": "3s",
+      "equipment": "High-speed camera",
+      "notes": "Show micro-movements radar detects"
+    },
+    {
+      "shot_id": "HV009",
+      "sequence": "App Interface",
+      "shot_type": "Screen Recording",
+      "description": "Real-time heart rate and breathing data updating on phone",
+      "duration": "5s",
+      "equipment": "Screen capture",
+      "notes": "Clean UI, smooth data flow"
+    },
+    {
+      "shot_id": "HV010",
+      "sequence": "Mentor Introduction",
+      "shot_type": "Medium Shot",
+      "description": "Person selecting Zen Master mentor on app",
+      "duration": "3s",
+      "equipment": "Over-shoulder shot",
+      "notes": "Show mentor selection interface"
+    },
+    {
+      "shot_id": "HV011",
+      "sequence": "Mentor Demo - Zen",
+      "shot_type": "Close-up",
+      "description": "Peaceful expression during Zen Master guidance",
+      "duration": "4s",
+      "equipment": "Soft lighting + 85mm lens",
+      "notes": "Serene, focused expression"
+    },
+    {
+      "shot_id": "HV012",
+      "sequence": "Mentor Demo - Yogi",
+      "shot_type": "Medium Shot",
+      "description": "Person in yoga pose receiving breathing guidance",
+      "duration": "4s",
+      "equipment": "Natural light",
+      "notes": "Show energy and vitality"
+    },
+    {
+      "shot_id": "HV013",
+      "sequence": "Mentor Demo - Chaplain",
+      "shot_type": "Medium Shot",
+      "description": "Person in prayer position with gentle guidance",
+      "duration": "3s",
+      "equipment": "Warm lighting",
+      "notes": "Peaceful, reverent atmosphere"
+    },
+    {
+      "shot_id": "HV014",
+      "sequence": "Mentor Demo - Spiritual",
+      "shot_type": "Close-up",
+      "description": "Eyes closed, slight smile during spiritual guidance",
+      "duration": "3s",
+      "equipment": "Soft focus",
+      "notes": "Show inner discovery and insight"
+    },
+    {
+      "shot_id": "HV015",
+      "sequence": "Mentor Demo - Stoic",
+      "shot_type": "Medium Shot",
+      "description": "Strong, centered posture during stoic guidance",
+      "duration": "3s",
+      "equipment": "Sharp, clear lighting",
+      "notes": "Emphasize mental strength"
+    },
+    {
+      "shot_id": "HV016",
+      "sequence": "Mentor Demo - Vedanta",
+      "shot_type": "Wide Shot",
+      "description": "Person in lotus position, deeply immersed",
+      "duration": "4s",
+      "equipment": "Natural setting",
+      "notes": "Show unity and transcendence"
+    },
+    {
+      "shot_id": "HV017",
+      "sequence": "Data Visualization",
+      "shot_type": "Animated Graphic",
+      "description": "HRV graph showing improvement over time",
+      "duration": "4s",
+      "equipment": "Motion graphics",
+      "notes": "Clear upward trend visualization"
+    },
+    {
+      "shot_id": "HV018",
+      "sequence": "Data Visualization",
+      "shot_type": "Screen Recording",
+      "description": "Mindfulness points accumulating with animations",
+      "duration": "3s",
+      "equipment": "Screen capture",
+      "notes": "Satisfying progression visual"
+    },
+    {
+      "shot_id": "HV019",
+      "sequence": "Achievement System",
+      "shot_type": "Animated Graphic",
+      "description": "Achievement badges unlocking with celebrations",
+      "duration": "5s",
+      "equipment": "Motion graphics",
+      "notes": "Gamification appeal"
+    },
+    {
+      "shot_id": "HV020",
+      "sequence": "Scientific Credibility",
+      "shot_type": "Medium Shot",
+      "description": "Research papers and citations appearing on screen",
+      "duration": "3s",
+      "equipment": "Clean studio setup",
+      "notes": "Professional, academic feel"
+    },
+    {
+      "shot_id": "HV021",
+      "sequence": "Privacy Focus",
+      "shot_type": "Animated Graphic",
+      "description": "Non-imaging radar vs camera comparison",
+      "duration": "4s",
+      "equipment": "Motion graphics",
+      "notes": "Show privacy protection clearly"
+    },
+    {
+      "shot_id": "HV022",
+      "sequence": "User Testimonial 1",
+      "shot_type": "Medium Shot",
+      "description": "Sarah M. giving testimonial about Zen Master mentor",
+      "duration": "8s",
+      "equipment": "Interview setup",
+      "notes": "Authentic, conversational tone"
+    },
+    {
+      "shot_id": "HV023",
+      "sequence": "User Testimonial 2",
+      "shot_type": "Medium Shot",
+      "description": "David L. (meditation teacher) on objective feedback",
+      "duration": "7s",
+      "equipment": "Interview setup",
+      "notes": "Professional credibility"
+    },
+    {
+      "shot_id": "HV024",
+      "sequence": "User Testimonial 3",
+      "shot_type": "Medium Shot",
+      "description": "Maya P. (studio owner) on group analytics",
+      "duration": "6s",
+      "equipment": "Interview setup",
+      "notes": "Business application focus"
+    },
+    {
+      "shot_id": "HV025",
+      "sequence": "Multiple Use Cases",
+      "shot_type": "Time-lapse",
+      "description": "Device being used throughout the day - morning, work, evening",
+      "duration": "6s",
+      "equipment": "Multiple cameras",
+      "notes": "Show versatility and integration"
+    },
+    {
+      "shot_id": "HV026",
+      "sequence": "Studio Application",
+      "shot_type": "Wide Shot",
+      "description": "Multiple ZenMirrors in meditation studio with group",
+      "duration": "5s",
+      "equipment": "Wide angle",
+      "notes": "Professional/commercial appeal"
+    },
+    {
+      "shot_id": "HV027",
+      "sequence": "Travel/Portability",
+      "shot_type": "Medium Shot",
+      "description": "Device being packed in travel case",
+      "duration": "3s",
+      "equipment": "Clean product shot",
+      "notes": "Show premium case and portability"
+    },
+    {
+      "shot_id": "HV028",
+      "sequence": "Different Environments",
+      "shot_type": "Montage",
+      "description": "ZenMirror working in bedroom, living room, office, outdoor",
+      "duration": "8s",
+      "equipment": "Multiple locations",
+      "notes": "Adaptability across settings"
+    },
+    {
+      "shot_id": "HV029",
+      "sequence": "Team Introduction",
+      "shot_type": "Medium Shot",
+      "description": "Dr. Sarah Chen explaining the vision",
+      "duration": "10s",
+      "equipment": "Professional interview",
+      "notes": "Founder credibility and passion"
+    },
+    {
+      "shot_id": "HV030",
+      "sequence": "Technical Expertise",
+      "shot_type": "Medium Shot",
+      "description": "Dr. Marcus Rodriguez on radar technology",
+      "duration": "8s",
+      "equipment": "Lab/tech environment",
+      "notes": "Technical authority"
+    },
+    {
+      "shot_id": "HV031",
+      "sequence": "Cultural Authenticity",
+      "shot_type": "Medium Shot",
+      "description": "Lama Tenzin Norbu on traditional wisdom",
+      "duration": "9s",
+      "equipment": "Peaceful setting",
+      "notes": "Spiritual authenticity"
+    },
+    {
+      "shot_id": "HV032",
+      "sequence": "Manufacturing Quality",
+      "shot_type": "Medium Shot",
+      "description": "Precision assembly in clean manufacturing facility",
+      "duration": "4s",
+      "equipment": "Industrial lighting",
+      "notes": "Quality and reliability"
+    },
+    {
+      "shot_id": "HV033",
+      "sequence": "Quality Testing",
+      "shot_type": "Close-up",
+      "description": "Hands conducting final quality inspection",
+      "duration": "3s",
+      "equipment": "Macro lens",
+      "notes": "Attention to detail"
+    },
+    {
+      "shot_id": "HV034",
+      "sequence": "Packaging",
+      "shot_type": "Medium Shot",
+      "description": "Premium eco-friendly packaging being assembled",
+      "duration": "4s",
+      "equipment": "Clean studio",
+      "notes": "Sustainability values"
+    },
+    {
+      "shot_id": "HV035",
+      "sequence": "Comparison - Traditional",
+      "shot_type": "Split Screen",
+      "description": "Left: Person with multiple wearables, Right: Clean ZenMirror setup",
+      "duration": "5s",
+      "equipment": "Dual camera setup",
+      "notes": "Stark contrast visualization"
+    },
+    {
+      "shot_id": "HV036",
+      "sequence": "Comparison - Distraction",
+      "shot_type": "Close-up",
+      "description": "Person checking smartwatch during meditation vs peaceful ZenMirror session",
+      "duration": "6s",
+      "equipment": "Intercutting",
+      "notes": "Show interruption vs flow"
+    },
+    {
+      "shot_id": "HV037",
+      "sequence": "Heart Rate Accuracy",
+      "shot_type": "Animated Graphic",
+      "description": "Side-by-side heart rate readings: ZenMirror vs chest strap",
+      "duration": "4s",
+      "equipment": "Data visualization",
+      "notes": "Clinical accuracy demonstration"
+    },
+    {
+      "shot_id": "HV038",
+      "sequence": "Breathing Analysis",
+      "shot_type": "Animated Graphic",
+      "description": "Real-time breathing pattern visualization",
+      "duration": "5s",
+      "equipment": "Motion graphics",
+      "notes": "Scientific precision visual"
+    },
+    {
+      "shot_id": "HV039",
+      "sequence": "HRV Explanation",
+      "shot_type": "Animated Graphic",
+      "description": "Heart rate variability explained with clear visuals",
+      "duration": "6s",
+      "equipment": "Educational animation",
+      "notes": "Make complex concept accessible"
+    },
+    {
+      "shot_id": "HV040",
+      "sequence": "RSA Demonstration",
+      "shot_type": "Animated Graphic",
+      "description": "Respiratory sinus arrhythmia visualization",
+      "duration": "5s",
+      "equipment": "Scientific animation",
+      "notes": "Show heart-breath synchronization"
+    },
+    {
+      "shot_id": "HV041",
+      "sequence": "Closed Loop Learning",
+      "shot_type": "Animated Graphic",
+      "description": "Feedback loop: Monitor → Assess → Feedback → Improve",
+      "duration": "6s",
+      "equipment": "Circular flow animation",
+      "notes": "Clear process visualization"
+    },
+    {
+      "shot_id": "HV042",
+      "sequence": "Personalization",
+      "shot_type": "Screen Recording",
+      "description": "App learning and adapting to user preferences",
+      "duration": "5s",
+      "equipment": "Interface capture",
+      "notes": "Show AI adaptation"
+    },
+    {
+      "shot_id": "HV043",
+      "sequence": "Progress Tracking",
+      "shot_type": "Screen Recording",
+      "description": "Long-term meditation quality improvement charts",
+      "duration": "4s",
+      "equipment": "Screen capture",
+      "notes": "Show meaningful progress"
+    },
+    {
+      "shot_id": "HV044",
+      "sequence": "Community Features",
+      "shot_type": "Screen Recording",
+      "description": "Community challenges and shared achievements",
+      "duration": "4s",
+      "equipment": "App interface",
+      "notes": "Social connection aspect"
+    },
+    {
+      "shot_id": "HV045",
+      "sequence": "Different Ages",
+      "shot_type": "Montage",
+      "description": "Young adult, middle-aged, elderly all using ZenMirror",
+      "duration": "6s",
+      "equipment": "Multiple shoots",
+      "notes": "Universal appeal"
+    },
+    {
+      "shot_id": "HV046",
+      "sequence": "Different Cultures",
+      "shot_type": "Montage",
+      "description": "Diverse users with different mentor preferences",
+      "duration": "7s",
+      "equipment": "Multiple locations",
+      "notes": "Global inclusivity"
+    },
+    {
+      "shot_id": "HV047",
+      "sequence": "Accessibility",
+      "shot_type": "Medium Shot",
+      "description": "Person with physical limitations using ZenMirror easily",
+      "duration": "5s",
+      "equipment": "Sensitive filming",
+      "notes": "Inclusive design benefits"
+    },
+    {
+      "shot_id": "HV048",
+      "sequence": "Safety Demonstration",
+      "shot_type": "Animated Graphic",
+      "description": "Power level comparison: ZenMirror vs smartphone vs microwave",
+      "duration": "4s",
+      "equipment": "Infographic style",
+      "notes": "Clearly show safety"
+    },
+    {
+      "shot_id": "HV049",
+      "sequence": "Long-term Use",
+      "shot_type": "Time-lapse",
+      "description": "Device running continuously for 24 hours",
+      "duration": "3s",
+      "equipment": "Long exposure",
+      "notes": "Reliability and endurance"
+    },
+    {
+      "shot_id": "HV050",
+      "sequence": "Environmental Conditions",
+      "shot_type": "Montage",
+      "description": "ZenMirror working in different lighting, temperature conditions",
+      "duration": "5s",
+      "equipment": "Various conditions",
+      "notes": "Robust performance"
+    },
+    {
+      "shot_id": "HV051",
+      "sequence": "Backing Call-to-Action",
+      "shot_type": "Medium Shot",
+      "description": "Person successfully completing their first meditation session",
+      "duration": "5s",
+      "equipment": "Inspirational lighting",
+      "notes": "Achievement and satisfaction"
+    },
+    {
+      "shot_id": "HV052",
+      "sequence": "Backing Call-to-Action",
+      "shot_type": "Close-up",
+      "description": "Hand selecting reward tier on phone",
+      "duration": "3s",
+      "equipment": "Over-shoulder",
+      "notes": "Clear action step"
+    },
+    {
+      "shot_id": "HV053",
+      "sequence": "Early Bird Urgency",
+      "shot_type": "Animated Graphic",
+      "description": "Limited quantity countdown animation",
+      "duration": "3s",
+      "equipment": "Motion graphics",
+      "notes": "Create appropriate urgency"
+    },
+    {
+      "shot_id": "HV054",
+      "sequence": "Risk Mitigation",
+      "shot_type": "Animated Graphic",
+      "description": "30-day guarantee and delivery insurance badges",
+      "duration": "3s",
+      "equipment": "Clean graphics",
+      "notes": "Reduce purchase anxiety"
+    },
+    {
+      "shot_id": "HV055",
+      "sequence": "Future Vision",
+      "shot_type": "Animated Graphic",
+      "description": "Stretch goals visualization: more features, integration",
+      "duration": "4s",
+      "equipment": "Futuristic animation",
+      "notes": "Exciting possibilities"
+    },
+    {
+      "shot_id": "HV056",
+      "sequence": "Closing",
+      "shot_type": "Wide Shot",
+      "description": "Person in deep meditation with ZenMirror, peaceful expression",
+      "duration": "5s",
+      "equipment": "Golden hour lighting",
+      "notes": "Aspirational final image"
+    },
+    {
+      "shot_id": "HV057",
+      "sequence": "Closing",
+      "shot_type": "Close-up",
+      "description": "ZenMirror logo with tagline fade-in",
+      "duration": "3s",
+      "equipment": "Clean studio",
+      "notes": "Brand reinforcement"
+    }
+  ],
+  "additional_shots": [
+    {
+      "shot_id": "AS001",
+      "category": "Product Detail",
+      "description": "360-degree product rotation on white background",
+      "duration": "8s",
+      "purpose": "Website/social media use"
+    },
+    {
+      "shot_id": "AS002",
+      "category": "Unboxing",
+      "description": "Premium unboxing experience",
+      "duration": "15s",
+      "purpose": "Backer excitement/social proof"
+    },
+    {
+      "shot_id": "AS003",
+      "category": "Setup Tutorial",
+      "description": "Step-by-step setup process",
+      "duration": "30s",
+      "purpose": "Customer support/onboarding"
+    },
+    {
+      "shot_id": "AS004",
+      "category": "App Walkthrough",
+      "description": "Complete app interface tour",
+      "duration": "45s",
+      "purpose": "Feature demonstration"
+    },
+    {
+      "shot_id": "AS005",
+      "category": "Mentor Deep Dive",
+      "description": "Extended samples from each mentor",
+      "duration": "60s",
+      "purpose": "Mentor selection aid"
+    },
+    {
+      "shot_id": "AS006",
+      "category": "Scientific Explanation",
+      "description": "Detailed radar technology breakdown",
+      "duration": "90s",
+      "purpose": "Technical audience"
+    },
+    {
+      "shot_id": "AS007",
+      "category": "User Stories Extended",
+      "description": "Longer testimonials and case studies",
+      "duration": "120s",
+      "purpose": "Social proof/credibility"
+    },
+    {
+      "shot_id": "AS008",
+      "category": "Manufacturing Tour",
+      "description": "Behind-the-scenes production process",
+      "duration": "60s",
+      "purpose": "Quality assurance/transparency"
+    },
+    {
+      "shot_id": "AS009",
+      "category": "Cultural Authenticity",
+      "description": "Advisor interviews on tradition accuracy",
+      "duration": "90s",
+      "purpose": "Cultural credibility"
+    },
+    {
+      "shot_id": "AS010",
+      "category": "Comparison Deep Dive",
+      "description": "Detailed vs competitor analysis",
+      "duration": "45s",
+      "purpose": "Competitive advantage"
+    },
+    {
+      "shot_id": "AS011",
+      "category": "Beta Tester Stories",
+      "description": "Extended beta user experiences",
+      "duration": "120s",
+      "purpose": "Real-world validation"
+    },
+    {
+      "shot_id": "AS012",
+      "category": "Team Expertise",
+      "description": "Extended team member profiles",
+      "duration": "90s",
+      "purpose": "Credibility building"
+    },
+    {
+      "shot_id": "AS013",
+      "category": "Research Foundation",
+      "description": "Scientific studies and citations",
+      "duration": "60s",
+      "purpose": "Academic credibility"
+    },
+    {
+      "shot_id": "AS014",
+      "category": "Privacy Deep Dive",
+      "description": "Detailed privacy and security explanation",
+      "duration": "45s",
+      "purpose": "Privacy concern mitigation"
+    },
+    {
+      "shot_id": "AS015",
+      "category": "Accessibility Features",
+      "description": "Inclusive design demonstrations",
+      "duration": "30s",
+      "purpose": "Accessibility highlighting"
+    },
+    {
+      "shot_id": "AS016",
+      "category": "Environmental Impact",
+      "description": "Sustainability practices and materials",
+      "duration": "30s",
+      "purpose": "Environmental consciousness"
+    },
+    {
+      "shot_id": "AS017",
+      "category": "Quality Assurance",
+      "description": "Testing procedures and standards",
+      "duration": "45s",
+      "purpose": "Quality confidence"
+    },
+    {
+      "shot_id": "AS018",
+      "category": "Customer Support",
+      "description": "Support system and resources",
+      "duration": "30s",
+      "purpose": "Purchase confidence"
+    },
+    {
+      "shot_id": "AS019",
+      "category": "Community Building",
+      "description": "User community and forums",
+      "duration": "30s",
+      "purpose": "Community engagement"
+    },
+    {
+      "shot_id": "AS020",
+      "category": "Future Roadmap",
+      "description": "Product evolution and updates",
+      "duration": "45s",
+      "purpose": "Long-term value"
+    },
+    {
+      "shot_id": "AS021",
+      "category": "International Appeal",
+      "description": "Global users and applications",
+      "duration": "30s",
+      "purpose": "Market expansion"
+    },
+    {
+      "shot_id": "AS022",
+      "category": "Professional Use",
+      "description": "Studio and enterprise applications",
+      "duration": "60s",
+      "purpose": "B2B market"
+    },
+    {
+      "shot_id": "AS023",
+      "category": "Lifestyle Integration",
+      "description": "Daily life integration scenarios",
+      "duration": "45s",
+      "purpose": "Lifestyle appeal"
+    },
+    {
+      "shot_id": "AS024",
+      "category": "Technology Evolution",
+      "description": "Meditation tech timeline and future",
+      "duration": "30s",
+      "purpose": "Innovation leadership"
+    },
+    {
+      "shot_id": "AS025",
+      "category": "Awards and Recognition",
+      "description": "Industry recognition and achievements",
+      "duration": "15s",
+      "purpose": "Credibility boost"
+    },
+    {
+      "shot_id": "AS026",
+      "category": "Partnership Highlights",
+      "description": "Key partnerships and collaborations",
+      "duration": "30s",
+      "purpose": "Network credibility"
+    },
+    {
+      "shot_id": "AS027",
+      "category": "Investment and Growth",
+      "description": "Funding milestones and expansion",
+      "duration": "30s",
+      "purpose": "Business credibility"
+    },
+    {
+      "shot_id": "AS028",
+      "category": "Media Coverage",
+      "description": "Press coverage and reviews",
+      "duration": "30s",
+      "purpose": "Third-party validation"
+    },
+    {
+      "shot_id": "AS029",
+      "category": "Educational Content",
+      "description": "Meditation education and resources",
+      "duration": "60s",
+      "purpose": "Value-added content"
+    },
+    {
+      "shot_id": "AS030",
+      "category": "Seasonal Campaigns",
+      "description": "Holiday and special occasion uses",
+      "duration": "30s",
+      "purpose": "Marketing campaigns"
+    }
+  ],
+  "production_notes": {
+    "lighting_requirements": "Natural light preferred for meditation scenes, professional lighting for testimonials and product shots",
+    "audio_requirements": "High-quality audio for mentor voice samples, ambient sound for meditation scenes",
+    "location_diversity": "Home environments, studios, offices, outdoor spaces, manufacturing facility",
+    "talent_requirements": "Diverse age groups, cultures, meditation experience levels",
+    "equipment_list": [
+      "4K cameras (primary and backup)",
+      "Drone for establishing shots",
+      "Macro lenses for product detail",
+      "Professional lighting kit",
+      "Audio recording equipment",
+      "Stabilization equipment (steadicam, gimbal)",
+      "Screen recording software",
+      "Animation workstation"
+    ],
+    "post_production": {
+      "editing_software": "Adobe Premiere Pro",
+      "motion_graphics": "After Effects",
+      "color_grading": "DaVinci Resolve",
+      "audio_post": "Adobe Audition",
+      "delivery_formats": [
+        "4K master",
+        "1080p web optimized",
+        "720p mobile optimized",
+        "Vertical formats for social media",
+        "Various aspect ratios for different platforms"
+      ]
+    }
+  }
+}

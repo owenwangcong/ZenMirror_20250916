@@ -1,0 +1,143 @@
+File_Path,HTML_Source,Alt_Text,Exists,Image_Type,Description
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\og-image.jpg,kickstarter_final,og-image,FALSE,social_media,Open Graph image for social sharing
+D:\Projects\ZenMirror_20250916\assets\images\branding\zenmirror-logo.png,kickstarter_final,ZenMirror,TRUE,logo,Main ZenMirror brand logo with zen aesthetic
+D:\Projects\ZenMirror_20250916\assets\images\product\zenmirror-device.png,kickstarter_final,ZenMirror Device,TRUE,product,Main hero image of the ZenMirror device
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\video-thumbnail.jpg,kickstarter_final,ZenMirror Demo Video,FALSE,video_thumbnail,Thumbnail for main demonstration video
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\traditional-wearables.jpg,kickstarter_final,Traditional wearables,FALSE,comparison,Image showing cluttered traditional wearable devices
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\zenmirror-setup.jpg,kickstarter_final,ZenMirror contactless setup,FALSE,comparison,Clean setup showing ZenMirror contactless monitoring
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\icons\radar-waves.jpg,kickstarter_final,Radar Waves,FALSE,icon,Icon representing radar wave technology
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\icons\heart-monitoring.jpg,kickstarter_final,Heart Monitoring,FALSE,icon,Icon for heart rate monitoring feature
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\icons\privacy-shield.jpg,kickstarter_final,Privacy Shield,FALSE,icon,Icon representing privacy protection
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\tech-diagram.jpg,kickstarter_final,ZenMirror Technology Diagram,FALSE,diagram,Technical diagram showing how ZenMirror works
+D:\Projects\ZenMirror_20250916\assets\images\mentors\zen-master.png,kickstarter_final,Zen Master,TRUE,mentor,Portrait of Zen Master mentor character
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\icons\zen-circle.jpg,kickstarter_final,Zen Circle,FALSE,icon,Zen Buddhist circle symbol
+D:\Projects\ZenMirror_20250916\assets\images\mentors\yogi.png,kickstarter_final,Yogi,TRUE,mentor,Portrait of Yogi mentor character
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\icons\lotus.jpg,kickstarter_final,Lotus,FALSE,icon,Lotus flower symbol for yoga
+D:\Projects\ZenMirror_20250916\assets\images\mentors\chaplain.png,kickstarter_final,Chaplain,TRUE,mentor,Portrait of Chaplain mentor character
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\icons\dove.jpg,kickstarter_final,Dove,FALSE,icon,Dove symbol for peace and spirituality
+D:\Projects\ZenMirror_20250916\assets\images\mentors\spiritual-mentor.png,kickstarter_final,Spiritual Mentor,TRUE,mentor,Portrait of Spiritual Mentor character
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\icons\tree-of-life.jpg,kickstarter_final,Tree of Life,FALSE,icon,Tree of life symbol for universal spirituality
+D:\Projects\ZenMirror_20250916\assets\images\mentors\stoic-philosopher.png,kickstarter_final,Stoic Philosopher,TRUE,mentor,Portrait of Stoic Philosopher mentor character
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\icons\column.jpg,kickstarter_final,Column,FALSE,icon,Classical column symbol for stoic philosophy
+D:\Projects\ZenMirror_20250916\assets\images\mentors\vedanta-acharya.png,kickstarter_final,Vedanta Acharya,TRUE,mentor,Portrait of Vedanta Acharya mentor character
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\icons\om-symbol.jpg,kickstarter_final,Om Symbol,FALSE,icon,Om symbol for Vedanta tradition
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\icons\real-time.jpg,kickstarter_final,Real-time,FALSE,icon,Icon for real-time feedback feature
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\icons\scoring.jpg,kickstarter_final,Scoring,FALSE,icon,Icon for mindfulness scoring system
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\icons\achievements.jpg,kickstarter_final,Achievements,FALSE,icon,Icon for achievement system
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\icons\multi-mode.jpg,kickstarter_final,Multi-mode,FALSE,icon,Icon for multiple operation modes
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\icons\closed-loop.jpg,kickstarter_final,Closed Loop,FALSE,icon,Icon for closed-loop optimization
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\icons\analytics.jpg,kickstarter_final,Analytics,FALSE,icon,Icon for scientific analytics
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\icons\hrv-research.jpg,kickstarter_final,HRV Research,FALSE,icon,Icon for HRV research validation
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\icons\rsa-research.jpg,kickstarter_final,RSA Research,FALSE,icon,Icon for RSA research validation
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\icons\meditation-research.jpg,kickstarter_final,Meditation Research,FALSE,icon,Icon for meditation research validation
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\hrv-rsa-chart.jpg,kickstarter_final,HRV and RSA Visualization,FALSE,chart,Chart showing HRV and RSA data visualization
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\closed-loop-diagram.jpg,kickstarter_final,Closed Loop System,FALSE,diagram,Diagram showing closed-loop meditation system
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\team\founder.jpg,kickstarter_final,Founder,FALSE,team,Portrait of company founder Dr. Sarah Chen
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\team\cto.jpg,kickstarter_final,CTO,FALSE,team,Portrait of CTO Dr. Marcus Rodriguez
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\team\advisor.jpg,kickstarter_final,Spiritual Advisor,FALSE,team,Portrait of spiritual advisor Lama Tenzin Norbu
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\testimonials\sarah.jpg,kickstarter_final,Sarah M.,FALSE,testimonial,Portrait of testimonial giver Sarah M.
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\testimonials\david.jpg,kickstarter_final,David L.,FALSE,testimonial,Portrait of testimonial giver David L.
+D:\Projects\ZenMirror_20250916\final_campaigns\kickstarter\assets\testimonials\maya.jpg,kickstarter_final,Maya P.,FALSE,testimonial,Portrait of testimonial giver Maya P.
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\og-image.jpg,indiegogo_final,og-image,FALSE,social_media,Open Graph image for social sharing
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\gallery\setup-view.jpg,indiegogo_final,Setup View,FALSE,gallery,Gallery image showing device setup
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\gallery\app-interface.jpg,indiegogo_final,App Interface,FALSE,gallery,Gallery image showing app interface
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\gallery\mentor-selection.jpg,indiegogo_final,Mentor Selection,FALSE,gallery,Gallery image showing mentor selection screen
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\gallery\data-visualization.jpg,indiegogo_final,Data Visualization,FALSE,gallery,Gallery image showing data visualization
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\story\traditional-problems.jpg,indiegogo_final,Traditional meditation tracking problems,FALSE,story,Image showing problems with traditional wearables
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\story\zenmirror-solution.jpg,indiegogo_final,ZenMirror contactless solution,FALSE,story,Image showing ZenMirror contactless solution
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\story\cultural-mentors.jpg,indiegogo_final,Cultural wisdom traditions,FALSE,story,Image representing six wisdom traditions
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\icons\hrv-research.jpg,indiegogo_final,HRV Research,FALSE,icon,Icon for HRV research validation
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\icons\meditation-research.jpg,indiegogo_final,Meditation Research,FALSE,icon,Icon for meditation research validation
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\icons\rsa-research.jpg,indiegogo_final,RSA Research,FALSE,icon,Icon for RSA research validation
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\videos\hero-demo-thumb.jpg,indiegogo_final,ZenMirror Hero Demo,FALSE,video_thumbnail,Hero demo video thumbnail
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\videos\tech-demo-thumb.jpg,indiegogo_final,Technology Demo,FALSE,video_thumbnail,Technology demo video thumbnail
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\videos\mentor-demo-thumb.jpg,indiegogo_final,Mentor Demo,FALSE,video_thumbnail,Mentor demo video thumbnail
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\videos\setup-guide-thumb.jpg,indiegogo_final,Setup Guide,FALSE,video_thumbnail,Setup guide video thumbnail
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\videos\user-stories-thumb.jpg,indiegogo_final,User Stories,FALSE,video_thumbnail,User stories video thumbnail
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\videos\comparison-thumb.jpg,indiegogo_final,Comparison Demo,FALSE,video_thumbnail,Comparison demo video thumbnail
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\gallery\product-front.jpg,indiegogo_final,ZenMirror Front View,FALSE,gallery,Product front view gallery image
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\gallery\product-side.jpg,indiegogo_final,ZenMirror Side View,FALSE,gallery,Product side view gallery image
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\gallery\product-detail.jpg,indiegogo_final,ZenMirror Detail View,FALSE,gallery,Product detail view gallery image
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\gallery\product-packaging.jpg,indiegogo_final,Product Packaging,FALSE,gallery,Product packaging gallery image
+D:\Projects\ZenMirror_20250916\assets\images\app\dashboard.png,indiegogo_final,App Dashboard,TRUE,app,App dashboard interface screenshot
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\gallery\mentor-interface.jpg,indiegogo_final,Mentor Selection,FALSE,gallery,Mentor interface gallery image
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\gallery\analytics-view.jpg,indiegogo_final,Analytics View,FALSE,gallery,Analytics view gallery image
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\gallery\achievements-view.jpg,indiegogo_final,Achievements,FALSE,gallery,Achievements view gallery image
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\gallery\home-meditation.jpg,indiegogo_final,Home Meditation,FALSE,gallery,Home meditation scenario gallery image
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\gallery\studio-use.jpg,indiegogo_final,Studio Use,FALSE,gallery,Studio use scenario gallery image
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\gallery\office-meditation.jpg,indiegogo_final,Office Meditation,FALSE,gallery,Office meditation scenario gallery image
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\gallery\travel-setup.jpg,indiegogo_final,Travel Setup,FALSE,gallery,Travel setup scenario gallery image
+D:\Projects\ZenMirror_20250916\assets\images\technology\radar-visualization.png,indiegogo_final,Radar Technology Visualization,TRUE,technology,Radar technology visualization diagram
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\closed-loop-diagram.jpg,indiegogo_final,Closed Loop System,FALSE,diagram,Closed-loop system diagram
+D:\Projects\ZenMirror_20250916\final_campaigns\indiegogo\assets\updates\manufacturing-facility.jpg,indiegogo_final,Manufacturing Facility,FALSE,update,Manufacturing facility update image
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\og-image.jpg,kickstarter_mockup,og-image,FALSE,social_media,Open Graph image for social sharing
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\video-thumbnail.jpg,kickstarter_mockup,ZenMirror Demo Video,FALSE,video_thumbnail,Demo video thumbnail for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\traditional-wearables.jpg,kickstarter_mockup,Traditional wearables,FALSE,comparison,Traditional wearables comparison image
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\zenmirror-setup.jpg,kickstarter_mockup,ZenMirror contactless setup,FALSE,comparison,ZenMirror setup comparison image
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\icons\radar-waves.svg,kickstarter_mockup,Radar Waves,FALSE,icon,SVG icon for radar waves
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\icons\heart-monitoring.svg,kickstarter_mockup,Heart Monitoring,FALSE,icon,SVG icon for heart monitoring
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\icons\privacy-shield.svg,kickstarter_mockup,Privacy Shield,FALSE,icon,SVG icon for privacy shield
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\tech-diagram.svg,kickstarter_mockup,ZenMirror Technology Diagram,FALSE,diagram,SVG technology diagram
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\icons\zen-circle.svg,kickstarter_mockup,Zen Circle,FALSE,icon,SVG Zen circle icon
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\icons\lotus.svg,kickstarter_mockup,Lotus,FALSE,icon,SVG lotus icon
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\icons\dove.svg,kickstarter_mockup,Dove,FALSE,icon,SVG dove icon
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\icons\tree-of-life.svg,kickstarter_mockup,Tree of Life,FALSE,icon,SVG tree of life icon
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\icons\column.svg,kickstarter_mockup,Column,FALSE,icon,SVG column icon
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\icons\om-symbol.svg,kickstarter_mockup,Om Symbol,FALSE,icon,SVG Om symbol icon
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\icons\real-time.svg,kickstarter_mockup,Real-time,FALSE,icon,SVG real-time icon
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\icons\scoring.svg,kickstarter_mockup,Scoring,FALSE,icon,SVG scoring icon
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\icons\achievements.svg,kickstarter_mockup,Achievements,FALSE,icon,SVG achievements icon
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\icons\multi-mode.svg,kickstarter_mockup,Multi-mode,FALSE,icon,SVG multi-mode icon
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\icons\closed-loop.svg,kickstarter_mockup,Closed Loop,FALSE,icon,SVG closed-loop icon
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\icons\analytics.svg,kickstarter_mockup,Analytics,FALSE,icon,SVG analytics icon
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\icons\hrv-research.svg,kickstarter_mockup,HRV Research,FALSE,icon,SVG HRV research icon
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\icons\rsa-research.svg,kickstarter_mockup,RSA Research,FALSE,icon,SVG RSA research icon
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\icons\meditation-research.svg,kickstarter_mockup,Meditation Research,FALSE,icon,SVG meditation research icon
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\hrv-rsa-chart.svg,kickstarter_mockup,HRV and RSA Visualization,FALSE,chart,SVG HRV and RSA chart
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\closed-loop-diagram.svg,kickstarter_mockup,Closed Loop System,FALSE,diagram,SVG closed-loop diagram
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\team\founder.jpg,kickstarter_mockup,Founder,FALSE,team,Founder portrait for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\team\cto.jpg,kickstarter_mockup,CTO,FALSE,team,CTO portrait for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\team\advisor.jpg,kickstarter_mockup,Spiritual Advisor,FALSE,team,Advisor portrait for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\testimonials\sarah.jpg,kickstarter_mockup,Sarah M.,FALSE,testimonial,Sarah testimonial portrait for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\testimonials\david.jpg,kickstarter_mockup,David L.,FALSE,testimonial,David testimonial portrait for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\kickstarter_mockups\assets\testimonials\maya.jpg,kickstarter_mockup,Maya P.,FALSE,testimonial,Maya testimonial portrait for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\og-image.jpg,indiegogo_mockup,og-image,FALSE,social_media,Open Graph image for social sharing
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\gallery\setup-view.jpg,indiegogo_mockup,Setup View,FALSE,gallery,Setup view gallery image for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\gallery\app-interface.jpg,indiegogo_mockup,App Interface,FALSE,gallery,App interface gallery image for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\gallery\mentor-selection.jpg,indiegogo_mockup,Mentor Selection,FALSE,gallery,Mentor selection gallery image for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\gallery\data-visualization.jpg,indiegogo_mockup,Data Visualization,FALSE,gallery,Data visualization gallery image for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\story\traditional-problems.jpg,indiegogo_mockup,Traditional meditation tracking problems,FALSE,story,Traditional problems story image for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\story\zenmirror-solution.jpg,indiegogo_mockup,ZenMirror contactless solution,FALSE,story,ZenMirror solution story image for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\story\cultural-mentors.jpg,indiegogo_mockup,Cultural wisdom traditions,FALSE,story,Cultural mentors story image for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\icons\hrv-research.svg,indiegogo_mockup,HRV Research,FALSE,icon,SVG HRV research icon for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\icons\meditation-research.svg,indiegogo_mockup,Meditation Research,FALSE,icon,SVG meditation research icon for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\icons\rsa-research.svg,indiegogo_mockup,RSA Research,FALSE,icon,SVG RSA research icon for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\videos\tech-demo-thumb.jpg,indiegogo_mockup,Technology Demo,FALSE,video_thumbnail,Tech demo video thumbnail for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\videos\mentor-demo-thumb.jpg,indiegogo_mockup,Mentor Demo,FALSE,video_thumbnail,Mentor demo video thumbnail for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\videos\user-stories-thumb.jpg,indiegogo_mockup,User Stories,FALSE,video_thumbnail,User stories video thumbnail for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\gallery\product-front.jpg,indiegogo_mockup,ZenMirror Front View,FALSE,gallery,Product front view for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\gallery\product-side.jpg,indiegogo_mockup,ZenMirror Side View,FALSE,gallery,Product side view for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\gallery\product-detail.jpg,indiegogo_mockup,ZenMirror Detail View,FALSE,gallery,Product detail view for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\gallery\mentor-interface.jpg,indiegogo_mockup,Mentor Selection,FALSE,gallery,Mentor interface for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\gallery\analytics-view.jpg,indiegogo_mockup,Analytics View,FALSE,gallery,Analytics view for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\gallery\setup-process.jpg,indiegogo_mockup,Setup Process,FALSE,gallery,Setup process for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\gallery\meditation-session.jpg,indiegogo_mockup,Meditation Session,FALSE,gallery,Meditation session for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\gallery\feedback-system.jpg,indiegogo_mockup,Feedback System,FALSE,gallery,Feedback system for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\gallery\home-meditation.jpg,indiegogo_mockup,Home Meditation,FALSE,gallery,Home meditation for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\gallery\studio-use.jpg,indiegogo_mockup,Studio Use,FALSE,gallery,Studio use for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\gallery\group-meditation.jpg,indiegogo_mockup,Group Meditation,FALSE,gallery,Group meditation for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\icons\heart-rate.svg,indiegogo_mockup,Heart Rate,FALSE,icon,SVG heart rate icon for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\icons\breathing.svg,indiegogo_mockup,Breathing,FALSE,icon,SVG breathing icon for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\icons\hrv.svg,indiegogo_mockup,HRV,FALSE,icon,SVG HRV icon for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\icons\rsa.svg,indiegogo_mockup,RSA,FALSE,icon,SVG RSA icon for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\icons\movement.svg,indiegogo_mockup,Movement,FALSE,icon,SVG movement detection icon for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\icons\ai-analysis.svg,indiegogo_mockup,AI Analysis,FALSE,icon,SVG AI analysis icon for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\icons\non-imaging.svg,indiegogo_mockup,Non-imaging,FALSE,icon,SVG non-imaging icon for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\icons\local-processing.svg,indiegogo_mockup,Local Processing,FALSE,icon,SVG local processing icon for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\icons\encryption.svg,indiegogo_mockup,Encryption,FALSE,icon,SVG encryption icon for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\icons\offline-mode.svg,indiegogo_mockup,Offline Mode,FALSE,icon,SVG offline mode icon for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\addons\premium-stand.jpg,indiegogo_mockup,Premium Stand,FALSE,addon,Premium stand addon image for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\addons\travel-case.jpg,indiegogo_mockup,Travel Case,FALSE,addon,Travel case addon image for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\addons\meditation-cushion.jpg,indiegogo_mockup,Meditation Cushion,FALSE,addon,Meditation cushion addon image for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\updates\manufacturing-facility.jpg,indiegogo_mockup,Manufacturing Facility,FALSE,update,Manufacturing facility update image for mockup
+D:\Projects\ZenMirror_20250916\outputs\ui-developer\indiegogo_mockups\assets\updates\mentor-development.jpg,indiegogo_mockup,Mentor Development,FALSE,update,Mentor development update image for mockup

@@ -1,0 +1,57 @@
+{
+  "project_title": "MetaBow: A Digital Revolution for String Instruments",
+  "funding_goal": "CA$ 4,446 (HK$ 25,000)",
+  "amount_raised": "CA$ 5,015 (HK$ 28,200)",
+  "percentage_funded": "113%",
+  "number_of_backers": 4,
+  "category": "Technology > Hardware",
+  "main_features": [
+    "Miniaturized sensor and prototype housing unit for violin, viola, cello, and double bass bows",
+    "9DoF IMU (accelerometer, gyroscope, magnetometer) integrated into MetaBoard sensor",
+    "Real-time bow movement tracking (speed, tilt, pressure, position)",
+    "Cross-platform SDK for data visualization",
+    "Embedded sensor fusion computing",
+    "IC touch sensor and haptic feedback capacitor",
+    "Microphone integration",
+    "DIY-friendly installation without altering playing technique",
+    "53+ design iterations for optimal balance between functionality and usability"
+  ],
+  "reward_tiers": [
+    {
+      "name": "Tote Bag",
+      "price": "HK$ 700 (CA$ 125)",
+      "backers": 0,
+      "includes": "Limited edition MetaBow branded tote bag"
+    },
+    {
+      "name": "SUPER Early Bird Special! (violin/viola/cello)",
+      "price": "HK$ 2,500 (CA$ 445)",
+      "backers": 2,
+      "includes": "MetaBow Housing Prototype (violin, viola, or cello)"
+    },
+    {
+      "name": "SUPER Early Bird Special! (double bass)",
+      "price": "HK$ 3,500 (CA$ 623)",
+      "backers": 0,
+      "includes": "MetaBow Housing Prototype (double bass)"
+    },
+    {
+      "name": "Mounted MetaBow (violin, viola, cello)",
+      "price": "HK$ 5,000 (CA$ 890)",
+      "backers": 0,
+      "includes": "Standard Dev Kit: Housing & Sensor for violin, viola, or cello"
+    },
+    {
+      "name": "Mounted MetaBow (double bass)",
+      "price": "HK$ 6,000 (CA$ 1,068)",
+      "backers": 1,
+      "includes": "Standard Dev Kit: Housing & Sensor for double bass"
+    },
+    {
+      "name": "Mounted MetaBow Quartet",
+      "price": "HK$ 13,000 (CA$ 2,313)",
+      "backers": 1,
+      "includes": "Quartet Dev Kit: housing & sensors for 2 violin, 1 viola, 1 cello"
+    }
+  ]
+}

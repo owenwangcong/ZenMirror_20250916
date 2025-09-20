@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenMirror - Complete Storyboard Collection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2D5B3E, #4A7C59);
+            color: #2C3E3A;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .project-overview {
+            background: rgba(255,255,255,0.95);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 12px 40px rgba(45,91,62,0.15);
+        }
+
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .overview-card {
+            background: linear-gradient(135deg, #E8F5E8, #F4F8F5);
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 4px solid #2D5B3E;
+        }
+
+        .overview-title {
+            color: #2D5B3E;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .overview-content {
+            color: #5A6B5D;
+            font-size: 0.9rem;
+        }
+
+        .storyboard-navigation {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .storyboard-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 35px rgba(45,91,62,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .storyboard-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 50px rgba(45,91,62,0.25);
+        }
+
+        .card-header {
+            padding: 25px;
+            background: linear-gradient(135deg, #2D5B3E, #4A7C59);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .card-subtitle {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .card-visual {
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .opening-visual {
+            background: linear-gradient(45deg, #343A40, #6C757D, #E8F5E8);
+        }
+
+        .product-visual {
+            background: linear-gradient(45deg, #E8F5E8, #2D5B3E, #D97A34);
+        }
+
+        .mentor-visual {
+            background: linear-gradient(45deg, #2D5B3E, #D97A34, #F4A460);
+        }
+
+        .feature-visual {
+            background: linear-gradient(45deg, #D97A34, #F4A460, #FDF6F0);
+        }
+
+        .visual-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4rem;
+            opacity: 0.7;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .opening-icon {
+            color: #6C757D;
+        }
+
+        .product-icon {
+            color: #2D5B3E;
+        }
+
+        .mentor-icon {
+            color: #D97A34;
+        }
+
+        .feature-icon {
+            color: #F4A460;
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .sequence-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            background: rgba(45,91,62,0.05);
+            padding: 12px;
+            border-radius: 10px;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #2D5B3E;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .info-value {
+            color: #5A6B5D;
+            font-size: 0.9rem;
+        }
+
+        .key-shots {
+            margin-top: 15px;
+        }
+
+        .key-shots-title {
+            font-weight: bold;
+            color: #2D5B3E;
+            margin-bottom: 8px;
+        }
+
+        .shot-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .shot-item {
+            background: linear-gradient(135deg, #FDF6F0, #F4F8F5);
+            padding: 8px 12px;
+            margin-bottom: 5px;
+            border-radius: 8px;
+            border-left: 3px solid #D97A34;
+            font-size: 0.85rem;
+            color: #5A6B5D;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #D97A34, #F4A460);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(135deg, #F4A460, #D97A34);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(217,122,52,0.3);
+        }
+
+        .production-timeline {
+            background: rgba(255,255,255,0.95);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 12px 40px rgba(45,91,62,0.15);
+        }
+
+        .timeline-title {
+            color: #2D5B3E;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .timeline-item {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            position: relative;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -10px;
+            width: 20px;
+            height: 2px;
+            background: #D97A34;
+            transform: translateY(-50%);
+        }
+
+        .timeline-item:last-child::after {
+            display: none;
+        }
+
+        .timeline-circle {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #2D5B3E, #4A7C59);
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .timeline-label {
+            font-weight: bold;
+            color: #2D5B3E;
+            margin-bottom: 5px;
+        }
+
+        .timeline-description {
+            color: #5A6B5D;
+            font-size: 0.8rem;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(-50%, -50%) translateY(0px); }
+            50% { transform: translate(-50%, -50%) translateY(-10px); }
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #E8F5E8, #F4F8F5);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            border-top: 4px solid #D97A34;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2D5B3E;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: #5A6B5D;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .timeline {
+                flex-direction: column;
+            }
+
+            .timeline-item::after {
+                display: none;
+            }
+
+            .sequence-info {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎬 ZenMirror Visual Storyboard Collection</h1>
+            <p>Complete Video Production Guide for Revolutionary Contactless Meditation Technology</p>
+        </div>
+
+        <div class="project-overview">
+            <h2 style="color: #2D5B3E; margin-bottom: 20px; text-align: center;">📋 Campaign Video Overview</h2>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="overview-title">🎯 Campaign Objective</div>
+                    <div class="overview-content">Introduce ZenMirror as the world's first contactless meditation monitoring system, establishing trust and driving crowdfunding support.</div>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-title">⏱️ Total Duration</div>
+                    <div class="overview-content">2:45 minutes (165 seconds) optimized for maximum engagement and conversion.</div>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-title">🎨 Visual Style</div>
+                    <div class="overview-content">Zenful aesthetic with natural greens and warm oranges, balancing technology with tranquility.</div>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-title">👥 Target Audience</div>
+                    <div class="overview-content">Meditation practitioners, wellness enthusiasts, technology early adopters seeking authentic experiences.</div>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">87</div>
+                    <div class="stat-label">Total Shots</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Mentor Personalities</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Sequence Groups</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Production Days</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="storyboard-navigation">
+            <div class="storyboard-card" onclick="window.open('storyboard_opening_sequence.html', '_blank')">
+                <div class="card-header">
+                    <div class="card-title">🎭 Opening Sequence</div>
+                    <div class="card-subtitle">Hook & Problem Setup</div>
+                </div>
+                <div class="card-visual opening-visual">
+                    <div class="visual-icon opening-icon">😣</div>
+                </div>
+                <div class="card-content">
+                    <div class="sequence-info">
+                        <div class="info-item">
+                            <div class="info-label">Duration</div>
+                            <div class="info-value">0:00 - 0:15</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Shots</div>
+                            <div class="info-value">3 shots</div>
+                        </div>
+                    </div>
+                    <div class="key-shots">
+                        <div class="key-shots-title">🎯 Key Shots:</div>
+                        <ul class="shot-list">
+                            <li class="shot-item">Frustrated meditator with devices</li>
+                            <li class="shot-item">Cluttered meditation space</li>
+                            <li class="shot-item">Transition to possibility</li>
+                        </ul>
+                    </div>
+                    <button class="cta-button">View Opening Storyboard</button>
+                </div>
+            </div>
+
+            <div class="storyboard-card" onclick="window.open('storyboard_product_introduction.html', '_blank')">
+                <div class="card-header">
+                    <div class="card-title">🚀 Product Introduction</div>
+                    <div class="card-subtitle">Revolutionary Solution Reveal</div>
+                </div>
+                <div class="card-visual product-visual">
+                    <div class="visual-icon product-icon">📡</div>
+                </div>
+                <div class="card-content">
+                    <div class="sequence-info">
+                        <div class="info-item">
+                            <div class="info-label">Duration</div>
+                            <div class="info-value">0:15 - 0:45</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Shots</div>
+                            <div class="info-value">4 shots</div>
+                        </div>
+                    </div>
+                    <div class="key-shots">
+                        <div class="key-shots-title">🎯 Key Shots:</div>
+                        <ul class="shot-list">
+                            <li class="shot-item">360° product reveal</li>
+                            <li class="shot-item">Contactless demo with radar</li>
+                            <li class="shot-item">Technology close-up</li>
+                            <li class="shot-item">App integration</li>
+                        </ul>
+                    </div>
+                    <button class="cta-button">View Product Storyboard</button>
+                </div>
+            </div>
+
+            <div class="storyboard-card" onclick="window.open('storyboard_mentor_personalities.html', '_blank')">
+                <div class="card-header">
+                    <div class="card-title">🧘 Mentor Personalities</div>
+                    <div class="card-subtitle">Wisdom Traditions & Cultural Authenticity</div>
+                </div>
+                <div class="card-visual mentor-visual">
+                    <div class="visual-icon mentor-icon">🕉️</div>
+                </div>
+                <div class="card-content">
+                    <div class="sequence-info">
+                        <div class="info-item">
+                            <div class="info-label">Duration</div>
+                            <div class="info-value">0:45 - 1:15</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Mentors</div>
+                            <div class="info-value">6 traditions</div>
+                        </div>
+                    </div>
+                    <div class="key-shots">
+                        <div class="key-shots-title">🎯 Mentor Traditions:</div>
+                        <ul class="shot-list">
+                            <li class="shot-item">Zen Master - Buddhist mindfulness</li>
+                            <li class="shot-item">Yogi - Pranayama & energy flow</li>
+                            <li class="shot-item">Chaplain - Contemplative prayer</li>
+                            <li class="shot-item">Spiritual Mentor - Universal wisdom</li>
+                            <li class="shot-item">Stoic - Rational philosophy</li>
+                            <li class="shot-item">Vedanta Acharya - Hindu consciousness</li>
+                        </ul>
+                    </div>
+                    <button class="cta-button">View Mentor Storyboard</button>
+                </div>
+            </div>
+
+            <div class="storyboard-card" onclick="window.open('storyboard_feature_demonstration.html', '_blank')">
+                <div class="card-header">
+                    <div class="card-title">⚡ Feature Demonstration</div>
+                    <div class="card-subtitle">Core Functionality & Innovation</div>
+                </div>
+                <div class="card-visual feature-visual">
+                    <div class="visual-icon feature-icon">📊</div>
+                </div>
+                <div class="card-content">
+                    <div class="sequence-info">
+                        <div class="info-item">
+                            <div class="info-label">Duration</div>
+                            <div class="info-value">0:45 - 1:45</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Features</div>
+                            <div class="info-value">4 core systems</div>
+                        </div>
+                    </div>
+                    <div class="key-shots">
+                        <div class="key-shots-title">🎯 Key Features:</div>
+                        <ul class="shot-list">
+                            <li class="shot-item">Real-time monitoring</li>
+                            <li class="shot-item">HRV analysis (RMSSD/SDNN)</li>
+                            <li class="shot-item">Achievement gamification</li>
+                            <li class="shot-item">Multi-mode functionality</li>
+                        </ul>
+                    </div>
+                    <button class="cta-button">View Feature Storyboard</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="production-timeline">
+            <div class="timeline-title">🎬 Production Timeline & Workflow</div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-circle">📝</div>
+                    <div class="timeline-label">Pre-Production</div>
+                    <div class="timeline-description">Storyboard review, location scouting, talent casting, equipment setup</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-circle">🎥</div>
+                    <div class="timeline-label">Principal Photography</div>
+                    <div class="timeline-description">Product shots, meditation scenes, testimonials, mentor demonstrations</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-circle">✂️</div>
+                    <div class="timeline-label">Post-Production</div>
+                    <div class="timeline-description">Editing, color grading, audio mixing, graphics integration</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-circle">🚀</div>
+                    <div class="timeline-label">Delivery</div>
+                    <div class="timeline-description">Final video export, platform optimization, campaign launch</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-overview">
+            <h2 style="color: #2D5B3E; margin-bottom: 20px; text-align: center;">🎯 Conversion Strategy & Success Metrics</h2>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="overview-title">📈 Engagement Targets</div>
+                    <div class="overview-content">
+                        • >75% completion rate<br>
+                        • >8% click-through to campaign<br>
+                        • >5% social sharing rate<br>
+                        • >12% viewer-to-backer conversion
+                    </div>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-title">🧠 Psychology Framework</div>
+                    <div class="overview-content">
+                        Problem → Solution → Proof → Call-to-Action flow designed to build trust and drive immediate action through authentic storytelling.
+                    </div>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-title">🌍 Cultural Sensitivity</div>
+                    <div class="overview-content">
+                        Expert consultants ensure authentic representation of wisdom traditions, avoiding stereotypes while honoring cultural depth.
+                    </div>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-title">🎨 Brand Consistency</div>
+                    <div class="overview-content">
+                        Zenful color palette and peaceful aesthetics reinforce ZenMirror's core value of enhancing rather than disrupting meditation.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scrolling and enhanced interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add floating animation to cards
+            const cards = document.querySelectorAll('.storyboard-card');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.1}s`;
+            });
+
+            // Add click analytics tracking (placeholder)
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const title = this.querySelector('.card-title').textContent;
+                    console.log(`Storyboard accessed: ${title}`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

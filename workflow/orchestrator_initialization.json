@@ -1,0 +1,150 @@
+{
+  "orchestrator_initialization": {
+    "workflow_id": "zenmirror_campaign_001",
+    "project_name": "ZenMirror Crowdfunding Campaign",
+    "start_time": "2025-09-16T00:00:00Z",
+    "total_estimated_duration": "17-20 hours",
+    "priority": "high",
+    "product_source": "raw/product_description.txt",
+    "compliance_requirement": "100% product description implementation",
+    "quality_threshold": 90,
+    "expert_target_score": 90,
+    "expert_max_iterations": 5,
+    "platforms": ["kickstarter", "indiegogo"],
+    "agents": [
+      "product-manager",
+      "content-strategist",
+      "financial-planner",
+      "marketing-strategist",
+      "ui-developer",
+      "graphic-designer",
+      "video-scriptwriter",
+      "resource-compiler",
+      "qa-reviewer",
+      "campaign-expert",
+      "orchestrator"
+    ],
+    "execution_phases": {
+      "phase_0": {
+        "name": "Product Description Study",
+        "duration": "30 minutes",
+        "agents": ["all"],
+        "action": "Read and internalize complete product description",
+        "mandatory": true,
+        "success_criteria": ["requirements_understood", "vision_aligned"],
+        "status": "initializing"
+      },
+      "phase_1": {
+        "name": "Foundation Analysis",
+        "duration": "2 hours",
+        "agents": ["product-manager"],
+        "dependencies": ["phase_0"],
+        "outputs": ["product_analysis", "market_research", "competitive_analysis"],
+        "validation": "All elements from product description included",
+        "status": "pending"
+      },
+      "phase_2": {
+        "name": "Strategy Development",
+        "duration": "3 hours",
+        "agents": ["content-strategist", "financial-planner", "marketing-strategist"],
+        "parallel": true,
+        "dependencies": ["phase_1"],
+        "validation": "Strategies align with product description vision",
+        "status": "pending"
+      },
+      "phase_3": {
+        "name": "Creative Development",
+        "duration": "4 hours",
+        "agents": ["ui-developer", "graphic-designer"],
+        "parallel": true,
+        "dependencies": ["phase_1"],
+        "validation": "All features from product description visualized",
+        "status": "pending"
+      },
+      "phase_4": {
+        "name": "Video Content Creation",
+        "duration": "2 hours",
+        "agents": ["video-scriptwriter"],
+        "dependencies": ["phase_3"],
+        "validation": "Scripts capture product description narrative",
+        "status": "pending"
+      },
+      "phase_5": {
+        "name": "Campaign Compilation",
+        "duration": "2 hours",
+        "agents": ["resource-compiler"],
+        "dependencies": ["phase_2", "phase_3", "phase_4"],
+        "validation": "Final pages reflect complete product description",
+        "status": "pending"
+      },
+      "phase_6": {
+        "name": "Quality Assurance",
+        "duration": "1 hour",
+        "agents": ["qa-reviewer"],
+        "dependencies": ["phase_5"],
+        "validation": "Technical quality meets description standards",
+        "status": "pending"
+      },
+      "phase_7": {
+        "name": "Expert Review & Optimization",
+        "duration": "3-6 hours",
+        "agents": ["campaign-expert"],
+        "dependencies": ["phase_6"],
+        "iterative": true,
+        "max_iterations": 5,
+        "commands_agents": ["all"],
+        "validation": "100% product description compliance achieved",
+        "status": "pending"
+      }
+    },
+    "key_product_features_to_implement": [
+      "contactless_millimeter_wave_radar",
+      "realtime_physiological_monitoring",
+      "breathing_heart_rate_body_movement",
+      "multidimensional_analysis_hrv_rsa",
+      "personalized_mentor_feedback_6_types",
+      "mindfulness_points_scoring",
+      "achievement_system",
+      "multiple_operation_modes",
+      "privacy_focused_design",
+      "closed_loop_system",
+      "scientific_research_support"
+    ],
+    "platform_requirements": {
+      "kickstarter": {
+        "format": "single_page",
+        "focus": "video_centered",
+        "layout": "rewards_sidebar",
+        "style": "narrative_driven"
+      },
+      "indiegogo": {
+        "format": "multi_section",
+        "focus": "gallery_emphasis",
+        "layout": "flexible_funding",
+        "style": "feature_detailed"
+      }
+    },
+    "deliverables": [
+      "kickstarter_html_page",
+      "indiegogo_html_page",
+      "shot_list_75_plus",
+      "b_roll_list_100_plus",
+      "production_schedule",
+      "social_media_assets",
+      "expert_certification_90_plus"
+    ],
+    "style_guidelines": {
+      "color_palette": "zenful_greens_oranges",
+      "primary_green": "#2D5B3E",
+      "accent_orange": "#D97A34",
+      "language_compliance": "avoid_medical_clinical",
+      "required_elements": [
+        "comparison_matrices",
+        "scientific_research_support",
+        "flowcharts_closed_loop",
+        "mentor_demonstrations",
+        "timeline_display"
+      ]
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "project_title": "TikeyX: The Premium Way to Organize Every Key",
+  "creator": "TikeyX",
+  "funding_goal": "£1,000",
+  "amount_raised": "£5,653",
+  "percentage_funded": "565%",
+  "number_of_backers": 75,
+  "campaign_period": "Jul 8 2025 - Aug 7 2025 (30 days)",
+  "location": "London, UK",
+  "category": "Gadgets",
+  "project_we_love": false,
+  "updates_count": 1,
+  "comments_count": 0,
+  "faq_count": 5,
+  "key_features": [
+    "Organized, silent, secure key storage",
+    "Holds up to 8 keys or accessories",
+    "Quick Flip Tool for one-handed access",
+    "Bi-directional opening from both ends",
+    "Integrated GPS tracking with dedicated app",
+    "Compact design: 8.25cm x 2.35cm",
+    "Lightweight at 58g",
+    "Premium titanium alloy construction",
+    "Leather strap with multiple style options",
+    "Laser engraving customization available",
+    "Compatible with portable multitools and USB accessories"
+  ],
+  "reward_structure": [
+    {
+      "type": "Early Bird",
+      "description": "Discounted TikeyX key organizers"
+    },
+    {
+      "type": "Standard Rewards",
+      "description": "Regular pricing for TikeyX units"
+    },
+    {
+      "type": "Customization Add-ons",
+      "description": "Laser engraving personalization options"
+    },
+    {
+      "type": "Accessory Add-ons",
+      "description": "USB connectors (A or C), GPS locators, multi-tools"
+    }
+  ],
+  "unique_elements": [
+    "Silent operation with no rattling",
+    "Bi-directional instant access design",
+    "Integrated GPS tracking with app",
+    "Premium titanium alloy construction",
+    "Customizable laser engraving",
+    "Modular accessory system",
+    "EDC-focused compact design",
+    "2-year warranty coverage",
+    "Sustainable and ethical manufacturing focus"
+  ],
+  "technical_specs": {
+    "dimensions": "8.25cm x 2.35cm",
+    "weight": "58g",
+    "material": "Premium titanium alloy",
+    "capacity": "Up to 8 keys or accessories",
+    "strap_material": "Premium leather",
+    "connectivity": "GPS tracking via dedicated app",
+    "customization": "Laser engraving both sides",
+    "warranty": "2 years"
+  }
+}

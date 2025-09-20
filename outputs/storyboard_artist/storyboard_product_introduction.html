@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenMirror - Product Introduction Storyboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2D5B3E, #4A7C59);
+            color: #2C3E3A;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .sequence-info {
+            background: rgba(255,255,255,0.9);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(45,91,62,0.1);
+        }
+
+        .storyboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .shot-panel {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(45,91,62,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .shot-panel:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(45,91,62,0.2);
+        }
+
+        .shot-visual {
+            height: 280px;
+            background: linear-gradient(45deg, #E8F5E8, #F4F8F5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shot-004 .shot-visual {
+            background: linear-gradient(45deg, #F4F8F5, #E8F5E8);
+        }
+
+        .shot-005 .shot-visual {
+            background: linear-gradient(45deg, #E8F5E8, #2D5B3E);
+        }
+
+        .shot-006 .shot-visual {
+            background: linear-gradient(45deg, #2D5B3E, #343A40);
+        }
+
+        .shot-007 .shot-visual {
+            background: linear-gradient(45deg, #F4F8F5, #D97A34);
+        }
+
+        .visual-element {
+            position: absolute;
+            border-radius: 10px;
+        }
+
+        .zenmirror-device {
+            width: 80px;
+            height: 50px;
+            background: linear-gradient(45deg, #2D5B3E, #4A7C59);
+            border-radius: 15px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 4px 15px rgba(45,91,62,0.3);
+            animation: rotate360 8s linear infinite;
+        }
+
+        .bamboo-platform {
+            width: 120px;
+            height: 20px;
+            background: linear-gradient(45deg, #D4A574, #F4A460);
+            border-radius: 10px;
+            bottom: 40%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .meditating-person {
+            width: 40px;
+            height: 60px;
+            background: linear-gradient(45deg, #D97A34, #F4A460);
+            border-radius: 20px 20px 5px 5px;
+            left: 20%;
+            bottom: 30%;
+        }
+
+        .radar-waves {
+            width: 200px;
+            height: 200px;
+            border: 3px solid rgba(45,91,62,0.3);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: pulse-wave 2s infinite;
+        }
+
+        .radar-waves::before {
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border: 2px solid rgba(45,91,62,0.2);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: pulse-wave 2s infinite 0.5s;
+        }
+
+        .radar-waves::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 2px solid rgba(45,91,62,0.4);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: pulse-wave 2s infinite 1s;
+        }
+
+        .radar-module {
+            width: 30px;
+            height: 30px;
+            background: radial-gradient(circle, #343A40, #6C757D);
+            border-radius: 50%;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 0 10px rgba(52,58,64,0.5);
+        }
+
+        .tech-indicators {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .tech-dot {
+            width: 8px;
+            height: 8px;
+            background: #2D5B3E;
+            border-radius: 50%;
+            animation: blink 1.5s infinite;
+        }
+
+        .tech-dot:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .tech-dot:nth-child(3) {
+            animation-delay: 1s;
+        }
+
+        .smartphone {
+            width: 50px;
+            height: 80px;
+            background: linear-gradient(45deg, #343A40, #6C757D);
+            border-radius: 8px;
+            right: 25%;
+            bottom: 30%;
+        }
+
+        .app-screen {
+            width: 40px;
+            height: 60px;
+            background: linear-gradient(45deg, #2D5B3E, #4A7C59);
+            border-radius: 4px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .data-streams {
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            background: #D97A34;
+            animation: stream 1s infinite;
+        }
+
+        .stream-1 {
+            top: 30%;
+            left: 60%;
+            animation-delay: 0s;
+        }
+
+        .stream-2 {
+            top: 40%;
+            left: 65%;
+            animation-delay: 0.3s;
+        }
+
+        .stream-3 {
+            top: 50%;
+            left: 70%;
+            animation-delay: 0.6s;
+        }
+
+        .shot-header {
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #2D5B3E, #4A7C59);
+            color: white;
+        }
+
+        .shot-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .shot-duration {
+            background: rgba(255,255,255,0.2);
+            padding: 4px 8px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            display: inline-block;
+        }
+
+        .shot-details {
+            padding: 20px;
+        }
+
+        .detail-item {
+            margin-bottom: 12px;
+        }
+
+        .detail-label {
+            font-weight: bold;
+            color: #2D5B3E;
+            margin-bottom: 3px;
+        }
+
+        .detail-content {
+            color: #5A6B5D;
+            font-size: 0.9rem;
+        }
+
+        .audio-track {
+            background: linear-gradient(135deg, #FDF6F0, #F4A460);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .voiceover {
+            font-style: italic;
+            color: #D97A34;
+            margin-top: 8px;
+            padding: 8px;
+            background: rgba(217,122,52,0.1);
+            border-left: 3px solid #D97A34;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .innovation-glow {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 35px;
+            height: 35px;
+            background: radial-gradient(circle, #D97A34, #F4A460);
+            border-radius: 50%;
+            animation: innovation-pulse 2s infinite;
+        }
+
+        @keyframes rotate360 {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        @keyframes pulse-wave {
+            0% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+            50% { opacity: 1; }
+            100% { opacity: 0; transform: translate(-50%, -50%) scale(1.2); }
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.3; }
+        }
+
+        @keyframes stream {
+            0% { opacity: 0; transform: translateY(0); }
+            50% { opacity: 1; }
+            100% { opacity: 0; transform: translateY(20px); }
+        }
+
+        @keyframes innovation-pulse {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.2); opacity: 1; }
+        }
+
+        .narrative-flow {
+            background: rgba(255,255,255,0.95);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 30px;
+            border-left: 5px solid #D97A34;
+        }
+
+        .flow-title {
+            color: #2D5B3E;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .tech-specs {
+            background: rgba(45,91,62,0.05);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 ZenMirror Product Introduction Storyboard</h1>
+            <p>Revolutionary Solution Reveal (0:15 - 0:45)</p>
+        </div>
+
+        <div class="sequence-info">
+            <h2 style="color: #2D5B3E; margin-bottom: 15px;">📋 Sequence Overview</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                <div>
+                    <strong>Total Duration:</strong> 30 seconds<br>
+                    <strong>Purpose:</strong> Introduce contactless solution
+                </div>
+                <div>
+                    <strong>Mood:</strong> Innovation & Hope<br>
+                    <strong>Key Message:</strong> Truly invisible monitoring
+                </div>
+                <div>
+                    <strong>Visual Style:</strong> Clean, technological<br>
+                    <strong>Audio:</strong> Harmonious technology sounds
+                </div>
+            </div>
+        </div>
+
+        <div class="storyboard-grid">
+            <!-- Shot 004 -->
+            <div class="shot-panel shot-004">
+                <div class="shot-header">
+                    <div class="shot-title">SHOT 004 - Product Reveal</div>
+                    <div class="shot-duration">0:15-0:20 (5 seconds)</div>
+                </div>
+                <div class="shot-visual">
+                    <div class="visual-element bamboo-platform"></div>
+                    <div class="visual-element zenmirror-device"></div>
+                    <div class="innovation-glow"></div>
+                </div>
+                <div class="shot-details">
+                    <div class="detail-item">
+                        <div class="detail-label">🎯 Description</div>
+                        <div class="detail-content">360-degree ZenMirror device rotation on clean bamboo surface with soft natural lighting</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">📷 Camera</div>
+                        <div class="detail-content">Medium shot, rotating platform</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">💡 Lighting</div>
+                        <div class="detail-content">Soft, warm product lighting with natural shadows</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">🎬 Props</div>
+                        <div class="detail-content">ZenMirror device, natural bamboo platform</div>
+                    </div>
+                    <div class="audio-track">
+                        <strong>🔊 Audio:</strong> Gentle chime, technological harmony sound
+                        <div class="voiceover">
+                            "Introducing ZenMirror - the world's first completely contactless meditation monitoring system."
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shot 005 -->
+            <div class="shot-panel shot-005">
+                <div class="shot-header">
+                    <div class="shot-title">SHOT 005 - Contactless Demo</div>
+                    <div class="shot-duration">0:20-0:26 (6 seconds)</div>
+                </div>
+                <div class="shot-visual">
+                    <div class="visual-element meditating-person"></div>
+                    <div class="visual-element zenmirror-device" style="right: 20%; animation: none;"></div>
+                    <div class="visual-element radar-waves"></div>
+                    <div class="innovation-glow"></div>
+                </div>
+                <div class="shot-details">
+                    <div class="detail-item">
+                        <div class="detail-label">🎯 Description</div>
+                        <div class="detail-content">Side view showing person meditating 1.5 meters from ZenMirror with animated radar waves visualization</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">📷 Camera</div>
+                        <div class="detail-content">Medium wide shot, profile view</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">💡 Lighting</div>
+                        <div class="detail-content">Warm, peaceful ambient lighting</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">👤 Talent</div>
+                        <div class="detail-content">Male practitioner, 40s, peaceful posture</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">🎨 Post-Production</div>
+                        <div class="detail-content">Add animated radar wave overlay, peaceful color grading</div>
+                    </div>
+                    <div class="audio-track">
+                        <strong>🔊 Audio:</strong> Subtle radar pulse sound, breathing audio
+                        <div class="voiceover">
+                            "Using advanced millimeter wave radar technology, ZenMirror monitors your breathing, heart rate, and meditation quality without any physical contact whatsoever."
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shot 006 -->
+            <div class="shot-panel shot-006">
+                <div class="shot-header">
+                    <div class="shot-title">SHOT 006 - Technology Detail</div>
+                    <div class="shot-duration">0:26-0:30 (4 seconds)</div>
+                </div>
+                <div class="shot-visual">
+                    <div class="visual-element radar-module"></div>
+                    <div class="tech-indicators">
+                        <div class="tech-dot"></div>
+                        <div class="tech-dot"></div>
+                        <div class="tech-dot"></div>
+                    </div>
+                    <div class="innovation-glow"></div>
+                </div>
+                <div class="shot-details">
+                    <div class="detail-item">
+                        <div class="detail-label">🎯 Description</div>
+                        <div class="detail-content">Close-up of ZenMirror's radar module with technical animation overlay showing millimeter wave detection</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">📷 Camera</div>
+                        <div class="detail-content">Macro close-up, technical focus</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">💡 Lighting</div>
+                        <div class="detail-content">Technical product lighting with accent highlights</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">📊 Graphics</div>
+                        <div class="detail-content">Millimeter wave visualization, technical specifications</div>
+                    </div>
+                    <div class="audio-track">
+                        <strong>🔊 Audio:</strong> Subtle technology sound, precise beeping
+                        <div class="voiceover">
+                            "With clinical-grade accuracy, it tracks heart rate variability, respiratory patterns, and provides unprecedented insight into your meditation state."
+                        </div>
+                    </div>
+                    <div class="tech-specs">
+                        <strong>🔬 Technical Specifications:</strong><br>
+                        • Millimeter wave radar frequency<br>
+                        • Non-imaging detection method<br>
+                        • 1.5 meter optimal distance<br>
+                        • Real-time data processing
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shot 007 -->
+            <div class="shot-panel shot-007">
+                <div class="shot-header">
+                    <div class="shot-title">SHOT 007 - App Integration</div>
+                    <div class="shot-duration">0:30-0:35 (5 seconds)</div>
+                </div>
+                <div class="shot-visual">
+                    <div class="visual-element smartphone">
+                        <div class="app-screen"></div>
+                    </div>
+                    <div class="visual-element data-streams stream-1"></div>
+                    <div class="visual-element data-streams stream-2"></div>
+                    <div class="visual-element data-streams stream-3"></div>
+                    <div class="innovation-glow"></div>
+                </div>
+                <div class="shot-details">
+                    <div class="detail-item">
+                        <div class="detail-label">🎯 Description</div>
+                        <div class="detail-content">Smartphone showing ZenMirror app dashboard with real-time data streaming</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">📷 Camera</div>
+                        <div class="detail-content">Over-shoulder shot of phone screen</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">💡 Lighting</div>
+                        <div class="detail-content">Soft screen lighting with ambient warmth</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">🎬 Props</div>
+                        <div class="detail-content">Smartphone with app interface mockup</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">🎨 Post-Production</div>
+                        <div class="detail-content">Screen content replacement, UI glow effects</div>
+                    </div>
+                    <div class="audio-track">
+                        <strong>🔊 Audio:</strong> App interface sounds, data streaming audio
+                        <div class="voiceover">
+                            "Real-time data flows seamlessly to your smartphone, providing instant insights into your practice."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="narrative-flow">
+            <div class="flow-title">🎬 Director's Vision & Narrative Strategy</div>
+
+            <p><strong>Solution Introduction:</strong> This sequence pivots from problem to solution with clear visual metaphors. The 360-degree product rotation establishes ZenMirror as a premium, carefully crafted device worthy of attention.</p>
+
+            <p><strong>Technology Visualization:</strong></p>
+            <ul style="margin: 10px 0; padding-left: 20px;">
+                <li><strong>Radar Waves:</strong> Animated concentric circles show invisible technology at work</li>
+                <li><strong>Distance Emphasis:</strong> 1.5-meter gap visually demonstrates contactless monitoring</li>
+                <li><strong>Data Flow:</strong> Streaming animations connect device to app, showing seamless integration</li>
+            </ul>
+
+            <p><strong>Color Evolution:</strong> We transition from natural bamboo warmth to technological sophistication, establishing ZenMirror as both organic and advanced. The green-to-orange gradient reinforces the brand's zenful nature while highlighting innovation.</p>
+
+            <p><strong>Credibility Building:</strong> Technical close-ups and precise animations establish scientific legitimacy. The macro lens work on the radar module creates intimacy with the technology, building trust in its capabilities.</p>
+
+            <p><strong>Audio Harmony:</strong> Technology sounds are deliberately harmonious rather than harsh, reinforcing the peace-enhancing rather than peace-disrupting nature of ZenMirror's approach.</p>
+        </div>
+    </div>
+</body>
+</html>

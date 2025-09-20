@@ -1,0 +1,49 @@
+{
+  "project_title": "Into the FUN FACTORY from AEG",
+  "creator": "Alderac Entertainment Group",
+  "funding_goal": "$10,000",
+  "amount_raised": "$212,353",
+  "percentage_funded": "2123%",
+  "number_of_backers": 3445,
+  "campaign_period": "Aug 26 2025 - Sep 5 2025 (10 days)",
+  "location": "Henderson, NV",
+  "category": "Tabletop Games",
+  "project_we_love": true,
+  "updates_count": 3,
+  "comments_count": 574,
+  "faq_count": 38,
+  "key_features": [
+    "Factory-style campaign with dozens of add-ons",
+    "Reprints of popular AEG evergreen games",
+    "New game: Into the Machine",
+    "All Smash Up expansions and faction packs",
+    "Flexible add-on system via pledge manager",
+    "Multiple game expansions in one campaign"
+  ],
+  "reward_structure": [
+    {
+      "type": "Main Product",
+      "description": "Into the Machine - New robot racing board game"
+    },
+    {
+      "type": "Add-ons",
+      "description": "Extensive catalog of AEG game reprints and expansions"
+    },
+    {
+      "type": "Combo Kits",
+      "description": "Bundled packages for specific game lines"
+    },
+    {
+      "type": "Newsletter Freebie",
+      "description": "Exclusive bonus for newsletter subscribers"
+    }
+  ],
+  "unique_elements": [
+    "Factory production model allowing massive add-on catalog",
+    "Established publisher with 30+ years experience",
+    "Extensive video preview coverage from board game reviewers",
+    "Clear shipping and tax policy explanations",
+    "Detailed pledge manager system explanation",
+    "Strong brand recognition in tabletop gaming"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "project_title": "G'AIM'E: Plug & Play TIME CRISIS Gun for Modern TVs (GAIME)",
+  "funding_goal": "CA$ 65,789",
+  "amount_raised": "CA$ 1,589,425", 
+  "percentage_funded": "2417%",
+  "number_of_backers": 5709,
+  "status": "Successfully Funded",
+  "category": "Hardware",
+  "location": "Tokyo, Japan",
+  "key_features": [
+    "High-resolution camera and AI tracking technology",
+    "Plug and play compatibility with modern TVs (15\" to 150\")",
+    "Officially licensed TIME CRISIS, POINT BLANK, STEEL GUNNER series",
+    "Recoil feedback and pedal controller for authentic arcade experience",
+    "No complex setup - automatic calibration and adjustment"
+  ],
+  "reward_tiers": [
+    {
+      "name": "Basic Pack",
+      "price": "~$100-150",
+      "description": "TIME CRISIS game only (single player)"
+    },
+    {
+      "name": "Premium Pack", 
+      "price": "~$200-250",
+      "description": "Multiple games + pedal controller"
+    },
+    {
+      "name": "Ultimate Pack",
+      "price": "~$300-350",
+      "description": "Complete system with 2-player support"
+    }
+  ],
+  "url": "https://www.kickstarter.com/projects/tasseidenki/gaime-plug-and-play-time-crisis-gun-system-for-modern-tvs"
+}

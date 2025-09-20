@@ -1,0 +1,58 @@
+{
+  "project_title": "Clixet: A Multi-Tool for Everyday Tasks and Emergencies",
+  "creator": "Clixet",
+  "funding_goal": "$1,000",
+  "amount_raised": "$11,465",
+  "percentage_funded": "1146%",
+  "number_of_backers": 87,
+  "campaign_period": "Jul 8 2025 - Aug 7 2025 (30 days)",
+  "location": "Not specified",
+  "category": "Design/EDC Tools",
+  "project_we_love": false,
+  "updates_count": null,
+  "comments_count": null,
+  "faq_count": null,
+  "key_features": [
+    "True EDC (Everyday Carry) companion",
+    "Functional and portable design",
+    "Built for unexpected situations",
+    "Handles both everyday tasks and emergencies",
+    "Compact multi-tool format",
+    "Everyday carry optimization",
+    "Emergency preparedness features",
+    "Portable and lightweight design"
+  ],
+  "reward_structure": [
+    {
+      "type": "Early Bird",
+      "description": "Discounted Clixet multi-tools"
+    },
+    {
+      "type": "Standard Rewards",
+      "description": "Regular pricing for Clixet units"
+    },
+    {
+      "type": "Multi-Pack Options",
+      "description": "Multiple units for families or groups"
+    }
+  ],
+  "unique_elements": [
+    "Dual focus on everyday tasks and emergencies",
+    "True EDC optimization for daily carry",
+    "Compact form factor for portability",
+    "Functional design prioritizing utility",
+    "Emergency preparedness integration",
+    "Versatile tool functionality",
+    "Accessible pricing point",
+    "Strong overfunding performance"
+  ],
+  "technical_specs": {
+    "category": "EDC Multi-tool",
+    "focus": "Everyday tasks and emergencies",
+    "design_priority": "Functional and portable",
+    "target_use": "Daily carry and emergency preparedness"
+  },
+  "average_pledge": "$68.82",
+  "daily_backers_average": 7.3,
+  "daily_pledge_average": "$461"
+}

@@ -1,0 +1,371 @@
+{
+  "production_schedule": {
+    "project_name": "ZenMirror Crowdfunding Video Campaign",
+    "total_budget": "$75,000",
+    "total_duration": "14 production days",
+    "crew_size": "8-12 people",
+    "start_date": "2025-03-20",
+    "completion_date": "2025-04-10",
+    "deliverables": [
+      "Hero video (2:45)",
+      "87 primary shots",
+      "124 B-roll clips",
+      "Social media variations",
+      "Platform-specific edits"
+    ]
+  },
+  "pre_production": {
+    "duration": "5 days",
+    "dates": "2025-03-15 to 2025-03-19",
+    "budget_allocation": "$8,000",
+    "activities": [
+      {
+        "day": 1,
+        "date": "2025-03-15",
+        "activities": [
+          "Location scouting and permits",
+          "Talent casting and scheduling",
+          "Equipment testing and preparation"
+        ],
+        "budget": "$1,500"
+      },
+      {
+        "day": 2,
+        "date": "2025-03-16",
+        "activities": [
+          "Shot list finalization",
+          "Storyboard creation",
+          "Equipment rental confirmation"
+        ],
+        "budget": "$1,200"
+      },
+      {
+        "day": 3,
+        "date": "2025-03-17",
+        "activities": [
+          "Crew briefings",
+          "Talent rehearsals",
+          "Props and set preparation"
+        ],
+        "budget": "$2,000"
+      },
+      {
+        "day": 4,
+        "date": "2025-03-18",
+        "activities": [
+          "Final location setup",
+          "Equipment transportation",
+          "Safety briefings"
+        ],
+        "budget": "$1,800"
+      },
+      {
+        "day": 5,
+        "date": "2025-03-19",
+        "activities": [
+          "Final preparations",
+          "Backup plans confirmation",
+          "Weather contingency setup"
+        ],
+        "budget": "$1,500"
+      }
+    ]
+  },
+  "production_phase_1": {
+    "duration": "3 days",
+    "dates": "2025-03-20 to 2025-03-22",
+    "focus": "Hero video primary shots and product demonstrations",
+    "budget_allocation": "$18,000",
+    "shooting_schedule": [
+      {
+        "day": 1,
+        "date": "2025-03-20",
+        "location": "Studio A - Product and Technology",
+        "shots": [
+          "HV001-HV010: Opening sequence and product showcase",
+          "HV017-HV021: Technology demonstrations",
+          "PD001-PD010: Product detail shots"
+        ],
+        "crew": "Full crew (12 people)",
+        "equipment": "Primary camera package + macro lenses",
+        "budget": "$6,500"
+      },
+      {
+        "day": 2,
+        "date": "2025-03-21",
+        "location": "Meditation Studio - User Scenarios",
+        "shots": [
+          "HV011-HV016: Mentor demonstration shots",
+          "MM001-MM015: Core meditation B-roll",
+          "UL001-UL010: User experience clips"
+        ],
+        "crew": "Core crew (8 people)",
+        "equipment": "Multi-camera setup + audio",
+        "budget": "$6,000"
+      },
+      {
+        "day": 3,
+        "date": "2025-03-22",
+        "location": "Outdoor Locations - Natural Settings",
+        "shots": [
+          "MM016-MM025: Outdoor meditation scenarios",
+          "UL011-UL020: Lifestyle integration",
+          "Sunrise/sunset time-sensitive shots"
+        ],
+        "crew": "Mobile crew (6 people)",
+        "equipment": "Drone + portable equipment",
+        "budget": "$5,500"
+      }
+    ]
+  },
+  "production_phase_2": {
+    "duration": "3 days",
+    "dates": "2025-03-23 to 2025-03-25",
+    "focus": "Testimonials and team credibility",
+    "budget_allocation": "$15,000",
+    "shooting_schedule": [
+      {
+        "day": 4,
+        "date": "2025-03-23",
+        "location": "Interview Studio - User Testimonials",
+        "shots": [
+          "HV022-HV024: Primary user testimonials",
+          "Extended testimonial content",
+          "User story B-roll"
+        ],
+        "crew": "Interview crew (6 people)",
+        "equipment": "Interview lighting + multiple cameras",
+        "budget": "$5,000"
+      },
+      {
+        "day": 5,
+        "date": "2025-03-24",
+        "location": "Company Offices - Team Shots",
+        "shots": [
+          "HV029-HV031: Team introduction shots",
+          "TC001-TC015: Team credibility B-roll",
+          "Behind-the-scenes content"
+        ],
+        "crew": "Documentary crew (8 people)",
+        "equipment": "Documentary package + natural lighting",
+        "budget": "$5,500"
+      },
+      {
+        "day": 6,
+        "date": "2025-03-25",
+        "location": "Manufacturing Facility - Production",
+        "shots": [
+          "HV032-HV034: Manufacturing and quality",
+          "PD015-PD025: Production process B-roll",
+          "Quality assurance demonstrations"
+        ],
+        "crew": "Industrial crew (6 people)",
+        "equipment": "Industrial lighting + safety gear",
+        "budget": "$4,500"
+      }
+    ]
+  },
+  "production_phase_3": {
+    "duration": "2 days",
+    "dates": "2025-03-26 to 2025-03-27",
+    "focus": "Comparison shots and scientific demonstrations",
+    "budget_allocation": "$12,000",
+    "shooting_schedule": [
+      {
+        "day": 7,
+        "date": "2025-03-26",
+        "location": "Laboratory - Scientific Validation",
+        "shots": [
+          "TS001-TS015: Technology and science B-roll",
+          "Scientific demonstration sequences",
+          "Accuracy validation shots"
+        ],
+        "crew": "Scientific crew (8 people)",
+        "equipment": "Scientific equipment + high-speed cameras",
+        "budget": "$6,500"
+      },
+      {
+        "day": 8,
+        "date": "2025-03-27",
+        "location": "Comparison Studio - Competitive Analysis",
+        "shots": [
+          "HV035-HV040: Comparison demonstrations",
+          "Traditional vs ZenMirror scenarios",
+          "Problem/solution contrasts"
+        ],
+        "crew": "Comparison crew (6 people)",
+        "equipment": "Split-screen setup + multiple products",
+        "budget": "$5,500"
+      }
+    ]
+  },
+  "production_phase_4": {
+    "duration": "1 day",
+    "dates": "2025-03-28",
+    "focus": "Additional B-roll and pickup shots",
+    "budget_allocation": "$8,000",
+    "shooting_schedule": [
+      {
+        "day": 9,
+        "date": "2025-03-28",
+        "location": "Multiple Locations - Pickup Shots",
+        "shots": [
+          "Remaining B-roll clips",
+          "Additional lifestyle scenarios",
+          "Backup shots and alternatives"
+        ],
+        "crew": "Flexible crew (4-8 people)",
+        "equipment": "Mobile equipment package",
+        "budget": "$8,000"
+      }
+    ]
+  },
+  "post_production": {
+    "duration": "12 days",
+    "dates": "2025-03-29 to 2025-04-10",
+    "budget_allocation": "$14,000",
+    "phases": [
+      {
+        "phase": "Rough Cut",
+        "duration": "3 days",
+        "dates": "2025-03-29 to 2025-03-31",
+        "activities": [
+          "Footage logging and organization",
+          "Rough cut assembly",
+          "Initial pacing and structure"
+        ],
+        "budget": "$3,500"
+      },
+      {
+        "phase": "Fine Cut",
+        "duration": "4 days",
+        "dates": "2025-04-01 to 2025-04-04",
+        "activities": [
+          "Detailed editing and refinement",
+          "Color correction and grading",
+          "Audio mixing and enhancement"
+        ],
+        "budget": "$5,000"
+      },
+      {
+        "phase": "Motion Graphics",
+        "duration": "3 days",
+        "dates": "2025-04-05 to 2025-04-07",
+        "activities": [
+          "Animated graphics creation",
+          "Data visualization animations",
+          "Title and text integration"
+        ],
+        "budget": "$3,500"
+      },
+      {
+        "phase": "Final Delivery",
+        "duration": "2 days",
+        "dates": "2025-04-08 to 2025-04-10",
+        "activities": [
+          "Final output and formatting",
+          "Platform-specific versions",
+          "Quality control and delivery"
+        ],
+        "budget": "$2,000"
+      }
+    ]
+  },
+  "budget_breakdown": {
+    "crew_costs": {
+      "director": "$8,000",
+      "cinematographer": "$6,000",
+      "audio_engineer": "$3,500",
+      "lighting_technician": "$3,000",
+      "camera_operators": "$4,500",
+      "production_assistants": "$2,500",
+      "total": "$27,500"
+    },
+    "equipment_rental": {
+      "cameras_and_lenses": "$8,000",
+      "lighting_equipment": "$4,000",
+      "audio_equipment": "$2,500",
+      "stabilization_gear": "$2,000",
+      "drone_equipment": "$1,500",
+      "miscellaneous": "$1,000",
+      "total": "$19,000"
+    },
+    "location_and_travel": {
+      "location_fees": "$3,000",
+      "transportation": "$2,500",
+      "accommodation": "$2,000",
+      "meals_and_catering": "$3,000",
+      "permits_and_insurance": "$1,500",
+      "total": "$12,000"
+    },
+    "talent_and_casting": {
+      "main_testimonial_talent": "$3,000",
+      "meditation_practitioners": "$2,000",
+      "diverse_user_representation": "$1,500",
+      "team_member_time": "$1,000",
+      "total": "$7,500"
+    },
+    "post_production": {
+      "editing_suite_rental": "$2,000",
+      "motion_graphics_software": "$1,000",
+      "color_grading_session": "$1,500",
+      "audio_post_production": "$1,000",
+      "render_farm_and_storage": "$500",
+      "total": "$6,000"
+    },
+    "contingency_and_misc": {
+      "emergency_fund": "$2,000",
+      "additional_equipment": "$1,000",
+      "total": "$3,000"
+    },
+    "grand_total": "$75,000"
+  },
+  "key_deliverables": {
+    "primary_video": {
+      "title": "ZenMirror Hero Campaign Video",
+      "duration": "2:45",
+      "format": "4K master, 1080p web, 720p mobile",
+      "aspect_ratios": ["16:9", "1:1", "9:16"]
+    },
+    "supplementary_content": {
+      "technology_deep_dive": "90 seconds",
+      "mentor_showcase": "120 seconds",
+      "user_testimonials": "180 seconds",
+      "comparison_video": "60 seconds"
+    },
+    "social_media_cuts": {
+      "instagram_stories": "15-second segments",
+      "youtube_shorts": "60-second version",
+      "tiktok_format": "30-second version",
+      "linkedin_professional": "90-second version"
+    },
+    "platform_specific": {
+      "kickstarter_optimized": "2:45 main + 30s teaser",
+      "indiegogo_optimized": "2:45 main + gallery videos",
+      "website_embedding": "Optimized streaming versions",
+      "email_campaign": "30-second highlights"
+    }
+  },
+  "quality_standards": {
+    "technical_requirements": {
+      "video_resolution": "Minimum 1080p for all deliverables",
+      "audio_quality": "Professional broadcast standard",
+      "color_accuracy": "Brand guideline compliance",
+      "compression": "Platform-optimized encoding"
+    },
+    "content_standards": {
+      "brand_consistency": "100% ZenMirror brand guideline adherence",
+      "cultural_sensitivity": "Expert review for all cultural content",
+      "scientific_accuracy": "Technical review by engineering team",
+      "legal_compliance": "All necessary releases and permissions"
+    }
+  },
+  "risk_mitigation": {
+    "weather_contingency": "Indoor backup locations identified",
+    "talent_backup": "Secondary talent options confirmed",
+    "equipment_failure": "Backup equipment packages arranged",
+    "location_issues": "Alternative locations scouted",
+    "schedule_delays": "Buffer time built into schedule",
+    "budget_overrun": "10% contingency fund allocated"
+  }
+}

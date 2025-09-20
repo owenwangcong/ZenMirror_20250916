@@ -1,0 +1,27 @@
+give me a prompt for applying a patent for a product that I want to develop. give me improved prompt in markdown.
+---------------------------------------- 
+0. detailed description of the product will uploaded in pdf. Use this as the basis and foundation of the patent application. Understand fully what the product is and does then write the patent application.
+1. use professional words and write like professional patent lawyer will do. 
+2. try to make the application stop potential competitors by strategically and tactically write the claims. Summarize what you did and how you did in a separate text/appendix, not part of the patent application.  
+3. try to identify patentable features and include them in the patent. Summarize what you did and how you did in a separate text/appendix, not part of the patent application. 
+4. give me the patent application and everything else in a separate text/appendix 
+5. give mermaid source code of the design drawings in a separate text/appendix, not part of the patent application. Make sure the numbers in the description and the numbers in the drawing match. Strictly follow the design and process described in the product description but don't make it too specific. make it reflect actual design but generalize a bit. this way the diagrams are more concise and prevent people walkaround it.
+6. don't provide too many drawings. 2-3 core diagram is enough. 
+7. use the format as if you are submitting it. No "Cross-Reference to Related Applications"
+8. let the prompt ask me to clarify if there is anything you are not sure. so that when writing the patent, the model has clearer understanding of the product.
+9. The heart rate, heartbeat phase, respiration rate, respiration phase and movement data are collected from the radar and used in subsequent calculations. 
+10. study all attachments, including scoring framework and other researches attached. Don't pay too much attention to scoring framework, it's secondary to this patent. assessment/scoring is as important as feedback. assessment is a better word than scoring. 
+11. Mention Monitor, Assessment and Feedback in the title. Avoid physiological, psychological or mental. Perfer "User state" in title and other parts of the patent application.
+12. wearables or contact-based equipment are not comfortable so non-contact method has advantages.
+13. Define key terms where appropriate but try not to limit it and don't make it narrow
+14. Keep the drawings consistent, concise, accurate and highlevel. Color of the diagram should be only black, grey and white. show at least a loop in the signal processing flow. ignore desk/floor/tripod placement in the diagrams. Don't use symbols, acronym or abbreviates in diagrams. learn from uploaded drawing guide to draw better. use double quotes " around texts in the mermaid code.
+15. mention that users can select different roles for the feedback to personalize/customize/fit their needs, both real-time and post-session. claim if possible.
+16. don't include quotes/references in the generated doc because I will submit pdf to USPTO and those doesn't work.
+
+Clarification Questions and answers
+- what is the primary use case? meditation, work, study, relaxation is the primary use case.
+- What is the intended physical form factor of the radar sensor? physical form factor of the radar sensor is a standalone device. can be placed on desk, floor or be installed on an extendable tripod
+- What is the primary embodiment for the processing device where the assessment application runs? It IS a user's smartphone communicating wirelessly with the radar.
+- What specific information is displayed to the user in a post-session report on the UI? It includes but not limited to the final Meditation Quality Score, the Mindfulness Points earned, and graphs showing the trend of HRV, heart rate , respiration rate and other data over the session.
+- The core invention is radar-based. Are you concerned about competitors attempting a design-around using a different non-contact sensor, such as an optical/camera-based system or a high-sensitivity microphone, to capture similar physiological data? no. only radar-based but my product may include other sensors.
+
