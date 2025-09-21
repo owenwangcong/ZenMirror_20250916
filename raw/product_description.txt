@@ -25,16 +25,14 @@
     * 人体距传感器的距离 (cm)
 
 ## Output Data and Analysis
-
 1. 基础输出数据
-    1. 心跳：平均心率、心率稳定度、心率下降度或其他由心跳而衍生出来的数据
-    2. 呼吸：平均呼吸率、呼吸稳定度、呼吸下降度或其他由呼吸而衍生出来的数据
+    1. 心跳：实时与移动平均值，标准差，波动范围
+    2. 呼吸：实时与移动平均值，标准差，波动范围
     3. 心率变异性 (HRV)：
         1. RMSSD
         2. SDNN
     4. 呼吸心律变异 (RSA)
     5. 体动：均方差
-
 2. 综合输出数据
     1. 单次质量分数(Session quality score)(0–100%)：通过用户状态评估框架(User State Assessment Framework)计算. 细节参考附件
     2. 正念积分 (Mindfulness Points, 0–∞)：基于生理稳定性和趋势累积生成。细节参考附件
@@ -174,6 +172,7 @@ zenmirror-crowdfunding-green.html
  - zenmirror出现，人身上开始出现心跳，呼吸和体动
 
 ## Campaign Page 其他要求
+ - campaign page里要mention patent-pending.
  - campaign page里要有timeline.
  - campaign page里要有comparison matrix。对比胸带，手环，脑波等
  - campaign page里要有×××√. 别的产品不能做到的，ZenMirror能做到的。
