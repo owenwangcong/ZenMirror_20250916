@@ -926,7 +926,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     flex-wrap: wrap;
     margin: 4rem 0;
 }
@@ -936,11 +936,13 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 200px;
+    width: 280px;
+    min-height: 320px;
+    flex-shrink: 0;
     position: relative;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 20px;
-    padding: 2.5rem 1.5rem;
+    padding: 3rem 2rem;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
     transition: all var(--transition-medium);
     backdrop-filter: blur(10px);
@@ -1023,9 +1025,10 @@ p {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--zen-forest-dark);
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
     font-family: var(--font-primary);
     transition: color var(--transition-medium);
+    line-height: 1.3;
 }
 
 .process-step:hover h3 {
@@ -1034,10 +1037,15 @@ p {
 
 .process-step p {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.55;
     color: var(--zen-gray-dark);
     font-weight: 400;
     transition: color var(--transition-medium);
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
 
 .process-step:hover p {
@@ -1045,12 +1053,14 @@ p {
 }
 
 .process-arrow {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: rgba(255, 255, 255, 0.9);
     font-weight: 700;
     text-shadow: 0 2px 8px rgba(217, 122, 52, 0.6);
     transition: all var(--transition-medium);
     animation: pulse 2s ease-in-out infinite;
+    flex-shrink: 0;
+    margin: 0 0.5rem;
 }
 
 @keyframes pulse {
@@ -1963,12 +1973,21 @@ p {
 @media (max-width: 768px) {
     .process-flow {
         flex-direction: column;
-        gap: 3rem;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .process-step {
+        width: 100%;
+        max-width: 320px;
+        min-height: 280px;
+        margin: 0 auto;
     }
 
     .process-arrow {
         transform: rotate(90deg);
-        margin: 1rem 0;
+        margin: 0.5rem 0;
+        font-size: 1.5rem;
     }
 
     .process-step {
