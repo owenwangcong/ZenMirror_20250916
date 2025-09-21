@@ -185,6 +185,18 @@ zenmirror-crowdfunding-green.html
  - campaign page里不要提medical或clinical以避免触发监管机制
  - campaign page的内容上要将从monitor到assessment， 从assessment到feedback的不同的过程和阶段流畅，平滑，完整的叙述和表现出来。
 
+## Campaign Strategy
+ - Early backers will have free lifetime subscription
+ - With subscription: 
+   - Unlock advanced data analytics,
+   - access a wider range of mentors, 
+   - explore the meditation knowledge base,
+   - receive personalized training plans, 
+   - exclusive meditation courses, 
+   - historical data trend comparisons, 
+   - community features and challenges, 
+   - regular expert talks and Q&A sessions.
+
 ## Color，style and theme
 zenful style
 {
