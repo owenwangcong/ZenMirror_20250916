@@ -3174,6 +3174,285 @@ p {
     margin: 0;
 }
 
+/* Scientific Validation Section */
+.scientific-validation {
+    background: linear-gradient(135deg, var(--zen-cream), var(--zen-white));
+    padding: 3rem;
+    margin-top: 4rem;
+    border-radius: 20px;
+    border: 1px solid var(--zen-gray-light);
+    box-shadow: var(--shadow-medium);
+}
+
+.scientific-validation h3 {
+    color: var(--zen-forest-dark);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.validation-subtitle {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--zen-gray-dark);
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.research-citations {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.citation-category {
+    background: var(--zen-white);
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--zen-gray-light);
+}
+
+.citation-category h4 {
+    color: var(--zen-forest-dark);
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--zen-orange-accent);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.citations-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.citation-item {
+    background: var(--zen-cream);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border-left: 4px solid var(--zen-orange-accent);
+    transition: var(--transition-medium);
+    position: relative;
+}
+
+.citation-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+}
+
+.citation-content strong {
+    color: var(--zen-forest-dark);
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.citation-content p {
+    color: var(--zen-charcoal);
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.journal {
+    color: var(--zen-gray-dark);
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.citation-finding {
+    background: var(--zen-white);
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid var(--zen-gray-light);
+    margin-top: 1rem;
+}
+
+.citation-finding em {
+    color: var(--zen-orange-deep);
+    font-weight: 600;
+    font-style: normal;
+}
+
+.citation-finding p,
+.citation-finding {
+    color: var(--zen-charcoal);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.clinical-accuracy {
+    background: var(--zen-forest-dark);
+    color: var(--zen-white);
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin-top: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.clinical-accuracy::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, var(--zen-orange-accent), transparent);
+    opacity: 0.1;
+}
+
+.clinical-accuracy h4 {
+    color: var(--zen-white);
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.accuracy-specs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.accuracy-metric {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.accuracy-metric strong {
+    color: var(--zen-white);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.accuracy-metric span {
+    color: var(--zen-orange-light);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.research-summary {
+    margin-top: 3rem;
+}
+
+.summary-highlight {
+    background: linear-gradient(135deg, var(--zen-orange-accent), var(--zen-orange-deep));
+    color: var(--zen-white);
+    border-radius: 16px;
+    padding: 2.5rem;
+    text-align: center;
+    box-shadow: var(--shadow-strong);
+    position: relative;
+    overflow: hidden;
+}
+
+.summary-highlight::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+    transform: rotate(45deg);
+}
+
+.summary-highlight h4 {
+    color: var(--zen-white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.summary-highlight p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.summary-highlight p:last-child {
+    margin-bottom: 0;
+}
+
+.summary-highlight strong {
+    color: var(--zen-white);
+    font-weight: 700;
+}
+
+/* Responsive Design for Scientific Validation */
+@media (max-width: 768px) {
+    .scientific-validation {
+        padding: 2rem 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .scientific-validation h3 {
+        font-size: 1.5rem;
+    }
+
+    .validation-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .citation-category {
+        padding: 1.5rem;
+    }
+
+    .citation-category h4 {
+        font-size: 1.125rem;
+    }
+
+    .citation-item {
+        padding: 1rem;
+    }
+
+    .accuracy-specs {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .accuracy-metric {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .clinical-accuracy {
+        padding: 2rem 1.5rem;
+    }
+
+    .summary-highlight {
+        padding: 2rem 1.5rem;
+    }
+
+    .summary-highlight h4 {
+        font-size: 1.25rem;
+    }
+}
+
 /* Comparison Table */
 .comparison-section {
     background: var(--zen-white);
