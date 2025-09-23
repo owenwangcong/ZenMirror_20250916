@@ -4790,3 +4790,216 @@ a:focus {
         padding: 1.5rem;
     }
 }
+
+/* Confidence Section - Peace of Mind Guarantees */
+.confidence-section {
+    background: linear-gradient(135deg, var(--zen-white), var(--zen-cream));
+    border-radius: 20px;
+    padding: 4rem 2rem;
+    margin: 4rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.confidence-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 70% 30%, rgba(217, 122, 52, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.confidence-section .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.confidence-section .section-header h2 {
+    color: var(--zen-forest-dark);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.confidence-section .section-subtitle {
+    color: var(--zen-gray-dark);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.confidence-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.confidence-card {
+    background: var(--zen-white);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-soft);
+    border: 2px solid transparent;
+    transition: all var(--transition-medium);
+    position: relative;
+    overflow: hidden;
+}
+
+.confidence-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(217, 122, 52, 0.05), transparent);
+    transition: left 0.6s ease;
+}
+
+.confidence-card:hover::before {
+    left: 100%;
+}
+
+.confidence-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-medium);
+    border-color: var(--zen-orange-accent);
+}
+
+.confidence-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1.5rem auto;
+    background: linear-gradient(135deg, var(--zen-cream), var(--zen-white));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--zen-gray-light);
+    transition: all var(--transition-medium);
+    position: relative;
+    z-index: 2;
+}
+
+.confidence-card:hover .confidence-icon {
+    border-color: var(--zen-orange-accent);
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(217, 122, 52, 0.15);
+}
+
+.confidence-icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    transition: transform var(--transition-medium);
+}
+
+.confidence-card:hover .confidence-icon img {
+    transform: scale(1.05);
+}
+
+.confidence-card h3 {
+    color: var(--zen-forest-dark);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.confidence-card p {
+    color: var(--zen-gray-dark);
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+
+/* Special styling for different confidence cards */
+.confidence-card:nth-child(1) {
+    border-left: 4px solid var(--zen-sage);
+}
+
+.confidence-card:nth-child(2) {
+    border-left: 4px solid var(--zen-orange-accent);
+}
+
+.confidence-card:nth-child(3) {
+    border-left: 4px solid var(--zen-forest-medium);
+}
+
+.confidence-card:nth-child(4) {
+    border-left: 4px solid var(--zen-mint);
+}
+
+/* Responsive Design for Confidence Section */
+@media (max-width: 768px) {
+    .confidence-section {
+        padding: 3rem 1.5rem;
+        margin: 3rem 0;
+    }
+
+    .confidence-section .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .confidence-section .section-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .confidence-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .confidence-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .confidence-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .confidence-icon img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .confidence-card h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .confidence-section {
+        padding: 2.5rem 1rem;
+    }
+
+    .confidence-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .confidence-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 1rem;
+    }
+
+    .confidence-icon img {
+        width: 50px;
+        height: 50px;
+    }
+}
