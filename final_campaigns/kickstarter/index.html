@@ -1204,6 +1204,532 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Sample Meditation Report UI -->
+                    <div class="sample-report-showcase">
+                        <h4>📱 See Your Complete Meditation Report</h4>
+                        <p class="report-intro">
+                            Here's what your comprehensive post-session analysis looks like on your phone,
+                            featuring real ZenMirror data from an actual 28-minute meditation session with live charts and trends:
+                        </p>
+
+                        <!-- Mobile Phone Frame -->
+                        <div class="mobile-frame">
+                            <div class="mobile-screen">
+                                <div class="mobile-status-bar">
+                                    <span class="status-time">9:32</span>
+                                    <div class="status-icons">
+                                        <span class="signal">📶</span>
+                                        <span class="wifi">📶</span>
+                                        <span class="battery">🔋</span>
+                                    </div>
+                                </div>
+
+                                <div class="app-content">
+                                    <!-- App Header -->
+                                    <div class="app-header">
+                                        <div class="back-button">←</div>
+                                        <h3>Session Report</h3>
+                                        <div class="share-button">⤴</div>
+                                    </div>
+
+                                    <!-- Scrollable Content -->
+                                    <div class="scroll-content">
+                                        <!-- Session Summary Card -->
+                                        <div class="session-card">
+                                            <div class="session-header">
+                                                <div class="session-title">
+                                                    <h4>🧘‍♀️ Morning Mindfulness</h4>
+                                                    <p class="session-meta">Today • 7:32 AM • 28min 15sec</p>
+                                                </div>
+                                                <div class="quality-score">
+                                                    <div class="score-ring">
+                                                        <svg width="60" height="60" viewBox="0 0 42 42" class="donut">
+                                                            <circle cx="21" cy="21" r="15.915" fill="transparent" stroke="#e6e7eb" stroke-width="3"></circle>
+                                                            <circle cx="21" cy="21" r="15.915" fill="transparent" stroke="#D97A34" stroke-width="3"
+                                                                    stroke-dasharray="89 11" stroke-dashoffset="25" class="progress-ring"></circle>
+                                                        </svg>
+                                                        <div class="score-text">89</div>
+                                                    </div>
+                                                    <span class="score-label">Quality</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Heart Rate Chart -->
+                                        <div class="chart-card">
+                                            <div class="chart-header">
+                                                <h5>🫀 Heart Rate Trend</h5>
+                                                <div class="chart-stats">
+                                                    <span class="final-value">62 BPM</span>
+                                                    <span class="change-indicator decrease">↓ 8</span>
+                                                </div>
+                                            </div>
+                                            <div class="chart-container">
+                                                <svg width="100%" height="120" viewBox="0 0 280 120" class="line-chart">
+                                                    <!-- Grid lines -->
+                                                    <defs>
+                                                        <linearGradient id="heartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                            <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:0.3" />
+                                                            <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:0" />
+                                                        </linearGradient>
+                                                    </defs>
+                                                    <!-- Chart line -->
+                                                    <polyline fill="none" stroke="#ff6b6b" stroke-width="2"
+                                                             points="0,30 20,28 40,32 60,35 80,40 100,38 120,42 140,45 160,40 180,35 200,30 220,25 240,22 260,18 280,15"/>
+                                                    <!-- Fill area -->
+                                                    <polyline fill="url(#heartGradient)" stroke="none"
+                                                             points="0,30 20,28 40,32 60,35 80,40 100,38 120,42 140,45 160,40 180,35 200,30 220,25 240,22 260,18 280,15 280,120 0,120"/>
+                                                    <!-- Data points -->
+                                                    <circle cx="0" cy="30" r="2" fill="#ff6b6b"/>
+                                                    <circle cx="70" cy="40" r="2" fill="#ff6b6b"/>
+                                                    <circle cx="140" cy="45" r="2" fill="#ff6b6b"/>
+                                                    <circle cx="210" cy="30" r="2" fill="#ff6b6b"/>
+                                                    <circle cx="280" cy="15" r="3" fill="#ff6b6b"/>
+                                                </svg>
+                                                <div class="time-labels">
+                                                    <span>0min</span>
+                                                    <span>7min</span>
+                                                    <span>14min</span>
+                                                    <span>21min</span>
+                                                    <span>28min</span>
+                                                </div>
+                                            </div>
+                                            <div class="chart-insight">
+                                                <p>💡 Steady decline from 70 → 62 BPM shows excellent relaxation response</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Breathing Pattern Chart -->
+                                        <div class="chart-card">
+                                            <div class="chart-header">
+                                                <h5>🫁 Breathing Pattern</h5>
+                                                <div class="chart-stats">
+                                                    <span class="final-value">5.8 /min</span>
+                                                    <span class="change-indicator decrease">↓ 2.2</span>
+                                                </div>
+                                            </div>
+                                            <div class="chart-container">
+                                                <svg width="100%" height="120" viewBox="0 0 280 120" class="line-chart">
+                                                    <defs>
+                                                        <linearGradient id="breathGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                            <stop offset="0%" style="stop-color:#4ecdc4;stop-opacity:0.3" />
+                                                            <stop offset="100%" style="stop-color:#4ecdc4;stop-opacity:0" />
+                                                        </linearGradient>
+                                                    </defs>
+                                                    <!-- Breathing wave -->
+                                                    <polyline fill="none" stroke="#4ecdc4" stroke-width="2"
+                                                             points="0,20 35,35 70,25 105,40 140,30 175,45 210,35 245,50 280,40"/>
+                                                    <polyline fill="url(#breathGradient)" stroke="none"
+                                                             points="0,20 35,35 70,25 105,40 140,30 175,45 210,35 245,50 280,40 280,120 0,120"/>
+                                                    <!-- Breath cycles markers -->
+                                                    <circle cx="35" cy="35" r="2" fill="#4ecdc4"/>
+                                                    <circle cx="105" cy="40" r="2" fill="#4ecdc4"/>
+                                                    <circle cx="175" cy="45" r="2" fill="#4ecdc4"/>
+                                                    <circle cx="245" cy="50" r="3" fill="#4ecdc4"/>
+                                                </svg>
+                                                <div class="time-labels">
+                                                    <span>0min</span>
+                                                    <span>7min</span>
+                                                    <span>14min</span>
+                                                    <span>21min</span>
+                                                    <span>28min</span>
+                                                </div>
+                                            </div>
+                                            <div class="chart-insight">
+                                                <p>🎯 Optimal breathing rate achieved at 5.8/min - perfect for deep states</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- HRV Coherence Chart -->
+                                        <div class="chart-card">
+                                            <div class="chart-header">
+                                                <h5>💗 HRV Coherence</h5>
+                                                <div class="chart-stats">
+                                                    <span class="final-value">48.7 ms</span>
+                                                    <span class="change-indicator increase">↑ 23%</span>
+                                                </div>
+                                            </div>
+                                            <div class="chart-container">
+                                                <svg width="100%" height="100" viewBox="0 0 280 100" class="bar-chart">
+                                                    <!-- HRV bars -->
+                                                    <rect x="0" y="60" width="15" height="40" fill="#D97A34" opacity="0.6"/>
+                                                    <rect x="20" y="50" width="15" height="50" fill="#D97A34" opacity="0.7"/>
+                                                    <rect x="40" y="45" width="15" height="55" fill="#D97A34" opacity="0.8"/>
+                                                    <rect x="60" y="40" width="15" height="60" fill="#D97A34" opacity="0.9"/>
+                                                    <rect x="80" y="35" width="15" height="65" fill="#D97A34"/>
+                                                    <rect x="100" y="30" width="15" height="70" fill="#D97A34"/>
+                                                    <rect x="120" y="25" width="15" height="75" fill="#D97A34"/>
+                                                    <rect x="140" y="20" width="15" height="80" fill="#D97A34"/>
+                                                    <rect x="160" y="15" width="15" height="85" fill="#D97A34"/>
+                                                    <rect x="180" y="10" width="15" height="90" fill="#D97A34"/>
+                                                    <rect x="200" y="5" width="15" height="95" fill="#4CAF50"/>
+                                                    <rect x="220" y="5" width="15" height="95" fill="#4CAF50"/>
+                                                    <rect x="240" y="3" width="15" height="97" fill="#4CAF50"/>
+                                                    <rect x="260" y="2" width="15" height="98" fill="#4CAF50"/>
+                                                </svg>
+                                                <div class="time-labels">
+                                                    <span>0</span>
+                                                    <span>7</span>
+                                                    <span>14</span>
+                                                    <span>21</span>
+                                                    <span>28</span>
+                                                </div>
+                                            </div>
+                                            <div class="chart-insight">
+                                                <p>🌟 Peak coherence in final 8 minutes - deep meditative state achieved</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Key Metrics Grid -->
+                                        <div class="metrics-grid">
+                                            <div class="metric-item">
+                                                <div class="metric-icon">🎯</div>
+                                                <div class="metric-data">
+                                                    <span class="metric-label">Stillness</span>
+                                                    <span class="metric-value">94%</span>
+                                                </div>
+                                            </div>
+                                            <div class="metric-item">
+                                                <div class="metric-icon">📊</div>
+                                                <div class="metric-data">
+                                                    <span class="metric-label">RSA</span>
+                                                    <span class="metric-value">8.2 ms</span>
+                                                </div>
+                                            </div>
+                                            <div class="metric-item">
+                                                <div class="metric-icon">⭐</div>
+                                                <div class="metric-data">
+                                                    <span class="metric-label">Points</span>
+                                                    <span class="metric-value">847</span>
+                                                </div>
+                                            </div>
+                                            <div class="metric-item">
+                                                <div class="metric-icon">🏆</div>
+                                                <div class="metric-data">
+                                                    <span class="metric-label">Deep States</span>
+                                                    <span class="metric-value">3 phases</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Weekly Progress Trend -->
+                                        <div class="trend-card">
+                                            <div class="trend-header">
+                                                <h5>📈 7-Day Progress</h5>
+                                                <span class="trend-period">This Week</span>
+                                            </div>
+                                            <div class="progress-chart">
+                                                <div class="progress-item">
+                                                    <span class="progress-day">Mon</span>
+                                                    <div class="progress-bar-container">
+                                                        <div class="progress-bar" style="width: 65%"></div>
+                                                    </div>
+                                                    <span class="progress-score">65</span>
+                                                </div>
+                                                <div class="progress-item">
+                                                    <span class="progress-day">Tue</span>
+                                                    <div class="progress-bar-container">
+                                                        <div class="progress-bar" style="width: 72%"></div>
+                                                    </div>
+                                                    <span class="progress-score">72</span>
+                                                </div>
+                                                <div class="progress-item">
+                                                    <span class="progress-day">Wed</span>
+                                                    <div class="progress-bar-container">
+                                                        <div class="progress-bar" style="width: 78%"></div>
+                                                    </div>
+                                                    <span class="progress-score">78</span>
+                                                </div>
+                                                <div class="progress-item">
+                                                    <span class="progress-day">Thu</span>
+                                                    <div class="progress-bar-container">
+                                                        <div class="progress-bar" style="width: 81%"></div>
+                                                    </div>
+                                                    <span class="progress-score">81</span>
+                                                </div>
+                                                <div class="progress-item">
+                                                    <span class="progress-day">Fri</span>
+                                                    <div class="progress-bar-container">
+                                                        <div class="progress-bar" style="width: 85%"></div>
+                                                    </div>
+                                                    <span class="progress-score">85</span>
+                                                </div>
+                                                <div class="progress-item">
+                                                    <span class="progress-day">Sat</span>
+                                                    <div class="progress-bar-container">
+                                                        <div class="progress-bar" style="width: 87%"></div>
+                                                    </div>
+                                                    <span class="progress-score">87</span>
+                                                </div>
+                                                <div class="progress-item active">
+                                                    <span class="progress-day">Today</span>
+                                                    <div class="progress-bar-container">
+                                                        <div class="progress-bar highlight" style="width: 89%"></div>
+                                                    </div>
+                                                    <span class="progress-score highlight">89</span>
+                                                </div>
+                                            </div>
+                                            <div class="trend-insight">
+                                                <p>📊 +18% improvement this week • Your best session yet!</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Mentor Message -->
+                                        <div class="mentor-card">
+                                            <div class="mentor-avatar">
+                                                <div class="avatar-circle">🧘‍♂️</div>
+                                                <div class="mentor-info">
+                                                    <span class="mentor-name">Zen Master</span>
+                                                    <span class="mentor-style">Mindfulness Guide</span>
+                                                </div>
+                                            </div>
+                                            <div class="mentor-message-card">
+                                                <p><em>"Like morning mist settling on still water, your awareness found its natural depth today.
+                                                The three waves of deeper stillness reveal a mind learning to rest in its own spaciousness.
+                                                Tomorrow, simply begin again with the same gentle curiosity."</em></p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Action Buttons -->
+                                        <div class="action-buttons">
+                                            <button class="btn-secondary">📤 Share Report</button>
+                                            <button class="btn-primary">🧘‍♀️ Start New Session</button>
+                                        </div>
+
+                                        <!-- Bottom spacing for scroll -->
+                                        <div class="bottom-spacing"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sample-report-container" style="display: none;">
+                            <!-- Report Header -->
+                            <div class="report-header">
+                                <div class="report-title-section">
+                                    <h5>🧘‍♀️ Session Complete</h5>
+                                    <div class="session-info">
+                                        <span class="session-date">Today • 7:32 AM • 28min 15sec</span>
+                                        <span class="session-type">Mindfulness • Zen Master</span>
+                                    </div>
+                                </div>
+
+                                <div class="overall-score">
+                                    <div class="score-circle">
+                                        <span class="score-number">89</span>
+                                        <span class="score-total">/100</span>
+                                    </div>
+                                    <div class="score-label">Session Quality</div>
+                                </div>
+                            </div>
+
+                            <!-- Core Metrics Grid -->
+                            <div class="core-metrics-grid">
+                                <div class="metric-card heart-rate">
+                                    <div class="metric-icon">🫀</div>
+                                    <div class="metric-data">
+                                        <span class="metric-title">Heart Rate</span>
+                                        <div class="metric-values">
+                                            <span class="current-value">62 BPM</span>
+                                            <span class="change-indicator down">↓ 8 BPM</span>
+                                        </div>
+                                        <div class="metric-trend">
+                                            <span class="trend-label">Range:</span>
+                                            <span class="trend-value">54-70 BPM</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="metric-card breathing">
+                                    <div class="metric-icon">🫁</div>
+                                    <div class="metric-data">
+                                        <span class="metric-title">Breathing Rate</span>
+                                        <div class="metric-values">
+                                            <span class="current-value">5.8 /min</span>
+                                            <span class="change-indicator down">↓ 2.2 /min</span>
+                                        </div>
+                                        <div class="metric-trend">
+                                            <span class="trend-label">Range:</span>
+                                            <span class="trend-value">5.1-8.0 /min</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="metric-card hrv">
+                                    <div class="metric-icon">💗</div>
+                                    <div class="metric-data">
+                                        <span class="metric-title">HRV (RMSSD)</span>
+                                        <div class="metric-values">
+                                            <span class="current-value">48.7 ms</span>
+                                            <span class="change-indicator up">↑ 23%</span>
+                                        </div>
+                                        <div class="metric-secondary">
+                                            <span class="secondary-label">SDNN:</span>
+                                            <span class="secondary-value">52.3 ms</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="metric-card movement">
+                                    <div class="metric-icon">🎯</div>
+                                    <div class="metric-data">
+                                        <span class="metric-title">Stillness</span>
+                                        <div class="metric-values">
+                                            <span class="current-value">94%</span>
+                                            <span class="stability-badge excellent">Excellent</span>
+                                        </div>
+                                        <div class="metric-trend">
+                                            <span class="trend-label">Movement:</span>
+                                            <span class="trend-value">0.8 cm RMS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Advanced Analytics Section -->
+                            <div class="advanced-analytics">
+                                <h6>🔬 Advanced Analytics</h6>
+
+                                <div class="analytics-row">
+                                    <div class="analytics-item">
+                                        <span class="analytics-label">Respiratory Sinus Arrhythmia (RSA):</span>
+                                        <span class="analytics-value high">8.2 ms</span>
+                                        <span class="analytics-note">↑ Excellent heart-breath coherence</span>
+                                    </div>
+                                </div>
+
+                                <div class="analytics-row">
+                                    <div class="analytics-item">
+                                        <span class="analytics-label">Mindfulness Points Earned:</span>
+                                        <span class="analytics-value points">847 pts</span>
+                                        <span class="analytics-breakdown">(Base: 452 + Focus Bonus: 1.4x + Duration Bonus: 1.3x)</span>
+                                    </div>
+                                </div>
+
+                                <div class="analytics-row">
+                                    <div class="analytics-item">
+                                        <span class="analytics-label">Deep State Phases:</span>
+                                        <span class="analytics-value phases">3 phases</span>
+                                        <span class="analytics-timing">12:30-15:45, 18:20-22:10, 24:15-27:30</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Quality Breakdown -->
+                            <div class="quality-breakdown">
+                                <h6>📊 Quality Breakdown</h6>
+                                <div class="quality-metrics">
+                                    <div class="quality-bar">
+                                        <div class="quality-label">
+                                            <span>Focus Stability</span>
+                                            <span class="quality-score">92/100</span>
+                                        </div>
+                                        <div class="quality-progress">
+                                            <div class="quality-fill" style="width: 92%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="quality-bar">
+                                        <div class="quality-label">
+                                            <span>Breath Coherence</span>
+                                            <span class="quality-score">87/100</span>
+                                        </div>
+                                        <div class="quality-progress">
+                                            <div class="quality-fill" style="width: 87%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="quality-bar">
+                                        <div class="quality-label">
+                                            <span>HRV Balance</span>
+                                            <span class="quality-score">91/100</span>
+                                        </div>
+                                        <div class="quality-progress">
+                                            <div class="quality-fill" style="width: 91%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="quality-bar">
+                                        <div class="quality-label">
+                                            <span>Physical Stillness</span>
+                                            <span class="quality-score">85/100</span>
+                                        </div>
+                                        <div class="quality-progress">
+                                            <div class="quality-fill" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Zen Master's Reflection -->
+                            <div class="mentor-insight">
+                                <div class="mentor-avatar">
+                                    <span class="mentor-icon">🧘‍♂️</span>
+                                    <span class="mentor-name">Zen Master</span>
+                                </div>
+                                <div class="mentor-message">
+                                    <em>"Like morning mist settling on still water, your awareness found its natural depth today.
+                                    The three waves of deeper stillness—at 12, 18, and 24 minutes—reveal a mind learning to rest
+                                    in its own spaciousness. Your heart and breath moved into beautiful harmony,
+                                    especially during the final seven minutes. Tomorrow, simply begin again with the same gentle curiosity."</em>
+                                </div>
+                            </div>
+
+                            <!-- Personal Insights -->
+                            <div class="personal-insights">
+                                <h6>💡 Your Personal Insights</h6>
+                                <div class="insights-grid">
+                                    <div class="insight-item">
+                                        <div class="insight-icon">🎯</div>
+                                        <div class="insight-content">
+                                            <strong>Optimal Zone Found</strong>
+                                            <p>Your deepest states consistently occur between minutes 12-25 of sessions</p>
+                                        </div>
+                                    </div>
+                                    <div class="insight-item">
+                                        <div class="insight-icon">💨</div>
+                                        <div class="insight-content">
+                                            <strong>Breathing Sweet Spot</strong>
+                                            <p>5.8 breaths/minute maximizes your HRV coherence and focus quality</p>
+                                        </div>
+                                    </div>
+                                    <div class="insight-item">
+                                        <div class="insight-icon">📈</div>
+                                        <div class="insight-content">
+                                            <strong>7-Day Progress</strong>
+                                            <p>+18% improvement in average session quality, +12% in deep state duration</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Next Session Recommendations -->
+                            <div class="recommendations-section">
+                                <h6>🚀 Tomorrow's Practice</h6>
+                                <div class="recommendations-list">
+                                    <div class="recommendation-item">
+                                        <span class="rec-number">1</span>
+                                        <div class="rec-content">
+                                            <strong>Extend Duration</strong>
+                                            <p>Try a 35-minute session to explore states beyond your current peak window</p>
+                                        </div>
+                                    </div>
+                                    <div class="recommendation-item">
+                                        <span class="rec-number">2</span>
+                                        <div class="rec-content">
+                                            <strong>Breath Awareness Opening</strong>
+                                            <p>Begin with 5 minutes of conscious breathing to establish your optimal rhythm</p>
+                                        </div>
+                                    </div>
+                                    <div class="recommendation-item">
+                                        <span class="rec-number">3</span>
+                                        <div class="rec-content">
+                                            <strong>Body Scan Integration</strong>
+                                            <p>Your stillness is excellent—try integrating body awareness for deeper integration</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
