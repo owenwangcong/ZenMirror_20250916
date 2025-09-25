@@ -1,0 +1,154 @@
+{
+  "project_id": "timemore_coffee_grinder",
+  "title": "TIMEMORE Electric Coffee Grinder",
+  "creator": "TIMEMORE",
+  "location": "Singapore, Singapore",
+  "category": "Hardware",
+  "url": "https://www.kickstarter.com/projects/timemore/timemore-electric-coffee-grinder",
+  "funding_stats": {
+    "total_raised": "S$ 6,701,074",
+    "funding_goal": "S$ 20,000",
+    "funding_percentage": "33505%",
+    "total_backers": 10836,
+    "campaign_duration": "60 days",
+    "funding_period": "Mar 14 2023 - May 13 2023"
+  },
+  "key_features": [
+    "Electric coffee grinder with flat burr technology",
+    "Two models: 064 and 078 series with different burr sizes",
+    "Sculptor series branding",
+    "Professional barista quality grinding",
+    "One-touch operation",
+    "Premium build quality and design",
+    "Multiple voltage options for global shipping"
+  ],
+  "reward_tiers": [
+    {
+      "name": "TIMEMORE 064 - Launch Day Special",
+      "price": "S$ 402 (USD $299)",
+      "backers": 420,
+      "savings": "$150 OFF ($449 MSRP)",
+      "delivery": "Jun 2023",
+      "status": "All gone",
+      "model": "064"
+    },
+    {
+      "name": "TIMEMORE 064s - Launch Day Special",
+      "price": "S$ 402 (USD $299)",
+      "backers": 2436,
+      "savings": "$150 OFF ($449 MSRP)",
+      "delivery": "Jun 2023",
+      "status": "Most popular - All gone",
+      "model": "064s"
+    },
+    {
+      "name": "TIMEMORE 064 - Super Early Bird",
+      "price": "S$ 438 (USD $329)",
+      "backers": 88,
+      "savings": "$120 OFF ($449 MSRP)",
+      "delivery": "Jun 2023",
+      "status": "All gone",
+      "model": "064"
+    },
+    {
+      "name": "TIMEMORE 064s - Super Early Bird",
+      "price": "S$ 438 (USD $329)",
+      "backers": 826,
+      "savings": "$120 OFF ($449 MSRP)",
+      "delivery": "Jun 2023",
+      "status": "All gone",
+      "model": "064s"
+    },
+    {
+      "name": "TIMEMORE 078s - Launch Day Special",
+      "price": "S$ 671 (USD $499)",
+      "backers": 3782,
+      "savings": "$150 OFF ($649 MSRP)",
+      "delivery": "Jun 2023",
+      "status": "Second most popular - All gone",
+      "model": "078s"
+    },
+    {
+      "name": "TIMEMORE 078 - Launch Day Special (US&CA ONLY)",
+      "price": "S$ 671 (USD $499)",
+      "backers": 278,
+      "savings": "$150 OFF ($649 MSRP)",
+      "delivery": "Jun 2023",
+      "status": "All gone",
+      "model": "078"
+    }
+  ],
+  "success_factors": [
+    "Premium coffee equipment market timing during specialty coffee boom",
+    "Professional-grade flat burr technology at accessible price point",
+    "Strong brand reputation in coffee community",
+    "Aggressive early bird pricing (33% discount on launch day)",
+    "Multiple model options to capture different price segments",
+    "Third-party YouTube reviews embedded for credibility",
+    "Project We Love badge from Kickstarter",
+    "Professional marketing agency management (Longham Group)",
+    "Global shipping capability with voltage options",
+    "Clear value proposition for coffee enthusiasts"
+  ],
+  "engagement_metrics": {
+    "comments": 6020,
+    "updates": 26,
+    "faqs": 16,
+    "project_we_love": true,
+    "video_content": "Multiple embedded YouTube reviews",
+    "last_updated": "January 25, 2024"
+  },
+  "pricing_strategy": {
+    "tier_structure": "Launch Day > Super Early Bird > Early Bird progression",
+    "discount_levels": "33% ($150 off) > 27% ($120 off) > 22% ($100 off)",
+    "price_segments": "064 series ($299-$349) and 078 series ($499-$559)",
+    "currency_strategy": "Singapore dollars with USD pricing for clarity",
+    "bundle_options": "2-pack options available at additional discount",
+    "geographic_restrictions": "078 model limited to US&CA markets"
+  },
+  "video_marketing": {
+    "main_campaign_video": "Professional product demonstration",
+    "third_party_reviews": [
+      "Kyle Rowsell - 'TIMEMORE SCULPTOR 078S 064S - The Flat Burr King?'",
+      "Lance Hedrick - 'TIMEMORE SCULPTOR 078: Early Review'",
+      "Coffee Parts - 'Timemore Sculptor 078 Electric Coffee Grinder | Review'"
+    ],
+    "review_strategy": "Embedded independent coffee expert reviews for credibility"
+  },
+  "technical_innovation": {
+    "burr_technology": "Flat burr grinding system for professional consistency",
+    "model_differentiation": "064mm and 078mm burr sizes for different needs",
+    "build_quality": "Premium materials and construction",
+    "user_experience": "One-touch operation for ease of use",
+    "global_compatibility": "Multiple voltage options for international markets"
+  },
+  "market_positioning": {
+    "target_audience": "Coffee enthusiasts, home baristas, specialty coffee shops",
+    "competitive_advantage": "Professional flat burr technology at consumer price point",
+    "use_cases": "Home brewing, small coffee shops, gift for coffee lovers",
+    "brand_positioning": "Premium but accessible coffee equipment"
+  },
+  "professional_management": {
+    "agency": "Longham Group - crowdfunding specialists",
+    "services": "Comprehensive campaign management including ads, email, social media",
+    "global_presence": "Offices in Shenzhen, Hong Kong, and New York",
+    "expertise": "Specializes in crowdfunding and DTC marketing"
+  },
+  "reward_distribution": {
+    "total_single_units": 8813,
+    "most_popular_model": "078s Launch Day (3,782 backers)",
+    "second_most_popular": "064s Launch Day (2,436 backers)",
+    "bundle_sales": "Limited 2-pack options with minimal uptake",
+    "geographic_split": "Global shipping with US/CA restrictions on 078 model"
+  },
+  "analysis_notes": {
+    "category": "Hardware/Consumer Appliances",
+    "innovation_level": "Moderate - bringing professional technology to consumer market",
+    "market_timing": "Excellent - specialty coffee boom and home brewing trend",
+    "pricing_strategy": "Highly effective tiered early bird approach",
+    "communication": "Strong third-party validation through expert reviews",
+    "fulfillment_risk": "Low - established manufacturer with clear delivery timeline",
+    "viral_elements": "Coffee community endorsements and review embedding",
+    "global_strategy": "Smart use of Singapore base for international shipping"
+  }
+}

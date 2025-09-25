@@ -1,0 +1,99 @@
+{
+  "project_id": "bambu_lab_x1",
+  "title": "Bambu Lab X1: CoreXY Color 3D Printer with Lidar and AI",
+  "creator": "Bambu Lab",
+  "location": "Hong Kong, Hong Kong",
+  "category": "3D Printing",
+  "url": "https://www.kickstarter.com/projects/bambulab/bambu-lab-x1-corexy-color-3d-printer-with-lidar-and-ai",
+  "funding_stats": {
+    "total_raised": "HK$ 54,970,803",
+    "funding_goal": "HK$ 78,495",
+    "funding_percentage": "70031%",
+    "total_backers": 5575,
+    "campaign_duration": "30 days",
+    "funding_period": "May 31 2022 - Jun 30 2022"
+  },
+  "key_features": [
+    "20 m/s² Acceleration",
+    "Up to 16 Colors",
+    "7 μm Lidar",
+    "AI Features",
+    "Dual Auto Bed Leveling",
+    "PA / PC / Carbon / Support Filaments",
+    "Spaghetti Detection"
+  ],
+  "reward_tiers": [
+    {
+      "name": "Early Bird: X1",
+      "price": "HK$ 5,487",
+      "backers": 99,
+      "savings": "Save $300",
+      "msrp": "$999",
+      "delivery": "Jul 2022",
+      "includes": ["Bambu Lab X1", "250g Bambu PLA Filament"]
+    },
+    {
+      "name": "Kickstarter Special: X1",
+      "price": "HK$ 6,272",
+      "backers": 93,
+      "savings": "Save $200",
+      "msrp": "$999",
+      "delivery": "Jul 2022",
+      "includes": ["Bambu Lab X1", "250g Bambu PLA Filament"]
+    },
+    {
+      "name": "Early Bird: X1-Carbon",
+      "price": "HK$ 6,665",
+      "backers": 200,
+      "savings": "Save $350",
+      "msrp": "$1199",
+      "delivery": "Jul 2022",
+      "includes": ["Bambu Lab X1-Carbon", "250g Bambu PLA Filament"]
+    },
+    {
+      "name": "Kickstarter Special: X1-Carbon",
+      "price": "HK$ 7,450",
+      "backers": 396,
+      "savings": "Save $250",
+      "msrp": "$1199",
+      "delivery": "Jul 2022",
+      "includes": ["Bambu Lab X1-Carbon", "250g Bambu PLA Filament"]
+    },
+    {
+      "name": "Kickstarter Popular Ext: X1-Carbon Combo",
+      "price": "HK$ 9,412",
+      "backers": 1642,
+      "savings": "Save $250",
+      "msrp": "$1449",
+      "delivery": "Aug 2022",
+      "includes": ["Bambu Lab X1-Carbon", "Bambu Lab AMS", "250g Bambu PA-CF Filament", "250g Bambu Support Filament", "2× 250g Bambu PLA Filament"]
+    }
+  ],
+  "success_factors": [
+    "Revolutionary technology (Lidar, AI)",
+    "Significant speed improvements (20 m/s² acceleration)",
+    "Multi-color capability (up to 16 colors)",
+    "Advanced materials support",
+    "Strong video content and demonstrations",
+    "Clear technical specifications",
+    "Multiple reward tiers with good value proposition",
+    "Project We Love badge",
+    "Strong community engagement (4,946 comments, 18 updates)",
+    "Established company credibility"
+  ],
+  "engagement_metrics": {
+    "comments": 4946,
+    "updates": 18,
+    "faqs": 25,
+    "project_we_love": true,
+    "video_content": "Multiple YouTube demonstrations"
+  },
+  "analysis_notes": {
+    "category": "Hardware/Manufacturing",
+    "innovation_level": "High - breakthrough technology",
+    "market_timing": "Perfect - 3D printing boom",
+    "pricing_strategy": "Premium but competitive with significant early bird discounts",
+    "communication": "Excellent technical documentation and video demonstrations",
+    "fulfillment_risk": "Low - established manufacturer with production ready"
+  }
+}
