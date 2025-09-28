@@ -48,7 +48,9 @@
       "Bash(del \"final_campaigns\\kickstarter\\nul\")",
       "Bash(git rm:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(ffprobe:*)",
+      "Bash(git log:*)"
     ],
     "deny": [],
     "ask": []

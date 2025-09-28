@@ -1,0 +1,10 @@
+# Campaign videos (large files)
+scripts/campaign_videos/
+
+# Google OAuth credentials (SENSITIVE - DO NOT COMMIT)
+scripts/credentials.json
+scripts/token.json
+
+# Environment files
+scripts/.env
+*.env

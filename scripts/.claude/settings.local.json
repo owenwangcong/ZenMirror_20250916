@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__get-library-docs",
+      "Bash(python test:*)",
+      "Bash(if exist .env type .env)",
+      "Bash(findstr:*)",
+      "Bash(python test_video_generation.py:*)",
+      "Bash(dir:*)",
+      "Bash(powershell:*)",
+      "Bash(python:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

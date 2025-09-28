@@ -1,0 +1,163 @@
+{
+  "campaign": {
+    "title": "ZenMirror Campaign Video",
+    "total_duration": 180,
+    "description": "Revolutionary contactless meditation monitoring system with 6 cultural wisdom mentors",
+    "output_filename": "zenmirror_campaign_final.mp4"
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "title": "The Meditation Monitoring Problem",
+      "duration": 15,
+      "prompt": "Split screen comparison video: Left side shows a stressed person covered in multiple wearable devices including chest straps, smartwatches, EEG headbands, and finger sensors with tangled wires in a cluttered tech lab. Right side shows the same person in peaceful meditation with only a sleek bamboo-textured device nearby in a minimalist zen space with soft golden hour lighting. Camera smoothly transitions from cluttered chaos to serene simplicity.",
+      "visual_style": "cinematic, high contrast, desaturated left side transitioning to vibrant warm right side, 16:9 aspect ratio",
+      "key_elements": [
+        "tangled wires and sensors",
+        "frustrated facial expressions",
+        "minimalist zen aesthetic",
+        "golden hour lighting"
+      ],
+      "narration": "Traditional meditation monitoring disrupts the very peace it's meant to measure.",
+      "audio_cues": "Electronic beeps transitioning to natural ambient sounds"
+    },
+    {
+      "id": 2,
+      "title": "ZenMirror Technology Reveal",
+      "duration": 20,
+      "prompt": "Elegant 360-degree product showcase of ZenMirror device with premium lighting, showing bamboo texture and matte finish. Animated visualization of blue-green gradient millimeter wave radar pulses detecting heartbeat and breathing patterns without contact. HUD-style overlay graphics showing vital signs detection. Patent-pending badge with metallic shimmer effect. Size reference with hand for scale.",
+      "visual_style": "product photography, turntable shot, depth of field blur, particle effects for radar waves",
+      "key_elements": [
+        "360-degree rotation",
+        "animated radar waves",
+        "vital signs overlay",
+        "patent badge",
+        "bamboo material showcase"
+      ],
+      "narration": "Introducing ZenMirror - the world's first contactless meditation monitoring system using patent-pending millimeter wave radar.",
+      "audio_cues": "Subtle technology sounds, whoosh effects for transitions"
+    },
+    {
+      "id": 3,
+      "title": "Comprehensive Vital Signs Monitoring",
+      "duration": 20,
+      "prompt": "Person settling into meditation with animated glassmorphism UI overlays showing real-time vital signs detection. Display heart rate decreasing from 72 to 65 bpm, breathing slowing from 14 to 8 rpm, and HRV increasing from 45 to 72ms. Color-coded data streams in forest green palette. Visual sine wave synchronization showing coherence. Scientific ECG and breathing waveforms animated smoothly.",
+      "visual_style": "data visualization, glassmorphism UI, smooth animations, scientific accuracy",
+      "key_elements": [
+        "real-time metrics",
+        "ECG waveforms",
+        "breathing patterns",
+        "HRV visualization",
+        "coherence indicator"
+      ],
+      "narration": "Monitor heart rate, breathing patterns, HRV, and meditation quality without any physical contact.",
+      "audio_cues": "Heartbeat sounds, breathing rhythm"
+    },
+    {
+      "id": 4,
+      "title": "From Agitation to Tranquility",
+      "duration": 25,
+      "prompt": "Emotional journey showing person transforming from stressed to calm over 25 seconds. Start with hunched shoulders and erratic breathing at 18rpm with 85bpm heart rate. Gentle mentor voice guidance leads to straight spine and rhythmic 6rpm breathing with 60bpm heart rate. Visual color transition from red stress through orange to green calm. Particle effects showing chaotic movement becoming smooth flow.",
+      "visual_style": "emotional storytelling, color grading from cool stress to warm calm, particle effects",
+      "key_elements": [
+        "stress to calm transformation",
+        "body language changes",
+        "data synchronization",
+        "mentor voice overlay",
+        "color transitions"
+      ],
+      "narration": "Multiple mentor voices: 'Like water finding its level...' (Zen), 'Feel the prana flowing...' (Yogi), 'Rest in divine peace...' (Chaplain)",
+      "audio_cues": "Layered heartbeat, breathing, and mentor voices"
+    },
+    {
+      "id": 5,
+      "title": "Six Cultural Wisdom Mentors",
+      "duration": 25,
+      "prompt": "3D carousel showcasing six mentor avatars with ethereal watercolor portraits. Zen Master with Japanese garden, Yogi with Himalayan sunrise, Chaplain with cathedral light, Spiritual Guide with cosmic nebula, Stoic with Greek columns, Vedanta Teacher with sacred geometry. Each mentor morphs smoothly with unique cultural symbols and provides wisdom interpretation of the same physiological data.",
+      "visual_style": "ethereal watercolor, 3D carousel rotation, cultural aesthetics, sacred geometry",
+      "key_elements": [
+        "six distinct mentors",
+        "cultural backgrounds",
+        "unique color palettes",
+        "wisdom interpretations",
+        "sacred symbols"
+      ],
+      "narration": "Choose from six authentic wisdom mentors, each interpreting your meditation through their unique cultural lens.",
+      "audio_cues": "Native speaker voice samples for each mentor"
+    },
+    {
+      "id": 6,
+      "title": "Intelligent Real-time Guidance",
+      "duration": 20,
+      "prompt": "Split screen showing iPhone 15 Pro and Pixel 8 displaying ZenMirror app with real-time biometric feedback at 60fps. Breathing circle expanding and contracting with actual breath, heart rate pulse matching BPM, HRV coherence as flowing particles. Gentle notification appears: 'Your breath has become shallow' with mentor-specific styling. Material Design 3 and iOS Human Interface guidelines followed.",
+      "visual_style": "mobile UI demonstration, clean interface design, smooth animations",
+      "key_elements": [
+        "iOS and Android apps",
+        "real-time feedback",
+        "breathing visualization",
+        "notification system",
+        "accessibility features"
+      ],
+      "narration": "App notification: 'Your breath has become shallow. Return to the deep well of stillness.'",
+      "audio_cues": "Gentle notification sound, haptic feedback visualization"
+    },
+    {
+      "id": 7,
+      "title": "Comprehensive Session Analysis",
+      "duration": 20,
+      "prompt": "Post-meditation dashboard revealing session quality score of 94/100 with confetti celebration. Mindfulness points counter incrementing to +847. Achievement badge '30-Day Streak' with 3D metallic flip animation. Charts showing meditation depth progression, heart coherence increasing from 45% to 92%, breathing consistency improvement. Global rank #1,247 display with trend graphs.",
+      "visual_style": "dashboard UI, celebration effects, data visualization, gamification elements",
+      "key_elements": [
+        "quality score",
+        "mindfulness points",
+        "achievement badges",
+        "progress charts",
+        "social features"
+      ],
+      "narration": "Track your progress with detailed analytics, mindfulness points, and achievement rewards.",
+      "audio_cues": "Achievement sounds, celebration music"
+    },
+    {
+      "id": 8,
+      "title": "Beyond Meditation: Complete Wellness",
+      "duration": 20,
+      "prompt": "Fast-paced montage showing ZenMirror in five different modes with 3-second cuts. Meditation mode with morning ritual, Work mode at office desk with stress monitoring, Study mode in library for focus, Sleep mode bedside for sleep tracking, Recovery mode post-workout for HRV optimization. Diverse cast in different environments, seamless match cuts between breathing patterns.",
+      "visual_style": "lifestyle montage, quick cuts, diverse environments, time-lapse elements",
+      "key_elements": [
+        "meditation mode",
+        "work focus mode",
+        "study mode",
+        "sleep mode",
+        "recovery mode"
+      ],
+      "narration": "Meditation, work focus, study sessions - ZenMirror adapts to your entire wellness journey.",
+      "audio_cues": "Upbeat background music with mode transitions"
+    },
+    {
+      "id": 9,
+      "title": "Join the Mindfulness Revolution",
+      "duration": 15,
+      "prompt": "Premium product shots with golden hour rim lighting. Animated 'Back This Project' button pulsing. Early Bird price $299 with strikethrough $499 retail showing $200 savings. Progress bar at 73% funded, countdown timer showing days:hours:minutes. Limited quantity 127/500 remaining. Kickstarter Staff Pick and Project We Love badges. QR code for instant mobile backing.",
+      "visual_style": "call-to-action, urgency indicators, premium product photography, trust badges",
+      "key_elements": [
+        "pricing comparison",
+        "countdown timer",
+        "progress indicators",
+        "trust badges",
+        "QR code"
+      ],
+      "narration": "Join thousands of early backers. Get ZenMirror now with lifetime premium access. Your journey to deeper mindfulness starts here.",
+      "audio_cues": "Inspiring crescendo music, subtle urgency sounds"
+    }
+  ],
+  "transitions": {
+    "type": "smooth_fade",
+    "duration": 0.5,
+    "style": "crossfade with logo watermark"
+  },
+  "outro": {
+    "duration": 3,
+    "content": "ZenMirror logo with campaign URL overlay",
+    "style": "fade to brand colors"
+  }
+}
