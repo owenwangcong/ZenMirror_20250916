@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenMirror 众筹视频分镜脚本</title>
+    <style>
+        :root {
+            --zen-forest-dark: #1a3d2e;
+            --zen-forest-medium: #2d5b3e;
+            --zen-orange-accent: #d97a34;
+            --zen-white: #fdfcf8;
+            --zen-cream: #f9f7f1;
+            --zen-gray-medium: #b8b6b0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, var(--zen-cream), var(--zen-white));
+            color: var(--zen-forest-dark);
+            line-height: 1.8;
+        }
+
+        .storyboard-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .storyboard-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .storyboard-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--zen-forest-dark);
+            margin-bottom: 1rem;
+        }
+
+        .storyboard-subtitle {
+            font-size: 1.2rem;
+            color: var(--zen-gray-medium);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .scene {
+            background: var(--zen-white);
+            margin-bottom: 2rem;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 24px rgba(45, 91, 62, 0.12);
+            transition: transform 0.3s ease;
+        }
+
+        .scene:hover {
+            transform: translateY(-4px);
+        }
+
+        .scene-header {
+            background: linear-gradient(135deg, var(--zen-forest-medium), var(--zen-forest-dark));
+            color: var(--zen-white);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .scene-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .scene-duration {
+            background: rgba(255,255,255,0.2);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .scene-content {
+            padding: 2rem;
+        }
+
+        .scene-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .visual-frame {
+            aspect-ratio: 16/9;
+            background: var(--zen-cream);
+            border: 2px dashed var(--zen-gray-medium);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .visual-description {
+            font-size: 0.9rem;
+            color: var(--zen-gray-medium);
+            margin-bottom: 0.5rem;
+        }
+
+        .visual-elements {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--zen-forest-medium);
+            line-height: 1.6;
+        }
+
+        .scene-details h3 {
+            color: var(--zen-orange-accent);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .scene-description {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .technical-notes {
+            background: var(--zen-cream);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .technical-notes h4 {
+            color: var(--zen-forest-medium);
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .technical-notes ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .technical-notes li {
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .technical-notes li::before {
+            content: "→ ";
+            color: var(--zen-orange-accent);
+            font-weight: bold;
+        }
+
+        .audio-cue {
+            background: linear-gradient(135deg, var(--zen-orange-accent), #f4a460);
+            color: white;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        .audio-cue::before {
+            content: "🎵 ";
+            margin-right: 0.5rem;
+        }
+
+        .transition {
+            background: var(--zen-forest-dark);
+            color: var(--zen-white);
+            padding: 1rem;
+            text-align: center;
+            font-style: italic;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .scene-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .storyboard-container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="storyboard-container">
+        <div class="storyboard-header">
+            <h1 class="storyboard-title">ZenMirror 禅镜 · 众筹视频分镜脚本</h1>
+            <p class="storyboard-subtitle">
+                展示革命性非接触式冥想监测技术的视觉叙事，
+                配备6位文化智慧导师的全方位反馈系统
+            </p>
+        </div>
+
+        <!-- 场景 1: 问题引入 -->
+        <div class="scene">
+            <div class="scene-header">
+                <div class="scene-number">场景 1</div>
+                <div class="scene-duration">0:00 - 0:15</div>
+            </div>
+            <div class="scene-content">
+                <div class="scene-grid">
+                    <div class="visual-frame">
+                        <div class="visual-description">分屏对比画面</div>
+                        <div class="visual-elements">
+                            左侧：被传感器缠绕的冥想者<br>
+                            右侧：简洁的ZenMirror设置<br>
+                            对比度：混乱 vs 平静
+                        </div>
+                        <div style="position: absolute; bottom: 10px; left: 10px; font-size: 0.8rem; color: #999;">
+                            📐 画幅比：16:9 | 🎨 色调：左侧去饱和，右侧生动<br>
+                            📷 镜头：中景 | ⚡ 灯光：强硬光 vs 柔和光
+                        </div>
+                    </div>
+                    <div class="scene-details">
+                        <h3>冥想监测的困境</h3>
+                        <p class="scene-description">
+                            开场展现我们解决方案的鲜明对比。左侧画面显示一位冥想者被各种穿戴式设备包围——
+                            胸带、智能手表、脑电波头带、手指传感器，设备线缆缠绕，表情沮丧。
+                            右侧展示同一个人在ZenMirror陪伴下安详冥想，环境简洁优雅。
+                        </p>
+                        <div class="technical-notes">
+                            <h4>技术指导：</h4>
+                            <ul>
+                                <li>缠绕线缆和不舒适传感器的特写镜头（2-3秒）</li>
+                                <li>传统监测设备使用者的沮丧微表情</li>
+                                <li>平滑过渡到ZenMirror场景（滑轨运动）</li>
+                                <li>柔和灯光强调禅意美学（黄金时刻模拟）</li>
+                                <li>背景对比：杂乱的科技实验室 → 极简禅意空间</li>
+                                <li>道具：5个以上可穿戴设备、线缆、充电站 → 单一ZenMirror</li>
+                                <li>声音设计：电子蜂鸣声/干扰声 → 自然环境音</li>
+                            </ul>
+                        </div>
+                        <div class="audio-cue">
+                            旁白："传统的冥想监测设备，破坏了它本该守护的内心平静。"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 场景 2: 技术介绍 -->
+        <div class="scene">
+            <div class="scene-header">
+                <div class="scene-number">场景 2</div>
+                <div class="scene-duration">0:15 - 0:35</div>
+            </div>
+            <div class="scene-content">
+                <div class="scene-grid">
+                    <div class="visual-frame">
+                        <div class="visual-description">产品主视觉镜头</div>
+                        <div class="visual-elements">
+                            ZenMirror设备<br>
+                            动画雷达波纹<br>
+                            检测生命体征
+                        </div>
+                        <div style="position: absolute; bottom: 10px; left: 10px; font-size: 0.8rem; color: #999;">
+                            🎬 动画：After Effects粒子系统<br>
+                            🌊 波形可视化：60GHz频率图案<br>
+                            💫 特效：柔和光晕，景深虚化
+                        </div>
+                    </div>
+                    <div class="scene-details">
+                        <h3>ZenMirror 技术揭秘</h3>
+                        <p class="scene-description">
+                            优雅展示产品在自然环境中的形态。动画演示毫米波雷达如何在无需任何物理接触的情况下，
+                            检测心跳、呼吸模式和细微的身体动作，展现科技与禅意的完美融合。
+                        </p>
+                        <div class="technical-notes">
+                            <h4>技术指导：</h4>
+                            <ul>
+                                <li>360度产品旋转展示，专业打光（转盘拍摄，5秒）</li>
+                                <li>动画雷达波可视化（蓝绿渐变脉冲，1Hz频率）</li>
+                                <li>生命体征检测的叠加图形（HUD风格，半透明）</li>
+                                <li>专利标识动画（金属光泽效果）</li>
+                                <li>材质展示：竹纹理特写，哑光表面细节</li>
+                                <li>尺寸参考：手部放置展示比例（15cm × 10cm × 5cm）</li>
+                                <li>LED指示灯状态：呼吸模式同步可视化</li>
+                                <li>技术规格叠加："60GHz毫米波 • 3米范围 • <1mW功率"</li>
+                            </ul>
+                        </div>
+                        <div class="audio-cue">
+                            旁白："隆重介绍ZenMirror——全球首款采用专利毫米波雷达技术的非接触式冥想监测系统。"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 场景 3: 生命体征检测 -->
+        <div class="scene">
+            <div class="scene-header">
+                <div class="scene-number">场景 3</div>
+                <div class="scene-duration">0:35 - 0:55</div>
+            </div>
+            <div class="scene-content">
+                <div class="scene-grid">
+                    <div class="visual-frame">
+                        <div class="visual-description">数据可视化</div>
+                        <div class="visual-elements">
+                            冥想者上方的动画生命体征：<br>
+                            ❤️ 心率监测<br>
+                            🫁 呼吸模式<br>
+                            📊 心率变异性(HRV)
+                        </div>
+                        <div style="position: absolute; bottom: 10px; left: 10px; font-size: 0.8rem; color: #999;">
+                            📊 图表风格：实时示波器<br>
+                            🎨 颜色编码：红色(心率)、蓝色(呼吸)、绿色(HRV)<br>
+                            📈 更新率：30fps流畅动画
+                        </div>
+                    </div>
+                    <div class="scene-details">
+                        <h3>全方位生命体征监测</h3>
+                        <p class="scene-description">
+                            当冥想者进入状态，动画叠层展示ZenMirror如何实时检测和分析心率、呼吸模式、
+                            心率变异性(HRV)、呼吸性窦性心律不齐(RSA)以及细微的身体动作，
+                            所有数据精准呈现，毫无侵扰。
+                        </p>
+                        <div class="technical-notes">
+                            <h4>技术指导：</h4>
+                            <ul>
+                                <li>优雅的数据可视化叠层（毛玻璃UI设计）</li>
+                                <li>指标间的流畅动画过渡（ease-in-out，0.5秒）</li>
+                                <li>科学准确的波形显示（真实ECG/PPG模式）</li>
+                                <li>配合禅意美学的色彩编码（森林绿色调）</li>
+                                <li>实时数值：心率 72→65 bpm，呼吸 14→8 rpm，HRV 45→72 ms</li>
+                                <li>协调性指标：视觉正弦波同步效果</li>
+                                <li>微动作检测：细微身体摇摆可视化</li>
+                                <li>距离指示："最佳范围：0.5-3米"图形</li>
+                            </ul>
+                        </div>
+                        <div class="audio-cue">
+                            旁白："无需任何身体接触，即可监测心率、呼吸模式、HRV和冥想质量。"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 场景 4: 从压力到平静的转变 -->
+        <div class="scene">
+            <div class="scene-header">
+                <div class="scene-number">场景 4</div>
+                <div class="scene-duration">0:55 - 1:20</div>
+            </div>
+            <div class="scene-content">
+                <div class="scene-grid">
+                    <div class="visual-frame">
+                        <div class="visual-description">情绪转变之旅</div>
+                        <div class="visual-elements">
+                            冥想者：焦虑 → 引导 → 平静<br>
+                            数据：混乱 → 稳定 → 和谐<br>
+                            时间轴：0秒(压力) → 15秒(引导) → 25秒(平静)
+                        </div>
+                        <div style="position: absolute; bottom: 10px; left: 10px; font-size: 0.8rem; color: #999;">
+                            🎭 表演要点：方法派演技，真实压力反应<br>
+                            🎵 音频层次：心跳声、呼吸声、导师声音<br>
+                            🌈 调色：冷色压力 → 暖色平静
+                        </div>
+                    </div>
+                    <div class="scene-details">
+                        <h3>从焦虑到宁静</h3>
+                        <p class="scene-description">
+                            展示冥想旅程：冥想者开始时躁动不安，生命体征紊乱，
+                            接收到所选导师的温和音频指导后，逐渐达到深层平静，
+                            生理模式呈现和谐状态。
+                        </p>
+                        <div class="technical-notes">
+                            <h4>技术指导：</h4>
+                            <ul>
+                                <li>分屏显示人物和数据同步（70/30比例）</li>
+                                <li>心率下降的视觉呈现（25秒内从85降至60 bpm）</li>
+                                <li>呼吸模式：不规则18 rpm → 平稳6 rpm（4-7-8技巧）</li>
+                                <li>具有文化真实性的导师声音叠加（3个独特样本）</li>
+                                <li>颜色过渡：红色(压力) → 橙色(过渡) → 绿色(平静)</li>
+                                <li>面部微表情：下颌紧张 → 眉头舒展 → 微笑</li>
+                                <li>身体语言：耸肩弓背 → 脊柱挺直 → 胸部舒展</li>
+                                <li>环境变化：强烈阴影 → 柔和漫射光</li>
+                                <li>粒子特效：混乱运动 → 平稳流动 → 静止存在</li>
+                            </ul>
+                        </div>
+                        <div class="audio-cue">
+                            多位导师声音："如水归于平静..."(禅师)、"感受气脉流动..."(瑜伽师)、"安息于神圣宁静..."(牧师)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 场景 5: 六位文化导师 -->
+        <div class="scene">
+            <div class="scene-header">
+                <div class="scene-number">场景 5</div>
+                <div class="scene-duration">1:20 - 1:45</div>
+            </div>
+            <div class="scene-content">
+                <div class="scene-grid">
+                    <div class="visual-frame">
+                        <div class="visual-description">导师轮播展示</div>
+                        <div class="visual-elements">
+                            6位导师形象与文化符号：<br>
+                            🧘 禅宗大师（日式庭院背景）<br>
+                            🕉️ 瑜伽上师（喜马拉雅日出）<br>
+                            ✝️ 灵性牧师（教堂圣光）<br>
+                            ✨ 心灵导师（宇宙星云）<br>
+                            🏛️ 斯多葛哲人（希腊柱廊）<br>
+                            🕎 吠檀多导师（神圣几何）
+                        </div>
+                        <div style="position: absolute; bottom: 10px; left: 10px; font-size: 0.8rem; color: #999;">
+                            🎨 艺术风格：空灵水彩肖像<br>
+                            🔄 转场：3D旋转木马效果<br>
+                            🎙️ 声音样本：母语使用者，每位5秒
+                        </div>
+                    </div>
+                    <div class="scene-details">
+                        <h3>六大智慧传统</h3>
+                        <p class="scene-description">
+                            展示每位导师独特的视角和引导风格。每位导师带着文化符号出现，
+                            基于相同的生理数据提供独特见解，展现个性化的智慧指导。
+                        </p>
+                        <div class="technical-notes">
+                            <h4>技术指导：</h4>
+                            <ul>
+                                <li>优雅的导师转场，体现文化美学（变形效果，1秒）</li>
+                                <li>同一数据通过不同哲学视角解读：</li>
+                                <li>  • 禅宗："心如止水"（关注心率变异性）</li>
+                                <li>  • 瑜伽："气随呼吸流动"（关注呼吸模式）</li>
+                                <li>  • 牧师："超越理解的平安"（关注整体协调性）</li>
+                                <li>  • 心灵："能量中心对齐"（脉轮可视化）</li>
+                                <li>  • 斯多葛："控制可控之事"（关注主动指标）</li>
+                                <li>  • 吠檀多："见证意识涌现"（元认知）</li>
+                                <li>配音演员：拥有10年以上修行经验的母语使用者</li>
+                                <li>视觉元素：文化图标、神圣几何、自然场景</li>
+                                <li>独特色彩方案：每位导师有专属3色配色</li>
+                            </ul>
+                        </div>
+                        <div class="audio-cue">
+                            旁白："从六位真实的智慧导师中选择，每位都通过独特的文化视角解读您的冥想状态。"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 场景 6: 实时反馈 -->
+        <div class="scene">
+            <div class="scene-header">
+                <div class="scene-number">场景 6</div>
+                <div class="scene-duration">1:45 - 2:05</div>
+            </div>
+            <div class="scene-content">
+                <div class="scene-grid">
+                    <div class="visual-frame">
+                        <div class="visual-description">实时引导</div>
+                        <div class="visual-elements">
+                            移动应用界面<br>
+                            实时指导提示：<br>
+                            "呼吸再深一些..."通知<br>
+                            iOS & Android界面展示
+                        </div>
+                        <div style="position: absolute; bottom: 10px; left: 10px; font-size: 0.8rem; color: #999;">
+                            📱 设备：iPhone 15 Pro + Pixel 8<br>
+                            💬 通知样式：柔和淡入<br>
+                            🔔 触觉反馈可视化
+                        </div>
+                    </div>
+                    <div class="scene-details">
+                        <h3>智能实时引导</h3>
+                        <p class="scene-description">
+                            演示应用的实时反馈系统如何检测用户需要引导的时刻，
+                            通过所选导师提供温和、符合文化特色的提示，
+                            优化冥想体验。
+                        </p>
+                        <div class="technical-notes">
+                            <h4>技术指导：</h4>
+                            <ul>
+                                <li>应用界面显示实时生物特征反馈（60fps刷新）</li>
+                                <li>带有导师特定样式的通知动画（柔和脉冲）</li>
+                                <li>与呼吸改善同步的视觉反馈：</li>
+                                <li>  • 呼吸圆圈随实际呼吸扩张/收缩</li>
+                                <li>  • 心率脉冲动画匹配真实BPM</li>
+                                <li>  • HRV协调性显示为流动粒子</li>
+                                <li>简洁直观的UI设计（Material Design 3 / iOS人机界面）</li>
+                                <li>无障碍功能：高对比度模式、屏幕阅读器支持</li>
+                                <li>实时波形：ECG风格心率轨迹、呼吸波形</li>
+                                <li>阈值指示器："进入深度冥想"横幅</li>
+                                <li>会话计时器与阶段指示：安定 → 深化 → 巅峰</li>
+                            </ul>
+                        </div>
+                        <div class="audio-cue">
+                            应用通知音效后接导师引导："您的呼吸变浅了。回归深层静谧之井。"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 场景 7: 会话报告 -->
+        <div class="scene">
+            <div class="scene-header">
+                <div class="scene-number">场景 7</div>
+                <div class="scene-duration">2:05 - 2:25</div>
+            </div>
+            <div class="scene-content">
+                <div class="scene-grid">
+                    <div class="visual-frame">
+                        <div class="visual-description">成果仪表板</div>
+                        <div class="visual-elements">
+                            会话质量得分：94/100<br>
+                            正念积分：+847<br>
+                            成就解锁！🏆<br>
+                            "30天连续打卡"徽章<br>
+                            全球排名：#1,247
+                        </div>
+                        <div style="position: absolute; bottom: 10px; left: 10px; font-size: 0.8rem; color: #999;">
+                            ✨ 动画：彩纸爆炸效果<br>
+                            📊 图表：动态条形/折线图<br>
+                            🏅 徽章设计：3D金属光泽
+                        </div>
+                    </div>
+                    <div class="scene-details">
+                        <h3>全面会话分析</h3>
+                        <p class="scene-description">
+                            冥想后报告展示会话质量得分、获得的正念积分、
+                            生理改善指标和成就解锁。演示游戏化元素如何鼓励持续练习。
+                        </p>
+                        <div class="technical-notes">
+                            <h4>技术指导：</h4>
+                            <ul>
+                                <li>带庆祝特效的动画分数展示（彩纸，+1分递增）</li>
+                                <li>展示会话进展的数据可视化：</li>
+                                <li>  • 逐分钟冥想深度图表</li>
+                                <li>  • 心脏协调性百分比（开始45% → 结束92%）</li>
+                                <li>  • 呼吸一致性得分（紊乱 → 有节奏）</li>
+                                <li>  • 检测并纠正的走神事件</li>
+                                <li>成就徽章动画（带发光效果的3D翻转）</li>
+                                <li>趋势图表：7天、30天、历史进步曲线</li>
+                                <li>对比分析："您的冥想深度比上周提升23%"</li>
+                                <li>社交分享预览：Instagram故事模板生成</li>
+                                <li>个性化洞察："最佳冥想时间：早上6:30"</li>
+                                <li>下一目标建议："再冥想5次即可解锁禅宗大师级别"</li>
+                            </ul>
+                        </div>
+                        <div class="audio-cue">
+                            旁白："通过详细分析、正念积分和成就奖励追踪您的进步。"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 场景 8: 多种使用场景 -->
+        <div class="scene">
+            <div class="scene-header">
+                <div class="scene-number">场景 8</div>
+                <div class="scene-duration">2:25 - 2:45</div>
+            </div>
+            <div class="scene-content">
+                <div class="scene-grid">
+                    <div class="visual-frame">
+                        <div class="visual-description">生活方式整合</div>
+                        <div class="visual-elements">
+                            多种场景：<br>
+                            🧘‍♀️ 冥想模式（晨间仪式）<br>
+                            💼 工作专注模式（办公桌设置）<br>
+                            📚 学习模式（图书馆场景）<br>
+                            😴 睡眠模式（床头监测）<br>
+                            🏃 恢复模式（运动后）
+                        </div>
+                        <div style="position: absolute; bottom: 10px; left: 10px; font-size: 0.8rem; color: #999;">
+                            🎬 蒙太奇：3秒快切<br>
+                            🏠 环境：5个不同场所<br>
+                            👥 多元化演员阵容
+                        </div>
+                    </div>
+                    <div class="scene-details">
+                        <h3>超越冥想：全方位健康</h3>
+                        <p class="scene-description">
+                            展示ZenMirror的多功能性：深度练习的冥想模式、
+                            办公任务的工作压力监测模式、学习期间的专注模式等，
+                            全天候守护您的身心健康。
+                        </p>
+                        <div class="technical-notes">
+                            <h4>技术指导：</h4>
+                            <ul>
+                                <li>不同使用场景的快速蒙太奇（每个3秒，快速剪切）</li>
+                                <li>模式特定的UI适配：</li>
+                                <li>  • 冥想：全屏呼吸引导，最少干扰</li>
+                                <li>  • 工作：桌面小部件，压力警报，番茄钟</li>
+                                <li>  • 学习：专注计时器，认知负荷监测</li>
+                                <li>  • 睡眠：深色模式，睡眠阶段跟踪，智能闹钟</li>
+                                <li>  • 恢复：HRV优化，恢复分数</li>
+                                <li>生活方式整合：家庭、办公室、健身房、卧室、学习空间</li>
+                                <li>无缝转场：呼吸模式之间的匹配剪切</li>
+                                <li>延时元素：太阳位置显示全天使用</li>
+                                <li>多用户功能：家庭成员共享设备</li>
+                                <li>宠物友好：画面中的狗/猫，不受雷达影响</li>
+                            </ul>
+                        </div>
+                        <div class="audio-cue">
+                            旁白："冥想、工作专注、学习会话——ZenMirror适应您的整个健康旅程。"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 场景 9: 行动号召 -->
+        <div class="scene">
+            <div class="scene-header">
+                <div class="scene-number">场景 9</div>
+                <div class="scene-duration">2:45 - 3:00</div>
+            </div>
+            <div class="scene-content">
+                <div class="scene-grid">
+                    <div class="visual-frame">
+                        <div class="visual-description">众筹CTA</div>
+                        <div class="visual-elements">
+                            ZenMirror标志<br>
+                            "支持此项目"按钮<br>
+                            早鸟价：$299（优惠40%）<br>
+                            仅限500台<br>
+                            倒计时：剩余29天<br>
+                            "终身免费高级版"
+                        </div>
+                        <div style="position: absolute; bottom: 10px; left: 10px; font-size: 0.8rem; color: #999;">
+                            ⚡ 动画：脉冲CTA按钮<br>
+                            ⏰ 倒计时器：实时更新<br>
+                            💰 价格对比：$299 vs $499零售价
+                        </div>
+                    </div>
+                    <div class="scene-details">
+                        <h3>加入正念革命</h3>
+                        <p class="scene-description">
+                            强有力的行动号召，强调早鸟定价、独家终身订阅优惠，
+                            以及成为首批体验非接触式冥想技术用户的限时机会。
+                        </p>
+                        <div class="technical-notes">
+                            <h4>技术指导：</h4>
+                            <ul>
+                                <li>优雅灯光下的高端产品拍摄（黄金时刻、轮廓光）</li>
+                                <li>动画价格对比：早鸟价 vs 零售价（节省$200）</li>
+                                <li>紧迫性指标：</li>
+                                <li>  • 进度条："48小时内达成73%资金"</li>
+                                <li>  • 限量："早鸟名额剩余127/500"</li>
+                                <li>  • 倒计时器：天:小时:分钟:秒</li>
+                                <li>  • 社会认同："加入1,247位支持者"</li>
+                                <li>清晰的支持说明：3步流程可视化</li>
+                                <li>信任徽章："Kickstarter员工精选"、"我们喜爱的项目"</li>
+                                <li>保证印章："30天退款保证"</li>
+                                <li>发货信息："2025年5月全球发货"</li>
+                                <li>最终推荐：Beta测试者评价及五星评级</li>
+                                <li>二维码：即时移动端支持选项</li>
+                            </ul>
+                        </div>
+                        <div class="audio-cue">
+                            旁白："加入数千名早期支持者。立即获得ZenMirror，享受终身高级访问权限。您的深度正念之旅从这里开始。"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="transition">
+            视频以ZenMirror标志和众筹活动网址叠加结束<br>
+            🎬 制作时长：3分钟 | 🎯 目标受众：25-45岁健康意识人群
+        </div>
+    </div>
+</body>
+</html>

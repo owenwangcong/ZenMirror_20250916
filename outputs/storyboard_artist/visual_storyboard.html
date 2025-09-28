@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenMirror Campaign Video Storyboard</title>
+    <style>
+        :root {
+            --zen-forest-dark: #1a3d2e;
+            --zen-forest-medium: #2d5b3e;
+            --zen-orange-accent: #d97a34;
+            --zen-white: #fdfcf8;
+            --zen-cream: #f9f7f1;
+            --zen-gray-medium: #b8b6b0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, var(--zen-cream), var(--zen-white));
+            color: var(--zen-forest-dark);
+            line-height: 1.6;
+        }
+
+        .storyboard-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .storyboard-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .storyboard-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--zen-forest-dark);
+            margin-bottom: 1rem;
+        }
+
+        .storyboard-subtitle {
+            font-size: 1.2rem;
+            color: var(--zen-gray-medium);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .scene {
+            background: var(--zen-white);
+            margin-bottom: 2rem;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 24px rgba(45, 91, 62, 0.12);
+            transition: transform 0.3s ease;
+        }
+
+        .scene:hover {
+            transform: translateY(-4px);
+        }
+
+        .scene-header {
+            background: linear-gradient(135deg, var(--zen-forest-medium), var(--zen-forest-dark));
+            color: var(--zen-white);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .scene-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .scene-duration {
+            background: rgba(255,255,255,0.2);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .scene-content {
+            padding: 2rem;
+        }
+
+        .scene-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .visual-frame {
+            aspect-ratio: 16/9;
+            background: var(--zen-cream);
+            border: 2px dashed var(--zen-gray-medium);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .visual-description {
+            font-size: 0.9rem;
+            color: var(--zen-gray-medium);
+            margin-bottom: 0.5rem;
+        }
+
+        .visual-elements {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--zen-forest-medium);
+        }
+
+        .scene-details h3 {
+            color: var(--zen-orange-accent);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .scene-description {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .technical-notes {
+            background: var(--zen-cream);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .technical-notes h4 {
+            color: var(--zen-forest-medium);
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .technical-notes ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .technical-notes li {
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .technical-notes li::before {
+            content: "→ ";
+            color: var(--zen-orange-accent);
+            font-weight: bold;
+        }
+
+        .audio-cue {
+            background: linear-gradient(135deg, var(--zen-orange-accent), #f4a460);
+            color: white;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        .audio-cue::before {
+            content: "🎵 ";
+            margin-right: 0.5rem;
+        }
+
+        .transition {
+            background: var(--zen-forest-dark);
+            color: var(--zen-white);
+            padding: 1rem;
+            text-align: center;
+            font-style: italic;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .scene-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .storyboard-container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="storyboard-container">
+        <div class="storyboard-header">
+            <h1 class="storyboard-title">ZenMirror Campaign Video Storyboard</h1>
+            <p class="storyboard-subtitle">
+                Visual narrative showcasing the revolutionary contactless meditation technology
+                and its comprehensive feedback system with 6 cultural wisdom mentors.
+            </p>
+        </div>
+
+        <!-- Scene 1: Problem Introduction -->
+        <div class="scene">
+            <div class="scene-header">
+                <div class="scene-number">Scene 1</div>
+                <div class="scene-duration">0:00 - 0:15</div>
+            </div>
+            <div class="scene-content">
+                <div class="scene-grid">
+                    <div class="visual-frame">
+                        <div class="visual-description">Split Screen Comparison</div>
+                        <div class="visual-elements">
+                            LEFT: Person covered in sensors<br>
+                            RIGHT: Clean ZenMirror setup
+                        </div>
+                        <div style="position: absolute; bottom: 10px; left: 10px; font-size: 0.8rem; color: #999;">
+                            📐 Aspect: 16:9 | 🎨 Color: Desaturated left, Vibrant right<br>
+                            📷 Shot: Medium wide | ⚡ Lighting: Harsh vs. Soft
+                        </div>
+                    </div>
+                    <div class="scene-details">
+                        <h3>The Meditation Monitoring Problem</h3>
+                        <p class="scene-description">
+                            Open with the stark contrast that defines our solution. Left side shows a person
+                            meditating while covered in exaggerated wearable devices - chest straps,
+                            smartwatches, EEG headbands, finger sensors. Right side shows the same person
+                            in peaceful meditation with only the sleek ZenMirror device nearby.
+                        </p>
+                        <div class="technical-notes">
+                            <h4>Technical Direction:</h4>
+                            <ul>
+                                <li>Close-up shots of tangled wires and uncomfortable sensors (2-3 seconds)</li>
+                                <li>Person's frustrated expression with traditional monitoring (micro-expressions)</li>
+                                <li>Smooth camera transition to reveal clean ZenMirror setup (dolly/slider movement)</li>
+                                <li>Soft lighting emphasizing the zen aesthetic (golden hour simulation)</li>
+                                <li>Background: Cluttered tech lab → Minimalist zen space</li>
+                                <li>Props: 5+ wearable devices, cables, charging stations → Single ZenMirror</li>
+                                <li>Sound design: Electronic beeps/interference → Natural ambient sounds</li>
+                            </ul>
+                        </div>
+                        <div class="audio-cue">
+                            Narrator: "Traditional meditation monitoring disrupts the very peace it's meant to measure."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scene 2: Technology Introduction -->
+        <div class="scene">
+            <div class="scene-header">
+                <div class="scene-number">Scene 2</div>
+                <div class="scene-duration">0:15 - 0:35</div>
+            </div>
+            <div class="scene-content">
+                <div class="scene-grid">
+                    <div class="visual-frame">
+                        <div class="visual-description">Product Hero Shot</div>
+                        <div class="visual-elements">
+                            ZenMirror device with<br>
+                            animated radar waves<br>
+                            detecting vital signs
+                        </div>
+                        <div style="position: absolute; bottom: 10px; left: 10px; font-size: 0.8rem; color: #999;">
+                            🎬 Animation: After Effects particle system<br>
+                            🌊 Wave visualization: 60GHz frequency pattern<br>
+                            💫 Effects: Subtle glow, depth of field blur
+                        </div>
+                    </div>
+                    <div class="scene-details">
+                        <h3>ZenMirror Technology Reveal</h3>
+                        <p class="scene-description">
+                            Elegant product introduction showing ZenMirror in its natural environment.
+                            Animated visualization shows millimeter wave radar detecting heartbeat,
+                            breathing patterns, and subtle body movements without any physical contact.
+                        </p>
+                        <div class="technical-notes">
+                            <h4>Technical Direction:</h4>
+                            <ul>
+                                <li>360-degree product rotation with premium lighting (turntable shot, 5 seconds)</li>
+                                <li>Animated radar wave visualization (blue-green gradient pulses at 1Hz)</li>
+                                <li>Overlay graphics showing detected vital signs (HUD style, semi-transparent)</li>
+                                <li>Patent-pending badge animation (metallic shimmer effect)</li>
+                                <li>Material showcase: Bamboo texture closeup, matte finish detail</li>
+                                <li>Size reference: Hand placement for scale (6" x 4" x 2")</li>
+                                <li>LED indicator states: Breathing pattern sync visualization</li>
+                                <li>Technical specs overlay: "60GHz mmWave • 3m range • <1mW power"</li>
+                            </ul>
+                        </div>
+                        <div class="audio-cue">
+                            Narrator: "Introducing ZenMirror - the world's first contactless meditation monitoring system using patent-pending millimeter wave radar."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scene 3: Vital Signs Detection -->
+        <div class="scene">
+            <div class="scene-header">
+                <div class="scene-number">Scene 3</div>
+                <div class="scene-duration">0:35 - 0:55</div>
+            </div>
+            <div class="scene-content">
+                <div class="scene-grid">
+                    <div class="visual-frame">
+                        <div class="visual-description">Data Visualization</div>
+                        <div class="visual-elements">
+                            Animated vital signs appearing<br>
+                            over meditating person:<br>
+                            ♥️ Heart Rate, 🫁 Breathing, 📊 HRV
+                        </div>
+                        <div style="position: absolute; bottom: 10px; left: 10px; font-size: 0.8rem; color: #999;">
+                            📊 Graph style: Real-time oscilloscope<br>
+                            🎨 Color coding: Red (HR), Blue (Breath), Green (HRV)<br>
+                            📈 Update rate: 30fps smooth animation
+                        </div>
+                    </div>
+                    <div class="scene-details">
+                        <h3>Comprehensive Vital Signs Monitoring</h3>
+                        <p class="scene-description">
+                            As a person settles into meditation, animated overlays show ZenMirror detecting
+                            and analyzing heart rate, breathing patterns, heart rate variability (HRV),
+                            respiratory sinus arrhythmia (RSA), and subtle body movements in real-time.
+                        </p>
+                        <div class="technical-notes">
+                            <h4>Technical Direction:</h4>
+                            <ul>
+                                <li>Elegant data visualization overlays (glassmorphism UI design)</li>
+                                <li>Smooth animated transitions between metrics (ease-in-out, 0.5s)</li>
+                                <li>Scientific accuracy in displayed waveforms (actual ECG/PPG patterns)</li>
+                                <li>Color-coded data streams matching zen aesthetic (forest green palette)</li>
+                                <li>Real-time values: HR 72→65 bpm, Breathing 14→8 rpm, HRV 45→72 ms</li>
+                                <li>Coherence indicator: Visual sine wave synchronization effect</li>
+                                <li>Micro-movements detection: Subtle body sway visualization</li>
+                                <li>Distance indicator: "Optimal range: 0.5-3 meters" graphic</li>
+                            </ul>
+                        </div>
+                        <div class="audio-cue">
+                            Narrator: "Monitor heart rate, breathing patterns, HRV, and meditation quality without any physical contact."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scene 4: Stress to Calm Transformation -->
+        <div class="scene">
+            <div class="scene-header">
+                <div class="scene-number">Scene 4</div>
+                <div class="scene-duration">0:55 - 1:20</div>
+            </div>
+            <div class="scene-content">
+                <div class="scene-grid">
+                    <div class="visual-frame">
+                        <div class="visual-description">Emotional Journey</div>
+                        <div class="visual-elements">
+                            Person: Agitated → Guided → Peaceful<br>
+                            Data: Chaotic → Stabilizing → Harmonious<br>
+                            Timeline: 0s (stress) → 15s (guidance) → 25s (calm)
+                        </div>
+                        <div style="position: absolute; bottom: 10px; left: 10px; font-size: 0.8rem; color: #999;">
+                            🎭 Acting notes: Method acting, genuine stress response<br>
+                            🎵 Audio layers: Heartbeat, breathing, mentor voice<br>
+                            🌈 Color grading: Cool stress → Warm calm
+                        </div>
+                    </div>
+                    <div class="scene-details">
+                        <h3>From Agitation to Tranquility</h3>
+                        <p class="scene-description">
+                            Show the meditation journey: person starts restless with erratic vital signs,
+                            receives gentle audio guidance from selected mentor, and gradually achieves
+                            deep calm with harmonized physiological patterns.
+                        </p>
+                        <div class="technical-notes">
+                            <h4>Technical Direction:</h4>
+                            <ul>
+                                <li>Split screen showing person and data synchronization (70/30 ratio)</li>
+                                <li>Visual representation of decreasing heart rate (85→60 bpm over 25s)</li>
+                                <li>Breathing pattern: Irregular 18 rpm → Smooth 6 rpm (4-7-8 technique)</li>
+                                <li>Mentor voice overlay with cultural authenticity (3 distinct samples)</li>
+                                <li>Color transition: Red (stress) → Orange (transition) → Green (calm)</li>
+                                <li>Facial micro-expressions: Tension in jaw → Relaxed brow → Slight smile</li>
+                                <li>Body language: Hunched shoulders → Straight spine → Open chest</li>
+                                <li>Environmental changes: Harsh shadows → Soft diffused light</li>
+                                <li>Particle effects: Chaotic movement → Smooth flow → Still presence</li>
+                            </ul>
+                        </div>
+                        <div class="audio-cue">
+                            Multiple mentor voices: "Like water finding its level..." (Zen), "Feel the prana flowing..." (Yogi), "Rest in divine peace..." (Chaplain)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scene 5: Six Cultural Mentors -->
+        <div class="scene">
+            <div class="scene-header">
+                <div class="scene-number">Scene 5</div>
+                <div class="scene-duration">1:20 - 1:45</div>
+            </div>
+            <div class="scene-content">
+                <div class="scene-grid">
+                    <div class="visual-frame">
+                        <div class="visual-description">Mentor Carousel</div>
+                        <div class="visual-elements">
+                            6 mentor avatars with<br>
+                            cultural symbols:<br>
+                            🧘 Zen Master (Japanese garden background)<br>
+                            🕉️ Yogi (Himalayan sunrise)<br>
+                            ✝️ Chaplain (Cathedral light)<br>
+                            ✨ Spiritual Guide (Cosmic nebula)<br>
+                            🏛️ Stoic (Greek columns)<br>
+                            🕎 Vedanta Teacher (Sacred geometry)
+                        </div>
+                        <div style="position: absolute; bottom: 10px; left: 10px; font-size: 0.8rem; color: #999;">
+                            🎨 Art style: Ethereal watercolor portraits<br>
+                            🔄 Transition: 3D carousel rotation<br>
+                            🎙️ Voice samples: Native speakers, 5s each
+                        </div>
+                    </div>
+                    <div class="scene-details">
+                        <h3>Six Wisdom Traditions</h3>
+                        <p class="scene-description">
+                            Showcase each mentor with their unique perspective and guidance style.
+                            Each mentor appears with cultural symbols and provides a sample insight
+                            based on the same physiological data, demonstrating personalized wisdom.
+                        </p>
+                        <div class="technical-notes">
+                            <h4>Technical Direction:</h4>
+                            <ul>
+                                <li>Elegant mentor transitions with cultural aesthetics (morph effect, 1s)</li>
+                                <li>Same data interpreted through different philosophical lenses:</li>
+                                <li>  • Zen: "Empty mind like still water" (HR variability focus)</li>
+                                <li>  • Yogi: "Prana flows with breath" (Breathing pattern focus)</li>
+                                <li>  • Chaplain: "Peace that surpasses understanding" (Overall coherence)</li>
+                                <li>  • Spiritual: "Energy centers aligning" (Chakra visualization)</li>
+                                <li>  • Stoic: "Control what you can control" (Voluntary metrics)</li>
+                                <li>  • Vedanta: "Witness consciousness emerging" (Meta-awareness)</li>
+                                <li>Voice actors: Native speakers with 10+ years practice</li>
+                                <li>Visual elements: Cultural iconography, sacred geometry, nature scenes</li>
+                                <li>Unique color palettes: Each mentor has distinct 3-color scheme</li>
+                            </ul>
+                        </div>
+                        <div class="audio-cue">
+                            Narrator: "Choose from six authentic wisdom mentors, each interpreting your meditation through their unique cultural lens."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scene 6: Real-time Feedback -->
+        <div class="scene">
+            <div class="scene-header">
+                <div class="scene-number">Scene 6</div>
+                <div class="scene-duration">1:45 - 2:05</div>
+            </div>
+            <div class="scene-content">
+                <div class="scene-grid">
+                    <div class="visual-frame">
+                        <div class="visual-description">Live Guidance</div>
+                        <div class="visual-elements">
+                            Mobile app with<br>
+                            real-time coaching:<br>
+                            "Breathe deeper..." notification<br>
+                            iOS & Android UI shown
+                        </div>
+                        <div style="position: absolute; bottom: 10px; left: 10px; font-size: 0.8rem; color: #999;">
+                            📱 Device: iPhone 15 Pro + Pixel 8<br>
+                            💬 Notification style: Gentle fade-in<br>
+                            🔔 Haptic feedback visualization
+                        </div>
+                    </div>
+                    <div class="scene-details">
+                        <h3>Intelligent Real-time Guidance</h3>
+                        <p class="scene-description">
+                            Demonstrate the app's real-time feedback system detecting when the user
+                            needs guidance and providing gentle, culturally-appropriate prompts
+                            through their chosen mentor to optimize their meditation experience.
+                        </p>
+                        <div class="technical-notes">
+                            <h4>Technical Direction:</h4>
+                            <ul>
+                                <li>App interface showing live biometric feedback (60fps refresh)</li>
+                                <li>Notification animations with mentor-specific styling (gentle pulse)</li>
+                                <li>Visual feedback synchronized with breathing improvement:</li>
+                                <li>  • Breathing circle expands/contracts with actual breath</li>
+                                <li>  • Heart rate pulse animation matches real BPM</li>
+                                <li>  • HRV coherence shown as flowing particles</li>
+                                <li>Clean, intuitive UI design (Material Design 3 / iOS Human Interface)</li>
+                                <li>Accessibility features: High contrast mode, screen reader support</li>
+                                <li>Real-time waveforms: ECG-style heart trace, respiratory wave</li>
+                                <li>Threshold indicators: "Entering deep meditation" banner</li>
+                                <li>Session timer with phase indicators: Settling → Deepening → Peak</li>
+                            </ul>
+                        </div>
+                        <div class="audio-cue">
+                            App notification sound followed by mentor guidance: "Your breath has become shallow. Return to the deep well of stillness."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scene 7: Session Report -->
+        <div class="scene">
+            <div class="scene-header">
+                <div class="scene-number">Scene 7</div>
+                <div class="scene-duration">2:05 - 2:25</div>
+            </div>
+            <div class="scene-content">
+                <div class="scene-grid">
+                    <div class="visual-frame">
+                        <div class="visual-description">Results Dashboard</div>
+                        <div class="visual-elements">
+                            Session Quality Score: 94/100<br>
+                            Mindfulness Points: +847<br>
+                            Achievement Unlocked! 🏆<br>
+                            "30-Day Streak" Badge<br>
+                            Global Rank: #1,247
+                        </div>
+                        <div style="position: absolute; bottom: 10px; left: 10px; font-size: 0.8rem; color: #999;">
+                            ✨ Animation: Confetti particle burst<br>
+                            📊 Charts: Animated bar/line graphs<br>
+                            🏅 Badge design: 3D metallic shine
+                        </div>
+                    </div>
+                    <div class="scene-details">
+                        <h3>Comprehensive Session Analysis</h3>
+                        <p class="scene-description">
+                            Post-meditation report showing session quality score, mindfulness points
+                            earned, physiological improvements, and achievement unlocks. Demonstrate
+                            the gamification elements that encourage consistent practice.
+                        </p>
+                        <div class="technical-notes">
+                            <h4>Technical Direction:</h4>
+                            <ul>
+                                <li>Animated score revelation with celebration effects (confetti, +1 point increments)</li>
+                                <li>Data visualization showing session progression:</li>
+                                <li>  • Minute-by-minute meditation depth chart</li>
+                                <li>  • Heart coherence percentage (starts 45% → ends 92%)</li>
+                                <li>  • Breathing consistency score (erratic → rhythmic)</li>
+                                <li>  • Mind wandering events detected and corrected</li>
+                                <li>Achievement badge animation (3D flip with glow effect)</li>
+                                <li>Trend graphs: 7-day, 30-day, all-time progress curves</li>
+                                <li>Comparative analysis: "You meditated 23% deeper than last week"</li>
+                                <li>Social sharing preview: Instagram story template generation</li>
+                                <li>Personalized insights: "Best session time: 6:30 AM"</li>
+                                <li>Next goal suggestion: "5 more sessions to unlock Zen Master level"</li>
+                            </ul>
+                        </div>
+                        <div class="audio-cue">
+                            Narrator: "Track your progress with detailed analytics, mindfulness points, and achievement rewards."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scene 8: Multiple Use Cases -->
+        <div class="scene">
+            <div class="scene-header">
+                <div class="scene-number">Scene 8</div>
+                <div class="scene-duration">2:25 - 2:45</div>
+            </div>
+            <div class="scene-content">
+                <div class="scene-grid">
+                    <div class="visual-frame">
+                        <div class="visual-description">Lifestyle Integration</div>
+                        <div class="visual-elements">
+                            Multiple scenarios:<br>
+                            🧘‍♀️ Meditation Mode (Morning ritual)<br>
+                            💼 Work Focus Mode (Office desk setup)<br>
+                            📚 Study Mode (Library setting)<br>
+                            😴 Sleep Mode (Bedside monitoring)<br>
+                            🏃 Recovery Mode (Post-workout)
+                        </div>
+                        <div style="position: absolute; bottom: 10px; left: 10px; font-size: 0.8rem; color: #999;">
+                            🎬 Montage: Quick 3-second cuts<br>
+                            🏠 Environments: 5 distinct locations<br>
+                            👥 Diverse cast representation
+                        </div>
+                    </div>
+                    <div class="scene-details">
+                        <h3>Beyond Meditation: Complete Wellness</h3>
+                        <p class="scene-description">
+                            Show ZenMirror's versatility: meditation mode for deep practice,
+                            work mode for stress monitoring during office tasks, and study mode
+                            for maintaining focus during learning sessions.
+                        </p>
+                        <div class="technical-notes">
+                            <h4>Technical Direction:</h4>
+                            <ul>
+                                <li>Quick montage of different usage scenarios (3s each, fast cuts)</li>
+                                <li>Mode-specific UI adaptations:</li>
+                                <li>  • Meditation: Full-screen breathing guide, minimal distractions</li>
+                                <li>  • Work: Desktop widget, stress alerts, Pomodoro timer</li>
+                                <li>  • Study: Focus timer, cognitive load monitoring</li>
+                                <li>  • Sleep: Dark mode, sleep stage tracking, smart alarm</li>
+                                <li>  • Recovery: HRV optimization, recovery score</li>
+                                <li>Lifestyle integration: Home, office, gym, bedroom, study spaces</li>
+                                <li>Seamless transitions: Match cuts between breathing patterns</li>
+                                <li>Time-lapse elements: Sun position showing all-day usage</li>
+                                <li>Multi-user capability: Family members sharing device</li>
+                                <li>Pet-friendly: Dog/cat in frame, unaffected by radar</li>
+                            </ul>
+                        </div>
+                        <div class="audio-cue">
+                            Narrator: "Meditation, work focus, study sessions - ZenMirror adapts to your entire wellness journey."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scene 9: Call to Action -->
+        <div class="scene">
+            <div class="scene-header">
+                <div class="scene-number">Scene 9</div>
+                <div class="scene-duration">2:45 - 3:00</div>
+            </div>
+            <div class="scene-content">
+                <div class="scene-grid">
+                    <div class="visual-frame">
+                        <div class="visual-description">Campaign CTA</div>
+                        <div class="visual-elements">
+                            ZenMirror logo with<br>
+                            "Back This Project" button<br>
+                            Early Bird: $299 (40% OFF)<br>
+                            Only 500 units available<br>
+                            Timer: 29 days remaining<br>
+                            "FREE Lifetime Premium"
+                        </div>
+                        <div style="position: absolute; bottom: 10px; left: 10px; font-size: 0.8rem; color: #999;">
+                            ⚡ Animation: Pulsing CTA button<br>
+                            ⏰ Countdown timer: Live updating<br>
+                            💰 Price comparison: $299 vs $499 retail
+                        </div>
+                    </div>
+                    <div class="scene-details">
+                        <h3>Join the Mindfulness Revolution</h3>
+                        <p class="scene-description">
+                            Strong call-to-action emphasizing early bird pricing, exclusive lifetime
+                            subscription benefits, and the limited-time opportunity to be among
+                            the first to experience contactless meditation technology.
+                        </p>
+                        <div class="technical-notes">
+                            <h4>Technical Direction:</h4>
+                            <ul>
+                                <li>Premium product shots with elegant lighting (golden hour, rim lighting)</li>
+                                <li>Animated pricing comparison: Early Bird vs Retail ($200 savings)</li>
+                                <li>Urgency indicators:</li>
+                                <li>  • Progress bar: "73% funded in 48 hours"</li>
+                                <li>  • Limited quantity: "127/500 Early Bird slots remaining"</li>
+                                <li>  • Countdown timer: Days:Hours:Minutes:Seconds</li>
+                                <li>  • Social proof: "Join 1,247 backers"</li>
+                                <li>Clear backing instructions: 3-step process visualization</li>
+                                <li>Trust badges: "Kickstarter Staff Pick", "Project We Love"</li>
+                                <li>Guarantee seal: "30-day money-back guarantee"</li>
+                                <li>Shipping info: "Ships worldwide May 2025"</li>
+                                <li>Final testimonial: Beta tester quote with 5-star rating</li>
+                                <li>QR code: Instant mobile backing option</li>
+                            </ul>
+                        </div>
+                        <div class="audio-cue">
+                            Narrator: "Join thousands of early backers. Get ZenMirror now with lifetime premium access. Your journey to deeper mindfulness starts here."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="transition">
+            Video concludes with ZenMirror logo and campaign URL overlay
+        </div>
+    </div>
+</body>
+</html>
