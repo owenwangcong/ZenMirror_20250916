@@ -1,0 +1,52 @@
+{
+  "hrvProgress": [
+    { "day": 1, "hrv": 45, "label": "Day 1" },
+    { "day": 3, "hrv": 48, "label": "Day 3" },
+    { "day": 5, "hrv": 52, "label": "Day 5" },
+    { "day": 7, "hrv": 56, "label": "Week 1" },
+    { "day": 10, "hrv": 62, "label": "Day 10" },
+    { "day": 14, "hrv": 68, "label": "Week 2" },
+    { "day": 17, "hrv": 72, "label": "Day 17" },
+    { "day": 21, "hrv": 78, "label": "Week 3" }
+  ],
+  "sessionQuality": [
+    { "session": 1, "quality": 65, "date": "Day 1" },
+    { "session": 5, "quality": 70, "date": "Day 5" },
+    { "session": 10, "quality": 75, "date": "Day 10" },
+    { "session": 15, "quality": 78, "date": "Day 15" },
+    { "session": 20, "quality": 85, "date": "Day 20" },
+    { "session": 25, "quality": 89, "date": "Day 25" }
+  ],
+  "breathingPattern": [
+    { "time": 0, "phase": 0, "rate": 14 },
+    { "time": 2, "phase": 1, "rate": 12 },
+    { "time": 4, "phase": 0.8, "rate": 10 },
+    { "time": 6, "phase": -0.2, "rate": 8 },
+    { "time": 8, "phase": -1, "rate": 7 },
+    { "time": 10, "phase": -0.8, "rate": 6.5 },
+    { "time": 12, "phase": 0, "rate": 6 },
+    { "time": 14, "phase": 0.8, "rate": 6 },
+    { "time": 16, "phase": 1, "rate": 6 },
+    { "time": 18, "phase": 0.5, "rate": 6 },
+    { "time": 20, "phase": -0.5, "rate": 6 }
+  ],
+  "comparisonData": {
+    "without": {
+      "week1": 65,
+      "week2": 67,
+      "week3": 66,
+      "week4": 68
+    },
+    "with": {
+      "week1": 65,
+      "week2": 72,
+      "week3": 78,
+      "week4": 89
+    }
+  },
+  "realTimeMonitoring": {
+    "heartRate": [68, 69, 67, 68, 66, 67, 65, 66, 64, 65],
+    "breathRate": [12, 11, 10, 9, 8, 7, 6.5, 6, 6, 6],
+    "movement": [2, 1.5, 1, 0.5, 0.2, 0.1, 0, 0, 0, 0]
+  }
+}

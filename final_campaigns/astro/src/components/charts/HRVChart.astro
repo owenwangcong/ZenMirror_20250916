@@ -1,0 +1,240 @@
+---
+import mockData from '../../data/mockData.json';
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+}
+
+const {
+  title = "Heart Rate Variability Improvement",
+  subtitle = "Real user data: HRV improved from 45 to 78 in 3 weeks"
+} = Astro.props;
+
+const data = mockData.hrvProgress;
+---
+
+<div class="chart-container bg-white rounded-2xl p-6 md:p-8 shadow-zen-lg">
+  <div class="mb-6">
+    <h3 class="text-2xl md:text-3xl font-semibold text-zen-forest-medium mb-2">
+      {title}
+    </h3>
+    <p class="text-sm md:text-base text-zen-gray-dark">
+      {subtitle}
+    </p>
+  </div>
+
+  <div id="hrv-chart" class="w-full h-64 md:h-80"></div>
+
+  <div class="mt-6 grid grid-cols-3 gap-4 text-center">
+    <div class="p-4 bg-red-50 rounded-lg">
+      <div class="text-2xl font-bold text-red-600">45</div>
+      <div class="text-xs text-red-700 mt-1">Starting HRV</div>
+      <div class="text-xs text-zen-gray-dark">Stressed</div>
+    </div>
+    <div class="p-4 bg-yellow-50 rounded-lg">
+      <div class="text-2xl font-bold text-yellow-600">62</div>
+      <div class="text-xs text-yellow-700 mt-1">Week 2 HRV</div>
+      <div class="text-xs text-zen-gray-dark">Moderate</div>
+    </div>
+    <div class="p-4 bg-green-50 rounded-lg">
+      <div class="text-2xl font-bold text-green-600">78</div>
+      <div class="text-xs text-green-700 mt-1">Week 3 HRV</div>
+      <div class="text-xs text-zen-gray-dark">Excellent</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  import * as d3 from 'd3';
+
+  const data = [
+    { day: 1, hrv: 45, label: "Day 1" },
+    { day: 3, hrv: 48, label: "Day 3" },
+    { day: 5, hrv: 52, label: "Day 5" },
+    { day: 7, hrv: 56, label: "Week 1" },
+    { day: 10, hrv: 62, label: "Day 10" },
+    { day: 14, hrv: 68, label: "Week 2" },
+    { day: 17, hrv: 72, label: "Day 17" },
+    { day: 21, hrv: 78, label: "Week 3" }
+  ];
+
+  const container = document.getElementById('hrv-chart');
+  if (!container) throw new Error('Chart container not found');
+
+  const margin = { top: 20, right: 30, bottom: 50, left: 60 };
+  const width = container.clientWidth - margin.left - margin.right;
+  const height = container.clientHeight - margin.top - margin.bottom;
+
+  const svg = d3.select('#hrv-chart')
+    .append('svg')
+    .attr('width', width + margin.left + margin.right)
+    .attr('height', height + margin.top + margin.bottom)
+    .append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Scales
+  const x = d3.scaleLinear()
+    .domain([0, d3.max(data, d => d.day) || 21])
+    .range([0, width]);
+
+  const y = d3.scaleLinear()
+    .domain([30, 90])
+    .range([height, 0]);
+
+  // Color scale for zones
+  const colorScale = (hrv: number) => {
+    if (hrv < 50) return '#ef4444'; // Red - Stressed
+    if (hrv < 70) return '#eab308'; // Yellow - Moderate
+    return '#22c55e'; // Green - Excellent
+  };
+
+  // Area generator for gradient fill
+  const area = d3.area<typeof data[0]>()
+    .x(d => x(d.day))
+    .y0(height)
+    .y1(d => y(d.hrv))
+    .curve(d3.curveMonotoneX);
+
+  // Line generator
+  const line = d3.line<typeof data[0]>()
+    .x(d => x(d.day))
+    .y(d => y(d.hrv))
+    .curve(d3.curveMonotoneX);
+
+  // Add gradient
+  const gradient = svg.append('defs')
+    .append('linearGradient')
+    .attr('id', 'hrv-gradient')
+    .attr('x1', '0%')
+    .attr('x2', '0%')
+    .attr('y1', '0%')
+    .attr('y2', '100%');
+
+  gradient.append('stop')
+    .attr('offset', '0%')
+    .attr('stop-color', '#2d5b3e')
+    .attr('stop-opacity', 0.3);
+
+  gradient.append('stop')
+    .attr('offset', '100%')
+    .attr('stop-color', '#2d5b3e')
+    .attr('stop-opacity', 0);
+
+  // Draw area
+  svg.append('path')
+    .datum(data)
+    .attr('fill', 'url(#hrv-gradient)')
+    .attr('d', area);
+
+  // Draw axes
+  svg.append('g')
+    .attr('transform', `translate(0,${height})`)
+    .call(d3.axisBottom(x).ticks(7).tickFormat(d => `Day ${d}`))
+    .style('color', '#2d5b3e')
+    .selectAll('text')
+    .style('font-size', '12px')
+    .attr('transform', 'rotate(-45)')
+    .style('text-anchor', 'end');
+
+  svg.append('g')
+    .call(d3.axisLeft(y).ticks(6))
+    .style('color', '#2d5b3e')
+    .selectAll('text')
+    .style('font-size', '12px');
+
+  // Add Y-axis label
+  svg.append('text')
+    .attr('transform', 'rotate(-90)')
+    .attr('y', 0 - margin.left)
+    .attr('x', 0 - (height / 2))
+    .attr('dy', '1em')
+    .style('text-anchor', 'middle')
+    .style('font-size', '14px')
+    .style('fill', '#2d5b3e')
+    .text('HRV Score');
+
+  // Draw line
+  svg.append('path')
+    .datum(data)
+    .attr('fill', 'none')
+    .attr('stroke', '#d97a34')
+    .attr('stroke-width', 3)
+    .attr('d', line);
+
+  // Draw points
+  svg.selectAll('circle')
+    .data(data)
+    .enter()
+    .append('circle')
+    .attr('cx', d => x(d.day))
+    .attr('cy', d => y(d.hrv))
+    .attr('r', 5)
+    .attr('fill', d => colorScale(d.hrv))
+    .attr('stroke', 'white')
+    .attr('stroke-width', 2)
+    .style('cursor', 'pointer')
+    .on('mouseover', function(event, d) {
+      d3.select(this).attr('r', 8);
+
+      // Show tooltip
+      const tooltip = svg.append('g')
+        .attr('class', 'tooltip')
+        .attr('transform', `translate(${x(d.day)},${y(d.hrv) - 20})`);
+
+      tooltip.append('rect')
+        .attr('x', -40)
+        .attr('y', -35)
+        .attr('width', 80)
+        .attr('height', 30)
+        .attr('fill', 'white')
+        .attr('stroke', '#2d5b3e')
+        .attr('stroke-width', 2)
+        .attr('rx', 5);
+
+      tooltip.append('text')
+        .attr('text-anchor', 'middle')
+        .attr('y', -20)
+        .style('font-size', '12px')
+        .style('font-weight', 'bold')
+        .text(d.label);
+
+      tooltip.append('text')
+        .attr('text-anchor', 'middle')
+        .attr('y', -8)
+        .style('font-size', '11px')
+        .text(`HRV: ${d.hrv}`);
+    })
+    .on('mouseout', function() {
+      d3.select(this).attr('r', 5);
+      svg.selectAll('.tooltip').remove();
+    });
+
+  // Zone indicators
+  const zones = [
+    { y: 30, height: 20, color: '#ef4444', label: 'Stressed', opacity: 0.1 },
+    { y: 50, height: 20, color: '#eab308', label: 'Moderate', opacity: 0.1 },
+    { y: 70, height: 20, color: '#22c55e', label: 'Excellent', opacity: 0.1 }
+  ];
+
+  zones.forEach(zone => {
+    svg.append('rect')
+      .attr('x', 0)
+      .attr('y', y(zone.y + zone.height))
+      .attr('width', width)
+      .attr('height', y(zone.y) - y(zone.y + zone.height))
+      .attr('fill', zone.color)
+      .attr('opacity', zone.opacity);
+  });
+</script>
+
+<style>
+  .chart-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  #hrv-chart {
+    font-family: 'Inter', sans-serif;
+  }
+</style>

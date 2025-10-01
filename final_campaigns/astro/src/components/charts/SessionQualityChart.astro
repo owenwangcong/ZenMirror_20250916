@@ -1,0 +1,225 @@
+---
+interface Props {
+  title?: string;
+  subtitle?: string;
+}
+
+const {
+  title = "Session Quality Progress",
+  subtitle = "Track your meditation quality score over time"
+} = Astro.props;
+---
+
+<div class="chart-container bg-gradient-to-br from-zen-cream to-white rounded-2xl p-6 md:p-8 shadow-zen-lg">
+  <div class="mb-6">
+    <h3 class="text-2xl md:text-3xl font-semibold text-zen-forest-medium mb-2">
+      {title}
+    </h3>
+    <p class="text-sm md:text-base text-zen-gray-dark">
+      {subtitle}
+    </p>
+  </div>
+
+  <div id="quality-chart" class="w-full h-64 md:h-80"></div>
+
+  <div class="mt-6 flex justify-center items-center gap-6 text-sm">
+    <div class="flex items-center gap-2">
+      <div class="w-4 h-4 rounded-full bg-red-500"></div>
+      <span>Poor (0-60)</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="w-4 h-4 rounded-full bg-yellow-500"></div>
+      <span>Good (60-80)</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="w-4 h-4 rounded-full bg-green-500"></div>
+      <span>Excellent (80-100)</span>
+    </div>
+  </div>
+</div>
+
+<script>
+  import * as d3 from 'd3';
+
+  const data = [
+    { session: 1, quality: 65, date: "Day 1" },
+    { session: 5, quality: 70, date: "Day 5" },
+    { session: 10, quality: 75, date: "Day 10" },
+    { session: 15, quality: 78, date: "Day 15" },
+    { session: 20, quality: 85, date: "Day 20" },
+    { session: 25, quality: 89, date: "Day 25" }
+  ];
+
+  const container = document.getElementById('quality-chart');
+  if (!container) throw new Error('Chart container not found');
+
+  const margin = { top: 20, right: 30, bottom: 50, left: 60 };
+  const width = container.clientWidth - margin.left - margin.right;
+  const height = container.clientHeight - margin.top - margin.bottom;
+
+  const svg = d3.select('#quality-chart')
+    .append('svg')
+    .attr('width', width + margin.left + margin.right)
+    .attr('height', height + margin.top + margin.bottom)
+    .append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+
+  // Scales
+  const x = d3.scaleLinear()
+    .domain([0, d3.max(data, d => d.session) || 25])
+    .range([0, width]);
+
+  const y = d3.scaleLinear()
+    .domain([0, 100])
+    .range([height, 0]);
+
+  // Color scale
+  const colorScale = (quality: number) => {
+    if (quality < 60) return '#ef4444';
+    if (quality < 80) return '#eab308';
+    return '#22c55e';
+  };
+
+  // Draw reference lines
+  const referenceLines = [
+    { value: 60, label: 'Good', color: '#eab308' },
+    { value: 80, label: 'Excellent', color: '#22c55e' }
+  ];
+
+  referenceLines.forEach(ref => {
+    svg.append('line')
+      .attr('x1', 0)
+      .attr('x2', width)
+      .attr('y1', y(ref.value))
+      .attr('y2', y(ref.value))
+      .attr('stroke', ref.color)
+      .attr('stroke-width', 1)
+      .attr('stroke-dasharray', '5,5')
+      .attr('opacity', 0.3);
+
+    svg.append('text')
+      .attr('x', width - 5)
+      .attr('y', y(ref.value) - 5)
+      .attr('text-anchor', 'end')
+      .style('font-size', '11px')
+      .style('fill', ref.color)
+      .text(ref.label);
+  });
+
+  // Draw axes
+  svg.append('g')
+    .attr('transform', `translate(0,${height})`)
+    .call(d3.axisBottom(x).ticks(6).tickFormat(d => `#${d}`))
+    .style('color', '#2d5b3e')
+    .selectAll('text')
+    .style('font-size', '12px');
+
+  svg.append('g')
+    .call(d3.axisLeft(y).ticks(5))
+    .style('color', '#2d5b3e')
+    .selectAll('text')
+    .style('font-size', '12px');
+
+  // Add labels
+  svg.append('text')
+    .attr('x', width / 2)
+    .attr('y', height + margin.bottom - 10)
+    .attr('text-anchor', 'middle')
+    .style('font-size', '14px')
+    .style('fill', '#2d5b3e')
+    .text('Session Number');
+
+  svg.append('text')
+    .attr('transform', 'rotate(-90)')
+    .attr('y', 0 - margin.left)
+    .attr('x', 0 - (height / 2))
+    .attr('dy', '1em')
+    .style('text-anchor', 'middle')
+    .style('font-size', '14px')
+    .style('fill', '#2d5b3e')
+    .text('Quality Score');
+
+  // Draw bars
+  svg.selectAll('rect.bar')
+    .data(data)
+    .enter()
+    .append('rect')
+    .attr('class', 'bar')
+    .attr('x', d => x(d.session) - 15)
+    .attr('y', height)
+    .attr('width', 30)
+    .attr('height', 0)
+    .attr('fill', d => colorScale(d.quality))
+    .attr('rx', 4)
+    .style('cursor', 'pointer')
+    .on('mouseover', function(event, d) {
+      d3.select(this)
+        .attr('opacity', 0.7);
+
+      const tooltip = svg.append('g')
+        .attr('class', 'tooltip')
+        .attr('transform', `translate(${x(d.session)},${y(d.quality) - 20})`);
+
+      tooltip.append('rect')
+        .attr('x', -45)
+        .attr('y', -40)
+        .attr('width', 90)
+        .attr('height', 35)
+        .attr('fill', 'white')
+        .attr('stroke', '#2d5b3e')
+        .attr('stroke-width', 2)
+        .attr('rx', 5);
+
+      tooltip.append('text')
+        .attr('text-anchor', 'middle')
+        .attr('y', -25)
+        .style('font-size', '12px')
+        .style('font-weight', 'bold')
+        .text(d.date);
+
+      tooltip.append('text')
+        .attr('text-anchor', 'middle')
+        .attr('y', -12)
+        .style('font-size', '14px')
+        .style('fill', colorScale(d.quality))
+        .style('font-weight', 'bold')
+        .text(`Score: ${d.quality}`);
+    })
+    .on('mouseout', function() {
+      d3.select(this)
+        .attr('opacity', 1);
+      svg.selectAll('.tooltip').remove();
+    })
+    .transition()
+    .duration(1000)
+    .delay((d, i) => i * 100)
+    .attr('y', d => y(d.quality))
+    .attr('height', d => height - y(d.quality));
+
+  // Add trend line
+  const line = d3.line<typeof data[0]>()
+    .x(d => x(d.session))
+    .y(d => y(d.quality))
+    .curve(d3.curveMonotoneX);
+
+  const path = svg.append('path')
+    .datum(data)
+    .attr('fill', 'none')
+    .attr('stroke', '#d97a34')
+    .attr('stroke-width', 2)
+    .attr('stroke-dasharray', '5,5')
+    .attr('d', line)
+    .attr('opacity', 0);
+
+  path.transition()
+    .duration(1500)
+    .delay(800)
+    .attr('opacity', 0.6);
+</script>
+
+<style>
+  .chart-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+</style>

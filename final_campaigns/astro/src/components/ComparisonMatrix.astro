@@ -1,0 +1,101 @@
+---
+interface Metric {
+  name: string;
+  noDevice: number;
+  wearables: number;
+  zenmirror: number;
+}
+
+const metrics: Metric[] = [
+  { name: 'Objective Feedback', noDevice: 0, wearables: 60, zenmirror: 100 },
+  { name: 'Comfort/Non-Intrusive', noDevice: 100, wearables: 30, zenmirror: 100 },
+  { name: 'Data Accuracy', noDevice: 0, wearables: 70, zenmirror: 95 },
+  { name: 'Real-time Guidance', noDevice: 0, wearables: 20, zenmirror: 100 },
+  { name: 'Privacy Protection', noDevice: 100, wearables: 40, zenmirror: 100 },
+  { name: 'Cultural Wisdom', noDevice: 0, wearables: 0, zenmirror: 100 },
+  { name: 'Multi-Modal Analysis', noDevice: 0, wearables: 50, zenmirror: 95 },
+  { name: 'Ease of Use', noDevice: 100, wearables: 50, zenmirror: 90 }
+];
+
+function getColorClass(score: number): string {
+  if (score >= 96) return 'bg-green-500 text-white';
+  if (score >= 81) return 'bg-lime-500 text-gray-900';
+  if (score >= 61) return 'bg-yellow-500 text-gray-900';
+  if (score >= 31) return 'bg-orange-500 text-white';
+  return 'bg-red-500 text-white';
+}
+---
+
+<div class="bg-gradient-to-br from-zen-white to-zen-cream rounded-2xl p-6 md:p-8 shadow-zen-lg">
+  <div class="mb-6 text-center">
+    <h3 class="text-2xl md:text-3xl font-semibold text-zen-forest-medium mb-2">
+      Approach Comparison Matrix
+    </h3>
+    <p class="text-sm md:text-base text-zen-gray-dark">
+      See how ZenMirror outperforms traditional meditation and wearable devices
+    </p>
+  </div>
+
+  <div class="overflow-x-auto">
+    <table class="w-full border-collapse">
+      <thead>
+        <tr>
+          <th class="bg-zen-forest-dark text-white p-3 md:p-4 text-left font-semibold text-sm md:text-base border border-zen-gray-light">
+            Metric
+          </th>
+          <th class="bg-zen-gray-medium text-white p-3 md:p-4 text-center font-semibold text-sm md:text-base border border-zen-gray-light">
+            No Device
+          </th>
+          <th class="bg-zen-orange-accent text-white p-3 md:p-4 text-center font-semibold text-sm md:text-base border border-zen-gray-light">
+            Wearables
+          </th>
+          <th class="bg-zen-forest-medium text-white p-3 md:p-4 text-center font-semibold text-sm md:text-base border border-zen-gray-light">
+            ZenMirror
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {metrics.map((metric, index) => (
+          <tr class={index % 2 === 0 ? 'bg-white' : 'bg-zen-cream/30'}>
+            <td class="p-3 md:p-4 font-medium text-zen-gray-dark text-sm md:text-base border border-zen-gray-light">
+              {metric.name}
+            </td>
+            <td class={`p-3 md:p-4 text-center font-bold text-xl md:text-2xl border border-zen-gray-light ${getColorClass(metric.noDevice)}`}>
+              {metric.noDevice}%
+            </td>
+            <td class={`p-3 md:p-4 text-center font-bold text-xl md:text-2xl border border-zen-gray-light ${getColorClass(metric.wearables)}`}>
+              {metric.wearables}%
+            </td>
+            <td class={`p-3 md:p-4 text-center font-bold text-xl md:text-2xl border border-zen-gray-light ${getColorClass(metric.zenmirror)}`}>
+              {metric.zenmirror}%
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Legend -->
+  <div class="mt-6 flex flex-wrap justify-center gap-3 md:gap-4 text-xs md:text-sm">
+    <div class="flex items-center gap-2">
+      <div class="w-4 h-4 bg-red-500 rounded"></div>
+      <span class="text-zen-gray-dark">Poor (0-30%)</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="w-4 h-4 bg-orange-500 rounded"></div>
+      <span class="text-zen-gray-dark">Fair (31-60%)</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="w-4 h-4 bg-yellow-500 rounded"></div>
+      <span class="text-zen-gray-dark">Good (61-80%)</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="w-4 h-4 bg-lime-500 rounded"></div>
+      <span class="text-zen-gray-dark">Very Good (81-95%)</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="w-4 h-4 bg-green-500 rounded"></div>
+      <span class="text-zen-gray-dark">Excellent (96-100%)</span>
+    </div>
+  </div>
+</div>

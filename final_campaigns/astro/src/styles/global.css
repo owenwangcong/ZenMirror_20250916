@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply font-sans text-zen-charcoal bg-zen-white antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-4 bg-zen-orange-accent text-white font-semibold rounded-xl
+           shadow-zen-md hover:bg-zen-orange-deep hover:shadow-zen-lg
+           transform hover:scale-105 active:scale-95
+           transition-all duration-200 ease-out;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-4 bg-white text-zen-forest-medium font-semibold rounded-xl
+           border-2 border-zen-forest-medium hover:bg-zen-forest-medium hover:text-white
+           transition-all duration-200 ease-out;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-zen-orange-accent to-zen-orange-warm
+           bg-clip-text text-transparent;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Smooth animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,1316 @@
+---
+import { Icon } from 'astro-icon/components';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import FeatureGrid from '../components/FeatureGrid.astro';
+import HRVChart from '../components/charts/HRVChart.astro';
+import SessionQualityChart from '../components/charts/SessionQualityChart.astro';
+import RadarComparison from '../components/charts/RadarComparison.astro';
+import ComparisonMatrix from '../components/ComparisonMatrix.astro';
+import '../styles/global.css';
+---
+
+<BaseLayout>
+  <!-- Hero Section -->
+  <Hero />
+
+  <!-- Video Section -->
+  <section class="py-16 md:py-24 bg-zen-white">
+    <div class="container-custom">
+      <div class="max-w-4xl mx-auto">
+        <div class="relative aspect-video rounded-3xl overflow-hidden shadow-zen-lg group">
+          <!-- Video Element -->
+          <video
+            id="campaign-video"
+            class="w-full h-full object-cover"
+            preload="metadata"
+            poster="/assets/images/branding/zenmirror-logo.png"
+          >
+            <source src="/assets/videos/campaign.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <!-- Play Button Overlay -->
+          <div id="video-overlay" class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-zen-forest-medium/80 to-zen-forest-light/80 cursor-pointer transition-opacity duration-300">
+            <button class="w-20 h-20 bg-zen-orange-accent rounded-full flex items-center justify-center shadow-zen-glow transform group-hover:scale-110 transition-transform duration-300">
+              <Icon name="heroicons:play-solid" class="w-10 h-10 text-white ml-1" />
+            </button>
+          </div>
+
+          <!-- Video Info Overlay -->
+          <div id="video-info" class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/60 to-transparent pointer-events-none">
+            <h3 class="text-2xl font-semibold text-white mb-2">See ZenMirror in Action</h3>
+            <p class="text-white/90">Watch how contactless radar technology revolutionizes meditation practice</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const video = document.getElementById('campaign-video') as HTMLVideoElement;
+    const overlay = document.getElementById('video-overlay');
+    const videoInfo = document.getElementById('video-info');
+
+    if (video && overlay && videoInfo) {
+      // Play video when overlay is clicked
+      overlay.addEventListener('click', () => {
+        video.play();
+        overlay.style.opacity = '0';
+        videoInfo.style.opacity = '0';
+        setTimeout(() => {
+          overlay.style.display = 'none';
+          videoInfo.style.display = 'none';
+        }, 300);
+        video.setAttribute('controls', 'true');
+      });
+
+      // Show overlay when video ends
+      video.addEventListener('ended', () => {
+        overlay.style.display = 'flex';
+        videoInfo.style.display = 'block';
+        setTimeout(() => {
+          overlay.style.opacity = '1';
+          videoInfo.style.opacity = '1';
+        }, 10);
+        video.removeAttribute('controls');
+      });
+    }
+  </script>
+
+  <!-- How It Works -->
+  <section class="py-16 md:py-24 bg-zen-white">
+    <div class="container-custom">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-zen-forest-medium mb-4">
+          How ZenMirror Works
+        </h2>
+        <p class="text-lg text-zen-gray-dark max-w-3xl mx-auto">
+          A complete closed-loop system that monitors, assesses, provides feedback, and helps you improve
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        {[
+          {
+            step: "1",
+            title: "Monitor",
+            description: "60-64 GHz mmWave radar detects micro-movements from heartbeat and breathing through electromagnetic wave reflection",
+            icon: "heroicons:eye"
+          },
+          {
+            step: "2",
+            title: "Assess",
+            description: "Signal processing algorithms compute HRV, RSA patterns and generate Session Quality Score (0-100) plus Mindfulness Points",
+            icon: "heroicons:chart-bar"
+          },
+          {
+            step: "3",
+            title: "Feedback",
+            description: "Six cultural mentors provide real-time guidance and post-session reports with personalized improvement insights",
+            icon: "heroicons:chat-bubble-left-right"
+          },
+          {
+            step: "4",
+            title: "Improve",
+            description: "Adaptive learning tracks progress and optimizes recommendations to accelerate your meditation mastery",
+            icon: "heroicons:arrow-trending-up"
+          }
+        ].map((item) => (
+          <div class="bg-white rounded-2xl p-6 shadow-zen-md hover:shadow-zen-lg transition-shadow duration-300">
+            <div class="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-zen-orange-accent to-zen-orange-warm text-white rounded-xl font-bold text-xl mb-4">
+              {item.step}
+            </div>
+            <div class="mb-3">
+              <Icon name={item.icon} class="w-8 h-8 text-zen-forest-medium" />
+            </div>
+            <h3 class="text-xl font-semibold text-zen-forest-medium mb-2">{item.title}</h3>
+            <p class="text-sm text-zen-gray-dark leading-relaxed">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Results & Outcomes Section -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container-custom">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-zen-forest-dark mb-4">
+          Your Transformation Results
+        </h2>
+        <p class="text-lg text-zen-gray-dark max-w-3xl mx-auto">
+          Real outcomes experienced by ZenMirror users through data-driven meditation practice
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <!-- Result 1: Deeper Meditation States -->
+        <div class="bg-gradient-to-br from-zen-cream to-white rounded-2xl p-6 shadow-zen-md border-2 border-zen-forest-light/20 hover:border-zen-orange-accent/50 transition-all duration-300">
+          <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-4">
+            <Icon name="heroicons:sparkles" class="w-10 h-10 text-white" />
+          </div>
+          <h3 class="text-xl font-bold text-zen-forest-dark mb-2">Deeper Meditation States</h3>
+          <p class="text-zen-gray-dark mb-3">Achieve profound states of calm and focus 3x faster than traditional practice alone</p>
+          <div class="text-2xl font-bold text-zen-forest-medium">-40% <span class="text-sm font-normal text-zen-gray-dark">heart rate variability improvement</span></div>
+        </div>
+
+        <!-- Result 2: Reduced Stress & Anxiety -->
+        <div class="bg-gradient-to-br from-zen-cream to-white rounded-2xl p-6 shadow-zen-md border-2 border-zen-forest-light/20 hover:border-zen-orange-accent/50 transition-all duration-300">
+          <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-2xl flex items-center justify-center mb-4">
+            <Icon name="heroicons:heart" class="w-10 h-10 text-white" />
+          </div>
+          <h3 class="text-xl font-bold text-zen-forest-dark mb-2">Reduced Stress & Anxiety</h3>
+          <p class="text-zen-gray-dark mb-3">Lower cortisol levels and achieve lasting calm through optimized breathing patterns</p>
+          <div class="text-2xl font-bold text-zen-forest-medium">78% <span class="text-sm font-normal text-zen-gray-dark">of users report reduced daily stress</span></div>
+        </div>
+
+        <!-- Result 3: Enhanced Focus & Concentration -->
+        <div class="bg-gradient-to-br from-zen-cream to-white rounded-2xl p-6 shadow-zen-md border-2 border-zen-forest-light/20 hover:border-zen-orange-accent/50 transition-all duration-300">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center mb-4">
+            <Icon name="heroicons:bolt" class="w-10 h-10 text-white" />
+          </div>
+          <h3 class="text-xl font-bold text-zen-forest-dark mb-2">Enhanced Focus & Concentration</h3>
+          <p class="text-zen-gray-dark mb-3">Sharpen mental clarity and extend attention span during work and study</p>
+          <div class="text-2xl font-bold text-zen-forest-medium">+65% <span class="text-sm font-normal text-zen-gray-dark">increase in sustained focus time</span></div>
+        </div>
+
+        <!-- Result 4: Better Sleep Quality -->
+        <div class="bg-gradient-to-br from-zen-cream to-white rounded-2xl p-6 shadow-zen-md border-2 border-zen-forest-light/20 hover:border-zen-orange-accent/50 transition-all duration-300">
+          <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center mb-4">
+            <Icon name="heroicons:moon" class="w-10 h-10 text-white" />
+          </div>
+          <h3 class="text-xl font-bold text-zen-forest-dark mb-2">Better Sleep Quality</h3>
+          <p class="text-zen-gray-dark mb-3">Evening sessions train your nervous system for deeper, more restorative sleep</p>
+          <div class="text-2xl font-bold text-zen-forest-medium">92min <span class="text-sm font-normal text-zen-gray-dark">average increase in deep sleep</span></div>
+        </div>
+
+        <!-- Result 5: Improved Emotional Balance -->
+        <div class="bg-gradient-to-br from-zen-cream to-white rounded-2xl p-6 shadow-zen-md border-2 border-zen-forest-light/20 hover:border-zen-orange-accent/50 transition-all duration-300">
+          <div class="w-16 h-16 bg-gradient-to-br from-rose-500 to-pink-600 rounded-2xl flex items-center justify-center mb-4">
+            <Icon name="heroicons:face-smile" class="w-10 h-10 text-white" />
+          </div>
+          <h3 class="text-xl font-bold text-zen-forest-dark mb-2">Improved Emotional Balance</h3>
+          <p class="text-zen-gray-dark mb-3">Develop resilience and emotional regulation through RSA coherence training</p>
+          <div class="text-2xl font-bold text-zen-forest-medium">4.2x <span class="text-sm font-normal text-zen-gray-dark">improvement in emotional stability</span></div>
+        </div>
+
+        <!-- Result 6: Sustained Practice Habit -->
+        <div class="bg-gradient-to-br from-zen-cream to-white rounded-2xl p-6 shadow-zen-md border-2 border-zen-forest-light/20 hover:border-zen-orange-accent/50 transition-all duration-300">
+          <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-amber-600 rounded-2xl flex items-center justify-center mb-4">
+            <Icon name="heroicons:fire" class="w-10 h-10 text-white" />
+          </div>
+          <h3 class="text-xl font-bold text-zen-forest-dark mb-2">Sustained Practice Habit</h3>
+          <p class="text-zen-gray-dark mb-3">Gamification and visible progress keep you motivated for long-term transformation</p>
+          <div class="text-2xl font-bold text-zen-forest-medium">89% <span class="text-sm font-normal text-zen-gray-dark">still practicing after 6 months</span></div>
+        </div>
+      </div>
+
+      <!-- Summary CTA -->
+      <div class="mt-16 text-center bg-gradient-to-r from-zen-forest-medium to-zen-forest-dark rounded-2xl p-8 md:p-12 max-w-4xl mx-auto">
+        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">
+          These Results Are Waiting for You
+        </h3>
+        <p class="text-white/90 text-lg mb-6 max-w-2xl mx-auto">
+          Join thousands of practitioners who have transformed their meditation practice with data-driven insights and personalized guidance
+        </p>
+        <a href="#rewards" class="inline-flex items-center gap-2 bg-zen-orange-accent hover:bg-zen-orange-warm text-white font-bold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-zen-lg">
+          <span>Start Your Transformation</span>
+          <Icon name="heroicons:arrow-right" class="w-5 h-5" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transformation Section -->
+  <section class="py-12 md:py-16 bg-zen-cream">
+    <div class="container-custom">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-zen-forest-medium mb-3">
+          Why ZenMirror Transforms Your Meditation Practice
+        </h2>
+        <p class="text-base text-zen-gray-dark max-w-3xl mx-auto">
+          Traditional meditation lacks objective feedback. ZenMirror changes everything by providing scientific insights that accelerate your journey to mastery.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+        <div class="bg-white rounded-xl p-5 shadow-zen-md">
+          <h3 class="text-lg font-semibold text-zen-forest-medium mb-2">Objective Self-Awareness</h3>
+          <p class="text-xs font-semibold text-zen-orange-accent mb-1">The Problem:</p>
+          <p class="text-sm text-zen-gray-dark mb-2">You never know if you're actually getting better at meditation.</p>
+          <p class="text-xs font-semibold text-zen-forest-medium mb-1">ZenMirror's Solution:</p>
+          <p class="text-sm text-zen-gray-dark mb-3">Real-time HRV data shows exactly when you enter deeper states.</p>
+          <div class="bg-zen-bamboo/10 p-3 rounded-lg italic text-xs text-zen-gray-dark">
+            "My scores went from 65 to 89 in 3 weeks."
+            <div class="mt-1 text-xs text-zen-forest-medium not-italic">- Lisa K.</div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl p-5 shadow-zen-md">
+          <h3 class="text-lg font-semibold text-zen-forest-medium mb-2">Motivation Through Progress</h3>
+          <p class="text-xs font-semibold text-zen-orange-accent mb-1">The Problem:</p>
+          <p class="text-sm text-zen-gray-dark mb-2">Hard to stay motivated when benefits are subtle and slow.</p>
+          <p class="text-xs font-semibold text-zen-forest-medium mb-1">ZenMirror's Solution:</p>
+          <p class="text-sm text-zen-gray-dark mb-3">Daily tracking and achievements create engaging progress milestones.</p>
+          <div class="bg-zen-bamboo/10 p-3 rounded-lg italic text-xs text-zen-gray-dark">
+            "Seeing my HRV improve by 23% kept me going through my plateau."
+            <div class="mt-1 text-xs text-zen-forest-medium not-italic">- David M.</div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl p-5 shadow-zen-md">
+          <h3 class="text-lg font-semibold text-zen-forest-medium mb-2">Precision Guidance</h3>
+          <p class="text-xs font-semibold text-zen-orange-accent mb-1">The Problem:</p>
+          <p class="text-sm text-zen-gray-dark mb-2">Generic apps can't adapt to your individual patterns.</p>
+          <p class="text-xs font-semibold text-zen-forest-medium mb-1">ZenMirror's Solution:</p>
+          <p class="text-sm text-zen-gray-dark mb-3">AI mentors learn your signature and provide personalized guidance.</p>
+          <div class="bg-zen-bamboo/10 p-3 rounded-lg italic text-xs text-zen-gray-dark">
+            "It's like having a personal teacher who knows my style."
+            <div class="mt-1 text-xs text-zen-forest-medium not-italic">- Jennifer P.</div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl p-5 shadow-zen-md">
+          <h3 class="text-lg font-semibold text-zen-forest-medium mb-2">Accelerated Learning</h3>
+          <p class="text-xs font-semibold text-zen-orange-accent mb-1">The Problem:</p>
+          <p class="text-sm text-zen-gray-dark mb-2">Learning proper technique takes years without feedback.</p>
+          <p class="text-xs font-semibold text-zen-forest-medium mb-1">ZenMirror's Solution:</p>
+          <p class="text-sm text-zen-gray-dark mb-3">Instant biofeedback helps you master techniques 3x faster.</p>
+          <div class="bg-zen-bamboo/10 p-3 rounded-lg italic text-xs text-zen-gray-dark">
+            "I reached deep states in weeks that took me years before."
+            <div class="mt-1 text-xs text-zen-forest-medium not-italic">- Sarah T.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparison Matrix -->
+      <div class="mt-16">
+        <ComparisonMatrix />
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Feature Grid -->
+  <FeatureGrid />
+  
+  <!-- Technology Section -->
+  <section id="technology" class="py-16 md:py-24 bg-zen-white">
+    <div class="container-custom">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-zen-forest-medium mb-4">
+          Step 1: Monitor - Revolutionary Radar Technology
+        </h2>
+        <p class="text-lg text-zen-gray-dark max-w-3xl mx-auto">
+          Millimeter wave radar detects the subtlest physiological changes without any physical contact,
+          providing unprecedented insight into your meditation state.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        {[
+          {
+            title: "Contactless Sensing",
+            desc: "Advanced millimeter wave radar detects micro-movements of chest wall during breathing and heartbeat without any physical contact."
+          },
+          {
+            title: "Precision Monitoring",
+            desc: "Captures breathing rate, heart rate, heart rate variability (HRV), and respiratory sinus arrhythmia (RSA) with clinical-grade accuracy."
+          },
+          {
+            title: "Privacy Protected",
+            desc: "Non-imaging radar technology protects your privacy while working through clothing and partial obstruction."
+          },
+          {
+            title: "Adaptive Intelligence",
+            desc: "Machine learning algorithms continuously adapt to your unique physiological patterns and meditation style for increasingly personalized guidance."
+          }
+        ].map((tech) => (
+          <div class="bg-zen-cream rounded-2xl p-6">
+            <h3 class="text-xl font-semibold text-zen-forest-medium mb-3">{tech.title}</h3>
+            <p class="text-zen-gray-dark text-sm">{tech.desc}</p>
+          </div>
+        ))}
+      </div>
+
+      <!-- Comparison Grid -->
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="bg-zen-cream/50 border-2 border-zen-gray-light rounded-2xl p-8">
+          <div class="flex items-center justify-between mb-6">
+            <h3 class="text-2xl font-semibold text-zen-gray-dark">Traditional Approach</h3>
+            <span class="text-4xl text-red-500">✗</span>
+          </div>
+          <ul class="space-y-3 text-zen-gray-dark">
+            <li class="flex items-start gap-2"><span class="text-red-500">•</span> Uncomfortable chest straps and smartwatches</li>
+            <li class="flex items-start gap-2"><span class="text-red-500">•</span> Constant awareness of monitoring devices</li>
+            <li class="flex items-start gap-2"><span class="text-red-500">•</span> Limited accuracy during meditation postures</li>
+            <li class="flex items-start gap-2"><span class="text-red-500">•</span> Battery anxiety and charging requirements</li>
+            <li class="flex items-start gap-2"><span class="text-red-500">•</span> Privacy concerns with always-on wearables</li>
+          </ul>
+        </div>
+
+        <div class="bg-gradient-to-br from-zen-forest-medium/10 to-zen-orange-accent/10 border-2 border-zen-forest-medium rounded-2xl p-8">
+          <div class="flex items-center justify-between mb-6">
+            <h3 class="text-2xl font-semibold text-zen-forest-medium">ZenMirror Way</h3>
+            <span class="text-4xl text-zen-forest-medium">✓</span>
+          </div>
+          <ul class="space-y-3 text-zen-gray-dark">
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">•</span> Completely contactless millimeter wave radar</li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">•</span> No awareness of monitoring during practice</li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">•</span> Precision sensing in any meditation position</li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">•</span> Always ready, no battery dependency</li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">•</span> Privacy-first non-imaging technology</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Science Section -->
+  <section id="science" class="py-16 md:py-24 bg-zen-cream">
+    <div class="container-custom">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-zen-forest-medium mb-4">
+          Step 2: Assess - Scientific Data Analysis
+        </h2>
+        <p class="text-lg text-zen-gray-dark max-w-3xl mx-auto">
+          Our technology is grounded in peer-reviewed research on meditation, heart rate variability, and contemplative neuroscience.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        {[
+          {
+            title: "Heart Rate Variability",
+            desc: "Studies show HRV increases during meditation, indicating enhanced autonomic nervous system balance and stress resilience (Thayer & Lane, 2009)."
+          },
+          {
+            title: "Respiratory Sinus Arrhythmia",
+            desc: "RSA patterns correlate with meditative depth and emotional regulation capacity, providing objective markers of contemplative states (Grossman & Taylor, 2007)."
+          },
+          {
+            title: "Contemplative Science",
+            desc: "Objective physiological measures enhance meditation training effectiveness and provide valuable feedback for practitioners (Brandmeyer & Delorme, 2013)."
+          },
+          {
+            title: "Contactless Monitoring",
+            desc: "Millimeter wave radar enables accurate vital sign detection without physical contact, validated for healthcare and wellness applications (Adib et al., 2015)."
+          }
+        ].map((research) => (
+          <div class="bg-white rounded-2xl p-6 shadow-zen-md">
+            <h3 class="text-lg font-semibold text-zen-forest-medium mb-3">{research.title}</h3>
+            <p class="text-sm text-zen-gray-dark">{research.desc}</p>
+          </div>
+        ))}
+      </div>
+
+      <!-- Data Explanation -->
+      <div class="max-w-5xl mx-auto bg-white rounded-2xl p-8 shadow-zen-lg">
+        <h3 class="text-2xl font-semibold text-zen-forest-medium mb-6">Understanding Your Data</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div>
+            <h4 class="font-semibold text-zen-forest-medium mb-2">HRV (Heart Rate Variability)</h4>
+            <p class="text-sm text-zen-gray-dark">Measures the variation in time between heartbeats, indicating nervous system flexibility and resilience.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-zen-forest-medium mb-2">RSA (Respiratory Sinus Arrhythmia)</h4>
+            <p class="text-sm text-zen-gray-dark">Shows how heart rate naturally speeds up during inhalation and slows during exhalation.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-zen-forest-medium mb-2">Breath Coherence</h4>
+            <p class="text-sm text-zen-gray-dark">Tracks the harmony between breathing rhythm and heart rate patterns during meditation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Visualization Section -->
+  <section class="py-16 md:py-24 bg-zen-white">
+    <div class="container-custom">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-zen-forest-medium mb-4">
+          See Your Progress in Real-Time
+        </h2>
+        <p class="text-lg text-zen-gray-dark max-w-3xl mx-auto">
+          ZenMirror provides scientific, data-driven insights into your meditation practice
+        </p>
+      </div>
+
+      <div class="space-y-16">
+        <!-- HRV Chart -->
+        <HRVChart />
+
+        <!-- Session Quality Chart -->
+        <SessionQualityChart />
+      </div>
+    </div>
+  </section>
+
+  <!-- Step 3: Feedback Section -->
+  <section class="py-16 md:py-24 bg-gradient-to-br from-zen-cream to-zen-bamboo/20">
+    <div class="container-custom">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-zen-forest-medium mb-4">
+          Step 3: Feedback - Personalized Meditation Guidance
+        </h2>
+        <p class="text-lg text-zen-gray-dark max-w-3xl mx-auto">
+          Six cultural mentors provide real-time guidance and post-session reports with personalized improvement insights
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        {[
+          {
+            title: "Real-Time Guidance",
+            desc: "Mentors provide gentle feedback during your session based on your HRV and breathing patterns, helping you maintain optimal meditative states."
+          },
+          {
+            title: "Post-Session Reports",
+            desc: "Detailed analysis of your meditation session with personalized insights on what worked well and areas for improvement."
+          },
+          {
+            title: "Cultural Wisdom",
+            desc: "Choose from six mentor traditions, each offering unique perspectives rooted in centuries of contemplative practice."
+          },
+          {
+            title: "Advanced Data Analytics",
+            desc: "Deep insights from HRV, RSA, breathing patterns, and coherence metrics give you scientific understanding of your meditation progress."
+          }
+        ].map((feature) => (
+          <div class="bg-white rounded-2xl p-6 shadow-zen-md">
+            <h3 class="text-lg font-semibold text-zen-forest-medium mb-3">{feature.title}</h3>
+            <p class="text-sm text-zen-gray-dark">{feature.desc}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mb-8">
+        <h3 class="text-2xl font-semibold text-zen-forest-medium mb-2">Meet Your 6 Wisdom Mentors</h3>
+        <p class="text-sm text-zen-gray-dark">Choose the tradition that resonates with your practice</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {[
+          { name: "Zen Master", tradition: "Buddhist Zen", color: "from-gray-600 to-gray-800" },
+          { name: "Yogi", tradition: "Vedic Yoga", color: "from-orange-500 to-orange-700" },
+          { name: "Priest", tradition: "Christian Contemplative", color: "from-blue-600 to-blue-800" },
+          { name: "Spiritual Mentor", tradition: "Universal Wisdom", color: "from-purple-600 to-purple-800" },
+          { name: "Stoic Philosopher", tradition: "Greek Stoicism", color: "from-teal-600 to-teal-800" },
+          { name: "Vedanta Teacher", tradition: "Hindu Philosophy", color: "from-amber-600 to-amber-800" }
+        ].map((mentor) => (
+          <div class="bg-white rounded-2xl p-6 shadow-zen-md hover:shadow-zen-lg transition-all duration-300 hover:-translate-y-2">
+            <div class={`w-16 h-16 rounded-full bg-gradient-to-br ${mentor.color} mb-4 flex items-center justify-center text-white font-bold text-2xl`}>
+              {mentor.name[0]}
+            </div>
+            <h3 class="text-xl font-semibold text-zen-forest-medium mb-2">{mentor.name}</h3>
+            <p class="text-sm text-zen-gray-dark">{mentor.tradition}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-12 max-w-3xl mx-auto bg-white rounded-2xl p-8 shadow-zen-md">
+        <h3 class="text-2xl font-semibold text-zen-forest-medium mb-4">Personalized Wisdom</h3>
+        <p class="text-zen-gray-dark leading-relaxed mb-4">
+          Each mentor offers unique perspectives based on centuries of wisdom. Whether you seek the simplicity of Zen,
+          the breath-work of Yoga, the contemplation of Christian mysticism, or the rationality of Stoic philosophy,
+          ZenMirror adapts to your spiritual preferences.
+        </p>
+        <p class="text-zen-gray-dark leading-relaxed">
+          Using advanced RAG (Retrieval-Augmented Generation) technology, mentors provide contextually relevant guidance
+          based on your real-time physiological data and long-term progress patterns.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Improve Features Section -->
+  <section id="features-improve" class="py-16 md:py-24 bg-zen-cream">
+    <div class="container-custom">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-zen-forest-medium mb-4">
+          Step 4: Improve - Continuous Meditation Enhancement
+        </h2>
+        <p class="text-lg text-zen-gray-dark max-w-3xl mx-auto">
+          Every breath, heartbeat, and moment of stillness becomes data-driven insight
+          for accelerated meditation mastery through machine learning adaptation.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {[
+          {
+            title: "Closed-Loop Optimization",
+            desc: "System learns your patterns and continuously adapts feedback timing and style for maximum effectiveness."
+          },
+          {
+            title: "Scientific Analytics",
+            desc: "HRV, RSA, and breathing pattern analysis provide objective measures of meditation quality and progress."
+          },
+          {
+            title: "Mindfulness Points System",
+            desc: "Advanced scoring algorithm rewards duration and quality with focus bonuses and achievement multipliers for deeper engagement."
+          },
+          {
+            title: "Achievement System",
+            desc: "Six milestone categories track your journey from first session to mastery, including duration, consistency, quality, and hidden achievements."
+          },
+          {
+            title: "Multiple Operation Modes",
+            desc: "Three specialized modes adapt to different contexts: dedicated meditation sessions, background office monitoring, and focus support."
+          },
+          {
+            title: "Personalized Progress Tracking",
+            desc: "Advanced algorithms identify your unique meditation patterns and provide customized recommendations for accelerated improvement."
+          }
+        ].map((feature) => (
+          <div class="bg-white rounded-2xl p-6 shadow-zen-md">
+            <h3 class="text-lg font-semibold text-zen-forest-medium mb-3">{feature.title}</h3>
+            <p class="text-sm text-zen-gray-dark">{feature.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Confidence/Guarantee Section -->
+  <section class="py-16 md:py-24 bg-zen-white">
+    <div class="container-custom">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-zen-forest-medium mb-4">
+          Your Peace of Mind is Guaranteed
+        </h2>
+        <p class="text-lg text-zen-gray-dark max-w-3xl mx-auto">
+          Back with confidence knowing we've got you covered every step of the way
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {[
+          {
+            title: "Guaranteed Delivery",
+            desc: "We promise to deliver your ZenMirror or provide a full refund. Your investment is completely protected."
+          },
+          {
+            title: "2 Year Warranty",
+            desc: "Comprehensive warranty covers all hardware defects and technical issues for complete peace of mind."
+          },
+          {
+            title: "Free Lifetime Premium",
+            desc: "Early backers get permanent access to all premium features - no subscription fees, ever."
+          },
+          {
+            title: "Lifetime Support",
+            desc: "Our dedicated support team is here for you throughout your entire meditation journey."
+          }
+        ].map((conf) => (
+          <div class="bg-zen-cream rounded-2xl p-6 text-center">
+            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-zen-forest-medium to-zen-orange-accent mx-auto mb-4 flex items-center justify-center">
+              <Icon name="heroicons:check" class="w-8 h-8 text-white" />
+            </div>
+            <h3 class="text-lg font-semibold text-zen-forest-medium mb-3">{conf.title}</h3>
+            <p class="text-sm text-zen-gray-dark">{conf.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+  
+  <!-- Working Modes Section -->
+  <section class="py-16 md:py-24 bg-zen-white">
+    <div class="container-custom">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-zen-forest-medium mb-4">
+          Three Intelligent Modes for Every Context
+        </h2>
+        <p class="text-lg text-zen-gray-dark max-w-3xl mx-auto">
+          ZenMirror adapts to your lifestyle with specialized modes for meditation, study, and work environments
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Meditation Mode -->
+        <div class="bg-gradient-to-br from-zen-forest-medium/10 to-zen-bamboo/10 rounded-2xl p-8 border-2 border-zen-forest-medium">
+          <div class="text-center mb-6">
+            <div class="text-6xl mb-4">🧘‍♀️</div>
+            <h3 class="text-2xl font-semibold text-zen-forest-medium mb-2">Meditation Mode</h3>
+            <p class="text-sm text-zen-orange-accent font-semibold">Deep Practice Focus</p>
+          </div>
+          <p class="text-zen-gray-dark mb-6 text-sm">Designed for dedicated meditation sessions with comprehensive monitoring and real-time guidance from your chosen mentor.</p>
+          <div class="space-y-2 mb-6">
+            <h4 class="font-semibold text-zen-forest-medium text-sm">Features:</h4>
+            <ul class="space-y-2 text-sm text-zen-gray-dark">
+              <li class="flex items-start gap-2"><span class="text-zen-forest-medium">•</span> Real-time mentor guidance</li>
+              <li class="flex items-start gap-2"><span class="text-zen-forest-medium">•</span> Full HRV & RSA analysis</li>
+              <li class="flex items-start gap-2"><span class="text-zen-forest-medium">•</span> Session quality scoring</li>
+              <li class="flex items-start gap-2"><span class="text-zen-forest-medium">•</span> Progress tracking & insights</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-lg p-4 text-sm">
+            <div class="flex justify-between mb-2">
+              <span class="text-zen-gray-dark">Sensitivity:</span>
+              <span class="font-semibold text-zen-forest-medium">High</span>
+            </div>
+            <div class="flex justify-between mb-2">
+              <span class="text-zen-gray-dark">Feedback:</span>
+              <span class="font-semibold text-zen-forest-medium">Active</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-zen-gray-dark">Analytics:</span>
+              <span class="font-semibold text-zen-forest-medium">Comprehensive</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Study Mode -->
+        <div class="bg-gradient-to-br from-blue-500/10 to-blue-600/10 rounded-2xl p-8 border-2 border-blue-500">
+          <div class="text-center mb-6">
+            <div class="text-6xl mb-4">📚</div>
+            <h3 class="text-2xl font-semibold text-blue-700 mb-2">Study Mode</h3>
+            <p class="text-sm text-blue-600 font-semibold">Focus Enhancement</p>
+          </div>
+          <p class="text-zen-gray-dark mb-6 text-sm">Monitors your concentration levels during study sessions and provides gentle alerts to optimize focus and prevent mental fatigue.</p>
+          <div class="space-y-2 mb-6">
+            <h4 class="font-semibold text-blue-700 text-sm">Features:</h4>
+            <ul class="space-y-2 text-sm text-zen-gray-dark">
+              <li class="flex items-start gap-2"><span class="text-blue-500">•</span> Focus level monitoring</li>
+              <li class="flex items-start gap-2"><span class="text-blue-500">•</span> Stress detection alerts</li>
+              <li class="flex items-start gap-2"><span class="text-blue-500">•</span> Break time recommendations</li>
+              <li class="flex items-start gap-2"><span class="text-blue-500">•</span> Productivity insights</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-lg p-4 text-sm">
+            <div class="flex justify-between mb-2">
+              <span class="text-zen-gray-dark">Sensitivity:</span>
+              <span class="font-semibold text-blue-600">Medium</span>
+            </div>
+            <div class="flex justify-between mb-2">
+              <span class="text-zen-gray-dark">Feedback:</span>
+              <span class="font-semibold text-blue-600">Minimal</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-zen-gray-dark">Analytics:</span>
+              <span class="font-semibold text-blue-600">Focused</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work Mode -->
+        <div class="bg-gradient-to-br from-slate-500/10 to-slate-600/10 rounded-2xl p-8 border-2 border-slate-500">
+          <div class="text-center mb-6">
+            <div class="text-6xl mb-4">💼</div>
+            <h3 class="text-2xl font-semibold text-slate-700 mb-2">Work Mode</h3>
+            <p class="text-sm text-slate-600 font-semibold">Wellness Monitoring</p>
+          </div>
+          <p class="text-zen-gray-dark mb-6 text-sm">Passive background monitoring that tracks your stress levels throughout the workday and suggests micro-breaks for optimal wellbeing.</p>
+          <div class="space-y-2 mb-6">
+            <h4 class="font-semibold text-slate-700 text-sm">Features:</h4>
+            <ul class="space-y-2 text-sm text-zen-gray-dark">
+              <li class="flex items-start gap-2"><span class="text-slate-500">•</span> Background stress monitoring</li>
+              <li class="flex items-start gap-2"><span class="text-slate-500">•</span> Micro-break suggestions</li>
+              <li class="flex items-start gap-2"><span class="text-slate-500">•</span> Posture awareness alerts</li>
+              <li class="flex items-start gap-2"><span class="text-slate-500">•</span> Daily wellness reports</li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-lg p-4 text-sm">
+            <div class="flex justify-between mb-2">
+              <span class="text-zen-gray-dark">Sensitivity:</span>
+              <span class="font-semibold text-slate-600">Low</span>
+            </div>
+            <div class="flex justify-between mb-2">
+              <span class="text-zen-gray-dark">Feedback:</span>
+              <span class="font-semibold text-slate-600">Passive</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-zen-gray-dark">Analytics:</span>
+              <span class="font-semibold text-slate-600">Background</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="py-16 md:py-24 bg-zen-white">
+    <div class="container-custom">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-zen-forest-medium mb-4">
+          Why ZenMirror Leads the Category
+        </h2>
+        <p class="text-lg text-zen-gray-dark max-w-3xl mx-auto">
+          See how ZenMirror's contactless technology surpasses traditional meditation monitoring approaches.
+        </p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full max-w-5xl mx-auto bg-white rounded-2xl overflow-hidden shadow-zen-lg">
+          <thead class="bg-zen-forest-medium text-white">
+            <tr>
+              <th class="px-6 py-4 text-left">Feature</th>
+              <th class="px-6 py-4 text-center">ZenMirror</th>
+              <th class="px-6 py-4 text-center">Chest Strap</th>
+              <th class="px-6 py-4 text-center">Smartwatch</th>
+              <th class="px-6 py-4 text-center">EEG Headband</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-zen-gray-light">
+            <tr>
+              <td class="px-6 py-4 font-medium">Contactless Monitoring</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-forest-medium">✓</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-gray-light">✗</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-gray-light">✗</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-gray-light">✗</td>
+            </tr>
+            <tr class="bg-zen-cream/50">
+              <td class="px-6 py-4 font-medium">Zero Physical Distraction</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-forest-medium">✓</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-gray-light">✗</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-gray-light">✗</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-gray-light">✗</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 font-medium">Works Through Clothing</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-forest-medium">✓</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-gray-light">✗</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-forest-medium">✓</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-gray-light">✗</td>
+            </tr>
+            <tr class="bg-zen-cream/50">
+              <td class="px-6 py-4 font-medium">HRV Analysis</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-forest-medium">✓</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-forest-medium">✓</td>
+              <td class="px-6 py-4 text-center text-sm">Basic</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-gray-light">✗</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 font-medium">Cultural Mentor Guidance</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-forest-medium">✓</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-gray-light">✗</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-gray-light">✗</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-gray-light">✗</td>
+            </tr>
+            <tr class="bg-zen-cream/50">
+              <td class="px-6 py-4 font-medium">Privacy Protection</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-forest-medium">✓</td>
+              <td class="px-6 py-4 text-center text-sm">Partial</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-gray-light">✗</td>
+              <td class="px-6 py-4 text-center text-2xl text-zen-gray-light">✗</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Radar Comparison Chart -->
+      <div class="mt-16">
+        <RadarComparison />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="py-16 md:py-24 bg-zen-cream">
+    <div class="container-custom">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-zen-forest-medium mb-4">
+          Development Timeline
+        </h2>
+        <p class="text-lg text-zen-gray-dark max-w-3xl mx-auto">
+          Our carefully planned roadmap ensures quality delivery and continuous improvement.
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto space-y-8">
+        <div class="flex gap-6">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full bg-zen-forest-medium flex items-center justify-center text-white font-bold">✓</div>
+            <div class="w-1 flex-1 bg-zen-forest-medium"></div>
+          </div>
+          <div class="flex-1 pb-8">
+            <h3 class="text-xl font-semibold text-zen-forest-medium mb-2">Prototype Development</h3>
+            <p class="text-sm text-zen-orange-accent font-semibold mb-2">Completed - Q4 2024</p>
+            <p class="text-zen-gray-dark">Core radar technology and basic app functionality validated</p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full bg-zen-orange-accent flex items-center justify-center text-white font-bold">2</div>
+            <div class="w-1 flex-1 bg-zen-gray-light"></div>
+          </div>
+          <div class="flex-1 pb-8">
+            <h3 class="text-xl font-semibold text-zen-forest-medium mb-2">Kickstarter Campaign</h3>
+            <p class="text-sm text-zen-orange-accent font-semibold mb-2">Current - Q1 2025</p>
+            <p class="text-zen-gray-dark">Community building and early backer rewards</p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full bg-zen-gray-light flex items-center justify-center text-zen-gray-dark font-bold">3</div>
+            <div class="w-1 flex-1 bg-zen-gray-light"></div>
+          </div>
+          <div class="flex-1 pb-8">
+            <h3 class="text-xl font-semibold text-zen-forest-medium mb-2">Manufacturing Setup</h3>
+            <p class="text-sm text-zen-gray-dark font-semibold mb-2">Q2 2025</p>
+            <p class="text-zen-gray-dark">Production line testing and quality assurance protocols</p>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full bg-zen-gray-light flex items-center justify-center text-zen-gray-dark font-bold">4</div>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-xl font-semibold text-zen-forest-medium mb-2">First Units Ship</h3>
+            <p class="text-sm text-zen-gray-dark font-semibold mb-2">June 2025</p>
+            <p class="text-zen-gray-dark">Early Bird backers receive their ZenMirror devices</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specifications -->
+  <section class="py-16 md:py-24 bg-zen-white">
+    <div class="container-custom">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-zen-forest-medium mb-4">
+          Technical Specifications
+        </h2>
+        <p class="text-lg text-zen-gray-dark max-w-3xl mx-auto">
+          Precision engineering meets mindful design in every detail of ZenMirror
+        </p>
+      </div>
+
+      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+        <div class="bg-zen-cream rounded-2xl p-8">
+          <h3 class="text-2xl font-semibold text-zen-forest-medium mb-6">Radar Technology</h3>
+          <div class="space-y-4">
+            <div class="flex justify-between border-b border-zen-gray-light pb-2">
+              <span class="text-zen-gray-dark">Frequency Band</span>
+              <span class="font-semibold text-zen-forest-medium">60-64 GHz mmWave</span>
+            </div>
+            <div class="flex justify-between border-b border-zen-gray-light pb-2">
+              <span class="text-zen-gray-dark">Detection Range</span>
+              <span class="font-semibold text-zen-forest-medium">0.5 - 2.0 meters</span>
+            </div>
+            <div class="flex justify-between border-b border-zen-gray-light pb-2">
+              <span class="text-zen-gray-dark">Accuracy</span>
+              <span class="font-semibold text-zen-forest-medium">±2 BPM HR, ±1 BPM BR</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-zen-gray-dark">Power Output</span>
+              <span class="font-semibold text-zen-forest-medium">&lt;1mW (ultra-safe)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-zen-cream rounded-2xl p-8">
+          <h3 class="text-2xl font-semibold text-zen-forest-medium mb-6">Device Hardware</h3>
+          <div class="space-y-4">
+            <div class="flex justify-between border-b border-zen-gray-light pb-2">
+              <span class="text-zen-gray-dark">Dimensions</span>
+              <span class="font-semibold text-zen-forest-medium">12cm × 8cm × 3cm</span>
+            </div>
+            <div class="flex justify-between border-b border-zen-gray-light pb-2">
+              <span class="text-zen-gray-dark">Weight</span>
+              <span class="font-semibold text-zen-forest-medium">280g (portable)</span>
+            </div>
+            <div class="flex justify-between border-b border-zen-gray-light pb-2">
+              <span class="text-zen-gray-dark">Power Source</span>
+              <span class="font-semibold text-zen-forest-medium">USB-C, 12V adapter</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-zen-gray-dark">Materials</span>
+              <span class="font-semibold text-zen-forest-medium">Bamboo fiber, aluminum</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-zen-cream rounded-2xl p-8">
+          <h3 class="text-2xl font-semibold text-zen-forest-medium mb-6">Connectivity</h3>
+          <div class="space-y-4">
+            <div class="flex justify-between border-b border-zen-gray-light pb-2">
+              <span class="text-zen-gray-dark">Wireless</span>
+              <span class="font-semibold text-zen-forest-medium">Wi-Fi 6, Bluetooth 5.2</span>
+            </div>
+            <div class="flex justify-between border-b border-zen-gray-light pb-2">
+              <span class="text-zen-gray-dark">App Compatibility</span>
+              <span class="font-semibold text-zen-forest-medium">iOS 14+, Android 10+</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-zen-gray-dark">Data Storage</span>
+              <span class="font-semibold text-zen-forest-medium">Local + Cloud Sync</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-zen-cream rounded-2xl p-8">
+          <h3 class="text-2xl font-semibold text-zen-forest-medium mb-6">Certifications</h3>
+          <div class="space-y-4">
+            <div class="flex justify-between border-b border-zen-gray-light pb-2">
+              <span class="text-zen-gray-dark">Safety</span>
+              <span class="font-semibold text-zen-forest-medium">FCC, CE, ROHS</span>
+            </div>
+            <div class="flex justify-between border-b border-zen-gray-light pb-2">
+              <span class="text-zen-gray-dark">Radar Compliance</span>
+              <span class="font-semibold text-zen-forest-medium">FCC Part 15</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-zen-gray-dark">Warranty</span>
+              <span class="font-semibold text-zen-forest-medium">2 years + support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="py-16 md:py-24 bg-zen-cream">
+    <div class="container-custom">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-zen-forest-medium mb-4">
+          Meet the Team
+        </h2>
+        <p class="text-lg text-zen-gray-dark max-w-3xl mx-auto">
+          A passionate team of engineers, meditators, and wisdom keepers dedicated to advancing human consciousness through technology.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="bg-white rounded-2xl p-8 text-center shadow-zen-md">
+          <div class="w-32 h-32 rounded-full bg-gradient-to-br from-zen-forest-medium to-zen-forest-light mx-auto mb-4 flex items-center justify-center text-white text-4xl font-bold">
+            SC
+          </div>
+          <h3 class="text-xl font-semibold text-zen-forest-medium mb-2">Dr. Sarah Chen</h3>
+          <p class="text-sm font-semibold text-zen-orange-accent mb-3">Founder & CEO</p>
+          <p class="text-sm text-zen-gray-dark">15+ years in radar technology, 20-year meditation practitioner</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 text-center shadow-zen-md">
+          <div class="w-32 h-32 rounded-full bg-gradient-to-br from-zen-orange-accent to-zen-orange-warm mx-auto mb-4 flex items-center justify-center text-white text-4xl font-bold">
+            MR
+          </div>
+          <h3 class="text-xl font-semibold text-zen-forest-medium mb-2">Dr. Marcus Rodriguez</h3>
+          <p class="text-sm font-semibold text-zen-orange-accent mb-3">Chief Technology Officer</p>
+          <p class="text-sm text-zen-gray-dark">Former DARPA researcher, expert in millimeter wave systems</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 text-center shadow-zen-md">
+          <div class="w-32 h-32 rounded-full bg-gradient-to-br from-amber-600 to-amber-800 mx-auto mb-4 flex items-center justify-center text-white text-4xl font-bold">
+            TN
+          </div>
+          <h3 class="text-xl font-semibold text-zen-forest-medium mb-2">Lama Tenzin Norbu</h3>
+          <p class="text-sm font-semibold text-zen-orange-accent mb-3">Spiritual Technology Advisor</p>
+          <p class="text-sm text-zen-gray-dark">Traditional Tibetan teacher, modern mindfulness pioneer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rewards Section -->
+  <section id="rewards" class="py-16 md:py-24 bg-zen-cream">
+    <div class="container-custom">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-zen-forest-medium mb-4">
+          Back This Project
+        </h2>
+        <p class="text-lg text-zen-gray-dark max-w-3xl mx-auto">
+          Choose your reward tier and be among the first to experience the future of meditation technology.
+        </p>
+      </div>
+
+      <!-- Funding Progress -->
+      <div class="max-w-3xl mx-auto mb-12">
+        <div class="relative h-4 bg-zen-gray-light rounded-full overflow-hidden">
+          <div class="absolute h-full bg-gradient-to-r from-zen-orange-accent to-zen-orange-warm rounded-full" style="width: 82%"></div>
+        </div>
+        <div class="flex justify-between mt-3 text-sm">
+          <span class="font-semibold text-zen-forest-medium">$247,891 raised</span>
+          <span class="text-zen-gray-dark">Goal: $300,000</span>
+        </div>
+      </div>
+
+      <!-- Reward Tiers -->
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Early Bird -->
+        <div class="bg-gradient-to-br from-zen-orange-accent/10 to-zen-orange-warm/10 rounded-2xl p-8 shadow-zen-lg border-2 border-zen-orange-accent relative">
+          <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-zen-orange-accent text-white px-4 py-1 rounded-full text-sm font-semibold">
+            EARLY BIRD
+          </div>
+          <div class="text-center mb-6">
+            <div class="text-4xl font-bold text-zen-forest-medium mb-2">$299</div>
+            <div class="text-sm text-zen-gray-dark line-through">$499 retail</div>
+          </div>
+          <h4 class="text-xl font-semibold text-zen-forest-medium mb-4">ZenMirror Complete</h4>
+          <ul class="space-y-2 mb-6 text-sm text-zen-gray-dark">
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">✓</span> ZenMirror Device</li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">✓</span> All 6 Mentor Personalities</li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">✓</span> Premium App Features</li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium font-bold">✓</span> <strong>FREE Lifetime Subscription</strong></li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">✓</span> Advanced Data Analytics</li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">✓</span> Meditation Knowledge Base</li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">✓</span> Community Features</li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">✓</span> Worldwide Shipping</li>
+          </ul>
+          <div class="text-sm text-zen-gray-dark mb-2">Estimated delivery: June 2025</div>
+          <div class="text-sm font-semibold text-zen-orange-accent mb-4">47 of 100 remaining</div>
+          <button class="btn-primary w-full">Select Reward</button>
+        </div>
+
+        <!-- Deluxe -->
+        <div class="bg-white rounded-2xl p-8 shadow-zen-md border border-zen-gray-light">
+          <div class="text-center mb-6">
+            <div class="text-4xl font-bold text-zen-forest-medium mb-2">$399</div>
+          </div>
+          <h4 class="text-xl font-semibold text-zen-forest-medium mb-4">ZenMirror Deluxe</h4>
+          <ul class="space-y-2 mb-6 text-sm text-zen-gray-dark">
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">✓</span> Everything in Complete</li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium font-bold">✓</span> <strong>FREE Lifetime Subscription</strong></li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">✓</span> Premium Stand & Case</li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">✓</span> Exclusive Mentor Voices</li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">✓</span> Advanced Data Analytics</li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">✓</span> Community Features</li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">✓</span> Lifetime Premium Support</li>
+          </ul>
+          <div class="text-sm text-zen-gray-dark mb-6">Estimated delivery: June 2025</div>
+          <button class="btn-secondary w-full">Select Reward</button>
+        </div>
+
+        <!-- Studio -->
+        <div class="bg-white rounded-2xl p-8 shadow-zen-md border border-zen-gray-light">
+          <div class="text-center mb-6">
+            <div class="text-4xl font-bold text-zen-forest-medium mb-2">$999</div>
+          </div>
+          <h4 class="text-xl font-semibold text-zen-forest-medium mb-4">Studio Package</h4>
+          <ul class="space-y-2 mb-6 text-sm text-zen-gray-dark">
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">✓</span> 3x ZenMirror Devices</li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium font-bold">✓</span> <strong>FREE Lifetime Subscription</strong></li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">✓</span> Commercial License</li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">✓</span> Professional Data Export</li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">✓</span> Community Management Tools</li>
+            <li class="flex items-start gap-2"><span class="text-zen-forest-medium">✓</span> Direct Support Line</li>
+          </ul>
+          <div class="text-sm text-zen-gray-dark mb-6">Estimated delivery: July 2025</div>
+          <button class="btn-secondary w-full">Select Reward</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscription Benefits -->
+  <section class="py-16 md:py-24 bg-gradient-to-br from-zen-orange-accent/20 to-zen-orange-warm/20">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-zen-forest-medium mb-4">
+          🎁 Early Backer Exclusive: FREE Lifetime Subscription
+        </h2>
+        <p class="text-lg text-zen-gray-dark max-w-3xl mx-auto">
+          Every Kickstarter backer receives a lifetime subscription valued at $120/year - completely FREE forever!
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto bg-white rounded-2xl p-8 shadow-zen-lg">
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+          <div class="text-center p-6 bg-zen-cream rounded-xl">
+            <div class="text-4xl font-bold text-zen-orange-accent mb-2">$120/year</div>
+            <div class="text-zen-gray-dark">Subscription Value</div>
+          </div>
+          <div class="text-center p-6 bg-gradient-to-br from-zen-forest-medium to-zen-forest-light text-white rounded-xl">
+            <div class="text-4xl font-bold mb-2">FREE</div>
+            <div>For Early Backers</div>
+          </div>
+        </div>
+
+        <h3 class="text-2xl font-semibold text-zen-forest-medium mb-6">What's Included in Your Lifetime Access:</h3>
+        <div class="grid md:grid-cols-2 gap-4">
+          {[
+            "Advanced Data Analytics & Trends",
+            "Wider Range of Mentor Personalities",
+            "Meditation Knowledge Base",
+            "Personalized Training Plans",
+            "Exclusive Meditation Courses",
+            "Historical Data Access",
+            "Community Features & Challenges",
+            "Expert Talks & Q&A Sessions"
+          ].map((feature) => (
+            <div class="flex items-start gap-3">
+              <Icon name="heroicons:check" class="w-6 h-6 text-zen-forest-medium flex-shrink-0 mt-1" />
+              <span class="text-zen-gray-dark">{feature}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- FAQ -->
+  <section class="py-16 md:py-24 bg-zen-white">
+    <div class="container-custom">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-zen-forest-medium mb-4">
+          Frequently Asked Questions
+        </h2>
+      </div>
+
+      <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+        {[
+          {
+            q: "How accurate is contactless monitoring?",
+            a: "Our millimeter wave radar technology achieves clinical-grade accuracy for heart rate and breathing patterns, with precision comparable to direct contact sensors."
+          },
+          {
+            q: "Is the radar technology safe?",
+            a: "Absolutely. The power levels used are extremely low – thousands of times lower than your smartphone. It's completely safe for continuous use."
+          },
+          {
+            q: "Can it work through clothing?",
+            a: "Yes! ZenMirror works perfectly through normal clothing and even light blankets, making it ideal for comfortable meditation practice."
+          },
+          {
+            q: "What's the range and positioning requirements?",
+            a: "ZenMirror works optimally at 0.5-2 meters distance and can accommodate various meditation postures and positions."
+          },
+          {
+            q: "Do I need internet connectivity?",
+            a: "Basic functionality works offline. Internet connection enables mentor updates, progress sync, and community features."
+          },
+          {
+            q: "How do mentor personalities adapt to individuals?",
+            a: "Each mentor uses machine learning to understand your response patterns and adjusts guidance timing, tone, and content for maximum resonance."
+          }
+        ].map((faq) => (
+          <div class="bg-zen-cream rounded-2xl p-6">
+            <h3 class="text-lg font-semibold text-zen-forest-medium mb-3">{faq.q}</h3>
+            <p class="text-zen-gray-dark">{faq.a}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Community -->
+  <section class="py-16 md:py-24 bg-zen-cream">
+    <div class="container-custom">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-zen-forest-medium mb-4">
+          Join the Movement
+        </h2>
+        <p class="text-lg text-zen-gray-dark max-w-3xl mx-auto">
+          Thousands of meditators worldwide are already experiencing the future of mindfulness practice.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {[
+          {
+            quote: "ZenMirror showed me patterns in my practice I never would have noticed. My focus duration has doubled in just 6 weeks.",
+            author: "Michael Chen",
+            role: "Software Engineer"
+          },
+          {
+            quote: "As a yoga teacher, I can now provide my students with objective feedback. ZenMirror has transformed how I teach breathwork.",
+            author: "Priya Patel",
+            role: "Yoga Instructor"
+          },
+          {
+            quote: "The mentor guidance is incredibly accurate. It's like having a wise teacher who knows exactly when I need support.",
+            author: "James Wilson",
+            role: "Meditation Practitioner"
+          }
+        ].map((testimonial) => (
+          <div class="bg-white rounded-2xl p-8 shadow-zen-md">
+            <div class="text-4xl text-zen-orange-accent mb-4">"</div>
+            <p class="text-zen-gray-dark italic mb-6">{testimonial.quote}</p>
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-full bg-gradient-to-br from-zen-forest-medium to-zen-forest-light flex items-center justify-center text-white font-bold">
+                {testimonial.author[0]}
+              </div>
+              <div>
+                <p class="font-semibold text-zen-forest-medium">{testimonial.author}</p>
+                <p class="text-sm text-zen-gray-dark">{testimonial.role}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 md:py-24 bg-gradient-to-br from-zen-forest-medium to-zen-forest-dark text-white">
+    <div class="container-custom text-center">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+        Transform Your Meditation Practice Today
+      </h2>
+      <p class="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto">
+        Join 1,234 backers who are already experiencing the future of mindfulness
+      </p>
+      <a href="#rewards" class="btn-primary inline-flex items-center gap-2 text-lg">
+        Back This Project
+        <Icon name="heroicons:arrow-right" class="w-5 h-5" />
+      </a>
+      <p class="mt-4 text-sm text-white/70">
+        Early Bird Special: $299 (Save $200) • Limited Time Only
+      </p>
+    </div>
+  </section>
+
+  <!-- Founder Story -->
+  <section class="py-16 md:py-20 bg-gradient-to-br from-zen-cream to-white">
+    <div class="container-custom max-w-5xl">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl md:text-4xl font-semibold text-zen-forest-dark mb-3">
+          A Message from Our Founder
+        </h2>
+        <p class="text-sm text-zen-gray-dark italic">Owen Wang, Founder of Aeonlectron</p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-8 md:p-12 shadow-zen-lg">
+        <p class="text-lg leading-relaxed text-zen-gray-dark text-center">
+          For 15 years, I've been a meditation practitioner and electrical engineer—two worlds that rarely intersect. I've studied with Zen masters in Toronto, Vipassana retreats in Thailand, and Stoic philosophy in university. Each tradition offered profound wisdom, yet they all shared one limitation: I was practicing blind. As an engineer, I rely on precise measurements, yet in meditation I had zero objective data. Chest straps were distracting, fitness trackers missed HRV nuances, EEG headbands felt like lab equipment. A year ago, I contemplated the problem deeply, investigated many sensing technologies, and kept returning to millimeter-wave radar. After rigorous evaluation, I decided to pursue it—radar is completely non-intrusive, capturing breathing, heartbeat, and HRV with incredible precision. I spent 10 months in "technical meditation"—engineering by day, testing by night. The challenge was philosophical: how to quantify meditation without judgment? I designed ZenMirror to reflect, not judge, bringing in experts from six wisdom traditions using RAG technology to ensure authentic feedback. I see millions meditating with quiet confidence—beginners watching breath settle in real-time, advanced practitioners breaking plateaus. But more: bridges between ancient wisdom and modern science, between traditions separated by culture. This isn't just a product—it's a community believing deep understanding helps us live wisely. <strong>The cushion is ready. Will you join me?</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-zen-charcoal text-white/80 py-12">
+    <div class="container-custom">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">ZenMirror 禅镜</h3>
+          <p class="text-sm leading-relaxed">
+            Revolutionary contactless meditation monitoring with millimeter wave radar technology.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Technology</h3>
+          <ul class="space-y-2 text-sm">
+            <li>Patent-Pending mmWave Radar</li>
+            <li>HRV & RSA Analysis</li>
+            <li>AI-Powered Mentors</li>
+            <li>Non-Imaging Privacy</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Campaign</h3>
+          <ul class="space-y-2 text-sm">
+            <li>Early Bird Rewards</li>
+            <li>Free Lifetime Subscription</li>
+            <li>Delivery: Q4 2025</li>
+            <li>30-Day Money Back</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-white/20 text-center text-sm">
+        <p>&copy; 2025 ZenMirror. All rights reserved. Patent Pending.</p>
+      </div>
+    </div>
+  </footer>
+</BaseLayout>

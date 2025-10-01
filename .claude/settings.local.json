@@ -51,7 +51,12 @@
       "Bash(git push:*)",
       "Bash(ffprobe:*)",
       "Bash(git log:*)",
-      "Bash(git reset:*)"
+      "Bash(git reset:*)",
+      "Bash(npm install)",
+      "Bash(npm run build:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npx astro add astro-icon --yes)",
+      "Bash(npm install:*)"
     ],
     "deny": [],
     "ask": []

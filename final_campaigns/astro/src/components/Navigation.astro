@@ -1,0 +1,58 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-zen z-50">
+  <div class="container-custom">
+    <div class="flex items-center justify-between py-4">
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <img src="/assets/images/branding/zenmirror-logo.png" alt="ZenMirror" class="h-10 w-auto">
+        <span class="text-xl font-semibold text-zen-forest-medium">ZenMirror 禅镜</span>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center gap-6">
+        <a href="#technology" class="text-zen-forest-medium hover:text-zen-orange-accent transition-colors font-medium">Monitor</a>
+        <a href="#science" class="text-zen-forest-medium hover:text-zen-orange-accent transition-colors font-medium">Assess</a>
+        <a href="#mentors" class="text-zen-forest-medium hover:text-zen-orange-accent transition-colors font-medium">Feedback</a>
+        <a href="#features" class="text-zen-forest-medium hover:text-zen-orange-accent transition-colors font-medium">Improve</a>
+        <a href="#rewards" class="btn-primary text-sm px-6 py-2">Back This Project</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden p-2" id="mobile-menu-btn">
+        <Icon name="heroicons:bars-3" class="w-6 h-6 text-zen-forest-medium" />
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-zen-gray-light">
+    <div class="container-custom py-4 space-y-3">
+      <a href="#technology" class="block text-zen-forest-medium hover:text-zen-orange-accent font-medium">Monitor</a>
+      <a href="#science" class="block text-zen-forest-medium hover:text-zen-orange-accent font-medium">Assess</a>
+      <a href="#mentors" class="block text-zen-forest-medium hover:text-zen-orange-accent font-medium">Feedback</a>
+      <a href="#features" class="block text-zen-forest-medium hover:text-zen-orange-accent font-medium">Improve</a>
+      <a href="#rewards" class="block text-center py-2 bg-zen-orange-accent text-white rounded-lg font-medium">Back This Project</a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+</script>
+
+<style>
+  /* Smooth scroll offset for fixed nav */
+  html {
+    scroll-padding-top: 80px;
+  }
+</style>

@@ -1,0 +1,219 @@
+---
+interface Props {
+  title?: string;
+  subtitle?: string;
+}
+
+const {
+  title = "Product Comparison Radar",
+  subtitle = "See how ZenMirror outperforms other meditation monitoring solutions across key metrics"
+} = Astro.props;
+---
+
+<div class="chart-container bg-gradient-to-br from-zen-white to-zen-cream rounded-2xl p-6 md:p-8 shadow-zen-lg">
+  <div class="mb-6 text-center">
+    <h3 class="text-2xl md:text-3xl font-semibold text-zen-forest-medium mb-2">
+      {title}
+    </h3>
+    <p class="text-sm md:text-base text-zen-gray-dark">
+      {subtitle}
+    </p>
+  </div>
+
+  <div id="radar-chart" class="w-full h-96 md:h-[500px]"></div>
+
+  <div class="mt-6 flex flex-wrap justify-center gap-4 text-sm">
+    <div class="flex items-center gap-2">
+      <div class="w-4 h-4 rounded-full bg-zen-forest-medium"></div>
+      <span class="text-zen-gray-dark">ZenMirror</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="w-4 h-4 rounded-full bg-red-500 opacity-60"></div>
+      <span class="text-zen-gray-dark">Chest Strap</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="w-4 h-4 rounded-full bg-blue-500 opacity-60"></div>
+      <span class="text-zen-gray-dark">Smartwatch</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="w-4 h-4 rounded-full bg-purple-500 opacity-60"></div>
+      <span class="text-zen-gray-dark">EEG Headband</span>
+    </div>
+  </div>
+</div>
+
+<script>
+  import * as d3 from 'd3';
+
+  // Data for comparison
+  const data = [
+    {
+      name: 'ZenMirror',
+      axes: [
+        { axis: 'Comfort/Contactless', value: 100 },
+        { axis: 'Data Accuracy', value: 95 },
+        { axis: 'Privacy', value: 100 },
+        { axis: 'Ease of Use', value: 90 },
+        { axis: 'Multi-Modal Analysis', value: 95 },
+        { axis: 'AI Guidance', value: 100 },
+        { axis: 'Runtime', value: 100 }
+      ],
+      color: '#2d5b3e'
+    },
+    {
+      name: 'Chest Strap',
+      axes: [
+        { axis: 'Comfort/Contactless', value: 30 },
+        { axis: 'Data Accuracy', value: 85 },
+        { axis: 'Privacy', value: 60 },
+        { axis: 'Ease of Use', value: 50 },
+        { axis: 'Multi-Modal Analysis', value: 70 },
+        { axis: 'AI Guidance', value: 20 },
+        { axis: 'Runtime', value: 70 }
+      ],
+      color: 'rgba(239, 68, 68, 0.6)'
+    },
+    {
+      name: 'Smartwatch',
+      axes: [
+        { axis: 'Comfort/Contactless', value: 60 },
+        { axis: 'Data Accuracy', value: 65 },
+        { axis: 'Privacy', value: 40 },
+        { axis: 'Ease of Use', value: 80 },
+        { axis: 'Multi-Modal Analysis', value: 50 },
+        { axis: 'AI Guidance', value: 30 },
+        { axis: 'Runtime', value: 60 }
+      ],
+      color: 'rgba(59, 130, 246, 0.6)'
+    },
+    {
+      name: 'EEG Headband',
+      axes: [
+        { axis: 'Comfort/Contactless', value: 40 },
+        { axis: 'Data Accuracy', value: 90 },
+        { axis: 'Privacy', value: 50 },
+        { axis: 'Ease of Use', value: 45 },
+        { axis: 'Multi-Modal Analysis', value: 80 },
+        { axis: 'AI Guidance', value: 40 },
+        { axis: 'Runtime', value: 50 }
+      ],
+      color: 'rgba(168, 85, 247, 0.6)'
+    }
+  ];
+
+  const container = document.getElementById('radar-chart');
+  if (!container) throw new Error('Chart container not found');
+
+  const margin = { top: 60, right: 80, bottom: 60, left: 80 };
+  const width = container.clientWidth - margin.left - margin.right;
+  const height = container.clientHeight - margin.top - margin.bottom;
+  const radius = Math.min(width, height) / 2;
+
+  const svg = d3.select('#radar-chart')
+    .append('svg')
+    .attr('width', width + margin.left + margin.right)
+    .attr('height', height + margin.top + margin.bottom)
+    .append('g')
+    .attr('transform', `translate(${width / 2 + margin.left},${height / 2 + margin.top})`);
+
+  // Number of axes
+  const allAxis = data[0].axes.map(d => d.axis);
+  const total = allAxis.length;
+  const angleSlice = (Math.PI * 2) / total;
+
+  // Scale for the radius
+  const rScale = d3.scaleLinear()
+    .domain([0, 100])
+    .range([0, radius]);
+
+  // Draw background circles
+  const levels = 5;
+  for (let i = 1; i <= levels; i++) {
+    svg.append('circle')
+      .attr('r', radius / levels * i)
+      .style('fill', 'none')
+      .style('stroke', '#d1d5db')
+      .style('stroke-width', '1px')
+      .style('stroke-opacity', 0.5);
+  }
+
+  // Draw axis lines
+  const axis = svg.selectAll('.axis')
+    .data(allAxis)
+    .enter()
+    .append('g')
+    .attr('class', 'axis');
+
+  axis.append('line')
+    .attr('x1', 0)
+    .attr('y1', 0)
+    .attr('x2', (d, i) => rScale(100) * Math.cos(angleSlice * i - Math.PI / 2))
+    .attr('y2', (d, i) => rScale(100) * Math.sin(angleSlice * i - Math.PI / 2))
+    .style('stroke', '#9ca3af')
+    .style('stroke-width', '1px');
+
+  // Draw axis labels
+  axis.append('text')
+    .attr('class', 'legend')
+    .style('font-size', '12px')
+    .style('font-weight', '600')
+    .style('fill', '#2d5b3e')
+    .attr('text-anchor', 'middle')
+    .attr('dy', '0.35em')
+    .attr('x', (d, i) => rScale(115) * Math.cos(angleSlice * i - Math.PI / 2))
+    .attr('y', (d, i) => rScale(115) * Math.sin(angleSlice * i - Math.PI / 2))
+    .text(d => d);
+
+  // Line function for radar
+  const radarLine = d3.lineRadial<{axis: string; value: number}>()
+    .curve(d3.curveLinearClosed)
+    .radius(d => rScale(d.value))
+    .angle((d, i) => i * angleSlice);
+
+  // Draw the radar areas
+  data.forEach((product, index) => {
+    // Draw area
+    svg.append('path')
+      .datum(product.axes)
+      .attr('class', `radar-area-${index}`)
+      .attr('d', radarLine as any)
+      .style('fill', product.color)
+      .style('fill-opacity', index === 0 ? 0.3 : 0.15)
+      .style('stroke', product.color)
+      .style('stroke-width', index === 0 ? '3px' : '2px')
+      .style('stroke-opacity', 0.8);
+
+    // Draw circles at data points
+    svg.selectAll(`.radar-circle-${index}`)
+      .data(product.axes)
+      .enter()
+      .append('circle')
+      .attr('class', `radar-circle-${index}`)
+      .attr('r', index === 0 ? 5 : 3)
+      .attr('cx', (d, i) => rScale(d.value) * Math.cos(angleSlice * i - Math.PI / 2))
+      .attr('cy', (d, i) => rScale(d.value) * Math.sin(angleSlice * i - Math.PI / 2))
+      .style('fill', product.color)
+      .style('fill-opacity', 0.8)
+      .style('stroke', '#fff')
+      .style('stroke-width', '2px');
+  });
+
+  // Add value labels on circles (concentric)
+  const labelLevels = [20, 40, 60, 80, 100];
+  labelLevels.forEach(level => {
+    svg.append('text')
+      .attr('x', 5)
+      .attr('y', -rScale(level))
+      .attr('dy', '0.4em')
+      .style('font-size', '10px')
+      .style('fill', '#6b7280')
+      .text(level);
+  });
+</script>
+
+<style>
+  .chart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+</style>

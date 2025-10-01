@@ -8,3 +8,6 @@ scripts/token.json
 # Environment files
 scripts/.env
 *.env
+
+final_campaigns/astro/node_modules
+final_campaigns/astro/dist
