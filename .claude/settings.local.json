@@ -56,7 +56,8 @@
       "Bash(npm run build:*)",
       "Bash(npm run dev:*)",
       "Bash(npx astro add astro-icon --yes)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(npm run:*)"
     ],
     "deny": [],
     "ask": []

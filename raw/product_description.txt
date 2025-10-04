@@ -167,9 +167,12 @@ zenmirror-crowdfunding.html
 zenmirror-crowdfunding-green.html 
 
 ## 至少包括这些视频镜头
+ - 昏睡,惊醒,呼吸急促，不断各种小动作。
  - 对比: 左-身上各种夸张的仪器， 右-只有contactless的ZenMirror
+ - 人 + ZenMirror + 数据overlay动画
  - 烦躁不安 -> "像星战里的语音提示，各种导师一起的语音提示" -> 安静
  - zenmirror出现，人身上开始出现心跳，呼吸和体动
+ - 在各种情景下取出ZenMirror，表现轻巧灵便。
 
 ## Campaign Page 其他要求
  - campaign page里要mention patent-pending.
