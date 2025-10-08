@@ -10,6 +10,8 @@ module.exports = {
             dark: '#1a3d2e',
             medium: '#2d5b3e',
             light: '#4a7c59',
+            pale: '#e8f4ed',
+            ultra: '#f5faf7',
           },
           sage: '#6b8e5a',
           mint: '#8fbc8f',
@@ -22,17 +24,27 @@ module.exports = {
             warm: '#e89851',
             soft: '#f4b56f',
             light: '#fdd5a8',
+            pale: '#fff4e6',
           },
 
-          // Neutral Palette
-          white: '#fdfcf8',
+          // Neutral Palette - White theme optimized
+          white: '#ffffff',
+          offwhite: '#fdfcf8',
           cream: '#f9f7f1',
           gray: {
+            ultra: '#f8f9fa',
             light: '#e8e6e0',
             medium: '#b8b6b0',
             dark: '#6b6b6b',
+            darker: '#4a4a4a',
           },
           charcoal: '#2c2c2c',
+
+          // Blue accent for white theme
+          blue: {
+            accent: '#3b82f6',
+            light: '#60a5fa',
+          },
         },
       },
       fontFamily: {

@@ -12,7 +12,7 @@
   }
 
   body {
-    @apply font-sans text-zen-charcoal bg-zen-white antialiased;
+    @apply font-sans text-zen-charcoal bg-white antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -34,15 +34,16 @@
 
 @layer components {
   .btn-primary {
-    @apply px-8 py-4 bg-zen-orange-accent text-white font-semibold rounded-xl
-           shadow-zen-md hover:bg-zen-orange-deep hover:shadow-zen-lg
+    @apply px-8 py-4 bg-zen-forest-dark text-white font-semibold rounded-xl
+           shadow-lg hover:bg-zen-forest-medium hover:shadow-xl
            transform hover:scale-105 active:scale-95
            transition-all duration-200 ease-out;
   }
 
   .btn-secondary {
-    @apply px-8 py-4 bg-white text-zen-forest-medium font-semibold rounded-xl
-           border-2 border-zen-forest-medium hover:bg-zen-forest-medium hover:text-white
+    @apply px-8 py-4 bg-white text-zen-forest-dark font-semibold rounded-xl
+           border-2 border-zen-forest-dark hover:bg-zen-forest-dark hover:text-white
+           shadow-md hover:shadow-lg
            transition-all duration-200 ease-out;
   }
 

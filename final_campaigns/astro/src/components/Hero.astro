@@ -2,63 +2,66 @@
 import { Icon } from 'astro-icon/components';
 ---
 
-<section class="hero-section relative overflow-hidden bg-gradient-to-br from-zen-forest-medium to-zen-forest-light text-white section-padding">
-  <!-- Animated background -->
-  <div class="absolute inset-0 opacity-10">
+<section class="hero-section relative overflow-hidden bg-white section-padding">
+  <!-- Animated background with subtle pattern -->
+  <div class="absolute inset-0 opacity-[0.03]">
     <div class="radar-animation"></div>
   </div>
+
+  <!-- Subtle gradient overlay -->
+  <div class="absolute inset-0 bg-gradient-to-br from-zen-forest-ultra via-transparent to-zen-orange-pale opacity-40"></div>
 
   <div class="container-custom relative z-10">
     <div class="grid lg:grid-cols-2 gap-12 items-center">
       <!-- Left column: Content -->
       <div class="space-y-8 animate-fade-in">
         <!-- Badge -->
-        <div class="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-zen-orange-accent to-zen-orange-warm rounded-full text-sm font-semibold shadow-zen-glow">
+        <div class="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-zen-forest-dark to-zen-forest-medium text-white rounded-full text-sm font-semibold shadow-lg">
           <span>🚀</span>
           <span>LIVE ON KICKSTARTER</span>
         </div>
 
         <!-- Title -->
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-zen-charcoal">
           See Your Calm. Master Your Mind.<br>
-          <span class="bg-gradient-to-r from-zen-orange-accent to-zen-orange-warm bg-clip-text text-transparent">Transform Your Meditation.</span>
+          <span class="text-zen-forest-dark">Transform Your Meditation.</span>
         </h1>
 
         <!-- Who It's For -->
-        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm">
-          <span class="text-white/80">For meditators who want to know:</span>
-          <span class="font-semibold text-zen-orange-accent">"Am I actually doing this right?"</span>
+        <div class="inline-flex items-center gap-2 bg-zen-gray-ultra border-2 border-zen-gray-light px-4 py-2 rounded-full text-sm">
+          <span class="text-zen-gray-darker">For meditators who want to know:</span>
+          <span class="font-semibold text-zen-forest-dark">"Am I actually doing this right?"</span>
         </div>
 
         <!-- Subtitle -->
-        <p class="text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl">
+        <p class="text-lg md:text-xl text-zen-gray-darker leading-relaxed max-w-2xl">
           The world's first contactless meditation biofeedback device that monitors your heart, breath, and stillness in real-time, alerting you when disturbances appear so you can course-correct—using advanced millimeter wave radar with no sensors on your body.
         </p>
 
         <!-- Features list -->
-        <div class="grid grid-cols-2 gap-3 text-sm md:text-base">
+        <div class="grid grid-cols-2 gap-3 text-sm md:text-base text-zen-gray-darker">
           <div class="flex items-center gap-2">
-            <Icon name="heroicons:check-circle-solid" class="w-5 h-5 text-zen-orange-accent flex-shrink-0" />
+            <Icon name="heroicons:check-circle-solid" class="w-5 h-5 text-zen-forest-medium flex-shrink-0" />
             <span>Completely Contactless</span>
           </div>
           <div class="flex items-center gap-2">
-            <Icon name="heroicons:check-circle-solid" class="w-5 h-5 text-zen-orange-accent flex-shrink-0" />
+            <Icon name="heroicons:check-circle-solid" class="w-5 h-5 text-zen-forest-medium flex-shrink-0" />
             <span>Real-Time HRV Feedback</span>
           </div>
           <div class="flex items-center gap-2">
-            <Icon name="heroicons:check-circle-solid" class="w-5 h-5 text-zen-orange-accent flex-shrink-0" />
+            <Icon name="heroicons:check-circle-solid" class="w-5 h-5 text-zen-forest-medium flex-shrink-0" />
             <span>Meditation Quality Score</span>
           </div>
           <div class="flex items-center gap-2">
-            <Icon name="heroicons:check-circle-solid" class="w-5 h-5 text-zen-orange-accent flex-shrink-0" />
+            <Icon name="heroicons:check-circle-solid" class="w-5 h-5 text-zen-forest-medium flex-shrink-0" />
             <span>6 Wisdom Mentors</span>
           </div>
           <div class="flex items-center gap-2">
-            <Icon name="heroicons:check-circle-solid" class="w-5 h-5 text-zen-orange-accent flex-shrink-0" />
+            <Icon name="heroicons:check-circle-solid" class="w-5 h-5 text-zen-forest-medium flex-shrink-0" />
             <span>FREE Lifetime Premium</span>
           </div>
           <div class="flex items-center gap-2">
-            <Icon name="heroicons:check-circle-solid" class="w-5 h-5 text-zen-orange-accent flex-shrink-0" />
+            <Icon name="heroicons:check-circle-solid" class="w-5 h-5 text-zen-forest-medium flex-shrink-0" />
             <span>Privacy Protected</span>
           </div>
         </div>
@@ -69,25 +72,25 @@ import { Icon } from 'astro-icon/components';
             Back This Project - $129 Early Bird
             <Icon name="heroicons:arrow-right" class="w-5 h-5" />
           </a>
-          <div class="flex items-center gap-4 text-sm text-white/80">
+          <div class="flex items-center gap-4 text-sm text-zen-gray-darker">
             <p>🔥 <strong class="text-zen-orange-accent">$129</strong> Super Early Bird (60% off)</p>
             <p>💎 FREE Lifetime Premium for backers</p>
           </div>
         </div>
 
         <!-- Stats -->
-        <div class="grid grid-cols-3 gap-6 pt-8 border-t border-white/20">
+        <div class="grid grid-cols-3 gap-6 pt-8 border-t border-zen-gray-light">
           <div>
-            <div class="text-2xl md:text-3xl font-bold">$247K</div>
-            <div class="text-sm text-white/70">raised</div>
+            <div class="text-2xl md:text-3xl font-bold text-zen-charcoal">$247K</div>
+            <div class="text-sm text-zen-gray-dark">raised</div>
           </div>
           <div>
-            <div class="text-2xl md:text-3xl font-bold">1,234</div>
-            <div class="text-sm text-white/70">backers</div>
+            <div class="text-2xl md:text-3xl font-bold text-zen-charcoal">1,234</div>
+            <div class="text-sm text-zen-gray-dark">backers</div>
           </div>
           <div>
-            <div class="text-2xl md:text-3xl font-bold">18 days</div>
-            <div class="text-sm text-white/70">to go</div>
+            <div class="text-2xl md:text-3xl font-bold text-zen-charcoal">18 days</div>
+            <div class="text-sm text-zen-gray-dark">to go</div>
           </div>
         </div>
       </div>
@@ -96,19 +99,19 @@ import { Icon } from 'astro-icon/components';
       <div class="relative animate-fade-in" style="animation-delay: 0.2s;">
         <div class="relative z-10">
           <!-- Placeholder for product image -->
-          <div class="aspect-square bg-white/10 rounded-3xl backdrop-blur-sm p-8 flex items-center justify-center">
+          <div class="aspect-square bg-gradient-to-br from-zen-gray-ultra to-white rounded-3xl border-2 border-zen-gray-light p-8 flex items-center justify-center shadow-xl">
             <div class="text-center space-y-4">
-              <div class="w-32 h-32 mx-auto bg-white/20 rounded-full flex items-center justify-center">
+              <div class="w-32 h-32 mx-auto bg-gradient-to-br from-zen-forest-dark to-zen-forest-medium rounded-full flex items-center justify-center shadow-lg">
                 <Icon name="heroicons:light-bulb" class="w-16 h-16 text-white" />
               </div>
-              <div class="text-lg font-semibold">ZenMirror Device</div>
-              <div class="text-sm text-white/70">Patent-Pending Radar Technology</div>
+              <div class="text-lg font-semibold text-zen-charcoal">ZenMirror Device</div>
+              <div class="text-sm text-zen-gray-dark">Patent-Pending Radar Technology</div>
             </div>
           </div>
 
           <!-- Floating data card -->
-          <div class="absolute -bottom-6 -right-6 bg-white text-zen-charcoal rounded-2xl p-6 shadow-zen-lg max-w-xs">
-            <h4 class="font-semibold mb-3">Live Monitoring</h4>
+          <div class="absolute -bottom-6 -right-6 bg-white text-zen-charcoal rounded-2xl p-6 shadow-2xl border-2 border-zen-forest-pale max-w-xs">
+            <h4 class="font-semibold mb-3 text-zen-forest-dark">Live Monitoring</h4>
             <div class="space-y-2 text-sm">
               <div class="flex justify-between items-center">
                 <span class="text-zen-gray-dark">Heart Rate</span>
@@ -153,7 +156,7 @@ import { Icon } from 'astro-icon/components';
     position: absolute;
     width: 100px;
     height: 100px;
-    border: 2px solid rgba(217, 122, 52, 0.5);
+    border: 2px solid rgba(45, 91, 62, 0.3);
     border-radius: 50%;
     animation: radar 3s ease-out infinite;
   }
@@ -161,7 +164,7 @@ import { Icon } from 'astro-icon/components';
   .radar-animation {
     width: 100%;
     height: 100%;
-    background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-image: radial-gradient(circle, rgba(45, 91, 62, 0.1) 1px, transparent 1px);
     background-size: 50px 50px;
     animation: radar-bg 20s linear infinite;
   }
