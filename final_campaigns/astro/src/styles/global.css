@@ -9,42 +9,96 @@
 
   html {
     @apply scroll-smooth;
+    font-family: Inter, 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
 
   body {
-    @apply font-sans text-zen-charcoal bg-white antialiased;
+    @apply text-zen-charcoal bg-white antialiased;
+    font-family: Inter, 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold;
+    font-weight: 600;
+    line-height: 1.25;
   }
 
   h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl;
+    font-size: 32px;
+    font-weight: 700;
   }
 
   h2 {
-    @apply text-3xl md:text-4xl lg:text-5xl;
+    font-size: 24px;
+    font-weight: 600;
   }
 
   h3 {
-    @apply text-2xl md:text-3xl;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    h3 {
+      font-size: 22px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 48px;
+    }
+    h2 {
+      font-size: 32px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+  }
+
+  p {
+    line-height: 1.6;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply px-8 py-4 bg-zen-forest-dark text-white font-semibold rounded-xl
-           shadow-lg hover:bg-zen-forest-medium hover:shadow-xl
-           transform hover:scale-105 active:scale-95
-           transition-all duration-200 ease-out;
+    @apply bg-zen-forest-dark text-white font-bold rounded-lg
+           shadow-lg hover:shadow-xl
+           transform active:scale-95
+           transition-all duration-300 ease-out;
+    padding: 14px 28px;
+    min-height: 52px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .btn-primary:hover {
+    transform: scale(1.02);
+    background-color: rgba(44, 95, 79, 0.9);
   }
 
   .btn-secondary {
-    @apply px-8 py-4 bg-white text-zen-forest-dark font-semibold rounded-xl
+    @apply bg-white text-zen-forest-dark font-bold rounded-lg
            border-2 border-zen-forest-dark hover:bg-zen-forest-dark hover:text-white
            shadow-md hover:shadow-lg
-           transition-all duration-200 ease-out;
+           transform
+           transition-all duration-300 ease-out;
+    padding: 14px 28px;
+    min-height: 52px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .btn-secondary:hover {
+    transform: scale(1.02);
   }
 
   .gradient-text {
@@ -58,6 +112,48 @@
 
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Card shadows per UI design rules */
+  .shadow-zen-card {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .shadow-zen-card:hover {
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+  }
+
+  /* Hover scale utility */
+  .hover\:scale-102:hover {
+    transform: scale(1.02);
+  }
+
+  /* Mobile Sticky CTA Bar (per UI design rules) */
+  .mobile-sticky-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 12px 16px;
+    box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.12);
+    z-index: 50;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .mobile-sticky-cta {
+      display: none;
+    }
+  }
+
+  /* Responsive breakpoints per UI design rules */
+  @media (max-width: 767px) {
+    body {
+      font-size: 16px; /* Minimum to prevent zoom */
+    }
   }
 }
 

@@ -52,9 +52,10 @@ module.exports = {
         serif: ['Noto Serif', 'ui-serif', 'Georgia', 'serif'],
       },
       boxShadow: {
-        'zen': '0 2px 12px rgba(45, 91, 62, 0.08)',
-        'zen-md': '0 4px 24px rgba(45, 91, 62, 0.12)',
-        'zen-lg': '0 8px 40px rgba(45, 91, 62, 0.16)',
+        // UI Design Rules compliant shadows
+        'zen': '0px 2px 8px rgba(0, 0, 0, 0.08)',
+        'zen-md': '0px 2px 8px rgba(0, 0, 0, 0.08)',
+        'zen-lg': '0px 4px 16px rgba(0, 0, 0, 0.12)',
         'zen-glow': '0 0 20px rgba(217, 122, 52, 0.3)',
       },
       animation: {
