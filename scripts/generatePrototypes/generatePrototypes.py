@@ -8,7 +8,23 @@ from typing import Any, Optional
 
 import requests
 
-# OpenAI API key should be provided via environment variable OPENAI_API_KEY
+# OpenAI API key can be provided via environment variable OPENAI_API_KEY,
+# or by placing your key in a file named ".openai_api_key" in your home directory or project root.
+
+def load_openai_api_key() -> Optional[str]:
+    # 1. Check environment variables
+    key = os.getenv("OPENAI_API_KEY") or os.getenv("OPENAI_KEY")
+    if key:
+        return key
+    # 2. Check for .openai_api_key in current directory
+    key_file = Path(".openai_api_key")
+    if key_file.is_file():
+        return key_file.read_text(encoding="utf-8").strip()
+    # 3. Check for .openai_api_key in home directory
+    home_key_file = Path.home() / ".openai_api_key"
+    if home_key_file.is_file():
+        return home_key_file.read_text(encoding="utf-8").strip()
+    return None
 
 # Hard-coded defaults
 DEFAULT_PROMPT = (
@@ -104,9 +120,12 @@ def generate_images_with_openai(
     seed: Optional[int] = None,
 ) -> list[Path]:
     if not openai_api_key:
-        openai_api_key = os.getenv("OPENAI_API_KEY") or os.getenv("OPENAI_KEY")
+        openai_api_key = load_openai_api_key()
     if not openai_api_key:
-        raise RuntimeError("OpenAI API key not set. Provide --openai-key or set OPENAI_API_KEY/OPENAI_KEY.")
+        raise RuntimeError(
+            "OpenAI API key not set. Provide --openai-key, set OPENAI_API_KEY/OPENAI_KEY, "
+            "or put your key in a file named '.openai_api_key' in your home directory or project root."
+        )
 
     width, height = _parse_size(size)
     size_str = f"{width}x{height}"
@@ -195,7 +214,7 @@ def main() -> None:
         default=DEFAULT_PROMPT,
         help="Prompt text (defaults to the hard-coded meditation prompt)",
     )
-    parser.add_argument("--openai-key", dest="openai_key", type=str, default=None, help="OpenAI API key (or set OPENAI_API_KEY)")
+    parser.add_argument("--openai-key", dest="openai_key", type=str, default=None, help="OpenAI API key (or set OPENAI_API_KEY, or put in .openai_api_key file)")
     parser.add_argument("--no-random", dest="randomize", action="store_false", help="Disable random prompt augmentation for diversity")
     parser.add_argument("--seed", type=int, default=None, help="Optional RNG seed for reproducible randomness")
     parser.set_defaults(randomize=True)
