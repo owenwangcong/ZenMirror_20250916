@@ -98,15 +98,14 @@ import { Icon } from 'astro-icon/components';
       <!-- Right column: Product showcase -->
       <div class="relative animate-fade-in" style="animation-delay: 0.2s;">
         <div class="relative z-10">
-          <!-- Placeholder for product image -->
-          <div class="aspect-square bg-gradient-to-br from-zen-gray-ultra to-white rounded-3xl border-2 border-zen-gray-light p-8 flex items-center justify-center shadow-xl">
-            <div class="text-center space-y-4">
-              <div class="w-32 h-32 mx-auto bg-gradient-to-br from-zen-forest-dark to-zen-forest-medium rounded-full flex items-center justify-center shadow-lg">
-                <Icon name="heroicons:light-bulb" class="w-16 h-16 text-white" />
-              </div>
-              <div class="text-lg font-semibold text-zen-charcoal">ZenMirror Device</div>
-              <div class="text-sm text-zen-gray-dark">Patent-Pending Radar Technology</div>
-            </div>
+          <!-- Product image -->
+          <div class="aspect-square rounded-3xl overflow-hidden shadow-2xl border-2 border-zen-gray-light">
+            <img
+              src="/assets/images/lifestyle/bedroom-nightstand.png"
+              alt="ZenMirror meditation device on bedside table in peaceful bedroom setting"
+              class="w-full h-full object-cover"
+              loading="eager"
+            />
           </div>
 
           <!-- Floating data card -->
